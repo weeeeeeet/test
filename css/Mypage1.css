@@ -71,7 +71,6 @@ a {
 /* 컨텐츠 영역에 양쪽 200px씩 여백주기 */
 .content{
     margin: 20px 200px 0px;
-    border: 1px solid black;
 }
 
 /* 컨텐츠 영역의 왼쪽 가로 길이 잡아주기 */
@@ -111,7 +110,7 @@ a {
     float: left;
 }
 
-/* 컨텐츠 영역의 왼쪽상단의 프로필의 소설 로그인 아이디 위치 및 크기 잡아주기 */
+/* 컨텐츠 영역의 왼쪽상단의 프로필의 소설 로그인 종류*/
 .content .content_left .profile_social{
     width: 18px;
     height: 18px;
@@ -119,20 +118,24 @@ a {
     margin-top: 13px;
 }
 
+/* 컨텐츠 영역의 왼쪽상단의 프로필의 소설 로그인 아이디 위치 및 크기 잡아주기 */
 .content .content_left .profile_email{
     padding-left: 20px;
     font-size: 12px;
     color: #595959;
 }
 
+/* 컨켄츠 영역의 왼쪽 목록 */
 .content .mypage_list{
     clear: both;
 }
 
+/* 컨텐츠 영역의 왼쪽 목록에 프로필과의 사이 공백 주기 */
 .content .content_left .mypage_list ul li{
     margin-top: 18px;
 }
 
+/* 컨텐츠 영역의 왼쪽 목록의 li태그들의 css속성 지정 */
 .content .content_left .mypage_list ul a {
     font-weight: 450;
     font-size: 14px;
@@ -144,18 +147,22 @@ a {
     color: #2370DF;
 }
 
+/* 컨텐츠 영역의 왼쪽 목록의 마지막 li인 경우 밑에도 여백을 주어 밑의 목록과 구분해줘야 한다. */
 .content .content_left .mypage_list ul :last-of-type{
     margin-bottom: 18px;
 }
 
+/* 목록1 위에 보더로 선 생성 */
 .content .content_left .mypage_list .mypage_list_top{
     border-top: 1px solid black;
 }
 
+/* 목록2 위에 보더로 선 생성 */
 .content .content_left .mypage_list .mypage_list_bottom{
     border-top: 1px solid black;
 }
 
+/* 컨텐츠 영역의 오른쪽 부분 정리 */
 .content .content_right {
     margin: 20px 20px 0px 20px;
     border: 1px solid blue;
@@ -168,6 +175,7 @@ a {
     height: 67px;
 
     border: 1px solid #595959;
+    border-radius: 8px;
 }
 
 .content .content_right .mypage_toplist{
@@ -175,6 +183,7 @@ a {
 }
 
 .content .content_right .mypage_toplist li {
+    margin-left: 70px;
     float: left;
 }
 
