@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SCoreDream';
+}
+
+.contents {
+    margin: 50px 200px 50px 200px;
+}
+
+legend {
+    font-weight: bold;
+    border-bottom: 1px solid darkgray;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.card {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+}
+form span {
+    color: red;
+}
+table{
+    width: 100%;
+    margin: 30px;
+}
+table td{
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: darkgray;
+}
+button {
+    width: 50%;
+    margin: 0 auto;
+}
+
