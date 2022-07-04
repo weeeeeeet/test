@@ -159,6 +159,18 @@ a {
     float: right;
 }
 
+.content .content_right .mypage_toplist{
+    border: #595959;
+}
+
+.content .content_right .mypage_toplist li {
+    float: left;
+}
+
+#mypage_top_tabs input, #mypage_top_tabs progress{
+    accent-color: green;
+}
+
 
 
 /* Footer ================================ */
