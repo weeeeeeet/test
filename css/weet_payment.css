@@ -11,17 +11,22 @@
 }
 
 legend {
+    display: block;
     font-weight: bold;
     border-bottom: 1px solid darkgray;
     margin-top: 30px;
-    margin-bottom: 30px;
 }
 .card {
+    width: 100%;
+    margin: 20px 50px;
     text-align: center;
 }
 
 input {
     width: 100%;
+}
+.pay-info {
+    margin: 30px;
 }
 form span {
     color: red;
@@ -38,5 +43,8 @@ table td{
 button {
     width: 50%;
     margin: 0 auto;
+}
+.form-control-plaintext {
+    text-align: right;
 }
 
