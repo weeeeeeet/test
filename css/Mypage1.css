@@ -187,17 +187,20 @@ a {
     margin-top: 15px;
 }
 
+/* 컨텐츠 영역 - 오른쪽 영역 - TR게시판 / 좋아요 / 댓글 목록 ul - li */
 .content .content_right .mypage_toplist li {
     margin-left: 70px;
     float: left;
 }
 
+/* 컨텐츠 영역 - 오른쪽 영역 - TR게시판 / 좋아요 / 댓글 목록 ul - li - a */
 .content .content_right .mypage_toplist a {
     font-weight: 450;
     font-size: 14px;
     color: #6A6A6A;
 }
 
+/* 현재 탭의 경우에는 밑줄이 그어지고, 글씨가 두껍게 변한다. */
 .content .content_right .mypage_toplist a.on {
     font-weight: bold;
     color: black;
@@ -211,8 +214,17 @@ a {
     accent-color: green;
 }
 
+/* 하트 아이콘 - 좋아요수 */
 .fas fa-heart{
     background-color: red;
+}
+
+.mypage_top_tabs{}
+
+.table_tr {
+    /* border: 3px solid black; */
+    border-top-left-radius: 15px; border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
 }
 
 
