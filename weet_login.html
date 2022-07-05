@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weet</title>
+
+    <link href="css/weet_login_header.css" rel="stylesheet" />
+    <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    
+
+</head>
+
+<body>
+    <section class="header">
+        <nav class="nav_left">
+            <a href="http://127.0.0.1:5500/WEET/weet_header2.html"  target="_self">
+                <img src="img/weet_logo.png" alt="위의 이미지를 누르면 연결됩니다." width="100">
+            <a>
+            <div class="categories">
+                <a href="커뮤니티페이지" target="_self">
+                    커뮤니티
+                </a>
+                <a href="클래스페이지" target="_self">
+                    클래스
+                </a>
+            </div>
+        </nav>
+        
+        <div class="header_right">
+            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+            <input type="text" name="search"placeholder="트레이너명 또는 클래스명 입력">
+            <a href="#" class="fa-solid fa-magnifying-glass" target="_self"></a>
+        </div>
+    </section>
+    <div class="underline"></div>
+
+
+    <div class="login-contain">
+        <div class="d-grid gap-2 col-2 mx-auto mx-block" style="min-width: 300px;">
+            <div class="login-maim-text"> 로그인 </div>
+            <a href="#" class="btn btn-primary" role="button" aria-disabled="true" style="background-color:#fee500; border-color:#fee500; color:#181600;">
+                <div class="button-box" style="display: flex;">
+                    <div class="login-icon kakao"><img src="img/icon-kakao-medium.svg" alt="카카오로 시작하기"></div>
+                    <div class="login-text kakao">카카오로 시작하기</div>
+                </div>
+            </a>
+            <a href="#" class="btn btn-primary" role="button" aria-disabled="true" style="background-color:#1ec800; border-color:#1ec800;">
+                <div class="button-box" style="display: flex;">
+                    <div class="login-icon naver"><img src="img/icon-naver-medium.svg" alt="네이버로 시작하기"></div>
+                    <div class="login-text naver">네이버로 시작하기</div>
+                </div>
+            </a>
+            <a href="#" class="btn btn-primary" role="button" aria-disabled="true" style="background-color:#4285F4; border-color:#4285F4;">
+                <div class="button-box" style="display: flex;">
+                    <div class="login-icon google"><img src="img/icon-google-medium.svg" alt="구글로 시작하기"></div>
+                    <div class="login-text google">구글로 시작하기</div>
+                </div>
+            </a>
+            <a href="#" class="btn btn-primary" role="button" aria-disabled="true" style="background-color:#FF730E; border-color:#FF730E;">
+                <div class="button-box" style="display: flex;">
+                    <div class="login-icon tricon"><i class="fas fa-dumbbell" alt="트레이너로 시작하기"></i></div>
+                    <div class="login-text trtext">트레이너이신가요?</div>
+                </div>
+            </a>
+            <div class="greement">
+                <a href="#" class="agree_txt" role="button" aria-disabled="true">이용약관</a> 및
+                <a href="#" class="agree_txt" role="button" aria-disabled="true">개인정보 처리방침</a> 확인 후 동의합니다
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
