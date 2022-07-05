@@ -85,9 +85,9 @@
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4 embed-responsive embed-responsive-4by3">
-                            <img src="img/1000939.jpg" class="card-img-top embed-responsive-item" alt="...">
+                            <img src="img/1000939.jpg" class="card-img-top img-fluid rounded-start rounded-end embed-responsive-item" alt="...">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8">     
                             <div class="card-body">
                                 <div class="row">
                                     <h5 class="card-title class-title">헬린이를 위한 그룹피티</h5>
@@ -194,26 +194,32 @@
                 <div class="container pay-agmt-container">
                     <div class="row">
                         <div class="col-10">
-                            <label for="agmt-all">전체 동의</label>
+                            <label for="agmt-all" class="form-check-label">전체 동의</label>
                         </div>
                         <div class="col">
-                            <input type="checkbox" name="agmt-all" id="agmt-all">
+                            <input type="checkbox" class="form-check-input" name="agmt-all" id="agmt-all">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-10">
-                            <label for="agmt-age">만 14세 이상 결제 동의</label>
+                            <label for="agmt-age" class="form-check-label">만 14세 이상 결제 동의</label>
                         </div>
-                        <div class="col">
-                            <input type="checkbox" name="agmt-age" id="agmt-age">
+                        <div class="col-2">
+                            <input type="checkbox" class="form-check-input" name="agmt-age" id="agmt-age" required>
+                            <div class="invalid-feedback">
+                                약관에 동의해 주세요.
+                            </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-10">
-                            <label for="agmt-confirm">주문내용 확인 및 결제동의</label>
+                            <label for="agmt-confirm" class="form-check-label">주문내용 확인 및 결제동의</label>
                         </div>
                         <div class="col">
-                            <input type="checkbox" name="agmt-confirm" id="agmt-confirm">
+                            <input type="checkbox" class="form-check-input" name="agmt-confirm" id="agmt-confirm" required>
+                            <div class="invalid-feedback">
+                                약관에 동의해 주세요.
+                            </div>
                         </div>
                     </div>
                 </div>
