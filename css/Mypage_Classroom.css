@@ -209,45 +209,6 @@ a {
     border-bottom: 2px solid black;
 }
 
-/* 컨텐츠 영역 - 오른쪽 영역 - 전체 / 답변완료 탭 - 위쪽 영역과 아래쪽 영역 공백 넣기 */
-.mypage_top_tabs{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-/* 컨텐츠 영역 - 오른쪽 영역 - 전체 / 답변완료 탭 - 가로로 정렬 및 li와의 사이 공백 지정 */
-.mypage_top_tabs li{
-    font-size: 14px;
-
-    float: left;
-    margin-left: 50px;
-}
-
-/* 컨텐츠 영역 - 오른쪽 영역 - 전체 / 답변완료 탭 */
-.mypage_top_tabs li a{
-    font-weight: 450;
-    color: #877F7F;
-}
-
-/* 컨텐츠 영역 - 오른쪽 영역 - 전체 / 답변완료 탭 - 선택된 탭은 검정색으로 색 변환 */
-.mypage_top_tabs li .on{
-    font-weight: 450;
-    color: black;
-}
-
-/* 컨텐츠 영역 - 오른쪽 영역 - 전체 / 답변완료 탭 - 현재 탭은 왼쪽에 초록색 동그라미가 나오도록 */
-.mypage_top_tabs li a .on2{
-    display: inline-block;
-
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    margin-right: 5px;
-    
-    background-color: greenyellow;
-    color: greenyellow;
-}
-
 /* TR게시판 - 게시물 */
 .tb1{
     width: 900px;
