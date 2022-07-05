@@ -164,22 +164,27 @@ a {
 
 /* 컨텐츠 영역의 오른쪽 부분 정리 */
 .content .content_right {
-    margin: 20px 20px 0px 20px;
+    margin: 20px 20px 0px 0px;
+    padding-left: 50px;
     border: 1px solid blue;
 
     float: right;
 }
 
+/* 컨텐츠 영역의 오른쪽 영역의 위 목록을 감싸는 div css속성 지정 */
 .content .content_right .mypage_top{
-    width: 1200px;
-    height: 67px;
+    width: 900px;
+    height: 60px;
 
-    border: 1px solid #595959;
+    margin-right: 200px;
+
+    border: 2px solid #D9D9D9;
     border-radius: 8px;
 }
 
+/* 컨텐츠 영역 - 오른쪽 영역 - TR게시판 / 좋아요 / 댓글 목록 ul */
 .content .content_right .mypage_toplist{
-    align-content: center;
+    margin-top: 15px;
 }
 
 .content .content_right .mypage_toplist li {
@@ -187,8 +192,27 @@ a {
     float: left;
 }
 
+.content .content_right .mypage_toplist a {
+    font-weight: 450;
+    font-size: 14px;
+    color: #6A6A6A;
+}
+
+.content .content_right .mypage_toplist a.on {
+    font-weight: bold;
+    color: black;
+    padding-bottom: 10px;
+
+    border-bottom: 2px solid black;
+}
+
+/* 컨텐츠 영역 - 오른쪽 영역 - 전체 / 답변완료 탭 - 라디오 색깔 변경 */
 #mypage_top_tabs input, #mypage_top_tabs progress{
     accent-color: green;
+}
+
+.fas fa-heart{
+    background-color: red;
 }
 
 

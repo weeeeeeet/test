@@ -53,6 +53,7 @@
     <section class="content">
 
         <nav class="content_left">
+            <!-- 프로필 + 왼쪽 목록 -->
 
             <div class="profile">
 
@@ -67,6 +68,7 @@
             </div>
 
             <div class="mypage_list">
+                <!-- 왼쪽 목록 -->
 
                 <ul class="mypage_list_top">
                     <li><a href="#" class="on">내 활동</a></li>
@@ -84,6 +86,7 @@
         </nav>
 
         <div class="content_right">
+            <!-- 오른쪽 영역 : 위쪽 목록 + 전체 / 답변완료 + -->
 
             <div class="mypage_top">
 
@@ -99,6 +102,55 @@
                 <input id="tab1" type="radio" name="tab" checked="checked" value="all" /> <label for="tab1">전체</label>
                 <input id="tab2" type="radio" name="tab" value="checked" /> <label for="tab2">답변 완료</label>
             </div>
+
+            <table class="mypage_table">
+
+                <thead>
+                    <tr>
+                        <th>게시글 번호</th>
+                        <th>제목</th>
+                        <th>작성일자</th>
+                        <th>좋아요수</th>
+                        <th>댓글수</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>109</td>
+                        <td>운동을 처음 시작하는데, PT로 시작해도 ...</td>
+                        <td>2022.06.19</td>
+                        <td> <span style="color: red;"><i class="fas fa-heart"></i></span> 12</td>
+                        <td>5</td>
+                    </tr>
+
+                    <tr>
+                        <td>108</td>
+                        <td>다음주부터 PT를 시작하게 되었어요!</td>
+                        <td>2022.06.19</td>
+                        <td> <span style="color: red;"><i class="fas fa-heart"></i></span> 7</td>
+                        <td>6</td>
+                    </tr>
+
+                    <tr>
+                        <td>108</td>
+                        <td>제 식단 좀 봐주실 수 있을까요?</td>
+                        <td>2022.06.19</td>
+                        <td> <span style="color: red;"><i class="fas fa-heart"></i></span> 7</td>
+                        <td>6</td>
+                    </tr>
+
+                    <tr>
+                        <td>108</td>
+                        <td>게시물 제목</td>
+                        <td>2022.06.19</td>
+                        <td> <span style="color: red;"><i class="fas fa-heart"></i></span> 7</td>
+                        <td> <img src="./img/Vector.png" alt="댓글"> 6</td>
+                    </tr>
+
+                </tbody>
+            </table>
 
         </div>
 
