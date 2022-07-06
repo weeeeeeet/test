@@ -1,0 +1,363 @@
+@charset "UTF-8";
+
+/* WEB FONTS 적용 ----------------- */
+@import url(https://webfontworld.github.io/SCoreDream/SCoreDream.css);
+
+/* 기본적 css 리셋 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SCoreDream';
+    box-sizing: border-box;
+}
+
+/* 가이드라인 */
+/* .g{
+    border: 1px solid rgb(192, 2, 255);
+} */
+
+/* section {
+    width: 1040px;
+} */
+
+/* Header ================================================== */
+.header {
+    padding: 20px 80px 20px 80px;
+    height: 100px;
+    background-color: white;
+    /* position: sticky; */
+    /* 헤더 고정 */
+    top: 0px;
+
+    /* border: 1px solid #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+.header nav.nav_left a {
+    /* 로고 */
+    padding-left: 0px;
+    float: left;
+    display: inline;
+    margin-bottom: 20px;
+    margin-right: 8px;
+}
+
+.header .categories a {
+    /* 커뮤니티,클래스 */
+    margin-top: 20px;
+    display: inline;
+    padding-right: 35px;
+    font-size: 15px;
+    color: #2370DF;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.header div.header_right {
+    /* 헤더 우측 */
+    float: right;
+    margin-top: 15px;
+}
+
+.header div.header_right input {
+    /* 검색창 */
+    width: 260px;
+    border: 2.5px solid #2370DF;
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.header .header_right a:nth-of-type(1) {
+    /* 검색버튼 */
+    margin-right: 30px;
+}
+
+.header div.header_right a {
+    /* 마이페이지, 알림 */
+    color: #2370DF;
+    margin-left: 18px;
+    font-size: 20px;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+.underline {
+    /* 밑줄 */
+    border: 0;
+    height: 5px;
+    background: rgb(236, 236, 236);
+}
+
+/* 배경 스타일 작업 ================================================== */
+body {
+    background-color: rgb(227, 227, 227);
+    
+}
+section.wrap {
+    display: flex;
+}
+
+/* 사이드바 스타일 작업================================================== */
+section div.sidebar{
+
+    display: inline-block;
+    width: 350px;
+    background: white;
+    background-position: center;
+    background-size: cover;
+    /* position: fixed; */
+    
+
+    /* border: 2px solid red; */
+}
+
+/* 프로필 스타일 작업================================================== */
+section div.profile {
+    position: absolute;
+    width: 270px;
+    height: 325px;
+    margin: 40px;
+    border-radius: 18px;
+    text-align: center;
+    
+    
+    background:
+        linear-gradient(127deg, #d2d9ff, rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, #fcd9c2, rgba(0, 0, 255, 0) 70.71%);
+
+    /* border: 2px solid red; */
+}
+section div.profile img { /* 프로필 사진 */
+   
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    /* border: 2px solid red; */
+}
+section div.profile h1 { /* 이름 */
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+
+    margin-bottom: 40px;
+
+    /* border: 2px solid red; */
+}
+section div.profile h2 { /* 클래스 진행 현황 */
+    font-weight: bold;
+    font-size: 14px;
+    color: #2370DF;
+
+    /* border: 2px solid red; */
+}
+section div.profile progress { /* 진행바 */
+    text-align: center;
+
+    /* border: 2px solid red; */
+}
+ section div.profile h3 {  /* 횟수 */
+    text-align: center;
+    font-weight: normal;
+    font-size: 10px;
+    color: #2370DF;
+
+    /* border: 2px solid red; */
+}
+
+/* 메뉴 스타일 작업 ==================================================*/
+section div.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 가로 - 중앙으로 */
+   justify-content: flex-start;   /*세로 - 상단으로 */
+    margin-top: 375px;
+    margin-left: 40px;
+    width: 270px;
+    height: 500px;
+    clear: both;
+
+    /* border: 2px solid red; */
+}
+section div.menu i{
+    margin: 5px;
+}
+section div.menu-list{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    color: #878787;
+    margin-top: 30px;
+
+    /* border: 2px solid red; */
+}
+section div.menu a{
+    
+   text-decoration: none; /* 밑줄 없애기 */
+   color: black;
+}
+
+/* 대시보드 스타일 작업 ==================================================*/
+section div.dash { 
+    display: inline-block;
+    text-align: left;
+    width: 1200px;
+    height: 910px;  /* 대시보드 크기 */
+
+    padding: 30px;
+
+    /* height: 300px; */
+}
+section div.dash h1{ /*회원 대시보드*/
+    font-size: 25px;
+    font-weight: bold;
+    color: #95B4E0;
+    padding: 10px;
+}
+
+/* 클래스 공지사항 대시보드----------------------------------*/
+section div.class-notice {
+    background-color: rgb(255, 255, 255);
+    /* float: left; */
+    border-radius: 18px;
+}
+section div.class-notice h2{ /*클래스 공지사항*/
+    font-size: 20px;
+    font-weight: bold;
+    color: #2370DF;
+    padding-left: 55px;
+    padding-top: 30px;
+    margin: 10px;
+}
+section div.notice-list { /* 공지사항 리스트 박스 */
+    padding-bottom: 20px;
+ 
+}
+section div.notice-list li { /* 공지사항 리스트 - 리스트 태그*/
+    width: 1000px;
+    padding: 20px;
+    margin: auto;
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; */
+    list-style: none;
+    color: black;
+    border-bottom: solid #e7e7e7;
+}
+section div.notice-list a{
+    text-decoration: none; /* 밑줄 없애기 */
+    color: black;
+ }
+
+ /* 이번주 코칭계획 대시보드 ----------------------------------*/
+ section div.coaching-plan {
+    background-color: rgb(255, 255, 255);
+    /* float: left; */
+    border-radius: 18px;
+    margin-top: 30px;       /*박스간 간격*/
+}
+section div.coaching-plan h2{ /*이번주 코칭계획*/
+    font-size: 20px;
+    font-weight: bold;
+    color: #2370DF;
+    padding-left: 55px;
+    padding-top: 30px;
+    margin: 10px;
+}
+section div.plan-list { /* 공지사항 리스트 박스 */
+    padding-bottom: 20px;
+ 
+}
+section div.plan-list li { /* 공지사항 리스트 - 리스트 태그*/
+    width: 1000px;
+    padding: 20px;
+    margin: auto;
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; */
+    /* list-style: decimal; */ /* 숫자 위치가 애매해짐*/
+    list-style: none;
+    transform: rotate();
+    color: black;
+    border-bottom: solid #e7e7e7;
+}
+section div.plan-list a{
+    text-decoration: none; /* 밑줄 없애기 */
+    color: black;
+    padding-left: 10px;
+ }
+
+
+
+
+
+/* Footer ==================================================*/
+.footer {
+    height: 280px;
+    width: 100%;
+    background-color: white;
+    /* position: fixed;   */
+    bottom: 0;
+    left: 0;
+}
+.footer img {                                   /* footer로고 */
+    width: 120px;
+    margin-top: 25px;
+    margin-left: 80px;
+    display: inline;
+    float: left;
+}
+.footer .notice_service {                      /* 공지사항, 고객센터 */
+    float: right;
+    margin-top: 20px;
+    margin-right: 80px;
+}
+.footer .notice_service button {
+    border-radius: 5px;
+    font-weight: bold;
+    width: 160px;
+    height: 33px;
+    border: 2px solid #6C6C6C;
+    background-color: white;
+    cursor:pointer;                             /* 커서 올렸을 때 손모양으로 */
+}
+.footer ul.time {                               /* 운영시간 */
+    margin-top: 10px;
+    list-style: none;
+    font-size: 12px;
+    color: #6C6C6C;
+    margin-bottom: 25px;
+}
+.footer .underline2 {
+    clear: both;
+    border: 0;
+    height: 1.5px;
+    background: rgb(236, 236, 236);
+}
+.footer .terms {                                 /* 이용약관, 개인정보처리방침 */
+    height: 40px;                         
+    list-style: none;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.footer a {
+    float: left;
+    font-size: 15px;
+    padding-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+.footer .address {
+    margin-top: 20px;
+    margin-left: 80px;
+    line-height: 18px;
+}
+.footer p {
+    font-size: 15px;
+}
