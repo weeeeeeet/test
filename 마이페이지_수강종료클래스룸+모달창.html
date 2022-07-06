@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>마이페이지 - 클래스룸</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <link href="css/Mypage_End_Classroom_Modal.css" rel="stylesheet" />
+    <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- ==================HEADER==================== -->
+
+    <section class="header">
+        <nav class="nav_left">
+            <a href="http://127.0.0.1:5500/WEET/weet_header2.html"  target="_self">
+                <img src="img/weet_logo.png" alt="위의 이미지를 누르면 연결됩니다." width="100">
+            <a>
+            <div class="categories">
+                <a href="커뮤니티페이지" target="_self">
+                    커뮤니티
+                </a>
+                <a href="클래스페이지" target="_self">
+                    클래스
+                </a>
+            </div>
+        </nav>
+        
+        <div class="header_right">
+            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+            <input type="text" name="search"placeholder="트레이너명 또는 클래스명 입력">
+            <a href="#" class="fa-solid fa-magnifying-glass" target="_self"></a>
+            <a href="마이페이지" class="fa-solid fa-user" target="_self"></a>
+            <a href="알람" class="fa-solid fa-bell" target="_self"></a>
+        </div>
+    </section>
+    <div class="underline"></div>
+
+
+    <!-- ==================CONTENT==================== -->
+
+    <section class="content">
+
+        <nav class="content_left">
+            <!-- 프로필 + 왼쪽 목록 -->
+
+            <div class="profile">
+
+                <div class="profile_photo"></div>
+
+                <div class="profile_id">WEE.T</div>
+
+                <img src="./img/naver2.png" class="profile_social" alt="소설로그인표시">
+
+                <a href="#" class="profile_email">helloword@naver.com <i class="fas fa-angle-right"></i> </a>
+
+            </div>
+
+            <div class="mypage_list">
+                <!-- 왼쪽 목록 -->
+
+                <ul class="mypage_list_top">
+                    <li><a href="#">내 활동</a></li>
+                    <li><a href="#" class="on">내 클래스룸</a></li>
+                    <li><a href="#">MY BODY</a></li>
+                </ul>
+
+                <ul class="mypage_list_bottom">
+                    <li><a href="#">구매 내역</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <div class="content_right">
+            <!-- 오른쪽 영역 : 위쪽 목록 + 전체 / 답변완료 + -->
+
+            <div class="mypage_top">
+
+                <ul class="mypage_toplist">
+                    <li><a href="#">내 클래스 룸</a></li>
+                    <li><a href="#" class="on">수강종료 클래스</a></li>
+                    <li><a href="#">예약 클래스</a></li>
+                    <li><a href="#">찜 한 클래스</a></li>
+                </ul>
+
+            </div>
+
+            <div class="class_card">
+                <img src="./img/classcard1.jpg" class="card_img" alt="해당 클래스의 대포사진 자리">
+                <a href="#" class="card-text">[인기 클래스] 국내1위 홈트계 끝판왕 '위이티'</a>
+                <button type="button" class="class_card_btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    후기 등록하기
+                </button>
+            </div>
+
+            <div class="class_card">
+                <img src="./img/classcard2.jpg" class="card_img" alt="해당 클래스의 대포사진 자리">
+                <a href="#" class="card-text">[신규 클래스] 국내1위 홈트계 끝판왕 '위이티'</a>
+                <button type="button" class="class_card_btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    후기 등록하기
+                </button>
+            </div>
+
+            <div class="class_card">
+                <img src="./img/classcard3.jpg" class="card_img" alt="해당 클래스의 대포사진 자리">
+                <a href="#" class="card-text">[PT] 국내1위 홈트계 끝판왕 '위이티'</a>
+                <button type="button" class="class_card_btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    후기 등록하기
+                </button>
+            </div>
+            
+        </div>
+
+        <!-- Modal 창 (팝업창) -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">클래스 후기 등록하기</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <p class="modal_class_title">[인기 클래스] 국내1위 홈트계 끝판왕 '위이티'</p>
+
+                    <div class="modal_class_content">
+
+                        <div class="modal_class_content_profile">
+
+                            <div class="modal_class_content_profile_photo"></div>
+
+                            <p class="modal_class_content_profile_id">WEE.T</p>
+
+                            <p class="modal_class_content_profile_date">2022.07.06</p>
+
+                        </div>
+
+                        <form name="myform" id="myform" method="post" action="#">
+                            <fieldset>
+                                <label for="rate1">⭐</label><input type="radio" name="rating" value="5" id="rate1">
+                                <label for="rate2">⭐</label><input type="radio" name="rating" value="4" id="rate2">
+                                <label for="rate3">⭐</label><input type="radio" name="rating" value="3" id="rate3">
+                                <label for="rate4">⭐</label><input type="radio" name="rating" value="2" id="rate4">
+                                <label for="rate5">⭐</label><input type="radio" name="rating" value="1" id="rate5">
+                            </fieldset>
+                        </form>
+
+                        <div class="modal_class_content_review">
+                            <input type="text" name="review" id="modal_class_content_review_inner" placeholder="수강후기를 작성해주세요.">
+                        </div>
+
+                    </div>
+
+                    <div class="modal_class_file">
+                        <form action="#" method="post" enctype="multipart/form-data" name="">
+                            <input id="uploadFiles" type="file" multiple style="width:300px" onchange="uploadFileAdded()">
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                <button type="button" class="btn btn-primary">등록하기</button>
+                </div>
+                
+            </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ==================TOPBUTTON==================== -->
+
+    <!-- <a href="#" class="TOP_btn"><i class="fas fa-angle-up"></i><br>TOP</a> -->
+    <a href="#" class="TOP_btn">△<br>TOP</a>
+
+    <!-- ==================FOOTER==================== -->
+    
+
+    
+    <footer class="footer">
+        <div class="underline"></div>
+        <img src="img/weet_logo_bw.png" alt="">
+        <!-- <p>맞춤형 PT 예약&관리 플랫폼</p> -->
+
+        <div class="notice_service">
+            <button type="button" name="btnNotice" onclick="location.href='공지사항 주소';">공지사항</button>
+            <button type="button" name="btnService" onclick="location.href='고객센터 주소';">고객센터</button>
+            <br>
+            <ul class="time">
+                <li>운영시간 : 평일10시~18시 (주말, 공휴일 제외)</li>
+                <li> 점심시간 : 12시 30분~14시</li>
+            </ul>
+        </div>
+        <div class="underline2"></div>
+        <div class="terms">
+            <a href="이용약관페이지" target="_self">이용약관</a>
+            <a href="개인정보처리방침페이지" target="_self">개인정보처리방침</a>
+        </div>
+        <div class="underline2"></div>
+        <div class="address">
+            <p>대표: 조은별 | 서울특별시 강남구 테헤란로14길 6 남도빌딩 2F | Tel : 1234-5678<br>
+                사업자 등록번호 : 123-45-67892 | 통신판매업신고 : 2222-서울강남-1111호
+            </p>
+        </div>
+    </footer>
+   
+</body>
+
+</html>
