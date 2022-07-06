@@ -12,13 +12,9 @@
 }
 
 /* 가이드라인 */
-/* .g{
+.g{
     border: 1px solid rgb(191, 0, 255);
-} */
-
-/* section {
-    width: 1040px;
-} */
+}
 
 /* Header ================================================== */
 .header {
@@ -214,14 +210,14 @@ section div.dash {
 
     /* height: 300px; */
 }
-section div.dash h1{ /*회원 대시보드*/
+section div.dash h1{ /*회원 대시보드 타이틀*/
     font-size: 25px;
     font-weight: bold;
     color: #95B4E0;
     padding: 10px;
 }
 
-/* 오늘의 식단 대시보드----------------------------------*/
+/* 오늘의 식단 올리기 대시보드----------------------------------*/
 section div.today-food {
     background-color: rgb(255, 255, 255);
     border-radius: 18px;
@@ -236,8 +232,7 @@ section div.today-food h2{ /*오늘의 식단 올리기*/
     padding-left: 45px;
     padding-top: 30px;
     padding-bottom: 15px;
-    margin: 10px;
-    
+    margin: 10px;   
 }
 section div.image-container { /* 사진 첨부파일 박스 */
     margin-top: 30px;
@@ -252,10 +247,6 @@ section div.image-container input { /* 파일선택 버튼*/
     float: right;
     margin-top: 169px;
 }
-section div.notice-list a{
-    text-decoration: none; /* 밑줄 없애기 */
-    color: black;
- }
 
 
 
