@@ -237,12 +237,25 @@ a {
 .content_right .class_card .card-text{
     display: inline-block;
     margin-top: 10px;
-
     height: 50px;
 
     text-align: center;
     font-size: 14px;
     color: black;
+}
+
+/* 클래스 카드 - 후기 등록하러 가기 버튼 */
+.class_card_btn{
+    width: 104px;
+    height: 31px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    background-color: #2370DF;
+
+    float: right;
+    margin-top: 20px;
 }
 
 /* 탑 버튼 */
