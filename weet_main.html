@@ -35,10 +35,16 @@
         </nav>
         
         <div class="header_right">
-            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
             <input type="text" name="search"placeholder="트레이너명 또는 클래스명 입력">
             <a href="#" class="fa-solid fa-magnifying-glass" target="_self"></a>
-            <a href="마이페이지" class="fa-solid fa-user" target="_self"></a>
+            <i class="fa-solid fa-user" target="_self"> <!-- 사람아이콘 -->
+                <ul class="dropdown">
+                    <li><a href="#">마이페이지</li>
+                    <li><a href="#">쿠폰</li>
+                    <li><a href="#">로그아웃</li>
+                </ul>
+            </i>
+            
             <a href="알람" class="fa-solid fa-bell" target="_self"></a>
         </div>
     </section>
@@ -49,10 +55,12 @@
     <section class="banner">
         <div class="banner_copy_img">
             <p class="health">헬스? 어렵지 않아!</p>
-            <img src="img/banner.jpg" alt="">
+            <a href="#" target="_self">
+                <img src="img/banner1.jpg" alt="">
+            </a>
             <div class="btnPage">
-                <button type="button" class="fa-solid fa-angle-left"></button>
-                <button type="button" class="fa-solid fa-angle-right"></button>
+                <a href="#" class="fa-solid fa-angle-left"></a>
+                <a href="#" class="fa-solid fa-angle-right"></a>
             </div>
         </div>
     
@@ -70,6 +78,9 @@
         </div>
     </section> -->
 
+
+    <!-- ===================MAIN===================== -->
+
     <div class="search_main">
         <input type="text" name="search"placeholder="&nbsp&nbsp&nbsp트레이너명 또는 클래스명 입력">
         <a href="#" class="fa-solid fa-magnifying-glass" target="_self"></a>
@@ -77,10 +88,17 @@
 
     <div class="main">
         <div class = "main_class_recommended">
-            <div class="recommended"><p>추천클래스</p></div>
+            <div class="recommended">
+                <p>추천클래스</p>
+                <a href="#"  target="_self">+ 더보기&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+            </div>
             <div class="class_list">
                 <a href="#"  target="_self">
                     <img src="img/classlist.png" alt="">
+                    
+                    <div class="like" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </a>
                 <h1>곽두팔 / 개인클래스 / 서울시 강남구</h1>
                 <a href="#">헬스? 어렵지 않아! (5/6)</a><br>
@@ -96,6 +114,9 @@
             <div class="class_list">
                 <a href="#"  target="_self">
                     <img src="img/classlist.png" alt="">
+                    <div class="like" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </a>
                 <h1>곽두팔 / 개인클래스 / 서울시 강남구</h1>
                 <a href="#">헬스? 어렵지 않아! (5/6)</a><br>
@@ -111,6 +132,9 @@
             <div class="class_list">
                 <a href="#"  target="_self">
                     <img src="img/classlist.png" alt="">
+                    <div class="like" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </a>
                 <h1>곽두팔 / 개인클래스 / 서울시 강남구</h1>
                 <a href="#">헬스? 어렵지 않아! (5/6)</a><br>
@@ -125,10 +149,16 @@
             </div>
         </div>
         <div class = "main_class_end">
-            <div class="end"><p>마감임박 클래스</p></div>
+            <div class="end">
+                <p>마감임박 클래스</p>
+                <a href="#"  target="_self">+ 더보기&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+            </div>
             <div class="class_list">
                 <a href="#"  target="_self">
                     <img src="img/classlist.png" alt="">
+                    <div class="like" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </a>
                 <h1>곽두팔 / 개인클래스 / 서울시 강남구</h1>
                 <a href="#">헬스? 어렵지 않아! (5/6)</a><br>
@@ -144,6 +174,9 @@
             <div class="class_list">
                 <a href="#"  target="_self">
                     <img src="img/classlist.png" alt="">
+                    <div class="like" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </a>
                 <h1>곽두팔 / 개인클래스 / 서울시 강남구</h1>
                 <a href="#">헬스? 어렵지 않아! (5/6)</a><br>
@@ -159,6 +192,9 @@
             <div class="class_list">
                 <a href="#"  target="_self">
                     <img src="img/classlist.png" alt="">
+                    <div class="like" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </a>
                 <h1>곽두팔 / 개인클래스 / 서울시 강남구</h1>
                 <a href="#">헬스? 어렵지 않아! (5/6)</a><br>
@@ -175,10 +211,16 @@
         </div>
 
         <div class = "main_class_new">
-            <div class="new"><p>신규 클래스</p></div>
+            <div class="new">
+                <p>신규 클래스</p>
+                <a href="#"  target="_self">+ 더보기&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+            </div>
             <div class="class_list">
                 <a href="#"  target="_self">
                     <img src="img/classlist.png" alt="">
+                    <div class="like" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </a>
                 <h1>곽두팔 / 개인클래스 / 서울시 강남구</h1>
                 <a href="#">헬스? 어렵지 않아! (5/6)</a><br>
@@ -194,6 +236,9 @@
             <div class="class_list">
                 <a href="#"  target="_self">
                     <img src="img/classlist.png" alt="">
+                    <div class="like" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </a>
                 <h1>곽두팔 / 개인클래스 / 서울시 강남구</h1>
                 <a href="#">헬스? 어렵지 않아! (5/6)</a><br>
@@ -209,6 +254,9 @@
             <div class="class_list">
                 <a href="#"  target="_self">
                     <img src="img/classlist.png" alt="">
+                    <div class="like" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </a>
                 <h1>곽두팔 / 개인클래스 / 서울시 강남구</h1>
                 <a href="#">헬스? 어렵지 않아! (5/6)</a><br>
@@ -224,7 +272,10 @@
         </div>
 
         <div class = "board_hot">
-            <div class="hot_p"><p>커뮤니티 인기글</p></div>
+            <div class="hot_p">
+                <p>커뮤니티 인기글</p>
+                <a href="#"  target="_self">+ 더보기&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+            </div>
         </div>
     </div>
     <div class="hot">
