@@ -9,10 +9,6 @@
 
     <title>payment</title>
 
-    <!-- header & footer -->
-    <link href="css/weet_header&footer.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/weet_payment.css">
-
     <!-- font -->
     <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
 
@@ -26,6 +22,10 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 
+    <!-- header & footer -->
+    <link href="css/weet_header&footer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/weet_payment.css">
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
@@ -34,17 +34,37 @@
     <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.2.0.js"></script>
 
     <script>
+        const goPayment = () => {
+            event.preventDefault();
 
-        // const member_submit = () => {
-        //     //값 비어있으면
-        //     if ($("#name").val() === "") {
-        //         // is-invalid 클래스를 붙여줘서 빨간 경고문구 붙여준다
-        //         $("#name").addClass("is-invalid");
-        //         // 입력해야되는 창에 어그로
-        //         $("#name").focus();
-        //         return;
-        //     }
-        // }
+            const IMP = window.IMP; // 생략 가능
+            IMP.init("imp98682392"); // Example: imp00000000
+            // IMP.request_pay(param, callback) 결제창 호출
+            IMP.request_pay(
+                {
+                    // param
+                    pg: "html5_inicis",
+                    pay_method: "card",
+                    merchant_uid: "ORD20180131-0000020",
+                    name: "노르웨이 회전 의자",
+                    amount: 10,
+                    buyer_email: "gildong@gmail.com",
+                    buyer_name: "홍길동",
+                    buyer_tel: "010-4242-4242",
+                    buyer_addr: "서울특별시 강남구 신사동",
+                    buyer_postcode: "01181",
+                },
+                async function(rsp) {
+                    // callback
+                    if (rsp.success) {
+                        alert("결제완료");
+                        window.location.href = "weet_payment_succeeded.html";
+                    } else {
+                        alert("결제가 취소되었습니다. 다시 진행해 주세요.");
+                    }
+                }
+            );
+        }
 
     </script>
 </head>
@@ -77,22 +97,24 @@
     <!-- 헤더 -->
 
     <section class="contents">
-        <form action="pay" class="needs-validation" novalidate>
+        <form class="was-validated" onsubmit="goPayment()">
 
             <fieldset>
-                <legend style="margin-bottom: 30px;">상품 정보</legend>
+                <legend>상품 정보</legend>
 
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4 embed-responsive embed-responsive-4by3">
-                            <img src="img/1000939.jpg" class="card-img-top img-fluid rounded-start rounded-end embed-responsive-item" alt="...">
+                            <img src="img/1000939.jpg"
+                                class="card-img-top img-fluid rounded-start rounded-end embed-responsive-item"
+                                alt="...">
                         </div>
-                        <div class="col-md-8">     
+                        <div class="col-md-8">
                             <div class="card-body">
                                 <div class="row">
                                     <h5 class="card-title class-title">헬린이를 위한 그룹피티</h5>
                                     <p class="card-text class-info"><small class="text-muted">조덕출/그룹클래스/용산구</small></p>
-                                    <p class="card-text class-amount" style="font-weight: bold; font-size: 25px">
+                                    <p class="card-text class-amount">
                                         400,000원</p>
                                 </div>
                             </div>
@@ -103,23 +125,24 @@
             </fieldset>
 
             <fieldset>
-                <legend style="margin-bottom: 30px;">결제자 정보</legend>
+                <legend>결제자 정보</legend>
 
                 <div class="pay-info">
                     <div class="mb-2 row">
                         <label for="name" class="col-sm-2 col-form-label">이름<span>*</span></label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="name" placeholder="홍길동" required>
+                            <input type="text" class="form-control" name="buyer_name" id="name" placeholder="홍길동"
+                                pattern="^[가-힣]{2,4}|[a-zA-Z]{2,10}\s[a-zA-Z]{2,10}" required autofocus>
                             <div class="invalid-feedback">
-                                이름을 입력해주세요.
+                                올바른 이름을 입력해주세요.
                             </div>
                         </div>
                     </div>
                     <div class="mb-2 row">
                         <label for="phone" class="col-sm-2 col-form-label">전화번호<span>*</span></label>
                         <div class="col-sm-10">
-                            <input type="tel" class="form-control" id="phone" placeholder="010-0000-0000 ('-' 없이 입력)"
-                                required>
+                            <input type="tel" class="form-control" name="buyer_tel" id="phone"
+                                placeholder="010-0000-0000 ('-' 없이 입력)" pattern="\d*" minlength="10" maxlength="11" required>
                             <div class="invalid-feedback">
                                 올바른 전화번호를 입력해주세요.
                             </div>
@@ -128,8 +151,8 @@
                     <div class="mb-2 row">
                         <label for="email" class="col-sm-2 col-form-label">이메일<span>*</span></label>
                         <div class="col-sm-10">
-                            <input type="email" class="form-control" id="email" placeholder="example@example.com"
-                                required>
+                            <input type="email" class="form-control" name="buyer_email" id="email"
+                                placeholder="example@example.com" pattern="^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}" required>
                             <div class="invalid-feedback">
                                 올바른 이메일 형식을 입력해주세요.
                             </div>
@@ -139,72 +162,83 @@
             </fieldset>
 
             <fieldset>
-                <legend style="margin-bottom: 30px;">결제 금액</legend>
+                <legend>결제 금액</legend>
 
                 <div class="row">
-                    <label for="staticOriginAmount" class="col-sm-2 col-form-label">정가</label>
-                    <div class="col-sm-10">
-                        <input type="text" readonly class="form-control-plaintext" id="staticOriginAmount"
-                            value="400,000원">
+                    <div class="col-md-10">
+                        <p>정가</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>400,000원</p>
                     </div>
                 </div>
                 <div class="row">
-                    <label for="staticCoupon" class="col-sm-2 col-form-label">쿠폰할인</label>
-                    <div class="col-sm-10">
-                        <a href="#"><input type="text" readonly class="form-control-plaintext" id="staticCoupon"
-                                value="쿠폰 적용"></a>
+                    <div class="col-md-10">
+                        <p>쿠폰할인</p>
                     </div>
-                    <div class="row total-amount">
-                        <label for="staticTotalAmount" class="col-sm-2 col-form-label">총 결제 금액</label>
-                        <div class="col-sm-10">
-                            <input type="text" readonly class="form-control-plaintext" id="staticTotalAmount"
-                                value="376,500원">
-                        </div>
+                    <div class="col-md-2">
+                        <a href="#">쿠폰적용</a>
+                    </div>
+                </div>
+                <div class="row total-amount">
+                    <div class="col-md-10">
+                        <p>총 결제 금액</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>376,500원</p>
                     </div>
                 </div>
             </fieldset>
 
             <fieldset>
-                <legend style="margin-bottom: 30px;">결제 수단</legend>
+                <legend>결제 수단</legend>
 
                 <div class="container pay-method-container">
                     <div class="row">
                         <div class="col">
-                            <div class="box">
+                            <input type="radio" class="btn-check" name="pg" id="btn-check-normal" value="html5_inicis"
+                                autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="btn-check-normal">
+                                <i class="fas fa-credit-card"></i>
                                 일반결제
-                            </div>
+                            </label>
                         </div>
+
                         <div class="col">
-                            <div class="box">
+                            <input type="radio" class="btn-check" name="pg" id="btn-check-kakao" value="kakaopay"
+                                autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btn-check-kakao">
+                                <img src="img/payment_icon_yellow_medium.png" alt="카카오페이 이미지">
                                 카카오페이
-                            </div>
+                            </label>
                         </div>
+
                         <div class="col">
-                            <div class="box">
-                                네이버페이
-                            </div>
+                            <input type="radio" class="btn-check" name="pg" id="btn-check-naver" value="naverpay"
+                                autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btn-check-naver">네이버페이</label>
                         </div>
                     </div>
                 </div>
             </fieldset>
 
             <fieldset>
-                <legend style="margin-bottom: 30px;">이용 약관</legend>
+                <legend>이용 약관</legend>
 
                 <div class="container pay-agmt-container">
                     <div class="row">
-                        <div class="col-10">
+                        <div class="col">
                             <label for="agmt-all" class="form-check-label">전체 동의</label>
                         </div>
-                        <div class="col">
+                        <div class="col form-check-reverse">
                             <input type="checkbox" class="form-check-input" name="agmt-all" id="agmt-all">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-10">
+                        <div class="col">
                             <label for="agmt-age" class="form-check-label">만 14세 이상 결제 동의</label>
                         </div>
-                        <div class="col-2">
+                        <div class="col form-check-reverse">
                             <input type="checkbox" class="form-check-input" name="agmt-age" id="agmt-age" required>
                             <div class="invalid-feedback">
                                 약관에 동의해 주세요.
@@ -212,11 +246,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-10">
+                        <div class="col">
                             <label for="agmt-confirm" class="form-check-label">주문내용 확인 및 결제동의</label>
                         </div>
-                        <div class="col">
-                            <input type="checkbox" class="form-check-input" name="agmt-confirm" id="agmt-confirm" required>
+                        <div class="col form-check-reverse">
+                            <input type="checkbox" class="form-check-input" name="agmt-confirm" id="agmt-confirm"
+                                required>
                             <div class="invalid-feedback">
                                 약관에 동의해 주세요.
                             </div>
@@ -226,32 +261,8 @@
             </fieldset>
 
             <div class="text-center">
-                <button class="btn btn-primary" type="submit"
-                    style="background-color: #2370DF; border-color: #2370DF; margin-top: 50px;">결제</button>
+                <button class="btn btn-primary" id="pay-submit" type="submit">결제</button>
             </div>
-
-            <script>
-                (function () {
-                    'use strict'
-
-                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                    let forms = document.querySelectorAll('.needs-validation')
-
-                    // Loop over them and prevent submission
-                    Array.prototype.slice.call(forms)
-                        .forEach(function (form) {
-                            form.addEventListener('submit', function (event) {
-                                if (!form.checkValidity()) {
-                                    event.preventDefault()
-                                    event.stopPropagation()
-                                }
-
-                                form.classList.add('was-validated')
-                            }, false)
-                        })
-                })()
-
-            </script>
         </form>
     </section>
 

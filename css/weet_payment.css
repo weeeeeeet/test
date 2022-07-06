@@ -1,25 +1,31 @@
 @charset "UTF-8";
 
-* {
+* {                                      /* 전체 스타일 초기화 */
     margin: 0;
     padding: 0;
     font-family: 'SCoreDream';
 }
-body {
-    padding-top: 100px;
+body {                                   /* 헤더에 겹치지 않게 패딩 */
+    /* padding-top: 150px; */
 }
-.contents {
+a {                                      /* 링크 스타일 초기화 */
+    text-decoration: none;
+}
+.contents {                              /* 컨텐츠영역 잡기 */
     width: 1040px;
     margin: 0 auto;
 }
-legend {
+legend {                                 /* 소제목 */
     display: block;
     font-weight: bold;
     color: #2370DF;
     width: 100%;
     border-bottom: 1px solid #2370DF;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
+
+/* =====================상품정보 시작========================= */
 .card {
     width: 100%;
     z-index: -1;
@@ -32,9 +38,15 @@ legend {
 }
 .card-img-top {
     width: 100%;
-    height: 15rem;
     object-fit: fill;
 }
+.class-amount {
+    font-weight: bold; 
+    font-size: 25px
+}
+/* =====================상품정보 끝========================= */
+
+/* =====================결제자 정보 시작========================= */
 input {
     width: 100%;
 }
@@ -44,30 +56,48 @@ input {
 form span {
     color: red;
 }
+/* =====================결제자 정보 끝========================= */
+
+/* =====================결제수단 시작========================= */
 .pay-method-container {
     width: 100%;
+    height: 100px;
+    text-align: center;
 }
-.pay-method-container .box {
-    border: 1px solid rgb(255, 239, 239);
-    border-radius: 5px;
+.pay-method-container label {
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+
+    border-color: rgb(108, 108, 108);
+    color: rgb(108, 108, 108);
 }
-.pay-method-container .box:hover {
-    border-color: #2370DF;
+.pay-method-container input:focus-within {
+    background-color: aqua;
 }
+.pay-method-container label>img {
+    width: 55px;
+}
+/* =====================결제수단 끝========================= */
 .total-amount {
     background-color: #e6e6e6;
     border-radius: 10px;
     font-weight: bold;
 }
+/* =====================이용약관 시작========================= */
 .pay-agmt-container> div:nth-of-type(1) {
     border: 1px solid #2370DF;
     border-radius: 10px;
     background-color: #ebf4ff;
 }
+/* =====================이용약관 끝========================= */
+
+/* =====================결제버튼 시작========================= */
 button {
     width: 30%;
-}
-.form-control-plaintext {
-    text-align: right;
-}
+    margin-top: 50px;
 
+    background-color: #2370DF; 
+    border-color: #2370DF; 
+}
+/* =====================결제버튼 끝========================= */
