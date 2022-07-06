@@ -12,9 +12,9 @@
 }
 
 /* 가이드라인 */
-/* .g{
-    border: 1px solid rgb(192, 2, 255);
-} */
+.g{
+    border: 1px solid rgb(191, 0, 255);
+}
 
 /* section {
     width: 1040px;
@@ -221,10 +221,9 @@ section div.dash h1{ /*회원 대시보드*/
     padding: 10px;
 }
 
-/* 클래스 공지사항 대시보드----------------------------------*/
+/* 오늘의 식단 대시보드----------------------------------*/
 section div.class-notice {
     background-color: rgb(255, 255, 255);
-    /* float: left; */
     border-radius: 18px;
 }
 section div.class-notice h2{ /*클래스 공지사항*/
@@ -255,43 +254,6 @@ section div.notice-list a{
     color: black;
  }
 
- /* 이번주 코칭계획 대시보드 ----------------------------------*/
- section div.coaching-plan {
-    background-color: rgb(255, 255, 255);
-    /* float: left; */
-    border-radius: 18px;
-    margin-top: 30px;       /*박스간 간격*/
-}
-section div.coaching-plan h2{ /*이번주 코칭계획*/
-    font-size: 20px;
-    font-weight: bold;
-    color: #2370DF;
-    padding-left: 55px;
-    padding-top: 30px;
-    margin: 10px;
-}
-section div.plan-list { /* 공지사항 리스트 박스 */
-    padding-bottom: 20px;
- 
-}
-section div.plan-list li { /* 공지사항 리스트 - 리스트 태그*/
-    width: 1000px;
-    padding: 20px;
-    margin: auto;
-    /* padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px; */
-    /* list-style: decimal; */ /* 숫자 위치가 애매해짐*/
-    list-style: none;
-    transform: rotate();
-    color: black;
-    border-bottom: solid #e7e7e7;
-}
-section div.plan-list a{
-    text-decoration: none; /* 밑줄 없애기 */
-    color: black;
-    padding-left: 10px;
- }
 
 
 

@@ -17,6 +17,9 @@
     <!-- <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
 
+    <!-- defer : 브라우저가 스크립트를 문서 분석 이후에 실행해야 함을 나타내는 불리언 속성이다. -->
+    <script type="text/javascript" defer src="userFeedback.js"></script>
+    
 </head>
 
 <body>
@@ -87,34 +90,14 @@
 
             <div class="g"><h1>회원 대시보드</h1></div>
 
-            <!-- 클래스 공지사항 -->
+            <!-- 오늘의 식단 대시보드 -->
             <div class="class-notice g">
-                <h2>클래스 공지사항</h2>
+                <div class="g"><h2>오늘의 식단 올리기</h2></div>
 
-                <div class="notice-list g">
-                    <ul>
-                        <li class="g"><a href="#" target="self">Get set on autoship</a></li>
-                        <li class="g"><a href="#"  target="self">Set your goals for your first 90 days</a></li>
-                        <li class="g"><a href="#"  target="self">Complete the Compensation Plan Quiz</a></li>
-                        <li class="g"><a href="#"  target="self">Get set on autoship</a></li>
-                    </ul>
-                </div>
+                <!-- 첨부파일 -->
+                <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);"/>
+                <div id="image_container"></div>
             </div>
-
-            <!-- 이번주 코칭계획 -->
-            <div class="coaching-plan g">
-                <h2>이번주 코칭계획</h2>
-
-                <div class="plan-list g">
-                    <ul>
-                        <li class="g"><a href="#" target="self">1주차 코칭 계획</a></li>
-                        <li class="g"><a href="#"  target="self">2주차 코칭 계획</a></li>
-                        <li class="g"><a href="#"  target="self">3주차 코칭 계획</a></li>
-                        <li class="g"><a href="#"  target="self">4주차 코칭 계획</a></li>
-                    </ul>
-                </div>
-            </div>
-
         </div>
     </section>
 
