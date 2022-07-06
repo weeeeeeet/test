@@ -18,7 +18,11 @@
     <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <!--header-->
      <section class="header">
         <nav class="nav_left">
@@ -46,19 +50,74 @@
     <div class="underline"></div>
 
     <!-- contents -->
-    <section class="contents">
+    <section class="wrap">
 
+        <!-- 사이드바 -->
+        <div class="sidebar g">
+
+            <!-- 프로필 -->
+            <div class="profile g">
+                <img src="https://picsum.photos/id/823/200/200" alt="100x100 profile">
+                <!-- 이름 -->
+                <h1 class="g">Darlene Robertson</h1>
+    
+                <h2 class="g">클래스 진행 현황</h2>
+                <!-- 진행 바 -->
+                <progress class="g" value="6" max="10"></progress>
+    
+                <h3 class="g">6회 / 10회</h3>
+            </div>
+
+            <!-- 메뉴 -->
+            <div class="menu g">
+                <div class="menu-list notice g">
+                    <i class="fas fa-heart-pulse"></i><a href="#"  target="self">공지사항</a>
+                </div>
+                <div class="menu-list notice g">
+                    <i class="fas fa-heart-pulse"></i><a href="#"  target="self">피드백</a>
+                </div>
+                <div class="menu-list notice g">
+                    <i class="fas fa-calendar-days"></i><a href="#"  target="self">내 스케줄</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    </section>      
+        <!-- 대시보드 -->
+        <div class="dash g">
+
+            <div class="g"><h1>회원 대시보드</h1></div>
+
+            <div class="class-notice g">
+                <h2>클래스 공지사항</h2>
+
+                <div class="notice-list g">
+                    <ul>
+                        <li><a href="#" target="self">Get set on autoship</a></li>
+                        <li><a href="#"  target="self">Set your goals for your first 90 days</a></li>
+                        <li><a href="#"  target="self">Complete the Compensation Plan Quiz</a></li>
+                        <li><a href="#"  target="self">Get set on autoship</a></li>
+                    </ul>
+                </div>
+                <!-- <div>
+                    <a href="#"  target="self">Set your goals for your first 90 days</a>
+                </div>
+                <div>
+                    <a href="#"  target="self">Complete the Compensation Plan Quiz</a>
+                </div>
+                <div>
+                    <a href="#"  target="self">Get set on autoship</a>
+                </div> -->
+            </div>
+        </div>
     </section>
 
-
-
-
     <!--footer-->
-    <footer class="footer">
+     <footer class="footer">
         <div class="underline"></div>
         <img src="img/weet_logo_bw.png" alt="">
         <!-- <p>맞춤형 PT 예약&관리 플랫폼</p> -->
-
         <div class="notice_service">
             <button type="button" name="btnNotice" onclick="location.href='공지사항 주소';">공지사항</button>
             <button type="button" name="btnService" onclick="location.href='고객센터 주소';">고객센터</button>

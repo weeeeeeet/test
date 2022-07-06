@@ -11,83 +11,254 @@
     box-sizing: border-box;
 }
 
-/* Header */
+/* 가이드라인 */
+.g{
+    border: 2px solid red;
+}
+
+/* Header ================================================== */
 .header {
     padding: 20px 80px 20px 80px;
     height: 100px;
     background-color: white;
-    position: sticky;                       /* 헤더 고정 */
+    /* position: sticky; */
+    /* 헤더 고정 */
     top: 0px;
+
+    /* border: 1px solid #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
-.header nav.nav_left a{                     /* 로고 */
+
+.header nav.nav_left a {
+    /* 로고 */
     padding-left: 0px;
     float: left;
     display: inline;
     margin-bottom: 20px;
     margin-right: 8px;
 }
-.header .categories a {                     /* 커뮤니티,클래스 */
+
+.header .categories a {
+    /* 커뮤니티,클래스 */
     margin-top: 20px;
-    display: inline;           
+    display: inline;
     padding-right: 35px;
     font-size: 15px;
     color: #2370DF;
     font-weight: 500;
     text-decoration: none;
 }
-.header div.header_right {                  /* 헤더 우측 */
+
+.header div.header_right {
+    /* 헤더 우측 */
     float: right;
     margin-top: 15px;
 }
-.header div.header_right input {            /* 검색창 */
+
+.header div.header_right input {
+    /* 검색창 */
     width: 260px;
     border: 2.5px solid #2370DF;
     border-radius: 10px;
     padding: 8px 12px;
     font-size: 14px;
 }
-.header .header_right a:nth-of-type(1) {    /* 검색버튼 */
+
+.header .header_right a:nth-of-type(1) {
+    /* 검색버튼 */
     margin-right: 30px;
 }
-.header div.header_right a{                 /* 마이페이지, 알림 */
+
+.header div.header_right a {
+    /* 마이페이지, 알림 */
     color: #2370DF;
     margin-left: 18px;
     font-size: 20px;
     padding-top: 5px;
     text-decoration: none;
 }
-.underline {                                /* 밑줄 */
+
+.underline {
+    /* 밑줄 */
     border: 0;
     height: 5px;
     background: rgb(236, 236, 236);
 }
 
-/* 배경 스타일 작업 */
+/* 배경 스타일 작업 ================================================== */
+body {
+    background-color: rgb(227, 227, 227);
+    height: 240px
+    
+}
+
+section div.sidebar{
+    
+    width: 350px;
+    /* heiㄴght: 1000px; */
+    background: white;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    
+
+    /* border: 2px solid red; */
+}
+
+/* 프로필 스타일 작업------------------------------------- */
+section div.profile {
+    position: absolute;
+    width: 270px;
+    height: 325px;
+    margin: 40px;
+    border-radius: 18px;
+    text-align: center;
+    
+    
+    background:
+        linear-gradient(127deg, #d2d9ff, rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, #fcd9c2, rgba(0, 0, 255, 0) 70.71%);
+
+    /* border: 2px solid red; */
+}
+section div.profile img { /* 프로필 사진 */
+   
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    /* border: 2px solid red; */
+}
+section div.profile h1 { /* 이름 */
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+
+    margin-bottom: 40px;
+
+    /* border: 2px solid red; */
+}
+section div.profile h2 { /* 클래스 진행 현황 */
+    font-weight: bold;
+    font-size: 14px;
+    color: #2370DF;
+
+    /* border: 2px solid red; */
+}
+section div.profile progress { /* 진행바 */
+    text-align: center;
+
+    /* border: 2px solid red; */
+}
+ section div.profile h3 {  /* 횟수 */
+    text-align: center;
+    font-weight: normal;
+    font-size: 10px;
+    color: #2370DF;
+
+    /* border: 2px solid red; */
+}
+
+/* 메뉴 스타일 작업 ------------------------------------*/
+section div.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 가로 - 중앙으로 */
+   justify-content: flex-start;   /*세로 - 상단으로 */
+    margin-top: 375px;
+    margin-left: 40px;
+    width: 270px;
+    height: 240px;
+    clear: both;
+
+    /* border: 2px solid red; */
+}
+section div.menu i{
+    margin: 5px;
+}
+section div.menu-list{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    color: #878787;
+    margin-top: 30px;
+
+    /* border: 2px solid red; */
+}
+section div.menu a{
+    
+   text-decoration: none; /* 밑줄 없애기 */
+   color: black;
+}
+
+/* 대시보드 스타일 작업 ------------------------------------*/
+section div.dash {
+    text-align: left;
+    width: 1000px;
+    height: 300px;
+}
+/* 클래스 공지사항 */
+section div.class-notice {
+    background-color: rgb(255, 255, 255);
+    float: left;
+    border-radius: 18px;
+}
+section div.dash h1{
+    font-size: 25px;
+    font-weight: bold;
+    color: #95B4E0;
+}
+section div.class-notice h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #2370DF;
+}
+section div.notice-list li { /* 공지사항 리스트 */
+    list-style: none;
+    color: black;
+}
+section div.notice-list a{
+    text-decoration: none; /* 밑줄 없애기 */
+    color: black;
+ }
 
 
 
-/* Footer */
 
+
+
+/* Footer ==================================================*/
 .footer {
+    
     height: 280px;
     width: 100%;
     background-color: white;
-    position: fixed;  
+    /* position: sticky; */
     bottom: 0;
     left: 0;
 }
-.footer img {                                   /* footer로고 */
+
+.footer img {
+    /* footer로고 */
     width: 120px;
     margin-top: 25px;
     margin-left: 80px;
     display: inline;
     float: left;
 }
-.footer .notice_service {                      /* 공지사항, 고객센터 */
+
+.footer .notice_service {
+    /* 공지사항, 고객센터 */
     float: right;
     margin-top: 20px;
     margin-right: 80px;
 }
+
 .footer .notice_service button {
     border-radius: 5px;
     font-weight: bold;
@@ -95,27 +266,34 @@
     height: 33px;
     border: 2px solid #6C6C6C;
     background-color: white;
-    cursor:pointer;                             /* 커서 올렸을 때 손모양으로 */
+    cursor: pointer;
+    /* 커서 올렸을 때 손모양으로 */
 }
-.footer ul.time {                               /* 운영시간 */
+
+.footer ul.time {
+    /* 운영시간 */
     margin-top: 10px;
     list-style: none;
     font-size: 12px;
     color: #6C6C6C;
     margin-bottom: 25px;
 }
+
 .footer .underline2 {
     clear: both;
     border: 0;
     height: 1.5px;
     background: rgb(236, 236, 236);
 }
-.footer .terms {                                 /* 이용약관, 개인정보처리방침 */
-    height: 40px;                         
+
+.footer .terms {
+    /* 이용약관, 개인정보처리방침 */
+    height: 40px;
     list-style: none;
     margin-left: 80px;
     margin-top: 20px;
 }
+
 .footer a {
     float: left;
     font-size: 15px;
@@ -123,11 +301,13 @@
     text-decoration: none;
     color: black;
 }
+
 .footer .address {
     margin-top: 20px;
     margin-left: 80px;
     line-height: 18px;
 }
+
 .footer p {
     font-size: 15px;
 }
