@@ -177,6 +177,7 @@ a {
     height: 50px;
 
     margin-right: 200px;
+    margin-bottom: 20px;
 
     border: 1px solid #595959;
     border-radius: 8px;
@@ -209,126 +210,37 @@ a {
     border-bottom: 2px solid black;
 }
 
-/* TR게시판 - 게시물 */
-.tb1{
-    width: 900px;
-    height: 40px;
-
-    border: 2px solid #E5E5E5;
-
-    margin-bottom: 10px;
-    border-radius: 8px;
-
-    position: relative;
-}
-
-/* TR게시판 - 게시물 - span */
-.TR_tables .tb1 span {
-    display: inline-block;
-    margin-top: 5px;
-
-    position: absolute;
-}
-
-/* TR게시판 - 게시물  - 게시물 번호*/
-.TR_tables .tb1 .tr_no {
-    width: 50px;
-    height: 28px;
-
+/* 클래스 클릭 시 해당 클래스의 대시보드로 이동합니다 */
+.content_right .content_p {
     font-size: 14px;
-    font-weight: bold;
-    color: #797979;
-    text-align: center;
+    color: #6B6B6B;
 
     margin-left: 10px;
-    /* border: 1px solid orange; */
 }
 
-/* TR게시판 - 게시물 - 게시물 제목 */
-.TR_tables .tb1 .tr_title{
-    width: 550px;
-    height: 28px;
+/* 클래스 카드 위치 및 크기 지정 */
+.content_right .class_card{
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
 
-    margin-left: 80px;
-
-    font-size: 14px;
-    font-weight: bold;
-    color: #000000;
-
-    text-align: center;
-    /* border: 1px solid orange; */
+    width: 230px;
 }
 
-/* TR게시판 - 게시물 - 작성일자 */
-.TR_tables .tb1 .tr_date{
-    margin-left: 650px;
-
-    width: 106px;
-    height: 28px;
-
-    font-size: 14px;
-    font-weight: bold;
-    color: #797979;
-    text-align: center;
-
-    /* border: 1px solid orange; */
+/* 클래스 카드 이미지 */
+.content_right .class_card .card_img{
+    width: 230px;
+    height: 125px;
 }
 
-/* TR게시판 - 게시물 - 좋아요수 이모티콘 */
-.TR_tables .tb1 .heart{
-    position: absolute;
-    margin-left: 770px;
-    /* border: 1px solid red; */
-}
-
-
-/* TR게시판 - 게시물 - 좋아요수 */
-.TR_tables .tb1 .tr_like{
-    margin-left: 790px;
-
-    width: 30px;
-    height: 28px;
-
-    font-size: 14px;
-    font-weight: bold;
-    color: #000000;
-
-    text-align: center;
-
-    /* border: 1px solid orange; */
-}
-
-/* TR게시판 - 게시물 - 댓글 수 이모티콘 */
-.TR_tables .tb1 .comment {
-    position: absolute;
-    margin-left: 830px;
-    /* border: 1px solid blue; */
-}
-
-/* TR게시판 - 게시물 - 댓글 수 */
-.TR_tables .tb1 .tr_comment{
-    margin-left: 850px;
-
-    width: 30px;
-    height: 28px;
-
-    font-size: 14px;
-    font-weight: bold;
-    color: #000000;
-
-    text-align: center;
-
-    /* border: 1px solid orange; */
-}
-
-/* TR게시판 - 게시물 - 제목  */
-.TR_tables .tb1 a {
+/* 클래스 카드 - 클래스 제목 */
+.content_right .class_card .card-text{
     display: inline-block;
-    color: black;
-    text-align: center;
-    padding-top: 6px;
+    margin-top: 10px;
 
-    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    color: black;
 }
 
 /* 탑 버튼 */
