@@ -15,9 +15,9 @@
 .g{
     border: 2px solid red;
 }
-section {
+/* section {
     width: 1040px;
-}
+} */
 
 /* Header ================================================== */
 .header {
@@ -95,12 +95,13 @@ body {
 }
 
 section div.sidebar{
-    
+
+    display: inline-block;
     width: 350px;
     background: white;
     background-position: center;
     background-size: cover;
-    position: fixed;
+    /* position: fixed; */
     
 
     /* border: 2px solid red; */
@@ -199,14 +200,18 @@ section div.menu a{
 
 /* 대시보드 스타일 작업 ------------------------------------*/
 section div.dash {
+    display: inline-block;
     text-align: left;
     width: 1000px;
-    height: 300px;
+
+    margin-left: 100px
+    
+    /* height: 300px; */
 }
 /* 클래스 공지사항 */
 section div.class-notice {
-    background-color: rgb(255, 255, 255);
-    float: left;
+    background-color: rgb(88, 88, 88);
+    /* float: left; */
     border-radius: 18px;
 }
 section div.dash h1{
