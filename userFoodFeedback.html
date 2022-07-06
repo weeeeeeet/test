@@ -91,12 +91,16 @@
             <div class="g"><h1>회원 대시보드</h1></div>
 
             <!-- 오늘의 식단 대시보드 -->
-            <div class="class-notice g">
+            <div class="today-food g">
                 <div class="g"><h2>오늘의 식단 올리기</h2></div>
 
                 <!-- 첨부파일 -->
-                <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);"/>
-                <div id="image_container"></div>
+                <div class="image-container g">
+                     <!-- 이미지 미리보기 -->
+                    <img class="g" style="width: 200px;" id="preview-image" src="https://dummyimage.com/500x500/ffffff/000000.png&text=preview+image">
+                    <!-- 파일선택 버튼 -->
+                    <input class="g" style="display: block;" type="file" id="input-image">
+                </div>
             </div>
         </div>
     </section>

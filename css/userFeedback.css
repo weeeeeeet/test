@@ -12,9 +12,9 @@
 }
 
 /* 가이드라인 */
-.g{
+/* .g{
     border: 1px solid rgb(191, 0, 255);
-}
+} */
 
 /* section {
     width: 1040px;
@@ -208,7 +208,7 @@ section div.dash {
     display: inline-block;
     text-align: left;
     width: 1200px;
-    height: 910px;  /* 대시보드 크기 */
+    height: 1000px;  /*대시보드 컨텐츠 틀 크기 */
 
     padding: 30px;
 
@@ -222,32 +222,35 @@ section div.dash h1{ /*회원 대시보드*/
 }
 
 /* 오늘의 식단 대시보드----------------------------------*/
-section div.class-notice {
+section div.today-food {
     background-color: rgb(255, 255, 255);
     border-radius: 18px;
+    height: 870px;
 }
-section div.class-notice h2{ /*클래스 공지사항*/
+section div.today-food h2{ /*오늘의 식단 올리기*/
     font-size: 20px;
     font-weight: bold;
     color: #2370DF;
-    padding-left: 55px;
-    padding-top: 30px;
-    margin: 10px;
-}
-section div.notice-list { /* 공지사항 리스트 박스 */
-    padding-bottom: 20px;
- 
-}
-section div.notice-list li { /* 공지사항 리스트 - 리스트 태그*/
-    width: 1000px;
-    padding: 20px;
-    margin: auto;
-    /* padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px; */
-    list-style: none;
-    color: black;
     border-bottom: solid #e7e7e7;
+
+    padding-left: 45px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    margin: 10px;
+    
+}
+section div.image-container { /* 사진 첨부파일 박스 */
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 540px;
+}
+section div.image-container img { /* 파일선택 버튼*/
+    border-radius: 18px;
+    border: solid #e7e7e7;
+}
+section div.image-container input { /* 파일선택 버튼*/
+    float: right;
+    margin-top: 169px;
 }
 section div.notice-list a{
     text-decoration: none; /* 밑줄 없애기 */
