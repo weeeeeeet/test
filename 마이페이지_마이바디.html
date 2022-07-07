@@ -15,12 +15,12 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 
+    <!-- 차트.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
     <link href="css/Mypage_Mybody.css" rel="stylesheet" />
     <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
-
-    <!-- 차트.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
 </head>
 
@@ -107,21 +107,21 @@
                 <div class="mybody">
 
                     <div class="mybody_weight on">
-                        <p class="mybody_type"">체중 (kg)</p>
-                        <p class="mybody_weight_value">65.0</p>
-                        <p class="mybody_weight_type">표준</p>
+                        <div class="mybody_type"">체중 (kg)</div>
+                        <div class="mybody_weight_value">65.0</div>
+                        <div class="mybody_weight_type">표준</div>
                     </div>
                     
                     <div class="mybody_muscle">
-                        <p class="mybody_type">골격근량 (kg)</p>
-                        <p class="mybody_muscle_value">28.0</p>
-                        <p class="mybody_muscle_type">표준</p>
+                        <div  class="mybody_type">골격근량 (kg)</div>
+                        <div  class="mybody_muscle_value">28.0</div>
+                        <div  class="mybody_muscle_type">표준</div>
                     </div>
                     
                     <div class="mybody_BMI">
-                        <p class="mybody_type">체지방률 (%)</p>
-                        <p class="mybody_BMI_value">10.2</p>
-                        <p class="mybody_BMI_type">표준</p>
+                        <div  class="mybody_type">체지방률 (%)</div>
+                        <div  class="mybody_BMI_value">10.2</div>
+                        <div  class="mybody_BMI_type">표준</div>
                     </div>
 
                 </div>
@@ -130,13 +130,27 @@
                     인바디 입력
                 </button>
                 
-                <button type="button" class="mybody_Input btn btn-primary">
+                <button type="button" class="mybody_delete btn btn-primary">
                     기록삭제
                 </button>
 
             </div>
 
-            <div class="mybody_chart"></div>
+            <div class="mybody_chart_wrapper">
+
+                <div class="mybody_chart_btn">
+                    <button type="button" class="mybody_btn_date btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        날짜 선택
+                    </button>
+                    
+                    <button type="button" class="mybody_btn_select_type btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        체중 (kg)
+                    </button>
+                </div>
+
+                <div class="mybody_chart"></div>
+
+            </div>
             
         </div>
 
@@ -207,6 +221,10 @@
 
     <!-- <a href="#" class="TOP_btn"><i class="fas fa-angle-up"></i><br>TOP</a> -->
     <a href="#" class="TOP_btn">△<br>TOP</a>
+
+    <!-- ==================밑의 가리는 공간을 가리는 것을 방지하기 위한 쓸데없는 공간==================== -->
+
+    <div class="ttt"></div>
 
     <!-- ==================FOOTER==================== -->
     

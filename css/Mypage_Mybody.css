@@ -20,7 +20,7 @@ a {
     padding: 20px 80px 20px 80px;
     height: 100px;
     background-color: white;
-    position: sticky;                       /* 헤더 고정 */
+    position: static;                       /* 헤더 고정 */
     top: 0px;
 }
 .header nav.nav_left a{                     /* 로고 */
@@ -269,9 +269,174 @@ a {
 /* 현재 선택한 탭에는 보더가 두껍게 나타난다. */
 .mybody>.on{
     border: 2px solid #7C7C7C;
+    box-shadow: none;
+}
+
+/* 신체정보 : 체중, 골격근량, 체지방률 - 제목 : 크기 및 색 지정 */
+.mybody .mybody_type{
+    color: #5B5B5B;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+
+    /* border: 1px solid blue; */
+
+    width: 100%;
+
+    margin-top: 10px;
+}
+
+/* 신체정보 : 체중, 골격근량, 체지방률 - 수치 : 크기 및 위치 지정 */
+
+/* 체중 */
+.mybody_weight_value{
+    width: 100%;
+
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+
+    /* border: 1px solid red; */
+}
+
+/* 골격근량 */
+.mybody_muscle_value{
+    width: 100%;
+
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+
+    /* border: 1px solid red; */
+}
+
+/* 체중 */
+.mybody_BMI_value{
+    width: 100%;
+
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+
+    /* border: 1px solid red; */
+}
+
+/* 신체정보 : 체중, 골격근량, 체지방률 - 표준 */
+
+/* 체중 */
+.mybody_weight_type{
+    width: 57px;
+    height: 21px;
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+
+    padding-top: 1px;
+    margin-top: 2px;
+    margin-left: 25px;
+
+    background-color: #1DBF5E;
+}
+
+/* 골격근량 */
+.mybody_muscle_type{
+    width: 57px;
+    height: 21px;
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+
+    padding-top: 1px;
+    margin-top: 2px;
+    margin-left: 25px;
+
+    background-color: #1DBF5E;
+}
+
+/* 체지방률 */
+.mybody_BMI_type{
+    width: 57px;
+    height: 21px;
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+
+    padding-top: 1px;
+    margin-top: 2px;
+    margin-left: 25px;
+
+    background-color: #1DBF5E;
+}
+
+/* 신체정보 - 버튼 ================================ */
+.mybody_Input{
+    width: 94px;
+    height: 35px;
+
+    margin-top: 75px;
+    margin-left: 30px;
+}
+
+.mybody_delete{
+    width: 94px;
+    height: 35px;
+
+    border: none;
+    background-color: #D7D7D7;
+    color: #000000;
+
+    margin-top: 75px;
+    margin-left: 30px;
 }
 
 /* 신체정보 - 그래프 ================================ */
+
+/* 신체정보와 그래프 사이의 여백 만들기 */
+.mybody_wrapper{
+    margin-bottom: 60px;
+}
+
+/* 그래프 - 전체적인 버튼 위치 지정 */
+.mybody_chart_btn{
+    margin-bottom: 10px;
+}
+
+/* 그래프 - 날짜 선택 버튼 위치 */
+.mybody_btn_date{
+    margin-left: 70px;
+}
+
+/* 그래프 - 현재 선택한 신체정보 나타나는 버튼 */
+.mybody_btn_select_type{
+    margin-left: 500px;
+    border: none;
+    background-color: #D7D7D7;
+    color: #000000;
+}
+
+/* 그래프 - 차트 위치 */
+.mybody_chart{
+    width: 774px;
+    height: 500px;
+
+    margin-left: 30px;
+
+    border: 2px solid #6A6A6A;
+    background-color: #6A6A6A;
+    border-radius: 8px;
+}
 
 
 
@@ -402,13 +567,19 @@ a {
     text-shadow: 0 0 0 yellow; /* 마우스 클릭 체크 */
 }
 
+/* 푸터와의 공간 분리 */
+.ttt{
+    width: 100%;
+    height: 1300px;
+}
+
 /* Footer ================================ */
 
 .footer {
     height: 280px;
     width: 100%;
     background-color: white;
-    position: fixed;  
+    position: static;  
     bottom: 0;
     left: 0;
 }
