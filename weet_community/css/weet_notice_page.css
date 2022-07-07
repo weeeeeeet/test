@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SCoreDream';
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.contents {
+    margin: 50px 200px 50px 200px;
+}
+
+/* ------------------------------------------------ */
+.notice_page_box {
+    display: inline-table;
+    width: auto;
+    height: auto;
+    background-color: #A7A7A7;
+}
+
+.notice_page_title {
+    display: inline;
+    font-size: 20px;
+}
+
+.notice_page_tap {
+    float: right;
+    text-decoration: none;
+    color: #2370DF;
+}
+
+.notice_page_tap2 {
+    color: black;
+}
+
+/* ------------------------------------------------ */
+
+.notice_page_logo {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+.notice_page_check {
+    color: #2A7DE1;
+}
+
+.notice_page_date {
+    margin-left: 50px;
+    color: #9A9A9A;
+}

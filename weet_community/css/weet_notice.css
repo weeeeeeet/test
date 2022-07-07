@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SCoreDream';
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.contents {
+    margin: 50px 200px 50px 200px;
+}
+
+/* ------------------------------------------------ */
+
+.notice_title {
+    font-size: 20px;
+    font-style: bold;
+}
+
+/* ------------------------------------------------ */
+
+.notice_list {
+    text-decoration: none;
+    color: black;
+}
+.notice_date {
+    float: right;
+    color: #9A9A9A;
+}
+
+/* ------------------------------------------------ */
+
+.notice_num1 {
+    margin-top: 10px;
+    color: #CCCCCC;
+}
+.notice_num2 {
+    margin-top: 10px;
+    text-align: center;
+    color: #EB5757;
+}
+.notice_num3 {
+    margin-top: 10px;
+    color: black;
+}
+.notice_num1:hover{
+    color: #CCCCCC;
+    background-color: white;
+}
+.notice_num2:hover{
+    color: #EB5757;
+    background-color: white;
+}
+.notice_num3:hover{
+    color: black;
+    background-color: white;
+}
+.pagination {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }

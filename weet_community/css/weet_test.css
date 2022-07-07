@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SCoreDream';
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.contents {
+    margin: 50px 200px 50px 200px;
+}
+
+.nav * {
+    margin-top: -15px;
+    color: black;
+}
+
+.home {
+    margin-left: -150px;
+}
+.line1 {
+    display: block;
+    width: 80px;
+    margin-top: 0px;
+    margin-left: -170px;
+    border: 1px solid #b8b5b5;
+}
+.tr_comm {
+    /* margin-left: -50px; */
+}
+
+.comm_home_nav_btn {
+    height: 50px;
+    width: 150px;
+    border-radius: 13px;
+    position: relative;
+    left: 100px;
+    top: -40px;
+}
+
+.line2 {
+    margin: -30px -200px -50px -200px;
+}
+
+
+
+
+.col {
+    margin-top: 100px;
+    /* font-family: 'SCoreDream'; */
+}
+.col * {
+    font-size: 10px;
+    /* font-family: 'SCoreDream'; */
+}
+
+.comm_home_top_tr {
+    color: #063765;
+}
+
+
+
+.comm_home_comment {
+    color: #2370DF;
+}
+.comm_home_comment_num {
+    color: black;
+}
+.comm_home_tr_like {
+    color: red;
+}
+.comm_home_tr_like_num {
+    color: black;
+}
+
+
+.comm_home_tr_id {
+    /* font-size: 15px; */
+
+}
+
+.comm_home_plus {
+    float: right;
+}
