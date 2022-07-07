@@ -8,7 +8,7 @@
 
     <title>Weet</title>
 
-    <link href="css/weet_main.css" rel="stylesheet" />
+    <link href="css/weet_class.css" rel="stylesheet" />
     <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
     
@@ -40,9 +40,7 @@
             <i class="fa-solid fa-user" target="_self"> <!-- 사람아이콘 -->
                 <ul class="dropdown">
                     <li><a href="#">마이페이지</li>
-                        <div class="droqdown_underline"></div>
                     <li><a href="#">쿠폰</li>
-                        <div class="droqdown_underline"></div>
                     <li><a href="#">로그아웃</li>
                 </ul>
             </i>
@@ -54,66 +52,20 @@
 
     <!-- ==================BANNER==================== -->
     
-    <div class = "section">
-        <input type="radio" name="slide" id="slide01" checked>
-        <input type="radio" name="slide" id="slide02">
-        <input type="radio" name="slide" id="slide03">
-
-        <div class="slidewrap">
-            <ul class="slidelist">
-                <li>
-                    <a href="#">
-                        <label for="slide03" class="fa-solid fa-angle-left"></label>
-                        <img src="img/banner1.png">
-                        <label for="slide02" class="fa-solid fa-angle-right"></label>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <label for="slide01" class="fa-solid fa-angle-left"></label>
-                        <img src="img/banner2.png">
-                        <label for="slide03" class="fa-solid fa-angle-right"></label>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <label for="slide02" class="fa-solid fa-angle-left"></label>
-                        <img src="img/banner3.png">
-                        <label for="slide01" class="fa-solid fa-angle-right"></label>
-                    </a>
-                </li>
-            </ul>
+   <section class="banner">
+        <div class="banner_search">
+            <input type="text" name="search"placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp트레이너명 또는 클래스명 입력">
+            <a href="#" class="fa-solid fa-magnifying-glass" target="_self"></a>
         </div>
-    </div>
-
-   <!-- <section class="banner">
-        <div class="banner_copy_img">
-            <p class="health">헬스? 어렵지 않아!</p>
-            <a href="#" target="_self">
-                <img src="img/banner1.jpg" alt="">
-            </a>
-            <div class="btnPage">
-                <a href="#" class="fa-solid fa-angle-left"></a>
-                <a href="#" class="fa-solid fa-angle-right"></a>
-            </div>
-        </div>
-    
-    </section> -->
+    </section>
 
 
     <!-- ===================MAIN===================== -->
 
-    <div class="search_main">
-        <input type="text" name="search"placeholder="&nbsp&nbsp&nbsp트레이너명 또는 클래스명 입력">
-        <a href="#" class="fa-solid fa-magnifying-glass" target="_self"></a>
-    </div>
+
 
     <div class="main">
         <div class = "main_class_recommended">
-            <div class="recommended">
-                <p>추천클래스</p>
-                <a href="#"  target="_self">+ 더보기&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
-            </div>
             <div class="class_list">
                 <a href="#"  target="_self">
                     <img src="img/classlist.png" alt="">
@@ -171,10 +123,6 @@
             </div>
         </div>
         <div class = "main_class_end">
-            <div class="end">
-                <p>마감임박 클래스</p>
-                <a href="#"  target="_self">+ 더보기&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
-            </div>
             <div class="class_list">
                 <a href="#"  target="_self">
                     <img src="img/classlist.png" alt="">
@@ -233,10 +181,6 @@
         </div>
 
         <div class = "main_class_new">
-            <div class="new">
-                <p>신규 클래스</p>
-                <a href="#"  target="_self">+ 더보기&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
-            </div>
             <div class="class_list">
                 <a href="#"  target="_self">
                     <img src="img/classlist.png" alt="">
@@ -290,23 +234,6 @@
                 <i class="fa-solid fa-star-half"></i>
                 <hr>
                 <h1>10회 400,000원</h1>
-            </div>
-        </div>
-
-        <div class = "board_hot">
-            <div class="hot_p">
-                <p>커뮤니티 인기글</p>
-                <a href="#"  target="_self">+ 더보기&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
-            </div>
-        </div>
-    </div>
-    <div class="hot">
-        <div class="hot_list">
-            <div class="hot_list_list">
-            </div>
-            <div class="hot_list_list">
-            </div>
-            <div class="hot_list_list">
             </div>
         </div>
     </div>
