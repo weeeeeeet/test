@@ -1,12 +1,10 @@
 @charset "UTF-8";
 
-* {                                      /* 전체 스타일 초기화 */
+* { 
     margin: 0;
     padding: 0;
     font-family: 'SCoreDream';
-}
-body {                                   /* 헤더에 겹치지 않게 패딩 */
-    /* padding-top: 150px; */
+    overflow-x: hidden;
 }
 a {                                      /* 링크 스타일 초기화 */
     text-decoration: none;
@@ -40,6 +38,10 @@ legend {                                 /* 소제목 */
     width: 100%;
     object-fit: fill;
 }
+.class-title {
+    font-weight: bold; 
+    font-size: 20px;
+}
 .class-amount {
     font-weight: bold; 
     font-size: 25px
@@ -61,7 +63,6 @@ form span {
 /* =====================결제수단 시작========================= */
 .pay-method-container {
     width: 100%;
-    height: 100px;
     text-align: center;
 }
 .pay-method-container label {
@@ -72,14 +73,24 @@ form span {
     border-color: rgb(108, 108, 108);
     color: rgb(108, 108, 108);
 }
-.pay-method-container input:focus-within {
-    background-color: aqua;
+.pay-method-container input[type="radio"]:hover + label {
+    border-color: #2370DF;
+    background-color: #ebf4ff;
+    color: black;
+    box-shadow: none;
+}
+.pay-method-container input[type="radio"]:checked + label {
+    border-color: #2370DF;
+    background-color: #ebf4ff;
+    color: black;
+    box-shadow: none;
 }
 .pay-method-container label>img {
     width: 55px;
 }
 /* =====================결제수단 끝========================= */
-.total-amount {
+
+.total-amount {     /* 총 결제 금액 */
     background-color: #e6e6e6;
     border-radius: 10px;
     font-weight: bold;
@@ -93,7 +104,7 @@ form span {
 /* =====================이용약관 끝========================= */
 
 /* =====================결제버튼 시작========================= */
-button {
+.pay-submit button {
     width: 30%;
     margin-top: 50px;
 
@@ -101,3 +112,64 @@ button {
     border-color: #2370DF; 
 }
 /* =====================결제버튼 끝========================= */
+
+/* =====================쿠폰팝업(모달창) 시작========================= */
+#payModalLabel span {
+    color: #2370DF;
+}
+#coupon-close:focus {
+    box-shadow: none;
+}
+.form-check {
+    margin: 15px 0;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.modal-body .form-check:hover {
+    border-color: #2370DF;
+    background-color: #ebf4ff;
+    color: black;
+}
+.modal-body .form-check:focus-within {
+    border-color: #2370DF;
+    background-color: #ebf4ff;
+    color: black;
+}
+.modal-body input {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+.modal-body input:checked {
+    box-shadow: none;
+}
+.modal-body label {
+    display: inline-block;
+    width: 100% - 25px;
+    margin: 5px;
+}
+.modal-body label table {
+    width: 700px;
+}
+.modal-body label td {
+    padding-left: 10px;
+}
+.modal-body label td:nth-of-type(1) {
+    font-weight: bold;
+    border-right: 1px solid lightgray;
+}
+.modal-body label td:nth-of-type(3) {
+    color: rgb(161, 161, 161);
+}
+.modal-footer {
+    margin-top: 50px;
+}
+.modal-footer button {
+    width: 100%;
+    height: 50px;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+/* =====================쿠폰팝업(모달창) 끝========================= */

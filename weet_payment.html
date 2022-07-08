@@ -34,7 +34,24 @@
     <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.2.0.js"></script>
 
     <script>
+        $(() => {
+            $('#coupon-modal').click((e) => {
+                e.preventDefault();
+                $('#payModal').modal("show");
+            });
+            $('#coupon-close').click(() => $('#payModal').modal("hide"));
+            $('#coupon-submit').click(() => $('#payModal').modal("hide"));
+
+
+
+        }) // .jq
+
         const goPayment = () => {
+            console.clear();
+
+            let name = $('.class-title').text();    // 상품정보
+            console.log(name);
+
             event.preventDefault();
 
             const IMP = window.IMP; // 생략 가능
@@ -45,7 +62,7 @@
                     // param
                     pg: "html5_inicis",
                     pay_method: "card",
-                    merchant_uid: "ORD20180131-0000020",
+                    merchant_uid: "ORD20180131-0000021",
                     name: "노르웨이 회전 의자",
                     amount: 10,
                     buyer_email: "gildong@gmail.com",
@@ -54,7 +71,7 @@
                     buyer_addr: "서울특별시 강남구 신사동",
                     buyer_postcode: "01181",
                 },
-                async function(rsp) {
+                async function (rsp) {
                     // callback
                     if (rsp.success) {
                         alert("결제완료");
@@ -112,7 +129,7 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <div class="row">
-                                    <h5 class="card-title class-title">헬린이를 위한 그룹피티</h5>
+                                    <p class="card-title class-title">헬린이를 위한 그룹피티</p>
                                     <p class="card-text class-info"><small class="text-muted">조덕출/그룹클래스/용산구</small></p>
                                     <p class="card-text class-amount">
                                         400,000원</p>
@@ -142,7 +159,8 @@
                         <label for="phone" class="col-sm-2 col-form-label">전화번호<span>*</span></label>
                         <div class="col-sm-10">
                             <input type="tel" class="form-control" name="buyer_tel" id="phone"
-                                placeholder="010-0000-0000 ('-' 없이 입력)" pattern="\d*" minlength="10" maxlength="11" required>
+                                placeholder="010-0000-0000 ('-' 없이 입력)" pattern="\d*" minlength="10" maxlength="11"
+                                required>
                             <div class="invalid-feedback">
                                 올바른 전화번호를 입력해주세요.
                             </div>
@@ -152,7 +170,9 @@
                         <label for="email" class="col-sm-2 col-form-label">이메일<span>*</span></label>
                         <div class="col-sm-10">
                             <input type="email" class="form-control" name="buyer_email" id="email"
-                                placeholder="example@example.com" pattern="^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}" required>
+                                placeholder="example@example.com"
+                                pattern="^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}"
+                                required>
                             <div class="invalid-feedback">
                                 올바른 이메일 형식을 입력해주세요.
                             </div>
@@ -176,7 +196,7 @@
                     <div class="col-md-10">
                         <p>쿠폰할인</p>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2" id="coupon-modal">
                         <a href="#">쿠폰적용</a>
                     </div>
                 </div>
@@ -260,10 +280,89 @@
                 </div>
             </fieldset>
 
-            <div class="text-center">
+            <div class="text-center pay-submit">
                 <button class="btn btn-primary" id="pay-submit" type="submit">결제</button>
             </div>
         </form>
+
+        <!-- 쿠폰팝업(모달창) -->
+        <div class="modal fade" id="payModal" tabindex="-1" role="dialog" aria-labelledby="payModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="payModalLabel">사용가능 쿠폰 <span>3</span></h5>
+                        <button type="button" class="btn-close" id="coupon-close" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="coupons" id="no-coupon" value="-1"
+                                checked>
+                            <label class="form-check-label" for="no-coupon">
+                                선택 안 함
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="coupons" id="coupon1" value="1">
+                            <label class="form-check-label" for="coupon1">
+                                <table>
+                                    <colgroup>
+                                        <col style="width: 10%;">
+                                        <col style="width: 70%;">
+                                        <col style="width: 20%;">
+                                    </colgroup>
+
+                                    <tr>
+                                        <td>40%</td>
+                                        <td>첫번째 쿠폰</td>
+                                        <td>~ 2022-07-31</td>
+                                    </tr>
+                                </table>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="coupons" id="coupon2" value="2">
+                            <label class="form-check-label" for="coupon2">
+                                <table>
+                                    <colgroup>
+                                        <col style="width: 10%;">
+                                        <col style="width: 70%;">
+                                        <col style="width: 20%;">
+                                    </colgroup>
+
+                                    <tr>
+                                        <td>10%</td>
+                                        <td>두번째 쿠폰</td>
+                                        <td>~ 2022-07-31</td>
+                                    </tr>
+                                </table>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="coupons" id="coupon3" value="3">
+                            <label class="form-check-label" for="coupon3">
+                                <table>
+                                    <colgroup>
+                                        <col style="width: 10%;">
+                                        <col style="width: 70%;">
+                                        <col style="width: 20%;">
+                                    </colgroup>
+
+                                    <tr>
+                                        <td>20%</td>
+                                        <td>세번째 쿠폰</td>
+                                        <td>~ 2022-07-31</td>
+                                    </tr>
+                                </table>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" id="coupon-submit" type="submit">적용</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- 푸터 -->
