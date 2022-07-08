@@ -8,52 +8,89 @@
     box-sizing: border-box;
 }
 
+body {
+    /* padding-top: 100px; */
+}
+
 .contents {
-    margin: 50px 200px 50px 200px;
+    margin: 0 auto;
     height: auto;
     min-height: 100%;
     padding-bottom: 280px;
+    width: 1040px;
+    text-decoration: none;
+
 }
 
 /* ------------------------------------------------ */
 
+/* 검색 */
 .FAQ_box {
     text-align: center;
+    /* position: relative; */
+    background-color: #6C6C6C;
+    /* margin: 30px -200px -50px -200px; */
+    margin-top: 20px;
+    /* width: 1440px; */
+    height: 300px;
 }
 
+/* 무엇을 도와 드릴까요? */
+.FAQ_text {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 70%;
+    color: white;
+    font-size: 25px;
+}
+
+/* 검색창 */
 .FAQ_search {
-    /* 검색창 */
-    width: 260px;
+    display: inline;
+    width: 800px;
+    height: 7%;
     border: 2.5px solid #2370DF;
     border-radius: 10px;
     padding: 8px 12px;
     font-size: 14px;
-
-    /* margin-left: auto; */
-    /* margin-right: auto; */
+    position: absolute;
+    top: auto;
+    left: 30%;
+    /* vertical-align: auto; */
 }
 
-.header .header_right a:nth-of-type(1) {
-    /* 검색버튼 */
-    margin-right: 30px;
+/* 돋보기 */
+.search {
+    position: absolute;
+    display: flex;
+    /* bottom: 1px; */
+    left: 68%;
+    /* display: inline-block; */
+    /* margin-left: 30px; */
+    margin-top: 20px;
+
+    color: #2370DF;
 }
 
 /* ------------------------------------------------ */
 
 .FAQ_btn1 {
-    width: 150px;
-    padding: 15px;
-    margin: 50px auto;
-    border-radius: 10px;
-
+    width: 180px;
+    padding: 10px;
+    margin-left: 8%;
+    border-radius: 20px;
+    font-size: 15px;
+    color: white;
+    background-color: #2370DF;
 }
 
 .FAQ_btn2 {
-    width: 150px;
-    padding: 15px;
-    margin: 50px auto;
-    border-radius: 10px;
-
+    width: 180px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: white;
+    background-color: #6C6C6C;
 }
 
 .FAQ_list1 {
