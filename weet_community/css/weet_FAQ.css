@@ -10,6 +10,9 @@
 
 .contents {
     margin: 50px 200px 50px 200px;
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 280px;
 }
 
 /* ------------------------------------------------ */
@@ -17,7 +20,9 @@
 .FAQ_box {
     text-align: center;
 }
-.FAQ_search {            /* 검색창 */
+
+.FAQ_search {
+    /* 검색창 */
     width: 260px;
     border: 2.5px solid #2370DF;
     border-radius: 10px;
@@ -27,7 +32,9 @@
     /* margin-left: auto; */
     /* margin-right: auto; */
 }
-.header .header_right a:nth-of-type(1) {    /* 검색버튼 */
+
+.header .header_right a:nth-of-type(1) {
+    /* 검색버튼 */
     margin-right: 30px;
 }
 
@@ -40,6 +47,7 @@
     border-radius: 10px;
 
 }
+
 .FAQ_btn2 {
     width: 150px;
     padding: 15px;
@@ -47,14 +55,17 @@
     border-radius: 10px;
 
 }
+
 .FAQ_list1 {
     font-size: 14px;
     color: #2370DF;
 }
+
 .FAQ_list2 {
     font-size: 14px;
     color: black;
 }
+
 .FAQ_plus {
     float: right;
     color: #9A9A9A;
@@ -66,29 +77,35 @@
     margin-top: 10px;
     color: #CCCCCC;
 }
+
 .FAQ_num2 {
     margin-top: 10px;
     text-align: center;
     color: #EB5757;
 }
+
 .FAQ_num3 {
     margin-top: 10px;
     color: black;
 }
-.FAQ_num1:hover{
+
+.FAQ_num1:hover {
     color: #CCCCCC;
     background-color: white;
 }
-.FAQ_num2:hover{
+
+.FAQ_num2:hover {
     color: #EB5757;
     background-color: white;
 }
-.FAQ_num3:hover{
+
+.FAQ_num3:hover {
     color: black;
     background-color: white;
 }
+
 .pagination {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
-  }
+}

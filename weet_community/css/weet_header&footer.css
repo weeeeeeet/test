@@ -13,8 +13,7 @@
     padding: 20px 80px 20px 80px;
     height: 100px;
     background-color: white;
-    position: sticky;
-    /* 헤더 고정 */
+    position: sticky;            /* 헤더 고정 */
     top: 0px;
 }
 

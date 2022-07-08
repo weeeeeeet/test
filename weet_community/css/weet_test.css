@@ -10,6 +10,9 @@
 
 .contents {
     margin: 50px 200px 50px 200px;
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 280px;
 }
 
 .nav * {
@@ -20,6 +23,7 @@
 .home {
     margin-left: -150px;
 }
+
 .line1 {
     display: block;
     width: 80px;
@@ -27,6 +31,7 @@
     margin-left: -170px;
     border: 1px solid #b8b5b5;
 }
+
 .tr_comm {
     /* margin-left: -50px; */
 }
@@ -51,6 +56,7 @@
     margin-top: 100px;
     /* font-family: 'SCoreDream'; */
 }
+
 .col * {
     font-size: 10px;
     /* font-family: 'SCoreDream'; */
@@ -65,12 +71,15 @@
 .comm_home_comment {
     color: #2370DF;
 }
+
 .comm_home_comment_num {
     color: black;
 }
+
 .comm_home_tr_like {
     color: red;
 }
+
 .comm_home_tr_like_num {
     color: black;
 }

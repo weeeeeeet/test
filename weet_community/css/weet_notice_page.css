@@ -10,6 +10,9 @@
 
 .contents {
     margin: 50px 200px 50px 200px;
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 280px;
 }
 
 /* ------------------------------------------------ */
