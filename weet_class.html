@@ -21,7 +21,7 @@
 
     <section class="header">
         <nav class="nav_left">
-            <a href="http://127.0.0.1:5500/WEET/weet_header2.html"  target="_self">
+            <a href="http://127.0.0.1:5500/WEET/weet_main.html"  target="_self">
                 <img src="img/weet_logo.png" alt="위의 이미지를 누르면 연결됩니다." width="100">
             </a>
             <div class="categories">
@@ -50,7 +50,7 @@
     </section>
     <div class="underline"></div>
 
-    <!-- ==================BANNER==================== -->
+    <!-- ======================BANNER======================== -->
     
    <section class="banner">
         <div class="banner_search">
@@ -60,12 +60,35 @@
     </section>
 
 
-    <!-- ===================MAIN===================== -->
 
-
+    <!-- =================== CLASS LIST ===================== -->
 
     <div class="main">
+        
         <div class = "main_class_recommended">
+
+            <div class="sort">                              <!-- 정렬 -->
+                <select name="sort" id="sort">
+                    <option value="1">&nbsp&nbsp&nbsp별점순</option>
+                    <option value="2">&nbsp&nbsp&nbsp가격순</option>
+                    <option value="3">&nbsp&nbsp&nbsp최신순</option>
+                    <option value="4">&nbsp&nbsp&nbsp마감임박순</option>
+                    <option value="5">&nbsp&nbsp&nbsp정확도순</option>
+                </select>
+                <select name="type" id="type">
+                    <option selected disabled hidden>&nbsp&nbsp&nbsp클래스 종류</option>
+                    <option value="1">&nbsp&nbsp&nbsp전체보기</option>
+                    <option value="2">&nbsp&nbsp&nbsp개인</option>
+                    <option value="3">&nbsp&nbsp&nbsp그룹</option>
+                </select>
+                <select name="time" id="time">
+                    <option selected disabled hidden>&nbsp&nbsp&nbsp클래스 시간대</option>
+                    <option value="1">&nbsp&nbsp&nbsp전체보기</option>
+                    <option value="2">&nbsp&nbsp&nbsp오전반</option>
+                    <option value="3">&nbsp&nbsp&nbsp오후반</option>
+                </select>
+            </div>
+
             <div class="class_list">
                 <a href="#"  target="_self">
                     <img src="img/classlist.png" alt="">

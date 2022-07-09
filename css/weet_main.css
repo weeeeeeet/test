@@ -16,6 +16,7 @@
     position: sticky;                       /* 헤더 고정 */
     top: 0px;
     z-index: 1;
+    box-shadow: 5px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
 }
 .header nav.nav_left a{                     /* 로고 */
     padding-left: 0px;
@@ -76,15 +77,16 @@
     position: relative;
 }
 div.header_right .dropdown {
-    width: 100px;
+    width: 120px;
     height: 115px;
     padding-top: 10px;
-    background-color: #e7e7e7;
+    background-color: #f3f3f3;
     padding-top: 5px;
     position: absolute;
     top: 100%;
-    left: -40px;
+    left: -50px;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
 }
 div.header_right .dropdown {
    display:none;
@@ -94,7 +96,7 @@ div.header_right .dropdown li {
     list-style: none;
     font-size: 14px;
     font-weight: 500;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-top: 15px;
 }
 div.header_right .dropdown li a {
@@ -252,11 +254,12 @@ div.header_right i:hover .dropdown {
     border: 3px solid #2370DF;
     border-radius: 10px;
     margin-bottom: 100px;
+    box-shadow: 0px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
     
 }
 .search_main a {
     display: inline-block;
-    padding-top: 10px;
+    padding-top: 12px;
     margin-left: 15px;
     text-decoration: none;
     color: #2370DF;
