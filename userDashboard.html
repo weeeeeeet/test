@@ -12,42 +12,26 @@
      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
      <!-- 외부 스타일 시트 연결 -->
+        <!-- 유저 대시보드 css -->
     <link href="css/userDashboard.css" rel="stylesheet" />
 
+    <!-- 폰트 설정 -->
     <!-- <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
+
+    <!-- 외부 HTML 연결 -->
+    <!-- defer : 브라우저가 스크립트를 문서 분석 이후에 실행해야 함을 나타내는 불리언 속성이다. -->
+    <script src="js/loadHTML.js"></script>
 
 </head>
 
 <body>
+ 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!--header-->
-     <section class="header">
-        <nav class="nav_left">
-            <a href="http://127.0.0.1:5500/WEET/weet_header2.html"  target="_self">
-                <img src="img/weet_logo.png" alt="위의 이미지를 누르면 연결됩니다." width="100">
-            <a>
-            <div class="categories">
-                <a href="커뮤니티페이지" target="_self">
-                    커뮤니티
-                </a>
-                <a href="클래스페이지" target="_self">
-                    클래스
-                </a>
-            </div>
-        </nav>
-        
-        <div class="header_right">
-            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-            <input type="text" name="search"placeholder="트레이너명 또는 클래스명 입력">
-            <a href="#" class="fa-solid fa-magnifying-glass" target="_self"></a>
-            <a href="마이페이지" class="fa-solid fa-user" target="_self"></a>
-            <a href="알람" class="fa-solid fa-bell" target="_self"></a>
-        </div>
-    </section>
-    <div class="underline"></div>
+    
+    <!-- header 불러오기 -->
+    <div include-html="header.html"></div>
 
     <!-- contents -->
     <section class="wrap">
@@ -118,32 +102,13 @@
         </div>
     </section>
 
-    
-    <!--footer-->
-     <footer class="footer">
-        <div class="underline"></div>
-        <img src="img/weet_logo_bw.png" alt="">
-        <!-- <p>맞춤형 PT 예약&관리 플랫폼</p> -->
-        <div class="notice_service">
-            <button type="button" name="btnNotice" onclick="location.href='공지사항 주소';">공지사항</button>
-            <button type="button" name="btnService" onclick="location.href='고객센터 주소';">고객센터</button>
-            <br>
-            <ul class="time">
-                <li>운영시간 : 평일10시~18시 (주말, 공휴일 제외)</li>
-                <li> 점심시간 : 12시 30분~14시</li>
-            </ul>
-        </div>
-        <div class="underline2"></div>
-        <div class="terms">
-            <a href="이용약관페이지" target="_self">이용약관</a>
-            <a href="개인정보처리방침페이지" target="_self">개인정보처리방침</a>
-        </div>
-        <div class="underline2"></div>
-        <div class="address">
-            <p>대표: 조은별 | 서울특별시 강남구 테헤란로14길 6 남도빌딩 2F | Tel : 1234-5678<br>
-                사업자 등록번호 : 123-45-67892 | 통신판매업신고 : 2222-서울강남-1111호
-            </p>
-        </div>
-    </footer>
+     <!-- footer 불러오기 -->
+    <div include-html="footer.html"></div>
+
+    <!--includeHTML-->
+    <script>
+        includeHTML();
+    </script>
+
 </body>
 </html>

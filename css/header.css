@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/* WEB FONTS 적용 ----------------- */
+@import url(https://webfontworld.github.io/SCoreDream/SCoreDream.css);
+
+/* 기본적 css 리셋 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SCoreDream';
+    box-sizing: border-box;
+}
+
+/* 가이드라인 */
+/* .g{
+    border: 1px solid rgb(192, 2, 255);
+} */
+
+/* Header ================================================== */
+.header {
+    padding: 20px 80px 20px 80px;
+    height: 100px;
+    background-color: white;
+    /* position: sticky; */
+    /* 헤더 고정 */
+    top: 0px;
+
+    /* border: 1px solid #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+.header nav.nav_left a {
+    /* 로고 */
+    padding-left: 0px;
+    float: left;
+    display: inline;
+    margin-bottom: 20px;
+    margin-right: 8px;
+}
+
+.header .categories a {
+    /* 커뮤니티,클래스 */
+    margin-top: 20px;
+    display: inline;
+    padding-right: 35px;
+    font-size: 15px;
+    color: #2370DF;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.header div.header_right {
+    /* 헤더 우측 */
+    float: right;
+    margin-top: 15px;
+}
+
+.header div.header_right input {
+    /* 검색창 */
+    width: 260px;
+    border: 2.5px solid #2370DF;
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.header .header_right a:nth-of-type(1) {
+    /* 검색버튼 */
+    margin-right: 30px;
+}
+
+.header div.header_right a {
+    /* 마이페이지, 알림 */
+    color: #2370DF;
+    margin-left: 18px;
+    font-size: 20px;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+.underline {
+    /* 밑줄 */
+    border: 0;
+    height: 5px;
+    background: rgb(236, 236, 236);
+}
