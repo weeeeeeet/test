@@ -43,6 +43,7 @@ section div.dash h1{ /*회원 대시보드 타이틀*/
     font-weight: bold;
     color: #95B4E0;
     padding: 10px;
+    padding-bottom: 20px;
 }
 
 /* 클래스 공지사항 대시보드----------------------------------*/
@@ -84,7 +85,7 @@ section div.notice-list a{
     background-color: rgb(255, 255, 255);
     /* float: left; */
     border-radius: 18px;
-    margin-top: 30px;       /*박스간 간격*/
+    margin-top: 40px;       /* 두 박스간 간격*/
 }
 section div.coaching-plan h2{ /*이번주 코칭계획*/
     font-size: 20px;

@@ -107,7 +107,7 @@ section div.menu{
     margin-top: 375px;
     margin-left: 40px;
     width: 270px;
-    height: 540px;
+    height: 550px;      /* 사이드바 메뉴 높이*/
     clear: both;
 
     /* border: 2px solid red; */

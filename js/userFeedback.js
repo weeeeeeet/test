@@ -1,5 +1,5 @@
 
-// 파일첨부 & 이미지 미리보기
+// 파일첨부 & 이미지 미리보기============================================
 function readImage(input) {
     // 인풋 태그에 파일이 있는 경우
     if(input.files && input.files[0]) {
@@ -21,7 +21,7 @@ inputImage.addEventListener("change", e => {
     readImage(e.target)
 })
 
-// 텍스트 입력
+// 텍스트 입력 (추가할 수 있는 버전)========================================================================
 const add_textbox = () => {
     const box = document.getElementById("box");
     const newP = document.createElement('p');

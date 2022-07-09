@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>userDashboard</title>
+    <title>userFoodFeedback</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -14,7 +14,7 @@
 
     <!-- 외부 스타일 시트 연결 -->
     <!-- 유저 대시보드 css -->
-    <link href="/css/userDashboard.css" rel="stylesheet" />
+    <link href="/css/userFeedback.css" rel="stylesheet" />
 
     <!-- 폰트 설정 -->
     <!-- <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet"> -->
@@ -57,21 +57,39 @@
                 <h2>오늘의 식단 올리기</h2>
             </div>
 
-            <!-- 사진 첨부파일 -->
-            <div class="image-container g">
-                <!-- 이미지 미리보기 -->
-                <img class="g" style="width: 200px;" id="preview-image"
-                    src="https://dummyimage.com/500x500/ffffff/000000.png&text=preview+image">
-                <!-- 파일선택 버튼 -->
-                <input class="image-select-btn g" style="display: block;" type="file" id="input-image">
-            </div>
+            <!-- 사진첨부 & 텍스트 입력 -->
+            <div class="picAndText g">
+                <!-- ** get 방식으로 보내면 양식이 다 보인다 -->
+                <!-- 그래서 중요한 정보를 노출하기 싫으면 get 방식으로 보내면 안된다 -->
+                <!-- post 방식은 쿼리 스트링이 보이지 않는다! -->
+                <form class="g" name="foodForm" action="http://localhost:8080" method="POST" enctype="multipart/form-data"></form>
 
-            <!-- 텍스트 입력 박스 -->
-            <div class="g">
-                <form>
-                    <div id="box">
-                        <input type="text"> <input type="button" value="추가" onclick="add_textbox()">
-                    </div>
+                        <!-- 사진 첨부파일 -->
+                        <div class="image-container g">
+                            <!-- 이미지 미리보기 -->
+                            <p>
+                                <img class="g" style="width: 200px;" id="preview-image"
+                                    src="https://dummyimage.com/300x300/ffffff/000000.png&text=preview+image">
+                            </p>
+
+                            <!-- 파일선택 버튼 -->
+                            <div class="image-select-btn g">
+                                <p><input style="display: block;" type="file" id="input-image"></p>
+                            </div>
+                        </div>
+    
+                        <!-- 텍스트 입력 박스 추가하고 삭제하는 버전 -->
+                        <!-- <div class="g">
+                            <div id="box">
+                            <input type="text"> <input type="button" value="추가" onclick="add_textbox()">
+                        </div> -->
+    
+                        <!-- 텍스트 입력 박스-->
+                        <div class="text-container g">
+                            <p><input type="text" name="food-comend"></p>
+                            <p><input type="submit" value="올리기"></p>
+                        </div>
+
                 </form>
             </div>
 
