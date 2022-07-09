@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'SCoreDream';
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 a {                                      /* 링크 스타일 초기화 */
     text-decoration: none;
@@ -122,6 +122,7 @@ form span {
 }
 .form-check {
     margin: 15px 0;
+    height: 50px;
     border: 1px solid lightgray;
     border-radius: 5px;
 }
@@ -138,13 +139,14 @@ form span {
 .modal-body input {
     width: 25px;
     height: 25px;
-    margin: 5px;
+    margin-top: 10px;
 }
 .modal-body input:checked {
     box-shadow: none;
 }
 .modal-body label {
     display: inline-block;
+    line-height: 35px;
     width: 100% - 25px;
     margin: 5px;
 }

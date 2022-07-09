@@ -87,31 +87,41 @@
 </head>
 
 <body>
-    <!-- 헤더 -->
+    <!-- ==================HEADER==================== -->
+
     <section class="header">
         <nav class="nav_left">
             <a href="http://127.0.0.1:5500/WEET/weet_header2.html" target="_self">
                 <img src="img/weet_logo.png" alt="위의 이미지를 누르면 연결됩니다." width="100">
-                <a>
-                    <div class="categories">
-                        <a href="커뮤니티페이지" target="_self">
-                            커뮤니티
-                        </a>
-                        <a href="클래스페이지" target="_self">
-                            클래스
-                        </a>
-                    </div>
+            </a>
+            <div class="categories">
+                <a href="커뮤니티페이지" target="_self">
+                    커뮤니티
+                </a>
+                <a href="클래스페이지" target="_self">
+                    클래스
+                </a>
+            </div>
         </nav>
 
         <div class="header_right">
             <input type="text" name="search" placeholder="트레이너명 또는 클래스명 입력">
             <a href="#" class="fa-solid fa-magnifying-glass" target="_self"></a>
-            <a href="마이페이지" class="fa-solid fa-user" target="_self"></a>
+            <i class="fa-solid fa-user" target="_self">
+                <!-- 사람아이콘 -->
+                <ul class="dropdown">
+                    <li><a href="#">마이페이지</li>
+                    <div class="droqdown_underline"></div>
+                    <li><a href="#">쿠폰</li>
+                    <div class="droqdown_underline"></div>
+                    <li><a href="#">로그아웃</li>
+                </ul>
+            </i>
+
             <a href="알람" class="fa-solid fa-bell" target="_self"></a>
         </div>
     </section>
     <div class="underline"></div>
-    <!-- 헤더 -->
 
     <section class="contents">
         <form class="was-validated" onsubmit="goPayment()">
@@ -213,7 +223,7 @@
             <fieldset>
                 <legend>결제 수단</legend>
 
-                <div class="container pay-method-container">
+                <div class="pay-method-container">
                     <div class="row">
                         <div class="col">
                             <input type="radio" class="btn-check" name="pg" id="btn-check-normal" value="html5_inicis"
