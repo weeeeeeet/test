@@ -17,36 +17,41 @@
 
 <body>
 
-    <!-- ==================HEADER==================== -->
+   <!-- ==================HEADER==================== -->
 
-    <section class="header">
-        <nav class="nav_left">
-            <a href="http://127.0.0.1:5500/WEET/weet_main.html"  target="_self">
-                <img src="img/weet_logo.png" alt="위의 이미지를 누르면 연결됩니다." width="100">
+   <section class="header">
+    <nav class="nav_left">
+        <a href="http://127.0.0.1:5500/weet_main.html"  target="_self">
+            <img src="img/weet_logo.png" alt="위의 이미지를 누르면 연결됩니다." width="100">
+        </a>
+        <div class="categories">
+            <a href="커뮤니티페이지" target="_self">
+                커뮤니티
             </a>
-            <div class="categories">
-                <a href="커뮤니티페이지" target="_self">
-                    커뮤니티
-                </a>
-                <a href="클래스페이지" target="_self">
-                    클래스
-                </a>
-            </div>
-        </nav>
-        
-        <div class="header_right">
-            <input type="text" name="search"placeholder="트레이너명 또는 클래스명 입력">
-            <a href="#" class="fa-solid fa-magnifying-glass" target="_self"></a>
-            <i class="fa-solid fa-user" target="_self"> <!-- 사람아이콘 -->
-                <ul class="dropdown">
-                    <li><a href="#">마이페이지</li>
-                    <li><a href="#">쿠폰</li>
-                    <li><a href="#">로그아웃</li>
-                </ul>
-            </i>
-            
-            <a href="알람" class="fa-solid fa-bell" target="_self"></a>
+            <a href="클래스페이지" target="_self">
+                클래스
+            </a>
         </div>
+    </nav>
+    
+    <div class="header_right">
+        <input type="text" name="search"placeholder="트레이너명 또는 클래스명 입력">
+        <a href="#" class="fa-solid fa-magnifying-glass" target="_self"></a>
+        <i class="fa-solid fa-user" target="_self"> <!-- 사람아이콘 -->
+            <ul class="dropdown">
+                <li><i class="fa-solid fa-user"></i><a href="#">&nbsp&nbsp마이페이지</a>
+                    <div class="dropdown_underline"></div>
+                </li>
+                    
+                <li><i class="fa-solid fa-ticket-simple"></i><a href="#">&nbsp쿠폰</a>
+                    <div class="dropdown_underline"></div>
+                </li>
+                <li><i class="fa-solid fa-right-from-bracket"></i><a href="#">&nbsp&nbsp로그아웃</li>
+            </ul>
+        </i>
+        
+        <a href="알람" class="fa-solid fa-bell" target="_self"></a>
+    </div>
     </section>
     <div class="underline"></div>
 
@@ -200,6 +205,7 @@
                 <hr>
                 <h1>10회 400,000원</h1>
             </div>
+            
             
         </div>
 
