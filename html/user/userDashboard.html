@@ -13,7 +13,7 @@
 
      <!-- 외부 스타일 시트 연결 -->
         <!-- 유저 대시보드 css -->
-    <link href="css/userDashboard.css" rel="stylesheet" />
+    <link href="/css/userDashboard.css" rel="stylesheet" />
 
     <!-- 폰트 설정 -->
     <!-- <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet"> -->
@@ -21,7 +21,7 @@
 
     <!-- 외부 HTML 연결 -->
     <!-- defer : 브라우저가 스크립트를 문서 분석 이후에 실행해야 함을 나타내는 불리언 속성이다. -->
-    <script src="js/loadHTML.js"></script>
+    <script src="/js/loadHTML.js"></script>
 
 </head>
 
@@ -31,13 +31,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
     <!-- header 불러오기 -->
-    <div include-html="header.html"></div>
+    <div include-html="/html/common/header.html"></div>
 
     <!-- contents -->
     <section class="wrap">
 
         <!-- sidebar 불러오기 -->
-        <div include-html="sidebar.html"></div>
+        <div include-html="/html/common/sidebar.html"></div>
 
         <!--대시보드 -->
         <div class="dash g">
@@ -77,7 +77,7 @@
     </section>
 
      <!-- footer 불러오기 -->
-    <div include-html="footer.html"></div>
+    <div include-html="/html/common/footer.html"></div>
 
     <!--includeHTML-->
     <script>
