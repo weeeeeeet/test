@@ -179,7 +179,7 @@ a {
     margin-right: 200px;
     margin-bottom: 20px;
 
-    border: 1px solid #595959;
+    border: 1px solid #D9D9D9;
     border-radius: 8px;
 }
 
@@ -222,12 +222,8 @@ a {
 
 /* 구매내역 전체적인 틀 잡기 */
 .class_card_purchase_detail{
-
-    border: 1px solid grey;
-
     margin-left: 55px;
-    width: 800px;
-
+    width: 780px;
 }
 
 /* 구매상세내역 ================================ */
@@ -305,6 +301,8 @@ a {
 
 /* 주문정보 - 결제 수단 - 값 */
 .class_card_purchase_detail_info_type .purchase_type_value{
+    padding-top: 10px;
+
     font-size: 12px;
     font-weight: bold;
 
@@ -338,95 +336,211 @@ a {
     padding-bottom: 10px;
 
     border-top: 1px solid #aca9a9 ;
-    border-bottom: 2px solid black ;
 }
 
 /* 주문상품 - 총 상품금액 */
-.class_card_purchase_detail_orginalmoney
+.class_card_purchase_detail_orginalmoney{
+    font-size: 12px;
+    font-weight: bold;
+
+    float: left;
+}
 
 /* 주문상품 - 총 상품금액 - 값 */
-
-/* 주문상품 - 쿠폰 */
-
-/* 주문상품 - 쿠폰 - 값 */
-
-/* 주문상품 - 총 결제 금액 */
-
-/* 주문상품 - 총 결제 금액 - 값 */
-
-/* 구매상품 ================================ */
-
-/* 클래스 카드 위치 및 크기 지정 */
-.content_right .class_card{
-    margin-left: 20px;
-    margin-right: 20px;
-    float: left;
-
-    width: 890px;
-}
-
-/* 클래스 카드 이미지 */
-.content_right .class_card .card_img{
-    width: 280px;
-    height: 150px;
-
-    float: left;
-}
-
-/* 클래스 카드 - 클래스 제목 */
-.content_right .class_card .card-text{
-    display: inline-block;
-    margin-top: 10px;
-    height: 50px;
-
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-    color: black;
-}
-
-/* 클래스 카드 - 클래스 제목 + 클래스 주문번호 + 가격 + 번호 ( 오른쪽 부분 )  */
-.content_right .class_card_content{
-    width: 580px;
-
-    margin-left: 20px;
-    float: left;
-}
-
-/* 클래스 카드 - 구매 상세 내역 버튼 */
-.class_card_btn{
-    width: 104px;
-    height: 31px;
-    margin-top: 50px;
-    margin-right: 50px;
-
-    font-size: 14px;
+.class_card_purchase_detail_orginalmoney_value{
+    font-size: 12px;
     font-weight: bold;
 
     float: right;
-
-    background-color: #2370DF;
 }
 
-/* 탑버튼 ================================ */
+/* 주문상품 - 쿠폰 */
+.class_card_purchase_detail_cupon{
+    clear: both;
+    float: left;
 
-/* 탑 버튼 */
-.TOP_btn{
-    width: 40px;
-    height: 40px;
-    border: 1px solid #A7A7A7;
-    border-radius: 8px;
-
-    padding-left: 2px;
-
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
-    color: #A7A7A7;
+}
+
+/* 주문상품 - 쿠폰 - 값 */
+.class_card_purchase_detail_cupon_value{
+    float: right;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    padding-bottom: 10px;
+}
+
+/* 주문상품 - 총 결제 금액 */
+.class_card_purchase_detail_total{
+    clear: both;
+
+    padding-top: 10px;
+    margin-bottom: 20px;
+    border-top: 2px solid black ;
+}
+
+.class_card_purchase_detail_total_money{
+    font-size: 20px;
+    font-weight: bold;
+
+    padding-bottom: 20px;
+
+    display: inline-block;
+}
+
+/* 주문상품 - 총 결제 금액 - 값 */
+.class_card_purchase_detail_total_money_value{
+    font-size: 20px;
+    font-weight: bold;
+
+    float: right;
+}
+
+.class_card_purchase_detail_total::after{
+    clear: both;
+}
+
+/* 구매상품 ================================ */
+.class_card_purchase_detail_target::before{
+    clear: both;
+}
+
+/* 구매상품 제목 */
+.class_card_purchase_detail_target>p{
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-top: 20px;
+}
+
+/* 구매상품 - 클래스 카드 - 이미지 */
+.class_card_purchase_detail_target .card_img{
+    float: left;
+
+    width: 230px;
+    height: 125px;
+}
+
+/* 구매상품 - 오른쪽 클래스 이름 */
+.class_card_purchase_detail_target_right .class_card_target_text{
+    float: left;
+    padding-left: 20px;
+
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* 구매상품 - 버튼 */
+.class_card_purchase_detail_target_right > button {
+    clear: both;
+
+    margin-top: 87px;
+}
+
+/* 구매상품 - 구매취소 버튼 */
+.class_card_btn_delete{
+    margin-left: 170px;
+
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #EEEEEE;
+
+    border: none;
+}
+
+/* 구매상품 - ? 버튼 */
+.class_card_btn_info{
+    margin-left: 5px;
     text-align: center;
 
-    position: fixed;
-    bottom: 300px;
-    right: 250px;
+    width: 25px;
+    height: 25px;
+
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #8C8C8C;
+
+    border: none;
+    border-radius: 50%;
+}
+
+/* 모달창 1 - 주문취소 ================================ */
+
+/* 모달창 - 전체를 감싸는 보더 설정 */
+.modal_class_content{
+    width: 100%;
+
+    margin-bottom: 10px;
+}
+
+/* 모달창 - 헤드 - 제목 */
+.modal-title{
+    width: 100%;
+
+    color: #666666;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 모달창 - 클래스 제목 */
+.modal_class_title{
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 모달창 - 클래스 제목 */
+.modal_class_title_value{
+    color: #000000;
+    font-size: 14px;
+
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+/* 모달창 - 환불사유 제목 */
+.modal_class_content{
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+/* 모달창 - 이메일 입력 제목 */
+.refund_email{
+    display: inline-block;
+}
+
+.email_input{
+    width: 250px;
+    margin-left: 30px;
+}
+
+/* 모달창 - 주문취소 버튼 */
+.btn_submit{
+    background-color: #2370DF;
+    border: none;
+    border-radius: 8px;
+
+    color: white;
+    font-size: 14px;
+
+    width: 70px;
+    height: 38px;
+}
+
+/* 모달창 2 - ? ================================ */
+
+/* Footer 고정용 ================================ */
+.tttoooo{
+    width: 100%;
+    height: 750px;
 }
 
 /* Footer ================================ */
@@ -435,7 +549,7 @@ a {
     height: 280px;
     width: 100%;
     background-color: white;
-    position: fixed;  
+    position: static;  
     bottom: 0;
     left: 0;
 }
