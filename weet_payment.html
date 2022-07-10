@@ -22,18 +22,22 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 
-    <!-- header & footer -->
-    <link href="css/weet_header&footer.css" rel="stylesheet" />
+    <!-- css -->
     <link rel="stylesheet" href="css/weet_payment.css">
+
+    <!-- javascript -->
+    <script src="js/loadHTML.js"></script>
 
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
 
+
     <!-- iamport.payment.js -->
     <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.2.0.js"></script>
 
     <script>
+
         $(() => {
             $('#coupon-modal').click((e) => {
                 e.preventDefault();
@@ -41,15 +45,16 @@
             });
             $('#coupon-close').click(() => $('#payModal').modal("hide"));
             $('#coupon-submit').click(() => $('#payModal').modal("hide"));
-
-
-
         }) // .jq
 
         const goPayment = () => {
             console.clear();
 
-            let name = $('.class-title').text();    // 상품정보
+            let pg = $('btn-check').val();
+            console.log(pg);
+            let name = $('.class-title').text();    // 상품정보s
+            let amount = parseInt($('#total-amount').text().substring(0,$('#total-amount').text().length-1).replace(",", "")); // 금액
+
             console.log(name);
 
             event.preventDefault();
@@ -60,11 +65,11 @@
             IMP.request_pay(
                 {
                     // param
-                    pg: "html5_inicis",
+                    pg: pg,
                     pay_method: "card",
-                    merchant_uid: "ORD20180131-0000021",
-                    name: "노르웨이 회전 의자",
-                    amount: 10,
+                    merchant_uid: "ORD20180131-0000022",
+                    name: name,
+                    amount: amount,
                     buyer_email: "gildong@gmail.com",
                     buyer_name: "홍길동",
                     buyer_tel: "010-4242-4242",
@@ -87,41 +92,7 @@
 </head>
 
 <body>
-    <!-- ==================HEADER==================== -->
-
-    <section class="header">
-        <nav class="nav_left">
-            <a href="http://127.0.0.1:5500/WEET/weet_header2.html" target="_self">
-                <img src="img/weet_logo.png" alt="위의 이미지를 누르면 연결됩니다." width="100">
-            </a>
-            <div class="categories">
-                <a href="커뮤니티페이지" target="_self">
-                    커뮤니티
-                </a>
-                <a href="클래스페이지" target="_self">
-                    클래스
-                </a>
-            </div>
-        </nav>
-
-        <div class="header_right">
-            <input type="text" name="search" placeholder="트레이너명 또는 클래스명 입력">
-            <a href="#" class="fa-solid fa-magnifying-glass" target="_self"></a>
-            <i class="fa-solid fa-user" target="_self">
-                <!-- 사람아이콘 -->
-                <ul class="dropdown">
-                    <li><a href="#">마이페이지</li>
-                    <div class="droqdown_underline"></div>
-                    <li><a href="#">쿠폰</li>
-                    <div class="droqdown_underline"></div>
-                    <li><a href="#">로그아웃</li>
-                </ul>
-            </i>
-
-            <a href="알람" class="fa-solid fa-bell" target="_self"></a>
-        </div>
-    </section>
-    <div class="underline"></div>
+    <div w3-include-html="weet_header.html"></div>      <!-- header -->
 
     <section class="contents">
         <form class="was-validated" onsubmit="goPayment()">
@@ -214,7 +185,7 @@
                     <div class="col-md-10">
                         <p>총 결제 금액</p>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2" id="total-amount">
                         <p>376,500원</p>
                     </div>
                 </div>
@@ -375,34 +346,9 @@
         </div>
     </section>
 
-    <!-- 푸터 -->
-    <footer class="footer">
-        <img src="img/weet_logo_bw.png" alt="">
-        <!-- <p>맞춤형 PT 예약&관리 플랫폼</p> -->
+    <div w3-include-html="weet_footer.html"></div>  <!-- footer -->
 
-        <div class="notice_service">
-            <button type="button" name="btnNotice" onclick="location.href='공지사항 주소';">공지사항</button>
-            <button type="button" name="btnService" onclick="location.href='고객센터 주소';">고객센터</button>
-            <br>
-            <ul class="time">
-                <li>운영시간 : 평일10시~18시 (주말, 공휴일 제외)</li>
-                <li> 점심시간 : 12시 30분~14시</li>
-            </ul>
-        </div>
-        <div class="underline2"></div>
-        <div class="terms">
-            <a href="이용약관페이지" target="_self">이용약관</a>
-            <a href="개인정보처리방침페이지" target="_self">개인정보처리방침</a>
-        </div>
-        <div class="underline2"></div>
-        <div class="address">
-            <p>대표: 조은별 | 서울특별시 강남구 테헤란로14길 6 남도빌딩 2F | Tel : 1234-5678<br>
-                사업자 등록번호 : 123-45-67892 | 통신판매업신고 : 2222-서울강남-1111호
-            </p>
-        </div>
-    </footer>
-    <!-- 푸터 -->
-
+    <script>includeHTML();</script>
 </body>
 
 </html>
