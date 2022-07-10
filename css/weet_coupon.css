@@ -11,8 +11,10 @@
     min-height: 800px;
     margin: 0 auto;
 }
+/* ================상단 설명 시작============= */
 .contents-info {
     margin-top: 50px;
+    border-bottom: 1px solid lightgray;
 }
 .contents-info>h5 {
     font-size: 30px;
@@ -25,7 +27,9 @@
     color: #FF730E;
     font-weight: bold;
 }
+/* ================상단 설명 끝============= */
 
+/* ================탭 영역 시작============= */
 #couponTab {
     margin-top: 50px;
 }
@@ -57,7 +61,14 @@ small {
     border-image: linear-gradient(to right, #ffa85baa, #65a3ffaa);
     border-image-slice: 1;
 }
+.caption {
+    margin-top: 20px;
+    font-size: 14px;
+    color: darkgray;
+}
+/* ================탭 영역 끝============= */
 
+/* ================발급 확인 모달 시작============= */
 .modal-confirm {		
     color: #636363;
     width: 325px;
@@ -77,6 +88,7 @@ small {
     text-align: center;
     font-size: 26px;
     margin: 30px 0 -15px;
+    color: black;
 }
 .modal-confirm .form-control, .modal-confirm .btn {
     min-height: 40px;
@@ -140,3 +152,4 @@ small {
     font-size: 14px;
     color: darkgray;
 }
+/* ================발급 확인 모달 끝============= */
