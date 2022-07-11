@@ -8,146 +8,10 @@
 }
 
 
-/* Header ================================ */
-.header {
-    padding: 20px 80px 20px 80px;
-    height: 100px;
-    background-color: white;
-    position: sticky;                       /* 헤더 고정 */
-    top: 0px;
-    z-index: 1;
-    box-shadow: 5px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
-}
-.header nav.nav_left a{                     /* 로고 */
-    padding-left: 0px;
-    float: left;
-    display: inline;
-    margin-bottom: 20px;
-    margin-right: 50px;
-}
-.header .categories a {                     /* 커뮤니티,클래스 */
-    margin-top: 20px;
-    display: inline;           
-    padding-right: 0px;
-    font-size: 15px;
-    color: #2370DF;
-    font-weight: 500;
-    text-decoration: none;
-}
-.header div.header_right {                  /* 헤더 우측 */
-    float: right;
-    margin-top: 15px;
-}
-.header div.header_right input {            /* 검색창 */
-    width: 260px;
-    border: 3px solid #2370DF;
-    border-radius: 10px;
-    padding: 6px 12px;
-    font-size: 14px;
-    float: left;
-    position: relative;
-}
-.header .header_right > a:nth-of-type(1) {    /* 검색버튼 */
-    margin-right: 30px;
-    float: left;
-    color: #2370DF;
-    margin-left: 10px;
-    font-size: 20px;
-    padding-top: 8px;
-    text-decoration: none;
-}
-.header div.header_right a:nth-of-type(3){   /* 알림 아이콘 */
-    color: #2370DF;
-    margin-left: 18px;
-    font-size: 22px;
-    padding-top: 7px;
-    text-decoration: none;
-    float: right;
-}
-.header div.header_right i {                 /* 사람 아이콘 */
-    color: #2370DF;
-    margin-left: 18px;
-    font-size: 20px;
-    padding-top: 7px;
-    text-decoration: none;
-    position: relative;
-}
-div.header_right .dropdown {
-    width: 150px;
-    height: 177px;
-    padding-top: 10px;
-    background-color: #f9f9f9;
-    padding-top: 5px;
-    position: absolute;
-    top: 100%;
-    left: -65px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
-}
-div.header_right .dropdown {
-   display:none;
-}
-div.header_right .dropdown .fa-solid {
-    color: #637288;
- }
-
-div.header_right .dropdown li {
-    list-style: none;
-    font-size: 14px;
-    font-weight: 500;
-    margin-left: 0px;
-    margin-top: 10px;
-}
-div.header_right .dropdown li a {
-    text-decoration: none;
-    font-size: 14px;
-    margin-left: 10px;
-    color: #637288;
-}
-
-div.header_right i:hover {                 /* 사람 아이콘 */
-    color: #62a3ff;
-}
-div.header_right i:hover .dropdown {
-    display: block;
-}
-div.header_right li>.dropdown_underline {
-    height: 19px;
-    border-bottom: 1px solid #637288;
-    margin-left: 18px;
-    width: 112px;
-}
-.underline {                                /* 밑줄 */
-    border: 0;
-    height: 5px;
-    background: rgb(236, 236, 236);
-}
-
-
-/* Banner ================================ */
-/* .banner {
-    background-color: rgb(10, 17, 48);
-    height: 600px;
-}
-.banner .banner_copy_img{
-    margin: 0 auto;
-    text-align: center;
-}
-.banner > .banner_copy_img > .banner_copy p{
-    height: 200px;
-    font-size: 50px;
-    color: white;
-    font-weight: 500;
-    display: inline;
-}
-.banner .banner_copy_img img {
-    width: 700px;
-    display: inline;
-} */
-
 .banner {
     background-color: rgb(177, 198, 234);
     height: 270px;
+    margin-top: 100px;
 }
 .banner .banner_search {
     width: 815px;
@@ -241,7 +105,7 @@ div.header_right li>.dropdown_underline {
     float: left;
     margin-right: 10px;
     margin-left: 18px;
-    height: 200px;
+    height: 550px;
     /* margin-bottom: 30px; */
 }
 .main .class_list img {
@@ -265,19 +129,19 @@ div.header_right li>.dropdown_underline {
     font-weight: 300;
     margin-bottom: 5px;
 }
-.main .class_list a:nth-of-type(2) {
+.main .class_list a:nth-of-type(2) {    /* 클래스 제목 */
     text-decoration: none;
     font-size: 27px;
     color: black;
     font-weight: 700;
 }
-.main .class_list a:nth-of-type(3) {
+.main .class_list a:nth-of-type(3) {    /* 트레이너 이름 */
     text-decoration: none;
     font-size: 20px;
     color: black;
     font-weight: 500;
 }
-.main .class_list h1:nth-of-type(2) {
+.main .class_list h1:nth-of-type(2) {   /* 가격 */
     margin-top: 5px;
     font-size: 13px;
 }
@@ -317,72 +181,4 @@ div.header_right li>.dropdown_underline {
     display: inline;
     line-height: 95px;
 }
-
-/* Footer ================================ */
-
-.footer {
-    clear: both;
-    height: 280px;
-    width: 100%;
-    background-color: white;
-    /* position: fixed;   */
-    bottom: 0;
-    left: 0;
-}
-.footer img {                                   /* footer로고 */
-    width: 120px;
-    margin-top: 25px;
-    margin-left: 80px;
-    display: inline;
-    float: left;
-}
-.footer .notice_service {                      /* 공지사항, 고객센터 */
-    float: right;
-    margin-top: 20px;
-    margin-right: 80px;
-}
-.footer .notice_service button {
-    border-radius: 5px;
-    font-weight: bold;
-    width: 160px;
-    height: 33px;
-    border: 2px solid #6C6C6C;
-    background-color: white;
-    cursor:pointer;                             /* 커서 올렸을 때 손모양으로 */
-}
-.footer ul.time {                               /* 운영시간 */
-    margin-top: 10px;
-    list-style: none;
-    font-size: 12px;
-    color: #6C6C6C;
-    margin-bottom: 25px;
-}
-.footer .underline2 {
-    clear: both;
-    border: 0;
-    height: 1.5px;
-    background: rgb(236, 236, 236);
-}
-.footer .terms {                                 /* 이용약관, 개인정보처리방침 */
-    height: 40px;                         
-    list-style: none;
-    margin-left: 80px;
-    margin-top: 20px;
-}
-.footer a {
-    float: left;
-    font-size: 15px;
-    padding-right: 30px;
-    text-decoration: none;
-    color: black;
-}
-.footer .address {
-    margin-top: 20px;
-    margin-left: 80px;
-    line-height: 18px;
-}
-.footer p {
-    font-size: 15px;
-}
-
 

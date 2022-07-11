@@ -1,0 +1,436 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SCoreDream';
+    box-sizing: border-box;
+}
+body{
+    background-color: #2370DF;
+}
+
+
+
+/* Banner ================================ */
+.banner {
+    /* 배너 전체영역 */
+    /* clear: both; */
+    height: 480px;
+    width: 100%;
+    background: rgb(4, 53, 80);
+    /* position: sticky; */
+    border: 1px solid rgb(4, 53, 80);
+
+    /* padding: 50px 200px 50px; */
+}
+.banner div.img_contents_all {
+    margin: 80px 200px 0 400px;
+    width: 100%;
+}
+.banner div.banner_img {
+    float: left;
+    overflow: hidden;
+    width: 700px;
+    border-radius: 10px;
+    display: inline;
+    height: 320px;
+}
+.banner div.review {
+    float: left;
+    display :block;
+}
+.group {
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: rgb(35, 112, 223);
+    color: white;
+    display: inline-block;
+    height: 23px;
+    width: 40px;
+    text-align: center;
+    vertical-align: top;
+    font-size: 12px;
+    padding-top: 2px;
+}
+
+.star {
+    list-style: none;
+    display: inline-block;
+
+    vertical-align: top;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.star i {
+    font-size: 16px;
+    color: yellow;
+}
+.banner .contents_all {
+    margin-left: 730px;
+    height: 240px;
+    padding-top: 20px;
+}
+.review {
+    display: inline;
+    /* vertical-align: top; */
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 12px;
+    color: white;
+}
+
+.banner .contents_all div.banner_contents {
+    margin-top: 0px;
+    margin-right: 400px;
+}
+.banner .contents_all div.banner_contents p{
+   font-size: 40px;
+   color: white;
+   font-weight: 600;
+   padding-top: 10px;
+   display :block;
+    width : 1000px
+
+}
+.banner .contents_all ul {
+    list-style: none;
+}
+.banner .contents_all ul li{
+    color: white;
+    font-size: 15px;
+    line-height: 30px;
+}
+/* .title h1 {
+    display: inline-block;
+    color: white;
+    vertical-align: top;
+} */
+
+/* BAR ================================ */
+
+.page-indicator {
+    position: sticky;
+    top: 7.5%;
+    /* transform:translateY(-50%); */
+    width: 100%;
+    border-top: 1px solid rgba(160, 160, 160, 0.5);
+    border-bottom: 1px solid rgb(160, 160, 160, 0.5);
+    padding: 10px;
+    height: 60px;
+    background-color: white;
+    z-index: 2;
+    /* transition:transform 0.3s; */
+}
+
+.text {
+    margin-left: 400px;
+}
+
+.page-indicator li {
+    float: left;
+    margin-top: 10px;
+    margin-right: 50px;
+    list-style: none;
+}
+
+.page-indicator li a {
+    text-decoration-line: none;
+    color: #2370DF;
+}
+
+
+/* Main ================================ */
+.pages {
+    margin-left: 400px;
+    margin-right: 400px;
+    background-color: #ffffff;
+    /* padding-top: 8px; */
+    display: inline-block;
+
+}
+/* 메인탭 전체 */
+.page {
+    /* clear: both; */
+    /* border-left: 10px solid red;
+    border-right: 10px solid red; */
+    box-sizing: border-box;
+    margin-top: 80px;
+    margin-right: 500px;  
+    border: 2px solid red;
+}
+
+.page h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 2%;
+    padding-top: 170px;
+
+}
+
+/* 1. 클래스 소개 */
+#page-1 p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.page-1 hr{
+    width: 300px;
+    border: 0;
+    background-color: #2370DF;
+    height: 10px;
+}
+
+/* 2. 트레이너 소개 */
+#page-2 {
+    /* height: 150vh; */
+}
+.page-2 hr{
+    width: 300px;
+    border: 0;
+    background-color: #2370DF;
+    height: 10px;
+}
+.tr_career li {
+    /* list-style: none; */
+
+    font-size: 18px;
+}
+.tr_int li {
+    /* list-style: none; */
+    margin-top: 40px;
+    font-size: 18px;
+}
+.tr_int p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* 3. 커리큘럼*/
+.page-3 {
+    /* height: 150vh; */
+}
+.page-3 hr{
+    width: 300px;
+    border: 0;
+    background-color: #2370DF;
+    height: 10px;
+}
+.cc{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(237,237,237);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.cc li{
+    margin-top: 5px;
+    font-size: 14px;
+    list-style: none;
+
+}
+.cc ul{
+    font-size: 12px;
+    vertical-align: center;
+}
+.order {
+    margin: 10px 10px 6px 10px;
+    background-color: rgb(35, 112, 223);
+    color: white;
+    display: inline-block;
+    height: 23px;
+    width: 80px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+/* 4. 헬스장 정보 */
+.page-4 hr{
+    width: 300px;
+    border: 0;
+    background-color: #2370DF;
+    height: 10px;
+}
+.give{
+    font-size: 18px;
+    list-style: none;
+    margin-left: 3px;
+}
+.zim li{
+    font-size: 14px;
+}
+.map{
+    margin-top: 40px;
+}
+
+
+/* 5. 클래스 사진 */
+.page-5 {
+    height: 180vh;
+}
+.page-5 hr{
+    width: 300px;
+    border: 0;
+    background-color: #2370DF;
+    height: 10px;
+}
+
+/* 6. 클래스 후기 */
+.page-6 {
+    height: 280vh;
+}
+.page-6 hr{
+    width: 300px;
+    border: 0;
+    background-color: #2370DF;
+    height: 10px;
+}
+/* 7. 환불규정 */
+.page-7 {
+    /* height: 280vh; */
+    margin-bottom: 180px;
+}
+.page-7 hr{
+    width: 300px;
+    border: 0;
+    background-color: #2370DF;
+    height: 10px;
+}
+.refund{
+    margin-top: 50px;
+    height: 380px;
+    width: 500px;
+    background-color: rgba(202, 204, 206, 0.262);
+    border-radius: 5%;
+    padding: 15px 20px;
+}
+.ref_t{
+    text-align: center;
+}
+
+.ref_t>li{
+    margin-top: 15px;
+    list-style: none;
+    font-size: 18px;
+}
+.t{
+    margin-top: px;
+    font-size: 16px;
+}
+/* SIDE ================================ */
+.buy{
+    clear: both;
+    float: right;
+    width: 400px;
+    height: 450px;
+    align-items:flex-start;
+    position: relative;
+    top: -10500px;
+    border-radius: 20px;
+    border: 2px solid #2370DF;
+    box-shadow: 5px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
+}
+.buy > li{
+    height: 50px;
+    list-style: none;
+    display: inline-block;
+    background-color: #2370DF;
+    width: 396px;
+    border-radius: 18px 18px 0px 0px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 9px;
+}
+.buy ul {
+    list-style: none;
+    margin: 30px;
+}
+
+/* Footer ================================ */
+
+.footer {
+    height: 280px;
+    width: 100%;
+    background-color: white;
+    /* position: fixed;   */
+    bottom: 0;
+    left: 0;
+}
+
+.footer img {
+    /* footer로고 */
+    width: 120px;
+    margin-top: 25px;
+    margin-left: 80px;
+    display: inline;
+    float: left;
+}
+
+.footer .notice_service {
+    /* 공지사항, 고객센터 */
+    float: right;
+    margin-top: 20px;
+    margin-right: 80px;
+}
+
+.footer .notice_service button {
+    border-radius: 5px;
+    font-weight: bold;
+    width: 160px;
+    height: 33px;
+    border: 2px solid #6C6C6C;
+    background-color: white;
+    cursor: pointer;
+    /* 커서 올렸을 때 손모양으로 */
+}
+
+.footer ul.time {
+    /* 운영시간 */
+    margin-top: 10px;
+    list-style: none;
+    font-size: 12px;
+    color: #6C6C6C;
+    margin-bottom: 25px;
+}
+
+.footer .underline2 {
+    clear: both;
+    border: 0;
+    height: 1.5px;
+    background: rgb(236, 236, 236);
+}
+
+.footer .terms {
+    /* 이용약관, 개인정보처리방침 */
+    height: 40px;
+    list-style: none;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.footer a {
+    float: left;
+    font-size: 15px;
+    padding-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.footer .address {
+    margin-top: 20px;
+    margin-left: 80px;
+    line-height: 18px;
+}
+
+.footer p {
+    font-size: 15px;
+}
