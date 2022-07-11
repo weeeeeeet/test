@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+/* WEB FONTS 적용 ----------------- */
+@import url(https://webfontworld.github.io/SCoreDream/SCoreDream.css);
+
+/* 기본적 css 리셋 */
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +11,22 @@
     box-sizing: border-box;
 }
 
+/* 가이드라인 */
+/* .g{
+    border: 1px solid rgb(192, 2, 255);
+} */
 
-/* Header ================================ */
+/* Header ================================================== */
 .header {
     padding: 20px 80px 20px 80px;
     height: 100px;
     background-color: white;
-    position: sticky;            /* 헤더 고정 */
+    /* position: sticky; */
+    /* 헤더 고정 */
     top: 0px;
+
+    /* border: 1px solid #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
 .header nav.nav_left a {
@@ -73,15 +85,13 @@
     background: rgb(236, 236, 236);
 }
 
-
-
-/* Footer ================================ */
+/* Footer ==================================================*/
 
 .footer {
     height: 280px;
     width: 100%;
     background-color: white;
-    position: fixed;
+    /* position: fixed;   */
     bottom: 0;
     left: 0;
 }
