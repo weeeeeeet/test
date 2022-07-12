@@ -1,0 +1,340 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SCoreDream';
+    box-sizing: border-box;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header ================================ */
+.header {
+    padding: 20px 80px 20px 80px;
+    height: 100px;
+    background-color: white;
+    position: static;                       /* 헤더 고정 */
+    top: 0px;
+}
+.header nav.nav_left a{                     /* 로고 */
+    padding-left: 0px;
+    float: left;
+    display: inline;
+    margin-bottom: 20px;
+    margin-right: 8px;
+}
+.header .categories a {                     /* 커뮤니티,클래스 */
+    margin-top: 20px;
+    display: inline;           
+    padding-right: 35px;
+    font-size: 15px;
+    color: #2370DF;
+    font-weight: 500;
+    text-decoration: none;
+}
+.header div.header_right {                  /* 헤더 우측 */
+    float: right;
+    margin-top: 15px;
+}
+.header div.header_right input {            /* 검색창 */
+    width: 260px;
+    border: 2.5px solid #2370DF;
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+.header .header_right a:nth-of-type(1) {    /* 검색버튼 */
+    margin-right: 30px;
+}
+.header div.header_right a{                 /* 마이페이지, 알림 */
+    color: #2370DF;
+    margin-left: 18px;
+    font-size: 20px;
+    padding-top: 5px;
+    text-decoration: none;
+}
+.underline {                                /* 밑줄 */
+    border: 0;
+    height: 5px;
+    background: rgb(236, 236, 236);
+}
+
+/* content ================================ */
+
+/* 컨텐츠 영역에 양쪽 200px씩 여백주기 */
+.content{
+    margin: 20px 200px 0px;
+}
+
+/* 컨텐츠 영역의 왼쪽 가로 길이 잡아주기 */
+.content .content_left {
+    width: 259px;
+
+    margin: 20px 0px;
+    /* border: 1px solid red; */
+
+    float: left;
+}
+
+/* 컨텐츠 영역의 왼쪽상단의 프로필 전제 높이 잡아주기 */
+.content .content_left .profile {
+    height: 90px;
+
+    /* border: 1px solid palegreen; */
+}
+
+/* 컨텐츠 영역의 왼쪽상단의 프로필의 사진 전제 크기 잡아주기 */
+.content .content_left .profile_photo{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+
+    float: left;
+
+    background-color: gainsboro;
+}
+
+/* 컨텐츠 영역의 왼쪽상단의 프로필의 닉네임 위치 및 크기 잡아주기 */
+.content .content_left .profile_id{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 9px 0px 20px;
+
+    float: left;
+}
+
+/* 컨텐츠 영역의 왼쪽상단의 프로필의 소설 로그인 종류*/
+.content .content_left .profile_social{
+    width: 18px;
+    height: 18px;
+
+    margin-top: 13px;
+}
+
+/* 컨텐츠 영역의 왼쪽상단의 프로필의 소설 로그인 아이디 위치 및 크기 잡아주기 */
+.content .content_left .profile_email{
+    padding-left: 20px;
+    font-size: 12px;
+    color: #595959;
+}
+
+/* 컨켄츠 영역의 왼쪽 목록 */
+.content .mypage_list{
+    clear: both;
+}
+
+/* 컨텐츠 영역의 왼쪽 목록에 프로필과의 사이 공백 주기 */
+.content .content_left .mypage_list ul li{
+    margin-top: 18px;
+}
+
+/* 컨텐츠 영역의 왼쪽 목록의 li태그들의 css속성 지정 */
+.content .content_left .mypage_list ul a {
+    font-weight: 450;
+    font-size: 14px;
+    color: #000000;
+}
+
+/* 현재 페이지는 클래스 이름으로 on을 주어 색을 변하게 한다. */
+.content .content_left .mypage_list ul a.on {
+    color: #2370DF;
+}
+
+/* 컨텐츠 영역의 왼쪽 목록의 마지막 li인 경우 밑에도 여백을 주어 밑의 목록과 구분해줘야 한다. */
+.content .content_left .mypage_list ul :last-of-type{
+    margin-bottom: 18px;
+}
+
+/* 목록1 위에 보더로 선 생성 */
+.content .content_left .mypage_list .mypage_list_top{
+    border-top: 1px solid black;
+}
+
+/* 목록2 위에 보더로 선 생성 */
+.content .content_left .mypage_list .mypage_list_bottom{
+    border-top: 1px solid black;
+}
+
+/* 컨텐츠 영역의 오른쪽 부분 정리 */
+.content .content_right {
+    margin: 20px 20px 0px 0px;
+    padding-left: 50px;
+    /* border: 1px solid blue; */
+
+    float: right;
+}
+
+/* 컨텐츠 영역의 오른쪽 영역의 위 목록을 감싸는 div css속성 지정 */
+.content .content_right .mypage_top{
+    width: 900px;
+    height: 50px;
+
+    margin-right: 200px;
+    margin-bottom: 50px;
+
+    border: 1px solid #595959;
+    border-radius: 8px;
+}
+
+/* 컨텐츠 영역 - 오른쪽 영역 - TR게시판 / 좋아요 / 댓글 목록 ul */
+.content .content_right .mypage_toplist{
+    margin-top: 15px;
+}
+
+/* 컨텐츠 영역 - 오른쪽 영역 - TR게시판 / 좋아요 / 댓글 목록 ul - li */
+.content .content_right .mypage_toplist li {
+    margin-left: 70px;
+    float: left;
+}
+
+/* 컨텐츠 영역 - 오른쪽 영역 - TR게시판 / 좋아요 / 댓글 목록 ul - li - a */
+.content .content_right .mypage_toplist a {
+    font-weight: 450;
+    font-size: 14px;
+    color: #6A6A6A;
+}
+
+/* 현재 탭의 경우에는 밑줄이 그어지고, 글씨가 두껍게 바뀐다. */
+.content .content_right .mypage_toplist a.on {
+    font-weight: bold;
+    color: black;
+    padding-bottom: 10px;
+
+    border-bottom: 2px solid black;
+}
+
+/* 수신동의  ================================ */
+
+/* 수신동의 전체적인 틀 잡기 */
+.content_right_agree{
+    margin-left: 20px;
+}
+
+/* 수신동의 타이틀 */
+.content_right_agree .receive_agree{
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+/* 위티관련 수신동의 */
+.content_right_agree .receive_agree_WEET > p{
+    font-size: 14px;
+    font-weight: bold;
+
+    display: inline-block;
+}
+
+/* 위티관련 수신동의 - 체크박스 */
+.content_right_agree .receive_agree_WEET_check:first-of-type{
+    margin-left: 447px;
+}
+
+/* 이벤트 관련 수신동의 */
+.content_right_agree .receive_agree_EVENT >p{
+    font-size: 14px;
+    font-weight: bold;
+
+    display: inline-block;
+}
+
+/* 이벤트 관련 수신동의 - 체크박스 */
+.content_right_agree .receive_agree_EVENT_check:first-of-type{
+    margin-left: 300px;
+}
+
+/* 수신동의 저장 */
+.content_right_agree_save{
+    background-color: #2370DF;
+    border: none;
+    border-radius: 8px;
+
+    color: white;
+    font-size: 14px;
+
+    width: 50px;
+    height: 31px;
+
+    margin-top: 10px;
+    margin-left: 640px;
+}
+
+/* 푸터와의 공간 분리 */
+.ttt{
+    width: 100%;
+    height: 1000px;
+}
+
+/* Footer ================================ */
+
+.footer {
+    height: 280px;
+    width: 100%;
+    background-color: white;
+    position: static;  
+    bottom: 0;
+    left: 0;
+}
+.footer img {                                   /* footer로고 */
+    width: 120px;
+    margin-top: 25px;
+    margin-left: 80px;
+    display: inline;
+    float: left;
+}
+.footer .notice_service {                      /* 공지사항, 고객센터 */
+    float: right;
+    margin-top: 20px;
+    margin-right: 80px;
+}
+.footer .notice_service button {
+    border-radius: 5px;
+    font-weight: bold;
+    width: 160px;
+    height: 33px;
+    border: 2px solid #6C6C6C;
+    background-color: white;
+    cursor:pointer;                             /* 커서 올렸을 때 손모양으로 */
+}
+.footer ul.time {                               /* 운영시간 */
+    margin-top: 10px;
+    list-style: none;
+    font-size: 12px;
+    color: #6C6C6C;
+    margin-bottom: 25px;
+}
+.footer .underline2 {
+    clear: both;
+    border: 0;
+    height: 1.5px;
+    background: rgb(236, 236, 236);
+}
+.footer .terms {                                 /* 이용약관, 개인정보처리방침 */
+    height: 40px;                         
+    list-style: none;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.footer a {
+    float: left;
+    font-size: 15px;
+    padding-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+.footer .address {
+    margin-top: 20px;
+    margin-left: 80px;
+    line-height: 18px;
+}
+.footer p {
+    font-size: 15px;
+}
