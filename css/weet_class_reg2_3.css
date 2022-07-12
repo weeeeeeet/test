@@ -11,12 +11,13 @@
 /* CONTENTS ================================ */
 
 .contents{
-    margin: 0 200px;
+    width: 1040px;
+    margin: 0 auto;
     /* border: 10px solid red; */
     padding-top: 35px;
     margin-top: 100px;
 }
-.contents > h3{
+.contents h3{
     font-size: 30px;
     font-weight: bold;
     margin-top: 15px;
@@ -28,10 +29,10 @@
     min-width : 2500px;
 }
 .txt div {
-    display: inline-block;
+    display: inline;
+    width: 100%;
     margin-top: 15px;
     margin-left: 10px;
-    margin-right: 60px;
 }
 .c1 li:nth-of-type(5){
     color: #2370DF;
@@ -44,7 +45,7 @@
     list-style: none;
     display: inline-block;
     margin-bottom: 5px;
-    margin-right: 120px;
+    margin-right: 37px;
 }
 /* .txt.c2{
     display: inline-block;
@@ -65,17 +66,17 @@
 }
 .class_submit {
     margin-top: 15px;
-    margin-left: 5px;
     font-size: 18px;
     font-weight: bold;
+    min-width: 1200px;
 }
 .mark {
     display: inline-block;
     width: 18px;
     height: 18px;
-    margin-left: 10px;
+    margin-left: 15px;
     position: absolute;
-    margin-top: 4px;
+    margin-top: 5px;
     border-radius: 50%;
     background-color: rgb(147, 147, 147);
 }
@@ -87,7 +88,7 @@
     text-decoration: none;
     left: 30%;
 }
-.con > button {
+.con > button.schedule_select {
     margin-top: 20px;
     border: none;
     background-color: #2370DF;
@@ -104,7 +105,8 @@ span {
     font-size: 5px;
     color: #ff9100;
     margin-left: 3px;
-    margin-bottom: 25px;  
+    margin-top: 2px;
+    position: absolute;
 }
 .sort {
     width: 50px;
@@ -162,6 +164,7 @@ span {
 #term_num {
     min-width: 2000px;
     height: 100px;
+    margin-top: 25px;
 }
 .member_term .term {
     margin-top: 10px;
@@ -169,6 +172,8 @@ span {
 
 .term > .datepicker > span {
     color: black;
+    position: relative;
+    margin-top: 12px;
 }
 .term > .datepicker > input {
     border: 2px solid #2370DF;
@@ -195,9 +200,120 @@ span {
 }
 .member_num {
     position: absolute;
-        margin-top: 17px;
-        margin-left: 50px;
-        font-size: 18px;
-        font-weight: bold;
-        display: inline;
+    margin-top: 17px;
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline;
 }
+#tag_tuition {
+    min-width: 2000px;
+    height: 100px;
+    margin-top: 20px;
+}
+.tag {
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline;  
+}
+.tag .tag_input {
+    margin-top: 10px;
+}
+.tag .tag_input > input {
+    padding-left: 10px;
+    width: 378px;
+    height: 40px;
+    border: 2px solid #2370DF;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.tuition {
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 426px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline;  
+}
+.class_tuition > input {
+    margin-top: 10px;
+    padding-left: 10px;
+    width: 390px;
+    height: 40px;
+    border: 2px solid #2370DF;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 180px;
+}
+.class_img {
+    margin-top: 33px;
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 1200px;
+    left: 100px;
+
+}
+.class_img > button:nth-of-type(1) {
+    margin-top: 40px;
+    border: none;
+    background-color: #2370DF;
+    color: white;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    display: inline;
+    float: left;
+    position: absolute;
+    left: 200px;
+    box-shadow: 0px 3px 6px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.class_img > button:nth-of-type(2) {
+    margin-top: 40px;
+    border: none;
+    background-color: rgb(147, 147, 147);
+    color: white;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    display: inline;
+    float: left;
+    position: absolute;
+    left: 310px;
+    box-shadow: 0px 3px 6px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.page_button{
+    margin-top: 180px;
+    display: block;
+    text-align: center;
+    margin-bottom: 180px;
+}
+.back{
+    /* float: left; */
+    /* margin-left: 500px; */
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #919191;
+    font-style:9px;
+    color: white;;
+    border: none;
+}
+.next{
+    /* float: left; */
+    /* margin-left: 20px; */
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #2370DF;
+    font-style:9px;
+    color: white;;
+    border: none;
+}
+

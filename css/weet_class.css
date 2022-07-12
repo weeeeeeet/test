@@ -52,7 +52,7 @@
     margin-bottom: 50px;
 }
 .sort #sort {
-    width: 190px;
+    width: 150px;
     height: 40px;
     border: 2px solid #2370DF;
     border-radius: 10px;
@@ -60,7 +60,7 @@
     margin-right: 25px;
 }
 .sort #type {
-    width: 190px;
+    width: 150px;
     height: 40px;
     border: 2px solid #2370DF;
     border-radius: 10px;
@@ -68,7 +68,7 @@
     margin-right: 25px;
 }
 .sort #time {
-    width: 190px;
+    width: 150px;
     height: 40px;
     border: 2px solid #2370DF;
     border-radius: 10px;
@@ -76,11 +76,18 @@
 }
 
 
+
+
 /* ==================== CLASS LIST ============== */
+
+.contents {
+    width: 1040px;
+    margin: 0 auto;
+}
 
 .main {
     clear: both;
-    width: 1900px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 50px;
     /* margin-left: 200px;
@@ -105,11 +112,11 @@
     float: left;
     margin-right: 10px;
     margin-left: 18px;
-    height: 550px;
+    height: 400px;
     /* margin-bottom: 30px; */
 }
 .main .class_list img {
-    width: 600px;
+    width: 310px;
     margin-bottom: 10px;
 }
 .main .class_list a {
@@ -117,12 +124,10 @@
 }
 .main .class_list .like i{
     position: absolute;
-    left: 8px;
-    top: -52px;
-    margin-left: 530px;
-    margin-bottom: 20px; 
+    left: 275px;
+    top: -30px;
     color: red;
-    font-size: 42px;
+    font-size: 25px;
 }
 .main .class_list h1:nth-of-type(1) {
     font-size: 13px;

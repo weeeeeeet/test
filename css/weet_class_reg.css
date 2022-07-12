@@ -16,6 +16,7 @@ body{
 .banner {
     /* 배너 전체영역 */
     /* clear: both; */
+    margin-top: 100px;
     height: 480px;
     width: 100%;
     background: rgb(4, 53, 80);

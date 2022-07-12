@@ -16,7 +16,7 @@
     width: 100%;
     background-color: white;
     position: sticky; 
-    bottom: 0;
+    bottom: 0px;
     left: 0;
 }
 .footer img {                                   /* footer로고 */
