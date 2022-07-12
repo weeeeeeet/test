@@ -17,7 +17,7 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/weet_comm.css">
+    <link rel="stylesheet" href="css/weet_tr_nb.css">
     <link href="css/weet_header&footer.css" rel="stylesheet" />
     <script src="loadHTML.js"></script>
 </head>
@@ -26,9 +26,6 @@
     <!-- ==================HEADER==================== -->
 
     <div include-html="weet_header.html"></div>
-
-
-
 
 
     <!-- ==================COMM==================== -->
@@ -43,7 +40,21 @@
     </div>
 
     <section class="contents">
-        <span class="commhome_type">인기 게시판</span>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>정렬</option>
+            <option value="1">최신순</option>
+            <option value="2">댓글순</option>
+            <option value="3">좋아요순</option>
+
+        </select>
+
+        <div class="search_main">
+            <input type="text" name="search" placeholder="" autocomplete="off">
+            <a href="#" class="fa-solid fa-magnifying-glass" target="_self"></a>
+        </div>
+
+
+        <span class="commhome_type">인기 게시물</span>
         <div class="commhome_box">
             <div class="commhome_box_list">
 
@@ -98,7 +109,7 @@
         </div>
 
         <br><br>
-        <span class="commhome_type">TR 게시판 <a href="#" class="commhome_plus2">+ 더보기</a></span>
+        <span class="commhome_type2">전체 게시물</span>
         <div class="commhome_box2">
             <div class="commhome_box_list">
 
@@ -106,14 +117,14 @@
                     <b class="commhome_font_size">
                         <p class="commhome_text_type">좋아요 TOP TR 게시판</p>
                         <p>PT에 대해서 알고 싶습니다!</p>
-                        <p>PT를 시작하고 싶은 헬린이입니다. PT를 시작하고는 싶지만, 여러가지 고민이 있어 질문을 드리게 되었습니다. PT를 처음 시작할때, 1 : 1 PT가 좋을까요 아니면
+                        <p>PT를 시작하고 싶은 헬린이입니다. PT를 시작하고는 싶지만, 여러가지 고민이 있어 질문을 드리게 되었습니다. PT를 처음 시작할때, 1 : 1 PT가 좋을까요
+                            아니면
                             그룹
                             PT가 좋을까요? 그리고..</p>
-                        <p><i class="commhome_comment fas fa-comment-dots"></i>12 <i
-                                class="commhome_heart fas fa-heart"></i>532</p>
-                        <hr>
-                        <p>박코치 <i class="commhome_t fas fa-t"></i> <span class="commhome_lv"> LV.2</span></p>
-                        <span>안녕하세요, 00님. PT가 처음이시라면, 아마 개인PT가 그룹PT보다 더 자세한 코칭을 받을 수 있어...</span>
+                        <p><i class="commhome_comment fas fa-comment-dots"></i> 0 <i
+                                class="commhome_heart fas fa-heart"></i> 0</p>
+                        <hr class="tr_nb_noanswer_line">
+                        <span class="tr_nb_noanswer">답변이 아직 없습니다.</span>
                         <br><a href="#" class="commhome_plus">+ 더보기</a>
                     </b>
                 </div>
@@ -122,14 +133,15 @@
                     <b class="commhome_font_size">
                         <p class="commhome_text_type">좋아요 TOP TR 게시판</p>
                         <p>PT에 대해서 알고 싶습니다!</p>
-                        <p>PT를 시작하고 싶은 헬린이입니다. PT를 시작하고는 싶지만, 여러가지 고민이 있어 질문을 드리게 되었습니다. PT를 처음 시작할때, 1 : 1 PT가 좋을까요 아니면
+                        <p>PT를 시작하고 싶은 헬린이입니다. PT를 시작하고는 싶지만, 여러가지 고민이 있어 질문을 드리게 되었습니다. PT를 처음 시작할때, 1 : 1 PT가 좋을까요
+                            아니면
                             그룹
                             PT가 좋을까요? 그리고..</p>
                         <p><i class="commhome_comment fas fa-comment-dots"></i>12 <i
                                 class="commhome_heart fas fa-heart"></i>532</p>
                         <hr>
                         <p>박코치 <i class="commhome_t fas fa-t"></i> <span class="commhome_lv"> LV.2</span></p>
-                        <span>안녕하세요, 00님. PT가 처음이시라면, 아마 개인PT가 그룹PT보다 더 자세한 코칭을 받을 수 있어...</span>
+                        <span>안녕하세요, OO님.  현재 PT 횟수에 대해서 고민하고 있나 보군요. 보통 PT는 주 2회나 주 3회를 진행하시는 분이 많기에 주 2회로 진행하셔도 괜찮습니다.  하지만, 현재 OO님께서는 PT가 ....</span>
                         <br><a href="#" class="commhome_plus">+ 더보기</a>
                     </b>
                 </div>
@@ -138,56 +150,8 @@
                     <b class="commhome_font_size">
                         <p class="commhome_text_type">좋아요 TOP TR 게시판</p>
                         <p>PT에 대해서 알고 싶습니다!</p>
-                        <p>PT를 시작하고 싶은 헬린이입니다. PT를 시작하고는 싶지만, 여러가지 고민이 있어 질문을 드리게 되었습니다. PT를 처음 시작할때, 1 : 1 PT가 좋을까요 아니면
-                            그룹
-                            PT가 좋을까요? 그리고..</p>
-                        <p><i class="commhome_comment fas fa-comment-dots"></i>12 <i
-                                class="commhome_heart fas fa-heart"></i>532</p>
-                        <hr>
-                        <p>박코치 <i class="commhome_t fas fa-t"></i> <span class="commhome_lv"> LV.2</span></p>
-                        <span>안녕하세요, 00님. PT가 처음이시라면, 아마 개인PT가 그룹PT보다 더 자세한 코칭을 받을 수 있어...</span>
-                        <br><a href="#" class="commhome_plus">+ 더보기</a>
-                    </b>
-                </div>
-
-                <p>
-                <div class="commhome_box_tr_list2">
-                    <b class="commhome_font_size">
-                        <p class="commhome_text_type">좋아요 TOP TR 게시판</p>
-                        <p>PT에 대해서 알고 싶습니다!</p>
-                        <p>PT를 시작하고 싶은 헬린이입니다. PT를 시작하고는 싶지만, 여러가지 고민이 있어 질문을 드리게 되었습니다. PT를 처음 시작할때, 1 : 1 PT가 좋을까요 아니면
-                            그룹
-                            PT가 좋을까요? 그리고..</p>
-                        <p><i class="commhome_comment fas fa-comment-dots"></i>12 <i
-                                class="commhome_heart fas fa-heart"></i>532</p>
-                        <hr>
-                        <p>박코치 <i class="commhome_t fas fa-t"></i> <span class="commhome_lv"> LV.2</span></p>
-                        <span>안녕하세요, 00님. PT가 처음이시라면, 아마 개인PT가 그룹PT보다 더 자세한 코칭을 받을 수 있어...</span>
-                        <br><a href="#" class="commhome_plus">+ 더보기</a>
-                    </b>
-                </div>
-
-                <div class="commhome_box_tr_list2">
-                    <b class="commhome_font_size">
-                        <p class="commhome_text_type">좋아요 TOP TR 게시판</p>
-                        <p>PT에 대해서 알고 싶습니다!</p>
-                        <p>PT를 시작하고 싶은 헬린이입니다. PT를 시작하고는 싶지만, 여러가지 고민이 있어 질문을 드리게 되었습니다. PT를 처음 시작할때, 1 : 1 PT가 좋을까요 아니면
-                            그룹
-                            PT가 좋을까요? 그리고..</p>
-                        <p><i class="commhome_comment fas fa-comment-dots"></i>12 <i
-                                class="commhome_heart fas fa-heart"></i>532</p>
-                        <hr>
-                        <p>박코치 <i class="commhome_t fas fa-t"></i> <span class="commhome_lv"> LV.2</span></p>
-                        <span>안녕하세요, 00님. PT가 처음이시라면, 아마 개인PT가 그룹PT보다 더 자세한 코칭을 받을 수 있어...</span>
-                        <br><a href="#" class="commhome_plus">+ 더보기</a>
-                    </b>
-                </div>
-
-                <div class="commhome_box_tr_list2">
-                    <b class="commhome_font_size">
-                        <p class="commhome_text_type">좋아요 TOP TR 게시판</p>
-                        <p>PT에 대해서 알고 싶습니다!</p>
-                        <p>PT를 시작하고 싶은 헬린이입니다. PT를 시작하고는 싶지만, 여러가지 고민이 있어 질문을 드리게 되었습니다. PT를 처음 시작할때, 1 : 1 PT가 좋을까요 아니면
+                        <p>PT를 시작하고 싶은 헬린이입니다. PT를 시작하고는 싶지만, 여러가지 고민이 있어 질문을 드리게 되었습니다. PT를 처음 시작할때, 1 : 1 PT가 좋을까요
+                            아니면
                             그룹
                             PT가 좋을까요? 그리고..</p>
                         <p><i class="commhome_comment fas fa-comment-dots"></i>12 <i
@@ -202,12 +166,6 @@
         </div>
         <a href="#" class="chat"><i class="fas fa-comment-dots fa-flip-horizontal fa-3x"></i><br></a>
     </section>
-
-
-
-
-
-
 
 
 

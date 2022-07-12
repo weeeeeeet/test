@@ -73,10 +73,57 @@ body {
 }
 
 /* ------------------------------------------------ */
+
+/* =====검색===== */
+
+.form-select {
+    width: 150px;
+    height: 40px;
+    margin-top: 50px;
+    margin-bottom: -50px;
+    border: 2px solid #2370DF;
+    text-align: center;
+}
+
+.search_main {
+    width: 415px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.search_main input {
+    margin-left: 50px;
+    padding-left: 190px;
+    float: left;
+    width: 300px;
+    height: 40px;
+    font-size: 14px;
+    border: 2px solid #2370DF;
+    border-radius: 10px;
+    margin: -38px 0px 0px 400px;
+    /* box-shadow: 0px 5px 10px 0.5px rgba(0, 0, 0, 0.2); */
+}
+
+.search_main a {
+    display: inline-block;
+    /* padding-top: 1px; */
+    margin: -33px -310px;
+    text-decoration: none;
+    color: #2370DF;
+    font-size: 25px;
+    position: absolute;
+    right: 11%
+}
+
+/* ------------------------------------------------ */
+
+
 /* =====인기 게시판===== */
 .commhome_type {
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 20px;
     font-weight: bold;
     font-size: 18px;
@@ -92,7 +139,7 @@ body {
 
 .commhome_box_list {
     height: 500px;
-    margin-bottom: 100px;
+    margin-bottom: 250px;
     margin-left: 10px;
 }
 
@@ -141,45 +188,57 @@ body {
     text-decoration: none;
     float: right;
 }
+
 .commhome_plus:hover {
     color: #18A0FB;
 }
 
-/* =====TR 게시판===== */
+
+
+/* =====전체게시물===== */
+
+.commhome_type2 {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .commhome_box_tr_list {
-    width: 330px;
+    width: 1040px;
     height: 330px;
-    padding: 8px;
+    padding: 30px;
     margin-top: 25px;
-    margin: 0px 6.5px 0px 6.5px;
+    margin: 0px 6.5px 30px -10px;
     border-radius: 10px;
     border: 2px solid #E5E5E5;
     background-color: white;
     float: left;
     font-size: 14px;
 }
-.commhome_box_tr_list2 {
-    width: 330px;
-    height: 330px;
-    padding: 8px;
-    margin-top: 25px;
-    margin: 100px 6.5px 0px 6.5px;
-    border-radius: 10px;
-    border: 2px solid #E5E5E5;
-    background-color: white;
-    float: left;
-    font-size: 14px;
+
+.tr_nb_noanswer_line {
+    margin-bottom: 60px;
 }
+
+.tr_nb_noanswer {
+    display: block;
+    border-top: 30px;
+    color: #757575;
+    text-align: center;
+}
+
 .commhome_plus2 {
     margin-left: 880px;
     color: #8C8C8C;
     text-decoration: none;
 }
+
 .commhome_plus2:hover {
     color: #18A0FB;
 }
 
-
+/* =====채팅 버튼===== */
 .chat {
     position: fixed;
     bottom: 300px;
