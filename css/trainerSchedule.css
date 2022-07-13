@@ -39,7 +39,7 @@ section div.dash {
 section div.dash h1{ /*회원 대시보드 타이틀*/
     font-size: 25px;
     font-weight: bold;
-    color: #95B4E0;
+    color: #e6be96;
     padding: 10px;
 }
 
@@ -49,41 +49,21 @@ section div.today-food {
     border-radius: 18px;
     height: 800px;  /* 오늘의 식단 대시보드 크기 (높이) */
 }
-section div.today-food h2{ /*오늘의 식단 올리기 타이틀*/
+section div.today-food h2{ /*스케쥴 확인 타이틀*/
     font-size: 20px;
     font-weight: bold;
-    color: #2370DF;
-    border-bottom: solid #e7e7e7;
+    color: #FF730E;
+    /* border-bottom: solid #e7e7e7; */
 
     padding-left: 45px;
     padding-top: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     margin: 10px;   
 }
-/* 사진&텍스트 박스-------------------------------------------- */
-section div.picAndText { /* 사진 첨부파일 & 텍스트 틀 박스 */
-    display: inline-flex;
-    width: 1050px;
-    margin: 30px;
-}
-section div.picAndText form {
-    clear: both;
-    display: inline;
-}
-section div.image-container { /* 사진 첨부파일 박스 */
+section div.today-food p{ /*스케쥴 확인 문구*/
+    padding-left: 45px;;
+    padding-bottom: 15px;
 
+    border-bottom: solid #e7e7e7;
 }
-section div.image-container img { /* 파일선택 버튼 & 프리뷰 박스*/
-    border-radius: 18px;
-    border: solid #e3e3e3;  /* 프리뷰 박스 테두리*/
-}
-section div.image-container.image-select-btn{ /* 파일선택 버튼*/
-
-}
-section div.text-container { /* 텍스트 입력 박스 */
-    float: right;
-    width: 500px;
-    
-}
-
 
