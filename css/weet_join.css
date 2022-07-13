@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'SCoreDream';
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul>li{
+    list-style: none;
+}
+
+input{
+    border: 2px solid #2370DF;
+}
+
+
+/*======= join-contain========== */
+
+.join-contain {
+    min-width: 420px;
+    margin-top: 50px;
+    /* border: 2px solid green; */
+}
+.join-contain h2{                    /* 회원가입문구 */
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.join-contain h3{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+} 
+.join-box {                    /* 회원가입 form*/  
+    margin: 0 outo;
+    padding-bottom: 50px;
+    width: 370px;
+    /* border: 2px solid green; */
+}
+.form-label{                        /* 입력창 문구 */
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: 12px;
+    /* border: 2px solid green; */
+}
+.boxing{
+    /* border: 2px solid green; */
+    display: flex;
+}
+.join-box > div{
+    margin-bottom: 5px;
+}
+
+.boxing input{                   /* 입력창 */
+    font-size: 8px;
+    width: 370px;
+    height: 32px;
+    /* border: 2px solid green; */
+}
+
+.boxing button{                   /* 입력창 버튼 */
+    width: 20%;
+    color: white;
+    background-color: #2370DF;
+    border: none;
+    border-radius: 3px;
+    font-size:12px;
+}
+
+.partition {                                /* 밑줄 */
+    border: 1px solid rgb(236, 236, 236);
+    background-color: rgb(236, 236, 236);;
+    width: 60%;
+}
+
+.info-box{
+    text-align: center;
+    max-width: 420px;
+}
+
+.box1{                               /* 프로필,이름,성별 */
+    width: 370px;
+    display: flex;
+}
+
+.info .ng{
+    width: 270px;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.info .ng ul{
+    padding-left: 14px;
+}
+
+.info .name input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.info .intro input{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.form-control-sm{
+    width: 100%;
+}
+
+p {
+    font-size: 12px;
+}
+
+
+.accordion-item,.accordion-button{ 
+    font-size: 12px;
+}
