@@ -15,7 +15,7 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 
-    <link href="css/Mypage_TR_MyInfo_update.css" rel="stylesheet" />
+    <link href="css/Mypage_TR_MyInfo_Myclass_checkmyclass.css" rel="stylesheet" />
     <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
 
@@ -77,7 +77,7 @@
 
                 <ul class="mypage_list_top">
                     <li><a href="#">내 활동</a></li>
-                    <li><a href="#">내 클래스룸</a></li>
+                    <li><a href="#" class="on">내 클래스룸</a></li>
                     <li><a href="#">MY BODY</a></li>
                 </ul>
 
@@ -96,71 +96,60 @@
             <div class="mypage_top">
 
                 <ul class="mypage_toplist">
-                    <li><a href="#" class="on">프로필</a></li>
-                    <li><a href="#">알림살정</a></li>
-                    <li><a href="#">회원탈퇴</a></li>
+                    <li><a href="#">내 클래스룸</a></li>
+                    <li><a href="#">완료 클래스</a></li>
+                    <li><a href="#" class="on">클래스 검수</a></li>
                 </ul>
 
             </div>
 
-            <div class="content_right_MyProfile">
+            <div class="content_right_Myclass">
 
-                <div class="content_right_MyProfile_TOP">
-
-                    <div class="content_right_MyProfile_profile">
-
-                        <div class="content_right_MyProfile_photo"></div>
-        
-                        <div class="content_right_MyProfile_id">구창식2</div>
-
-                        <div class="content_right_MyProfile_social">T</div>
-
-                        <div class="content_right_MyProfile_Level">LV.3</div>
-        
-                        <a href="#" class="content_right_MyProfile_email">helloword@naver.com </a>
-        
-                    </div>
-
+                <div class="Myclass_checkclass_comment">
+                    <div>● 클래스 등록을 요청하시면 하시면 검수를 통해서 승인 완료됩니다.</div>
                 </div>
 
-                <div class="content_right_MyProfile_content">
+                <table class="table_checkclass_table table table-striped table-hover">
 
-                    <div class="MyProfile_content_name">닉네임
-                        <input type="text" name="name" class="MyProfile_content_name_value" placeholder="구창식2">
-                        <div class="MyProfile_content_name_check_btn"><a href="#">중복확인</a></div>
-                    </div>
+                    <thead>
+                        <tr>
+                            <th>클래스명</th>
+                            <th>유형</th>
+                            <th>금액</th>
+                            <th>등록일</th>
+                            <th>모집기간</th>
+                            <th>모집인원</th>
+                            <th>승인</th>
+                        </tr>
+                    </thead>
 
-                    <div class="MyProfile_content_gender">성별
-                        <div class="MyProfile_content_gender_value">여</div>
-                    </div>
+                    <tbody>
 
-                    <div class="MyProfile_content_phone">연락처 정보
-                        <input type="text" name="phone" class="MyProfile_content_phone_value" placeholder="010-1234-5678">
-                        <div class="MyProfile_content_phone_check_btn"><a href="#">인증</a></div>
-                    </div>
+                        <tr>
+                            <td>헬린이들 모여라!!!</td>
+                            <td>그룹</td>
+                            <td>450,000</td>
+                            <td>2022-06-13</td>
+                            <td> 2022-06-13 <br>
+                            ~ 2022-06-20</td>
+                            <td>4</td>
+                            <td>대기</td>
+                        </tr>
 
-                    <div class="MyProfile_content_pw">비밀번호
-                        <input type="password" name="password" class="MyProfile_content_pw_value" placeholder="**********">
-                        <div>영문 대소문자, 숫자, 특수문자를 조합하여 8이상 15자리 미만 입력 가능</div>
-                    </div>
+                        <tr>
+                            <td>건강한 습관 만들기</td>
+                            <td>개인</td>
+                            <td>550,000</td>
+                            <td>2022-06-10</td>
+                            <td> 2022-06-10 <br>
+                            ~ 2022-06-17</td>
+                            <td>5</td>
+                            <td>완료</td>
+                        </tr>
 
-                    <div class="MyProfile_content_pw2">비밀번호 확인
-                        <input type="password" name="password2" class="MyProfile_content_pw_value2" placeholder="**********">
-                        <div>비밀번호가 일치하지 않습니다</div>
-                    </div>
+                    </tbody>
 
-                    <div class="MyProfile_content_email">이메일
-                        <input type="text" name="email" class="MyProfile_content_email_value" placeholder="helloword@naver.com">
-                    </div>
-
-                    <div class="MyProfile_content_career">
-                        <p>경력사항 <br>및 수료사항</p>
-                        <input type="text" name="career" class="MyProfile_content_career_value" placeholder="1,000자 이내">
-                    </div>
-
-                    <a href="#" class="MyProfile_content_update">정보수정 완료</a>
-
-                </div>
+                </table>
 
             </div>
             
@@ -168,10 +157,6 @@
 
 
     </section>
-
-    <!-- ==================밑의 가리는 공간을 가리는 것을 방지하기 위한 쓸데없는 공간==================== -->
-
-    <div class="ttt"></div>
 
     <!-- ==================FOOTER==================== -->
     
