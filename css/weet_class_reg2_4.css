@@ -50,7 +50,7 @@
 .bar progress{
     display: inline;
     width: 100%;
-    height: 10px;
+    height: 5px;
 }
 
 /* ----------- */
@@ -208,10 +208,10 @@ span {
     /* float: left; */
     /* margin-left: 500px; */
     width: 70px;
-    height: 30px;
+    height: 40px;
     border-radius: 10px;
     background-color: #919191;
-    font-style:9px;
+    font-size: 14px;
     color: white;;
     border: none;
 }
@@ -219,11 +219,10 @@ span {
     /* float: left; */
     /* margin-left: 20px; */
     width: 70px;
-    height: 30px;
+    height: 40px;
     border-radius: 10px;
     background-color: #2370DF;
-    font-style:9px;
+    font-size: 14px;
     color: white;;
     border: none;
 }
-/* border: 2px solid red; */

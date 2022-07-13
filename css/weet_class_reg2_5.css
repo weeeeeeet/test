@@ -34,10 +34,10 @@
     margin-top: 15px;
     margin-left: 10px;
 }
-.c1 li:nth-of-type(7){
+.c1 li:nth-of-type(9){
     color: #2370DF;
 }
-.c1 li:nth-of-type(8){
+.c1 li:nth-of-type(10){
     color: #2370DF;
 }
 .c1 li{
@@ -50,10 +50,11 @@
 .bar progress{
     display: inline;
     width: 100%;
-    height: 10px;
+    height: 5px;
 }
 
-/* ----------- */
+/* ===========기타 제공사항================ */
+
 .con .facilities {
     width: 100%;
     margin-top: 15px;
@@ -87,17 +88,72 @@ span {
     position: absolute;
 }
 .facil_check {
+    padding-left: 50px;
+    padding-top: 23px;
     margin-top: 15px;
-    width: 600px;
-    height: 140px;
+    width: 500px;
+    height: 120px;
     background-color: #f1f1f1;
     border-radius: 10px;
     border: 2px solid #2370DF;
+    margin-bottom: 40px;
 
+}
+.checkbox1 {
+    width: 150px;
+    float: left;
+}
+.checkbox2 {
+    float: left;
+}
+.checkbox3 {
+    margin-left:70px;
+    float: left;
 }
 
 
-
+/* ===========위치정보================ */
+.con .location {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 1200px;
+}
+.location_search > input {
+    display: inline-block;
+    margin-top: 10px;
+    border: 2px solid #2370DF;
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #666666;
+}
+.location_search > button {
+    margin-left: 5px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #2370DF;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.detail_location > input {
+    margin-top: 10px;
+    display: inline-block;
+    border: 2px solid #2370DF;
+    width: 500px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #666666;
+}
 /* =========================== */
 .page_button{
     margin-top: 180px;
@@ -109,10 +165,10 @@ span {
     /* float: left; */
     /* margin-left: 500px; */
     width: 70px;
-    height: 30px;
+    height: 40px;
     border-radius: 10px;
     background-color: #919191;
-    font-style:9px;
+    font-size: 14px;
     color: white;;
     border: none;
 }
@@ -120,10 +176,10 @@ span {
     /* float: left; */
     /* margin-left: 20px; */
     width: 70px;
-    height: 30px;
+    height: 40px;
     border-radius: 10px;
     background-color: #2370DF;
-    font-style:9px;
+    font-size: 14px;
     color: white;;
     border: none;
 }

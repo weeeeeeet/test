@@ -33,12 +33,10 @@
     margin-top: 15px;
     margin-left: 10px;
 }
-.c1 li:nth-of-type(1){
+.c1 li:nth-of-type(11){
     color: #2370DF;
 }
-.c1 li:nth-of-type(2){
-    color: #2370DF;
-}
+
 .c1 li{
     /* color: #2370DF; */
     list-style: none;
@@ -46,18 +44,6 @@
     margin-bottom: 5px;
     margin-right: 37px;
 }
-/* .txt.c2{
-    display: inline-block;
-    padding-top: 8px;
-    margin-left: 120px;
-} */
-/* .c2 li{
-    list-style: none;   
-    display: inline-block;
-    float: left;
-    margin-left: 64px;
-    margin-right: 60px;
-} */
 .bar progress{
     display: inline;
     width: 100%;
@@ -69,24 +55,7 @@
     margin-top: 280px;
     margin-bottom: 280px;
 }
-.wee{
-    font-style: oblique;
-    font-weight: bold;
-    color: #2370DF;
-}
-.dot{
-    font-style: oblique;
-    font-weight: bold;
-    color: #c8ff12;
-}
-.tt{
-    font-style: oblique;
-    font-weight: bold;
-    color: #df7b23;
-}
-.ctc{
-    color: #2370DF;
-}
+
 .btn btn-primary{
     font-size: 12px;
     padding: 3px 8px;

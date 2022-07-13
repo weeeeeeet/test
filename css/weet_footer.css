@@ -13,11 +13,8 @@
 .footer {
     clear: both;
     height: 280px;
-    width: 100%;
     background-color: white;
     position: sticky; 
-    bottom: 0px;
-    left: 0;
 }
 .footer img {                                   /* footer로고 */
     width: 120px;
