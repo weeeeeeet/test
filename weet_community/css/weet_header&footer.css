@@ -148,9 +148,8 @@ div.header_right i:hover .dropdown {
 .footer img {
     /* footer로고 */
     width: 120px;
-    margin-top: 25px;
-    margin-left: 80px;
-    display: inline;
+    margin: 15px 0px 15px 80px;
+    display: inline-block;
     float: left;
 }
 
@@ -167,6 +166,7 @@ div.header_right i:hover .dropdown {
     width: 160px;
     height: 33px;
     border: 2px solid #6C6C6C;
+    margin-top: -10px;
     background-color: white;
     cursor: pointer;
     /* 커서 올렸을 때 손모양으로 */
@@ -174,11 +174,11 @@ div.header_right i:hover .dropdown {
 
 .footer ul.time {
     /* 운영시간 */
-    margin-top: 10px;
+    margin: 10px 0px 5px 0px;
     list-style: none;
     font-size: 12px;
     color: #6C6C6C;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 }
 
 .footer .underline2 {
@@ -192,23 +192,21 @@ div.header_right i:hover .dropdown {
     /* 이용약관, 개인정보처리방침 */
     height: 40px;
     list-style: none;
-    margin-left: 80px;
-    margin-top: 20px;
+    margin: 10px 0px -10px 80px;
 }
 
 .footer a {
     float: left;
-    font-size: 15px;
+    font-size: 14px;
     padding-right: 30px;
     text-decoration: none;
     color: black;
 }
 
 .footer .address {
-    margin-top: 20px;
-    margin-left: 80px;
+    margin: 10px 0px -5px 80px;
 }
 
 .footer p {
-    font-size: 15px;
+    font-size: 12px;
 }
