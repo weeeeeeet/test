@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>userFoodFeedback</title>
+    <title>trainerScheduleManagement</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -14,7 +14,7 @@
 
     <!-- 외부 스타일 시트 연결 -->
     <!-- 유저 대시보드 css -->
-    <link href="/css/userFeedback.css" rel="stylesheet" />
+    <link href="/css/trainerSchedule.css" rel="stylesheet" />
 
     <!-- 폰트 설정 -->
     <!-- <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet"> -->
@@ -25,7 +25,7 @@
     <script src="/js/loadHTML.js"></script>
 
     <!-- defer : 브라우저가 스크립트를 문서 분석 이후에 실행해야 함을 나타내는 불리언 속성이다. -->
-    <script type="text/javascript" defer src="/js/userFeedback.js"></script>
+    <script type="text/javascript" defer src="/js/trainerSchedule.js"></script>
 
 </head>
 
@@ -42,7 +42,7 @@
     <section class="wrap">
 
         <!-- sidebar 불러오기 -->
-        <div include-html="/html/common/sidebar.html"></div>
+        <div include-html="/html/common/sidebarTrainer.html"></div>
 
         <!--대시보드 -->
         <div class="dash g">
@@ -53,7 +53,7 @@
 
         <!-- 오늘의 식단 올리기 대시보드 -->
         <div class="today-food g">
-            <div class="todayFoodTitle g">
+            <div class="g">
                 <h2>오늘의 식단 올리기</h2>
             </div>
 
@@ -69,7 +69,7 @@
                             <!-- 이미지 미리보기 -->
                             <p class=" g">오늘 먹은 음식의 사진을 첨부해주세요.</p>
                             <p>
-                                <img class="g" style="width: 150px;" id="preview-image"
+                                <img class="g" style="width: 200px;" id="preview-image"
                                     src="https://dummyimage.com/300x300/ffffff/000000.png&text=preview+image">
                             </p>
 
@@ -87,73 +87,11 @@
     
                         <!-- 텍스트 입력 박스-->
                         <div class="text-container g">
-                            <p><input class="text-box" type="text" name="food-comend"></p>
+                            <p><input type="text" name="food-comend"></p>
                             <p><input type="submit" value="올리기"></p>
                         </div>
 
                 </form>
-            </div>
-
-            <!-- 내 식단 -->
-            <div class="myFood g">
-                <h2>내 식단</h2>
-            </div>
-
-            <!-- 식단 리스트 -->
-            <div class="pic-list g">
-                <div class="card g" style="width: 10rem;">
-                    <img src="https://picsum.photos/id/30/600/400" class="card-img-top" alt="">
-                    <div class="card-body">
-                    <h5 class="card-title">2022.07.13</h5>
-                    <p class="card-text"><p>
-                    <a href="#" class="btn btn-primary"><i class="fas fa-comment-dots"></i></a>
-                    </div>
-                </div>
-
-                <div class="card g" style="width: 10rem;">
-                    <img src="https://picsum.photos/id/30/600/400" class="card-img-top" alt="">
-                    <div class="card-body">
-                    <h5 class="card-title">2022.07.13</h5>
-                    <p class="card-text"><p>
-                    <a href="#" class="btn btn-primary"><i class="fas fa-comment-dots"></i></a>
-                    </div>
-                </div>
-
-                <div class="card g" style="width: 10rem;">
-                    <img src="https://picsum.photos/id/30/600/400" class="card-img-top" alt="">
-                    <div class="card-body">
-                    <h5 class="card-title">2022.07.13</h5>
-                    <p class="card-text"><p>
-                    <a href="#" class="btn btn-primary"><i class="fas fa-comment-dots"></i></a>
-                    </div>
-                </div>
-
-                <div class="card g" style="width: 10rem;">
-                    <img src="https://picsum.photos/id/30/600/400" class="card-img-top" alt="">
-                    <div class="card-body">
-                    <h5 class="card-title">2022.07.13</h5>
-                    <p class="card-text"><p>
-                    <a href="#" class="btn btn-primary"><i class="fas fa-comment-dots"></i></a>
-                    </div>
-                </div>
-
-                <div class="card g" style="width: 10rem;">
-                    <img src="https://picsum.photos/id/30/600/400" class="card-img-top" alt="">
-                    <div class="card-body">
-                    <h5 class="card-title">2022.07.13</h5>
-                    <p class="card-text"><p>
-                    <a href="#" class="btn btn-primary"><i class="fas fa-comment-dots"></i></a>
-                    </div>
-                </div>
-
-                <div class="card g" style="width: 10rem;">
-                    <img src="https://picsum.photos/id/30/600/400" class="card-img-top" alt="">
-                    <div class="card-body">
-                    <h5 class="card-title">2022.07.13</h5>
-                    <p class="card-text"><p>
-                    <a href="#" class="btn btn-primary"><i class="fas fa-comment-dots"></i></a>
-                    </div>
-                </div>
             </div>
 
         </div>

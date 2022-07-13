@@ -12,9 +12,9 @@
 }
 
 /* 가이드라인 */
-/* .g{
+.g{
     border: 1px solid rgb(191, 0, 255);
-} */
+}
 
 /* 배경 스타일 작업 ================================================== */
 body {
@@ -49,7 +49,7 @@ section div.today-food {
     border-radius: 18px;
     height: 800px;  /* 오늘의 식단 대시보드 크기 (높이) */
 }
-section div.todayFoodTitle h2 { /*오늘의 식단 올리기 타이틀*/
+section div.today-food h2{ /*오늘의 식단 올리기 타이틀*/
     font-size: 20px;
     font-weight: bold;
     color: #2370DF;
@@ -64,7 +64,6 @@ section div.todayFoodTitle h2 { /*오늘의 식단 올리기 타이틀*/
 section div.picAndText { /* 사진 첨부파일 & 텍스트 틀 박스 */
     display: inline-flex;
     width: 1050px;
-    height: 250px;
     margin: 30px;
 }
 section div.picAndText form {
@@ -79,32 +78,12 @@ section div.image-container img { /* 파일선택 버튼 & 프리뷰 박스*/
     border: solid #e3e3e3;  /* 프리뷰 박스 테두리*/
 }
 section div.image-container.image-select-btn{ /* 파일선택 버튼*/
+
 }
 section div.text-container { /* 텍스트 입력 박스 */
     float: right;
-    width: 500px;  
+    width: 500px;
+    
 }
-section div.text-container.text-box { /* 텍스트 입력 => 안됨 */
-    height: 300px; 
-    color: #2370DF;
-}
-/* 내 식단 박스-------------------------------------------- */
-section div.myFood h2{ /*내 식단 타이틀 텍스트*/
-    font-size: 20px;
-    font-weight: bold;
-    color: #2370DF;
-    border-bottom: solid #e7e7e7;
 
-    padding-left: 45px;
-    padding-bottom: 15px;
-    margin: 10px;
-}
-section div.pic-list { /*식단 카드 리스트*/
-    display: inline-flex;
-    margin-left: 30px;
-}
-section div.card { /*식단 카드*/
-    margin-right: 20px;
-    margin-top: 10px;
-}
 

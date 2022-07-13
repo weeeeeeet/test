@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>trainerFeedback</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- 외부 스타일 시트 연결 -->
+    <!-- 유저 대시보드 css -->
+    <link href="/css//trainerFeedback.css" rel="stylesheet" />
+
+    <!-- 폰트 설정 -->
+    <!-- <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet"> -->
+    <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
+
+    <!-- 외부 HTML 연결 -->
+    <!-- defer : 브라우저가 스크립트를 문서 분석 이후에 실행해야 함을 나타내는 불리언 속성이다. -->
+    <script src="/js/loadHTML.js"></script>
+
+    <!-- defer : 브라우저가 스크립트를 문서 분석 이후에 실행해야 함을 나타내는 불리언 속성이다. -->
+    <!-- <script type="text/javascript" defer src="/js/trainerFeedback.js"></script> -->
+
+</head>
+
+<body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- header 불러오기 -->
+    <div include-html="/html/common/header.html"></div>
+
+    <!-- contents -->
+    <section class="wrap">
+
+        <!-- sidebar 불러오기 -->
+        <div include-html="/html/common/sidebarTrainer.html"></div>
+
+        <!--대시보드 -->
+        <div class="dash g">
+
+            <div class="g">
+                <h1>회원 대시보드</h1>
+            </div>
+
+        <!-- 회원목록 대시보드 -->
+        <div class="user-list g">
+
+            <!-- 회원목록 타이틀 & 문구 -->
+            <div class="title-box g">
+                <h2>회원목록</h2>
+                <p class="g">관리를 원하는 회원의 프로필을 선택해주세요.</p>
+            </div>
+
+            <!-- 회원목록 리스트 테이블 박스 -->
+            <div class="user-table-box g">
+
+                <!-- 회원목록 테이블 -->
+                <table class="user-table g">
+                    <tr class="list-title g">
+                        <th class="g">이름</th>
+                        <th class="g">스케쥴</th>
+                        <th class="g">관리</th>
+                    </tr>
+    
+                    <tr class="g">
+                        <td>Darlene Robertson</td>
+                        <td>월, 수, 금 오후 7:00</td>
+                        <td>식단관리</td>
+                    </tr>
+    
+                    <tr class="g">
+                        <td>Marvin McKinney</td>
+                        <td>화, 수, 목 오후 9:00</td>
+                        <td>식단관리</td>
+                    </tr>
+    
+                    <tr class="g">
+                        <td>Guy Hawkins</td>
+                        <td>화, 금 오후 5:00</td>
+                        <td>식단관리</td>
+                    </tr>
+    
+                    <tr class="g">
+                        <td>Devon Lane</td>
+                        <td>월, 수, 금 오후 7:00</td>
+                        <td>식단관리</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    </section>
+
+    <!-- footer 불러오기 -->
+    <div include-html="/html/common/footer.html"></div>
+
+    <!--includeHTML-->
+    <script>
+        includeHTML();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>trainerDashboard</title>
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+     <!-- 외부 스타일 시트 연결 -->
+        <!-- 유저 대시보드 css -->
+    <link href="/css/trainerDashboard.css" rel="stylesheet" />
+
+    <!-- 폰트 설정 -->
+    <!-- <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet"> -->
+    <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
+
+    <!-- 외부 HTML 연결 -->
+    <!-- defer : 브라우저가 스크립트를 문서 분석 이후에 실행해야 함을 나타내는 불리언 속성이다. -->
+    <script src="/js/loadHTML.js"></script>
+
+</head>
+
+<body>
+ 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <!-- header 불러오기 -->
+    <div include-html="/html/common/header.html"></div>
+
+    <!-- contents -->
+    <section class="wrap">
+
+        <!-- sidebar 불러오기 -->
+        <div include-html="/html/common/sidebarTrainer.html"></div>
+
+        <!--대시보드 -->
+        <div class="dash g">
+
+            <div class="g"><h1>회원 대시보드</h1></div>
+
+            <!-- 클래스 공지사항 -->
+            <div class="class-notice g">
+
+                <!-- 공지사항 & 작성버튼 -->
+                <div class="notice-write g">
+                    <h2 class="g">클래스 공지사항</h2>
+    
+                    <!-- 글 작성 버튼-->
+                    <a href="#" target="self"><i class="fas fa-pen-to-square g"><h3 class="g">작성</h3></i></a>
+                </div>
+
+                <!-- 클래스 공지 리스트 -->
+                <div class="notice-list g">
+                    <ul>
+                        <li class="g"><a href="#" target="self">Get set on autoship</a></li>
+                        <li class="g"><a href="#"  target="self">Set your goals for your first 90 days</a></li>
+                        <li class="g"><a href="#"  target="self">Complete the Compensation Plan Quiz</a></li>
+                        <li class="g"><a href="#"  target="self">Get set on autoship</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 이번주 코칭계획 -->
+            <div class="coaching-plan g">
+                
+                <!-- 코칭계획 & 작성버튼 -->
+               <div class="plan-write g">
+                   <h2 class="g">이번주 코칭계획</h2>
+    
+                    <!-- 글 작성 버튼-->
+                    <a href="#" target="self"><i class="fas fa-pen-to-square g"><h3 class="g">작성</h3></i></a>
+               </div>
+
+               <!-- 이번주 코칭 리스트 -->
+                <div class="plan-list g">
+                    <ul>
+                        <li class="g"><a href="#" target="self">1주차 코칭 계획</a></li>
+                        <li class="g"><a href="#"  target="self">2주차 코칭 계획</a></li>
+                        <li class="g"><a href="#"  target="self">3주차 코칭 계획</a></li>
+                        <li class="g"><a href="#"  target="self">4주차 코칭 계획</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+     <!-- footer 불러오기 -->
+    <div include-html="/html/common/footer.html"></div>
+
+    <!--includeHTML-->
+    <script>
+        includeHTML();
+    </script>
+
+</body>
+</html>
