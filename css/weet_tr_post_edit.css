@@ -115,6 +115,44 @@ body {
     font-size: 16px;
 }
 
+/* =====수정버튼===== */
+.tr_post_edit_btn1 {
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+
+    position: relative;
+    top: -30px;
+    left: 700px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+
+    background-color: #85EC1D;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tr_post_edit_btn2 {
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+
+    /* float: right; */
+    position: relative;
+    top: -30px;
+    left: 730px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+
+    background-color: #FF730E;
+    color: #fff;
+    text-decoration: none;
+}
+
 .commhome_comment {
     color: #2370DF;
 }
@@ -269,7 +307,6 @@ body {
     position: relative;
     top: -28px;
 }
-
 
 /* ------------------------------------------------ */
 
