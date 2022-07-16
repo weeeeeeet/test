@@ -20,6 +20,7 @@ input{
 }
 
 
+
 /*======= join-contain========== */
 
 .join-contain {
@@ -38,7 +39,7 @@ input{
     font-weight: 600;
     margin-bottom: 30px;
     text-align: center;
-} 
+}
 .join-box {                    /* 회원가입 form*/  
     margin: 0 outo;
     padding-bottom: 50px;
@@ -120,7 +121,39 @@ p {
     font-size: 12px;
 }
 
-
+.accordion{
+    margin-left: 30px;
+}
 .accordion-item,.accordion-button{ 
     font-size: 12px;
+}
+.accordion-body p{
+    width: 370px;
+    height: 140px;
+    overflow: auto;
+}
+.accordion-body p::-webkit-scrollbar {
+    width: 10px;
+  }
+  .accordion-body p::-webkit-scrollbar-thumb {
+    background-color: #6092d7;
+  }
+  .accordion-body p::-webkit-scrollbar-track {
+    background-color: rgba(209, 209, 209, 0.386);
+  }
+  .loginbtn{
+    background-color: #2370DF;
+    -webkit-box-shadow: 0px 16px 23px -3px #ABABAB; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: aliceblue;
+    width: 370px;
+    height: 50px;
+    border: none;
+    border-radius: 10px; 
+    margin-top: 30px;
+    margin-left: 35px;
+  }
+
+.info span{
+    color: red;
 }
