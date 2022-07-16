@@ -17,6 +17,7 @@
 
     <!-- 차트.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
     <link href="css/Mypage_Mybody.css" rel="stylesheet" />
     <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
@@ -148,7 +149,43 @@
                     </button>
                 </div>
 
-                <div class="mybody_chart"></div>
+                <!-- 차트 움직이게 하는 화면 -->
+                <div class="outer">
+
+                    <div class="inner-list">
+
+                      <div class="inner">
+                        <div class="container">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                        <script type="text/javascript" src="./js/마이바디.js"></script>
+                      </div>
+
+                      <div class="inner">
+                        <div class="container">
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                        <script type="text/javascript" src="./js/마이바디2.js"></script>
+                      </div>
+
+                      <div class="inner">
+                        <div class="container">
+                            <canvas id="myChart3"></canvas>
+                        </div>
+                        <script type="text/javascript" src="./js/마이바디3.js"></script>
+                      </div>
+
+                    </div>
+
+                </div>
+                  
+                <div class="button-list">
+                    <button class="button-left">← 이전</button>
+                    <button class="button-right">다음 →</button>
+                </div>
+
+                <!-- 차트 -->
+                <script type="text/javascript" src="./js/마이바디-배네.js"></script>
 
             </div>
             
@@ -216,11 +253,6 @@
         </div>
 
     </section>
-
-    <!-- ==================TOPBUTTON==================== -->
-
-    <!-- <a href="#" class="TOP_btn"><i class="fas fa-angle-up"></i><br>TOP</a> -->
-    <a href="#" class="TOP_btn">△<br>TOP</a>
 
     <!-- ==================밑의 가리는 공간을 가리는 것을 방지하기 위한 쓸데없는 공간==================== -->
 

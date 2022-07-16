@@ -233,25 +233,6 @@ a {
     height: 125px;
 }
 
-/* 탑 버튼 */
-.TOP_btn{
-    width: 40px;
-    height: 40px;
-    border: 1px solid #A7A7A7;
-    border-radius: 8px;
-
-    padding-left: 2px;
-
-    font-size: 13px;
-    font-weight: bold;
-    color: #A7A7A7;
-    text-align: center;
-
-    position: fixed;
-    bottom: 300px;
-    right: 250px;
-}
-
 /* 신체정보 ================================ */
 
 /* 신체정보 : 체중, 골격근량, 체지방률 */
@@ -426,18 +407,57 @@ a {
     color: #000000;
 }
 
-/* 그래프 - 차트 위치 */
-.mybody_chart{
-    width: 774px;
-    height: 500px;
+/* 라인 차트 - 움짇이게 배너 ================================ */
 
-    margin-left: 30px;
+.outer {
+    width: 900px;
+    height: 450px;
+    margin: 0 auto;
+    overflow-x: hidden;
 
-    border: 2px solid #6A6A6A;
-    background-color: #6A6A6A;
-    border-radius: 8px;
+    margin-right: 200px;
+}
+  
+.inner-list {
+    display: flex;
+    transition: .3s ease-out;
+    height: 100%;
+}
+  
+.inner {
+    padding: 0 16px;
+}
+  
+.button-list {
+    text-align: center;
 }
 
+/* 그래프 다음으로 이동하기 */
+.mybody_chart_wrapper .button-list{
+    margin-right: 190px;
+}
+
+.mybody_chart_wrapper .button-list .button-left{
+    width: 80px;
+    height: 30px;
+
+    background-color: #D7D7D7;
+
+    border: none;
+    border-radius: 8px;
+
+    margin-right: 30px;
+}
+
+.mybody_chart_wrapper .button-list .button-right{
+    width: 80px;
+    height: 30px;
+
+    background-color: #D7D7D7;
+
+    border: none;
+    border-radius: 8px;
+}
 
 
 /* 모달창 ================================ */
@@ -570,7 +590,7 @@ a {
 /* 푸터와의 공간 분리 */
 .ttt{
     width: 100%;
-    height: 1000px;
+    height: 900px;
 }
 
 /* Footer ================================ */
