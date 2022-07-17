@@ -9,6 +9,9 @@
 a {                                      /* 링크 스타일 초기화 */
     text-decoration: none;
 }
+body {
+    padding-top: 100px;
+}
 .contents {                              /* 컨텐츠영역 잡기 */
     width: 1040px;
     margin: 0 auto;
@@ -62,7 +65,6 @@ form span {
 
 /* =====================결제수단 시작========================= */
 .pay-method-container {
-    width: 100%;
     text-align: center;
 }
 .pay-method-container label {
