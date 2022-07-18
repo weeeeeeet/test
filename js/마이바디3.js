@@ -8,7 +8,7 @@ var chart = new Chart(ctx, {
   data: {
     labels: ['22.05.30', '22.06.05', '22.06.15', '22.06.24', '22.06.30'],
     datasets: [{
-      label: '체중',
+      label: '체지방률',
       backgroundColor: 'transparent',
       borderColor: '#87cefa',
       data: [63.5 , 65.3 , 64.7 , 63.2 , 62.9 ]

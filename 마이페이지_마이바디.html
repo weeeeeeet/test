@@ -19,6 +19,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
+    <!-- 데이트 피커 -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" />
+    <script src="/js/bootstrap-datepicker.kr.js" charset="UTF-8"></script>
+
     <link href="css/Mypage_Mybody.css" rel="stylesheet" />
     <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
@@ -113,13 +122,13 @@
                         <div class="mybody_weight_type">표준</div>
                     </div>
                     
-                    <div class="mybody_muscle">
+                    <div class="mybody_muscle on">
                         <div  class="mybody_type">골격근량 (kg)</div>
                         <div  class="mybody_muscle_value">28.0</div>
                         <div  class="mybody_muscle_type">표준</div>
                     </div>
                     
-                    <div class="mybody_BMI">
+                    <div class="mybody_BMI on">
                         <div  class="mybody_type">체지방률 (%)</div>
                         <div  class="mybody_BMI_value">10.2</div>
                         <div  class="mybody_BMI_type">표준</div>
@@ -127,6 +136,7 @@
 
                 </div>
                 
+                <!-- 인바디 입력창 모달 -->
                 <button type="button" class="mybody_Input btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     인바디 입력
                 </button>
@@ -191,60 +201,64 @@
             
         </div>
 
-        <!-- Modal 창 (팝업창) -->
+        <!-- Modal 창 - 인바디 입력창 (팝업창) -->
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
 
             <div class="modal-content">
 
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">클래스 후기 등록하기</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">인바디 입력</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body">
 
-                    <p class="modal_class_title">[인기 클래스] 국내1위 홈트계 끝판왕 '위이티'</p>
+                    <form action="#">
 
-                    <div class="modal_class_content">
-
-                        <div class="modal_class_content_profile">
-
-                            <div class="modal_class_content_profile_photo"></div>
-
-                            <p class="modal_class_content_profile_id">WEE.T</p>
-
-                            <p class="modal_class_content_profile_date">2022.07.06</p>
-
+                        <!-- 날짜 -->
+                        <div class="modal_mybody_date">
+                            <p>날짜</p>
+                            
+                            <!-- 데이트 피커 적용 -->
+                            <div class="col-md-3 col-xs-4 modal_date_wrap">
+                                <div class="form-group">
+                                    <div class="input-group date" style="width: 400px;" id="datetimepicker1" data-target-input="nearest">
+                                        <input type="text" name="마이바디_날짜" class="modal_date_input form-control datetimepicker-input" data-target="#datetimepicker1" value="17/07/2022">
+                                        <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <script type="text/javascript" src="./js/데이트피커.js"></script>
+                            
                         </div>
 
-                        <form name="myform" id="myform" method="post" action="#">
-                            <fieldset>
-                                <label for="rate1">⭐</label><input type="radio" name="rating" value="5" id="rate1">
-                                <label for="rate2">⭐</label><input type="radio" name="rating" value="4" id="rate2">
-                                <label for="rate3">⭐</label><input type="radio" name="rating" value="3" id="rate3">
-                                <label for="rate4">⭐</label><input type="radio" name="rating" value="2" id="rate4">
-                                <label for="rate5">⭐</label><input type="radio" name="rating" value="1" id="rate5">
-                            </fieldset>
-                        </form>
-
-                        <div class="modal_class_content_review">
-                            <input type="text" name="review" id="modal_class_content_review_inner" placeholder="수강후기를 작성해주세요.">
+                        <!-- 체중 -->
+                        <div class="modal_mybody_weight">
+                            <p>체중 (kg)</p>
+                            <input type="text" name="마이바디_체중" placeholder="체중을 입력해주세요.">
                         </div>
 
-                    </div>
+                        <!-- 골격근량 -->
+                        <div class="modal_mybody_muscle">
+                            <p>골격근량 (kg)</p>
+                            <input type="text" name="마이바디_골격근량" placeholder="골격근량을 입력해주세요.">
+                        </div>
 
-                    <div class="modal_class_file">
-                        <form action="#" method="post" enctype="multipart/form-data" name="">
-                            <input id="uploadFiles" type="file" multiple style="width:300px" onchange="uploadFileAdded()">
-                        </form>
-                    </div>
+                        <!-- 체지방률 -->
+                        <div class="modal_mybody_BMI">
+                            <p>체지방률 (%)</p>
+                            <input type="text" name="마이바디_체지방률" placeholder="체지방률을 입력해주세요.">
+                        </div>
 
-                </div>
 
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
-                <button type="button" class="btn btn-primary">등록하기</button>
+                        <input type="submit" class="modal_mybody_input_btn" data-bs-dismiss="modal" value="등록">
+
+                    </form>
+
                 </div>
                 
             </div>
