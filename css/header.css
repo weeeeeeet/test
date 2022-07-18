@@ -5,7 +5,7 @@
 
 /* 기본적 css 리셋 */
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: 'SCoreDream';
     box-sizing: border-box;
