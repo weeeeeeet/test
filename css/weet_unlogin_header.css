@@ -10,7 +10,7 @@ a{
     color: #2370DF;
 }
 
-.wrap { padding-top: 72px;} /* 헤더높이값만큼 패딩으로 밀어주기 */
+#wrap { padding-top: 72px;} /* 헤더높이값만큼 패딩으로 밀어주기 */
 
 #header {
     position: fixed;
@@ -31,7 +31,6 @@ a{
 
 .header-box{ /* inner */
     position: relative;
-
     max-width: 1440px;
     margin: 0 auto;
     height: 100%;
