@@ -9,12 +9,6 @@ html {
   height: 100%;
 }
 
-body {
-    background: var(--white-color);
-    font-family: var(--body-font-family);    
-    position: relative;
-}
-
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
@@ -78,7 +72,7 @@ p {
   color: var(--text-secondary-white-color);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -127,6 +121,7 @@ a:hover {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 .navbar-brand {
   color: var(--primary-color);
   font-size: 24px;
@@ -166,7 +161,8 @@ a:hover {
   position: relative;
 }
 
-.nav-link:hover, .nav-item.active {
+.nav-link:hover,
+.nav-item.active {
   color: #2370DF;
   border-bottom: 1px solid #2370DF;
 }
@@ -256,34 +252,202 @@ a:hover {
 .heroText {
   position: absolute;
   z-index: 1;
-  top: 50%;
+  top: 70%;
   left: 50%;
 
   transform: translate(-50%, -50%);
 
-  width: 400px;
+  width: 100%;
   text-align: center;
-  background-color: rgba(4, 53, 87, .8);
-  border-radius: 20px;
+  background-color: rgba(4, 53, 87, .3);
 }
 
 /*---------------------------------------
   SECTION               
 -----------------------------------------*/
-.col-lg-5 {
-  box-shadow: 3px 3px 20px lightgray;
-}
 .section-padding {
   padding-bottom: 7rem;
 }
+
 .class-title {
+  margin-bottom: 50px;
+
   font-size: 30px;
   font-weight: 500;
-  border-bottom: 7px double rgba(35, 112, 223, .3);
-  margin-bottom: 50px;
+
+  /* border-bottom: 1px solid lightgray; */
+  /* border-image: linear-gradient(to right, rgba(35, 112, 223, .5), rgba(35, 112, 223, 0));
+  border-image-slice: 1; */
 }
+
 .youtube {
   margin-bottom: 40px;
+}
+
+/*---------------------------------------
+  REVIEWS            
+-----------------------------------------*/
+.card {
+  border-radius: 5px;
+  background-color: #fff;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.badge {
+  font-size: 25px;
+  font-weight: 400;
+  background-color: #2370DF;
+}
+
+.badge i {
+  font-size: 20px;
+  font-weight: 200
+}
+
+.about-rating {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px
+}
+
+.total-ratings {
+  font-size: 12px
+}
+
+.stars i {
+  color: #ffd64f;
+}
+
+.stars i:hover {
+  color: #FF730E;
+}
+
+.progress {
+  margin-top: 2px;
+  border-radius: 0px;
+  padding-left: 0px;
+}
+
+.progress-bar {
+  background-color: #ffd64f;
+}
+
+.progress-bar:hover {
+  background-color: #FF730E;
+}
+
+.percent span {
+  font-size: 14px;
+}
+
+.content {
+  font-size: 14px;
+}
+
+.pic {
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.star-active {
+  color: #ffd64f;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.star-active:hover {
+  color: #FF730E;
+}
+
+.star-inactive {
+  color: #CFD8DC;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.review-header {
+  line-height: 20px;
+}
+
+.review-header>div:nth-of-type(1) {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.review-header>div:last-of-type {
+  font-size: 14px;
+  line-height: 10px;
+  text-align: right;
+}
+
+.reviews>div div:last-of-type {
+  padding-left: 20px;
+}
+
+.reviews>.row {
+  margin: 15px 0;
+}
+
+/* page */
+.pagination,
+.jsgrid .jsgrid-pager {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem
+}
+
+.page-link {
+  color: black
+}
+
+.pagination.pagination-rounded-flat .page-item {
+  margin: 0 .25rem
+}
+
+.pagination-success .page-item.active .page-link {
+  background: #2370DF;
+  border-color: #2370DF;
+}
+
+.pagination.pagination-rounded-flat .page-item .page-link {
+  border: none;
+  border-radius: 50px;
+}
+
+/* sort button */
+.radio {
+  display: none;
+}
+
+.sort label {
+  display: inline-block;
+
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 30px;
+  background-color: #ebebeb;
+
+  border-radius: 20px;
+
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+.sort label:hover,
+.radio:checked+label {
+  cursor: pointer;
+  background-color: #2370DF;
+  color: white;
 }
 
 /*---------------------------------------
@@ -406,36 +570,44 @@ a:hover {
   position: sticky;
   top: 150px;
 }
+
 .side-box .card {
   border: 1px solid lightgray;
   border-radius: 10px;
 }
+
 .card-info {
   width: 100%;
   font-weight: 500;
   font-size: 18px;
 }
+
 .card-info .class-type span {
   color: #2370DF;
 }
+
 .card-info .class-amount {
   font-size: 35px;
   font-weight: bold;
 }
+
 .card-info .participants {
   font-size: 14px;
   text-align: left;
   color: gray;
 }
+
 .card-info .participants span {
   color: #2370DF;
   font-size: 17px;
   font-weight: bold;
 }
+
 .card-info progress {
   width: 100%;
   -webkit-appearance: none;
 }
+
 ::-webkit-progress-bar {
   width: 100%;
   height: 10px;
@@ -443,15 +615,19 @@ a:hover {
   border-radius: 5px;
   background-color: white;
 }
+
 ::-webkit-progress-value {
   background-color: #2370DF;
 }
+
 .card .material-icons {
   font-size: 15px;
 }
+
 .material-icons.red {
   color: #EB5757;
 }
+
 .card button {
   border: 1px solid #2370DF;
   background-color: white;
@@ -462,17 +638,288 @@ a:hover {
   font-size: 15px;
   line-height: 50px;
 }
+
 #sharebtn {
   width: 100%;
 }
+
 #likebtn {
   width: 100%;
 }
+
+#sharebtn:hover,
+#likebtn:hover {
+  background-color: rgba(35, 112, 223, .1);
+}
+
 #buybtn {
   border: none;
   background-color: #2370DF;
   color: white;
 }
+
+/*---------------------------------------
+  SIDE-BOX-HEART-ANIMATED     
+-----------------------------------------*/
+svg {
+  cursor: pointer;
+  overflow: visible;
+  width: 40px;
+  padding-bottom: 5px;
+}
+
+svg #heart {
+  transform-origin: center;
+  animation: animateHeartOut .3s linear forwards;
+}
+
+svg #main-circ {
+  transform-origin: 29.5px 29.5px;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox:checked+label svg #heart {
+  transform: scale(0.2);
+  fill: #E2264D;
+  animation: animateHeart .3s linear forwards .25s;
+}
+
+.checkbox:checked+label svg #main-circ {
+  transition: all 2s;
+  animation: animateCircle .3s linear forwards;
+  opacity: 1;
+}
+
+.checkbox:checked+label svg #heartgroup1 {
+  opacity: 1;
+  transition: .1s all .3s;
+}
+
+.checkbox:checked+label svg #heartgroup1 #heart1 {
+  transform: scale(0) translate(0, -30px);
+  transform-origin: 0 0 0;
+  transition: .5s transform .3s;
+}
+
+.checkbox:checked+label svg #heartgroup1 #heart2 {
+  transform: scale(0) translate(10px, -50px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform .3s;
+}
+
+.checkbox:checked+label svg #heartgroup2 {
+  opacity: 1;
+  transition: .1s all .3s;
+}
+
+.checkbox:checked+label svg #heartgroup2 #heart1 {
+  transform: scale(0) translate(30px, -15px);
+  transform-origin: 0 0 0;
+  transition: .5s transform .3s;
+}
+
+.checkbox:checked+label svg #heartgroup2 #heart2 {
+  transform: scale(0) translate(60px, -15px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform .3s;
+}
+
+.checkbox:checked+label svg #heartgroup3 {
+  opacity: 1;
+  transition: .1s all .3s;
+}
+
+.checkbox:checked+label svg #heartgroup3 #heart1 {
+  transform: scale(0) translate(30px, 0px);
+  transform-origin: 0 0 0;
+  transition: .5s transform .3s;
+}
+
+.checkbox:checked+label svg #heartgroup3 #heart2 {
+  transform: scale(0) translate(60px, 10px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform .3s;
+}
+
+.checkbox:checked+label svg #heartgroup4 {
+  opacity: 1;
+  transition: .1s all .3s;
+}
+
+.checkbox:checked+label svg #heartgroup4 #heart1 {
+  transform: scale(0) translate(30px, 15px);
+  transform-origin: 0 0 0;
+  transition: .5s transform .3s;
+}
+
+.checkbox:checked+label svg #heartgroup4 #heart2 {
+  transform: scale(0) translate(40px, 50px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform .3s;
+}
+
+.checkbox:checked+label svg #heartgroup5 {
+  opacity: 1;
+  transition: .1s all .3s;
+}
+
+.checkbox:checked+label svg #heartgroup5 #heart1 {
+  transform: scale(0) translate(-10px, 20px);
+  transform-origin: 0 0 0;
+  transition: .5s transform .3s;
+}
+
+.checkbox:checked+label svg #heartgroup5 #heart2 {
+  transform: scale(0) translate(-60px, 30px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform .3s;
+}
+
+.checkbox:checked+label svg #heartgroup6 {
+  opacity: 1;
+  transition: .1s all .3s;
+}
+
+.checkbox:checked+label svg #heartgroup6 #heart1 {
+  transform: scale(0) translate(-30px, 0px);
+  transform-origin: 0 0 0;
+  transition: .5s transform .3s;
+}
+
+.checkbox:checked+label svg #heartgroup6 #heart2 {
+  transform: scale(0) translate(-60px, -5px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform .3s;
+}
+
+.checkbox:checked+label svg #heartgroup7 {
+  opacity: 1;
+  transition: .1s all .3s;
+}
+
+.checkbox:checked+label svg #heartgroup7 #heart1 {
+  transform: scale(0) translate(-30px, -15px);
+  transform-origin: 0 0 0;
+  transition: .5s transform .3s;
+}
+
+.checkbox:checked+label svg #heartgroup7 #heart2 {
+  transform: scale(0) translate(-55px, -30px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform .3s;
+}
+
+.checkbox:checked+label svg #heartgroup2 {
+  opacity: 1;
+  transition: .1s opacity .3s;
+}
+
+.checkbox:checked+label svg #heartgroup3 {
+  opacity: 1;
+  transition: .1s opacity .3s;
+}
+
+.checkbox:checked+label svg #heartgroup4 {
+  opacity: 1;
+  transition: .1s opacity .3s;
+}
+
+.checkbox:checked+label svg #heartgroup5 {
+  opacity: 1;
+  transition: .1s opacity .3s;
+}
+
+.checkbox:checked+label svg #heartgroup6 {
+  opacity: 1;
+  transition: .1s opacity .3s;
+}
+
+.checkbox:checked+label svg #heartgroup7 {
+  opacity: 1;
+  transition: .1s opacity .3s;
+}
+
+@keyframes animateCircle {
+  40% {
+    transform: scale(10);
+    opacity: 1;
+    fill: #DD4688;
+  }
+
+  55% {
+    transform: scale(11);
+    opacity: 1;
+    fill: #D46ABF;
+  }
+
+  65% {
+    transform: scale(12);
+    opacity: 1;
+    fill: #CC8EF5;
+  }
+
+  75% {
+    transform: scale(13);
+    opacity: 1;
+    fill: transparent;
+    stroke: #CC8EF5;
+    stroke-width: .5;
+  }
+
+  85% {
+    transform: scale(17);
+    opacity: 1;
+    fill: transparent;
+    stroke: #CC8EF5;
+    stroke-width: .2;
+  }
+
+  95% {
+    transform: scale(18);
+    opacity: 1;
+    fill: transparent;
+    stroke: #CC8EF5;
+    stroke-width: .1;
+  }
+
+  100% {
+    transform: scale(19);
+    opacity: 1;
+    fill: transparent;
+    stroke: #CC8EF5;
+    stroke-width: 0;
+  }
+}
+
+@keyframes animateHeart {
+  0% {
+    transform: scale(0.2);
+  }
+
+  40% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animateHeartOut {
+  0% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
 /*---------------------------------------
   TOP-BUTTON          
 -----------------------------------------*/
@@ -490,10 +937,12 @@ a:hover {
   text-align: center;
   line-height: 27px;
 }
+
 .top-btn i {
   font-size: 20px;
   color: #444444;
 }
+
 .top-btn p {
   font-size: 10px;
   line-height: 0;
