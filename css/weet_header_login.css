@@ -16,7 +16,7 @@
     background-color: white;
     position: fixed;                       /* 헤더 고정 */
     top: 0px;
-    z-index: 1;
+    z-index: 5;
     box-shadow: 5px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
 }
 .header nav.nav_left a{                     /* 로고 */
@@ -91,7 +91,6 @@ div.header_right .dropdown {
 div.header_right .dropdown .fa-solid {
     color: #637288;
  }
-
 div.header_right .dropdown li {
     list-style: none;
     font-size: 14px;
@@ -122,23 +121,4 @@ div.header_right li>.dropdown_underline {
     border: 0;
     height: 5px;
     background: rgb(236, 236, 236);
-}
-
-.notification {
-    position: absolute;
-    top: 20;
-    right: 74px;
-    height: 15px;
-    width: 15px;
-    background-color: rgb(255, 72, 0);
-    border-radius: 15px;
-    display: inline-block;
-}
-.notification > span {
-    font-size: 1px;
-    color: white;
-    text-align: center;
-    position: relative;
-    top:-5.8px;
-    right: -4.5px;
 }
