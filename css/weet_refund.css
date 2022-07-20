@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SCoreDream';
+}
+#refund-button {
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+#refund-close:focus {
+    box-shadow: none;
+}
+.modal-footer button {
+    margin: 0 auto;
+}
