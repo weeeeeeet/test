@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SCoreDream';
+    box-sizing: border-box;
+}
+
+
+.banner {
+    background-color: rgb(177, 198, 234);
+    height: 270px;
+    margin-top: 100px;
+}
+.banner .banner_search {
+    width: 815px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0px;
+    position: relative;
+}
+.banner .banner_search input {
+    margin-left: 50px;
+    float: left;
+    width: 700px;
+    height: 70px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 1px solid white;
+    margin-top: 100px;
+    padding-left: 162px;
+    box-shadow: 5px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
+}
+.banner .banner_search a {
+    display: inline-block;
+    padding-top: 115px;
+    right: 12%;
+    text-decoration: none;
+    color: #fe8902;
+    font-size: 40px;
+    position: absolute;
+}
+
+
+/* ==================== CLASS SORT ============== */
+
+.sort {
+    width: 1900px;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+.sort #sort {
+    width: 150px;
+    height: 40px;
+    border: 2px solid #2370DF;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-right: 25px;
+}
+.sort #type {
+    width: 150px;
+    height: 40px;
+    border: 2px solid #2370DF;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-right: 25px;
+}
+.sort #time {
+    width: 150px;
+    height: 40px;
+    border: 2px solid #2370DF;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+
+
+
+/* ==================== CLASS LIST ============== */
+
+.contents {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+.main {
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    /* margin-left: 200px;
+    margin-right: 200px; */
+}
+
+.main .main_class_recommended {
+    height: 600px;
+    /* border: 2px solid red; */
+}
+.main .main_class_end {
+    height: 600px;
+    /* border: 2px solid red; */
+}
+.main .main_class_new {
+    height: 600px;
+    /* border: 2px solid red; */
+}
+
+
+.main .class_list {
+    float: left;
+    margin-right: 10px;
+    margin-left: 18px;
+    height: 400px;
+    /* margin-bottom: 30px; */
+}
+.main .class_list img {
+    width: 310px;
+    margin-bottom: 10px;
+}
+.main .class_list a {
+    position : relative;
+}
+.main .class_list .like i{
+    position: absolute;
+    left: 275px;
+    top: -30px;
+    color: red;
+    font-size: 25px;
+}
+.main .class_list h1:nth-of-type(1) {
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.main .class_list a:nth-of-type(2) {    /* 클래스 제목 */
+    text-decoration: none;
+    font-size: 27px;
+    color: black;
+    font-weight: 700;
+}
+.main .class_list a:nth-of-type(3) {    /* 트레이너 이름 */
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+.main .class_list h1:nth-of-type(2) {   /* 가격 */
+    margin-top: 5px;
+    font-size: 13px;
+}
+.main .class_list i {                           /* 별 */
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: rgb(255, 217, 0);
+}
+
+
+
+.hot {
+    width: 1870px;
+    margin: 0 auto;
+    background-color: #eaeaea;
+}
+.hot .hot_list {
+    height: 500px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+.hot .hot_list .hot_list_list {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    float: left;
+    border-radius: 30px;
+}
+.main .board_hot .hot_p a {
+    float: right;
+    text-decoration: none;
+    font-size: 17px;
+    color: #6C6C6C;
+    display: inline;
+    line-height: 95px;
+}
+
