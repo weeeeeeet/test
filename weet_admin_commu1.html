@@ -41,23 +41,24 @@
                 <div class="inner">
                     <h3>게시글 목록</h3>
                     <div class="select-box">
-                        <div calss="search-box">
-                            <ul>
-                                <li><span class="search-title">검색어 </span>:</li>
-                                <li>
-                                    <div class="search-bar">
-                                        <select class="search-select" name="search-type">
-                                            <option value="user_name">글제목+내용</option>
-                                            <option value="user_id">닉네임</option>
-                                            <option value="user_mail">이메일</option>
-                                        </select>
-                                        <input type="text" name="search" placeholder="검색어 입력">
-                                        <button class="search_btn" name="search">검색</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
+                        <form action="">
+                            <div calss="search-box">
+                                <ul>
+                                    <li><span class="search-title">검색어 </span>:</li>
+                                    <li>
+                                        <div class="search-bar">
+                                            <select class="search-select" name="search-type">
+                                                <option value="user_name">글제목+내용</option>
+                                                <option value="user_id">닉네임</option>
+                                                <option value="user_mail">이메일</option>
+                                            </select>
+                                            <input type="text" name="search" placeholder="검색어 입력">
+                                            <button class="search_btn" name="search">검색</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
                     </div>
                     <form id="boardForm" name="boardForm">
                         <input type="hidden" id="function_name" name="function_name" value="getBoardList" />

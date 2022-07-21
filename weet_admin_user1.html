@@ -41,38 +41,41 @@
                 <div class="inner">
                     <h3>회원 리스트</h3>
                     <div class="select-box">
-                        <div class="check-box">
-                            <ul>
-                                <li><span class="search-title">회원유형 </span>:</li>
-                                <li><input type="checkbox" name="user_type" id="user_type" value="allType" checked> 전체
-                                </li>
-                                <li><input type="checkbox" name="user_type" id="user_type" value="N"> 일반회원</li>
-                                <li><input type="checkbox" name="user_type" id="user_type" value="T"> 트레이너</li>
-                            </ul>
-                            <ul>
-                                <li><span class="search-title">수신동의 </span>:</li>
-                                <li><input type="checkbox" name="user_type" id="agm" value="allAgree" checked> 전체</li>
-                                <li><input type="checkbox" name="user_type" id="agm" value="SMS"> SMS</li>
-                                <li><input type="checkbox" name="user_type" id="agm" value="Email"> E-mail</li>
-                            </ul>
-                        </div>
-                        <div calss="search-box">
-                            <ul>
-                                <li><span class="search-title">검색어 </span> :</li>
-                                <li>
-                                    <div class="search-bar">
-                                        <select class="search-select" name="search-type">
-                                            <option value="user_name">이름</option>
-                                            <option value="user_id">아이디</option>
-                                            <option value="user_mail">이메일</option>
-                                        </select>
-                                        <input type="text" name="search" placeholder="검색어 입력">
-                                        <button class="search_btn" name="search">검색</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
+                        <form action="">
+                            <div class="check-box">
+                                <ul>
+                                    <li><span class="search-title">회원유형 </span>:</li>
+                                    <li><input type="checkbox" name="user_type" id="user_type" value="allType" checked>
+                                        전체
+                                    </li>
+                                    <li><input type="checkbox" name="user_type" id="user_type" value="N"> 일반회원</li>
+                                    <li><input type="checkbox" name="user_type" id="user_type" value="T"> 트레이너</li>
+                                </ul>
+                                <ul>
+                                    <li><span class="search-title">수신동의 </span>:</li>
+                                    <li><input type="checkbox" name="user_type" id="agm" value="allAgree" checked> 전체
+                                    </li>
+                                    <li><input type="checkbox" name="user_type" id="agm" value="SMS"> SMS</li>
+                                    <li><input type="checkbox" name="user_type" id="agm" value="Email"> E-mail</li>
+                                </ul>
+                            </div>
+                            <div calss="search-box">
+                                <ul>
+                                    <li><span class="search-title">검색어 </span> :</li>
+                                    <li>
+                                        <div class="search-bar">
+                                            <select class="search-select" name="search-type">
+                                                <option value="user_name">이름</option>
+                                                <option value="user_id">아이디</option>
+                                                <option value="user_mail">이메일</option>
+                                            </select>
+                                            <input type="text" name="search" placeholder="검색어 입력">
+                                            <button class="search_btn" name="search">검색</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
                     </div>
                     <form id="boardForm" name="boardForm">
                         <input type="hidden" id="function_name" name="function_name" value="getBoardList" />
