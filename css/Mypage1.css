@@ -370,25 +370,6 @@ a {
     position: absolute;
 }
 
-/* 탑 버튼 */
-.TOP_btn{
-    width: 40px;
-    height: 40px;
-    border: 1px solid #A7A7A7;
-    border-radius: 8px;
-
-    padding-left: 2px;
-
-    font-size: 13px;
-    font-weight: bold;
-    color: #A7A7A7;
-    text-align: center;
-
-    position: fixed;
-    bottom: 300px;
-    right: 250px;
-}
-
 /* Footer ================================ */
 
 .footer {
