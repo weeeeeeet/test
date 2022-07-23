@@ -36,7 +36,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
 
-
     <!--
 
 TemplateMo 567 Nomad Force
@@ -51,31 +50,40 @@ https://templatemo.com/tm-567-nomad-force
 
     <main>
         <section class="hero" id="hero">
-            <div class="heroText">
-                <h1 class="news-detail-title text-white mt-lg-5 mb-lg-4" data-aos="zoom-in" data-aos-delay="300">
-                    헬린이를 위한 그룹 피티
-                </h1>
-                <h1 class="news-detail-title text-white mt-lg-5 mb-lg-4" data-aos="zoom-in" data-aos-delay="300">
-                    배너 수정중
-                </h1>
-
-                <div class="d-flex justify-content-center align-items-center">
-                    <a href="#" class="text-secondary-white-color social-share-link">
-                        <i class="bi-chat-square-fill me-1"></i>
-                        128
-                    </a>
-
-                    <a href="#" class="social-share-link bi-bookmark-fill ms-3 me-4"></a>
-
-                    <span>21 hours ago</span>
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <img src="img/health.png" alt="">
+                </div>
+                <div class="col-md-5 hero-text">
+                    <div class="card bg-transparent border-0 p-0">
+                        <div class="row text-white">
+                            <span class="badge-group">그룹</span>
+                            <span class="fa fa-star star-active"></span>
+                            <span class="fa fa-star star-active"></span>
+                            <span class="fa fa-star star-active"></span>
+                            <span class="fa fa-star star-active"></span>
+                            <span class="fa fa-star star-inactive"></span>
+                            <span class="reviews">(31 개의 후기)</span>
+                        </div>
+                        <div class="row text-white">
+                            <h1>헬린이를 위한 그룹 피티</h1>
+                        </div>
+                        <div class="row text-white">
+                            <span><span class="material-icons">fitness_center</span> <strong>김삿갓</strong> 트레이너</span>
+                            <span><span class="material-icons">schedule</span> <strong>20</strong>회</span>
+                            <span><span class="material-icons">person</span> 모집인원 <strong>10</strong>명</span>
+                            <span><span class="material-icons">calendar_month</span> 모집기간 <strong>2022-06-01</strong> ~ <strong>2022-07-30</strong></span>
+                            <span><span class="material-icons">calendar_month</span> 개강일 <strong>2022-06-15</strong></span>
+                        </div>
+                        <div class="row text-white">
+                            #
+                            <span>태그1</span>
+                            <span>태그2</span>
+                            <span>태그3</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="videoWrapper">
-                <img src="img/health.png" class="img-fluid news-detail-image" alt="">
-            </div>
-
-            <div class="overlay"></div>
         </section>
 
         <nav class="navbar navbar-expand-lg bg-light shadow-lg">
@@ -112,7 +120,7 @@ https://templatemo.com/tm-567-nomad-force
         <section class="news-detail section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 mx-auto">
+                    <div class="col-md-8 mx-auto">
                         <div class="class01 class-intro" id="section01">
 
                             <div class="class-title">
@@ -120,6 +128,7 @@ https://templatemo.com/tm-567-nomad-force
                             </div>
 
                             <div class="container mt-5">
+                                nav바 수정해야할거: 클릭시, 스크롤위치에 따라 스타일변경
                                 <!-- 유뷰브 링크 -->
                                 <iframe class="youtube" width="100%" height="350"
                                     src="https://www.youtube.com/embed/8psDg6-Aq0Q" title="YouTube video player"
@@ -151,20 +160,35 @@ https://templatemo.com/tm-567-nomad-force
                                 <h1>트레이너 소개</h1>
                             </div>
 
-                            <div class="container mt-5" data-aos="fade-up">
-                                <h2 class="mb-3">헬린이를 위한 그룹 피티</h2>
+                            <div class="container mt-5 trainer-profile" data-aos="fade-up">
+                                <div class="row trainer-profile-img">
+                                    <img src="img/trainer-profile.jpg" alt="트레이너 사진">
+                                </div>
+                                <div class="row">
+                                    <h2>조덕출 트레이너</h2>
+                                </div>
+                                <div class="row">
+                                    <h3>경력사항 및 수료사항</h3>
 
-                                <p class="me-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-                                    suspendisse
-                                    ultrices gravida. Risus commodo viverra maecenas accumsan.</p>
+                                    <ul>
+                                        <li>~~ 수상</li>
+                                        <li>어쩌고 헬스장 근무</li>
+                                        <li>PT경력 5년</li>
+                                        <li>머찐경력</li>
+                                        <li>대충있어보이는경력</li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <h3>소개글</h3>
 
-                                <p>Nullam id lorem commodo, pharetra sapien ut, accumsan ligula. Sed sit
-                                    amet
-                                    sem pulvinar, imperdiet eros quis, vestibulum felis. Pellentesque posuere
-                                    scelerisque
-                                    sodales.</p>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, esse nesciunt
+                                        sapiente officia laboriosam consequatur dignissimos, pariatur eveniet neque
+                                        nulla sit? Saepe vel commodi exercitationem rem eligendi maiores reiciendis
+                                        iste?
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
 
@@ -176,27 +200,27 @@ https://templatemo.com/tm-567-nomad-force
 
                             <ul data-aos="fade-up">
                                 <li>
-                                    <div class="step">Step 1 : 운동의 정석 : 1장</div>
+                                    <div class="step"><span>Step 1</span> 운동의 정석 : 1장</div>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et laudantium fugiat
                                         excepturi possimus cupiditate, sit dignissimos non placeat harum aperiam?</p>
                                 </li>
                                 <li>
-                                    <div class="step">Step 2 : 운동의 정석 : 2장</div>
+                                    <div class="step"><span>Step 2</span> 운동의 정석 : 2장</div>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et laudantium fugiat
                                         excepturi possimus cupiditate, sit dignissimos non placeat harum aperiam?</p>
                                 </li>
                                 <li>
-                                    <div class="step">Step 3 : 운동의 정석 : 3장</div>
+                                    <div class="step"><span>Step 3</span> 운동의 정석 : 3장</div>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et laudantium fugiat
                                         excepturi possimus cupiditate, sit dignissimos non placeat harum aperiam?</p>
                                 </li>
                                 <li>
-                                    <div class="step">Step 4 : 운동의 정석 : 4장</div>
+                                    <div class="step"><span>Step 4</span> 운동의 정석 : 4장</div>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et laudantium fugiat
                                         excepturi possimus cupiditate, sit dignissimos non placeat harum aperiam?</p>
                                 </li>
                                 <li>
-                                    <div class="step">Step 5 : 운동의 정석 : 5장</div>
+                                    <div class="step"><span>Step 5</span> 운동의 정석 : 5장</div>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et laudantium fugiat
                                         excepturi possimus cupiditate, sit dignissimos non placeat harum aperiam?</p>
                                 </li>
@@ -210,8 +234,29 @@ https://templatemo.com/tm-567-nomad-force
                             </div>
 
                             <div class="container mt-5" data-aos="fade-up">
+
+                                <div class="row justify-content-center center-facilities">
+                                    <div class="col-md-6">
+                                        <p class="text-secondary text-decoration-line-through"><span
+                                                class="material-icons">shower</span> 샤워실 제공</p>
+                                        <p class="text-secondary text-decoration-line-through"><span
+                                                class="material-icons">dry_cleaning</span> 타올 제공</p>
+                                        <p class="text-primary"><span class="material-icons">shower</span> 운동복 제공</p>
+
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p class="text-primary"><span class="material-icons">inbox</span> 개인 사물함 제공</p>
+                                        <p class="text-primary"><span class="material-icons">local_parking</span> 주차공간
+                                            제공</p>
+                                        <p class="text-primary"><span class="material-icons">wifi</span> 와이파이 제공</p>
+                                    </div>
+                                </div>
+
                                 <iframe src="https://www.google.com/maps?q=서울 강남구 테헤란로14길 6&output=embed" width="100%"
-                                    height="500" data-aos="fade-up"></iframe>
+                                    height="500"></iframe>
+
+                                지도 카카오로 변경할것
+
                             </div>
                         </div>
 
@@ -222,9 +267,39 @@ https://templatemo.com/tm-567-nomad-force
                             </div>
 
                             <div class="container mt-5" data-aos="fade-up">
+                                <div id="class-carousel" class="carousel slide" data-bs-ride="true">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#class-carousel" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#class-carousel" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#class-carousel" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" data-bs-interval="3000">
+                                            <img src="img/eximg.jpg" class="d-block w-100" alt="클래스 사진">
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="3000">
+                                            <img src="img/health.png" class="d-block w-100" alt="클래스 사진">
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="3000">
+                                            <img src="img/1000939.jpg" class="d-block w-100" alt="클래스 사진">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#class-carousel"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#class-carousel"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
 
-
-                                
+                                캐러셀 높이 일정하게수정해야함
                             </div>
                         </div>
 
@@ -357,7 +432,7 @@ https://templatemo.com/tm-567-nomad-force
                                             </div>
 
                                             <div class="col-md-4">
-                                                <p class="text-left"><span class="text-muted">4.0</span>
+                                                <p class="text-left"><span class="text-muted">4</span>
                                                     <span class="fa fa-star star-active ml-3"></span>
                                                     <span class="fa fa-star star-active"></span>
                                                     <span class="fa fa-star star-active"></span>
@@ -373,7 +448,7 @@ https://templatemo.com/tm-567-nomad-force
 
                                         <div class="row text-left">
                                             <p class="content">리뷰는 10개씩 보여주어요. 사진을 클릭하면 확대해서 볼 수 있서요. 정렬은 최신이 디폴트.
-                                                페이지는 5개씩 끝은 항상조심해야
+                                                페이지는 5페이지씩, 페이징은 데이터 연동 이후에
                                             </p>
                                         </div>
 
@@ -394,7 +469,7 @@ https://templatemo.com/tm-567-nomad-force
                                             </div>
 
                                             <div class="col-md-4">
-                                                <p class="text-left"><span class="text-muted">5.0</span>
+                                                <p class="text-left"><span class="text-muted">5</span>
                                                     <span class="fa fa-star star-active ml-3"></span>
                                                     <span class="fa fa-star star-active"></span>
                                                     <span class="fa fa-star star-active"></span>
@@ -426,7 +501,7 @@ https://templatemo.com/tm-567-nomad-force
                                             </div>
 
                                             <div class="col-md-4">
-                                                <p class="text-left"><span class="text-muted">3.0</span>
+                                                <p class="text-left"><span class="text-muted">3</span>
                                                     <span class="fa fa-star star-active ml-3"></span>
                                                     <span class="fa fa-star star-active"></span>
                                                     <span class="fa fa-star star-active"></span>
@@ -446,6 +521,48 @@ https://templatemo.com/tm-567-nomad-force
                                         </div>
 
                                         <div class="row text-left">
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="row d-flex">
+                                        <div class="row d-flex review-header">
+                                            <div class="col-md-5">
+                                                <h3 class="mt-2 mb-0">찬호박</h3>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <p class="text-left"><span class="text-muted">5</span>
+                                                    <span class="fa fa-star star-active ml-3"></span>
+                                                    <span class="fa fa-star star-active"></span>
+                                                    <span class="fa fa-star star-active"></span>
+                                                    <span class="fa fa-star star-active"></span>
+                                                    <span class="fa fa-star star-active"></span>
+                                                </p>
+                                            </div>
+
+                                            <div class="col-md-3 date">
+                                                <p class="text-muted pt-5 pt-sm-3">2022.07.11</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row text-left">
+                                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Ad, obcaecati expedita quia enim fugiat optio sunt, quam, odit sit in
+                                                officia odio incidunt corrupti dolorum nesciunt quisquam autem
+                                                recusandae culpa accusantium doloremque et quas? Provident id ducimus
+                                                saepe optio voluptas porro ratione ut harum minima tempora, aliquam at
+                                                praesentium, maxime illum unde ea necessitatibus, debitis architecto vel
+                                                iusto odio? Magnam dolorem possimus blanditiis, officia tempora repellat
+                                                modi ullam voluptatum quibusdam incidunt voluptate atque maiores
+                                                molestiae libero magni, non dolor quo dicta. Atque possimus, beatae unde
+                                                quasi nemo vitae tenetur asperiores doloribus reprehenderit, libero
+                                                veritatis nobis nihil eligendi, nostrum voluptatibus repellat.</p>
+                                        </div>
+
+                                        <div class="row text-left">
+                                            <img class="pic" src="https://picsum.photos/id/234/600/400" alt="">
                                         </div>
                                     </div>
 
@@ -478,129 +595,141 @@ https://templatemo.com/tm-567-nomad-force
                                 <h1>환불규정</h1>
                             </div>
 
-                            <h2 class="mb-3" data-aos="fade-up">헬린이를 위한 그룹 피티</h2>
-
-                            <p class="me-4" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
-                                ultrices gravida. Risus commodo viverra maecenas accumsan.</p>
-
-                            <p data-aos="fade-up">Nullam id lorem commodo, pharetra sapien ut, accumsan ligula. Sed sit
-                                amet
-                                sem pulvinar, imperdiet eros quis, vestibulum felis. Pellentesque posuere scelerisque
-                                sodales.</p>
+                            <div class="container mt-5" data-aos="fade-up">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi explicabo ratione
+                                    vitae repudiandae minima enim, praesentium quasi! Similique odio assumenda maxime
+                                    amet cum saepe eligendi dolorem dolorum vero eveniet nesciunt ipsam quaerat eum
+                                    aliquam enim, nulla aut hic magnam! Vitae cum consectetur eum molestiae ea quaerat
+                                    eveniet et nihil aperiam quam, modi ab itaque assumenda neque deleniti recusandae.
+                                    Nesciunt ipsam error ullam iste deleniti natus at eum sit quidem quae, incidunt
+                                    facilis distinctio aperiam dolor ipsa. Iure tempore eos deleniti similique, unde
+                                    perspiciatis. Obcaecati maiores nobis doloribus odit blanditiis aspernatur, esse
+                                    voluptatibus quisquam distinctio nam magni harum beatae quis fugit?
+                                    환불규정은 나중에 세세하게 적을것
+                                </p>
+                            </div>
                         </div>
 
 
                     </div>
 
                     <!-- SIDE-BOX -->
-                    <div class="col-lg-3 col-2 mx-auto">
+                    <div class="col-md-3 col-2 mx-auto">
                         <div class="side-box">
-                            <div class="card bg-white p-3 mb-4">
+                            <div class="card bg-white p-0 mb-4">
+                                <div class="card-header">신규회원 전용 웰컴쿠폰 받아가세요!</div>
+                                <div class="p-3">
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <div class="card-info">
+                                            <div class="card-info__basic">
+                                                <h3 class="mb-0 class-type"><span>그룹</span> PT 클래스</h3>
+                                                <p class="text-muted mb-0 class-count">20회</p>
+                                                <p class="class-amount">₩ 400,000</p>
 
-                                <div class="d-flex justify-content-between mb-4">
-                                    <div class="card-info">
-                                        <div class="card-info__basic">
-                                            <h3 class="mb-0 class-type"><span>그룹</span> PT 클래스</h3>
-                                            <p class="text-muted mb-0 class-count">20회</p>
-                                            <p class="class-amount">₩ 400,000</p>
-
-                                            <progress id="participant" value="6" max="10"></progress>
-                                            <p class="participants"><span>10</span>명 중 <span>6</span>명이 이 클래스를 신청했어요!
-                                            </p>
+                                                <progress id="participant" value="6" max="10"></progress>
+                                                <p class="participants"><span>10</span>명 중 <span>6</span>명이 이 클래스를
+                                                    신청했어요!
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="row">
-                                    <div class="col-6">
-                                        <button type="button" name="share" id="sharebtn"><i
-                                                class="material-icons">share</i> 공유하기</button>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <button type="button" name="share" id="sharebtn"><i
+                                                    class="material-icons">share</i> 공유하기</button>
+                                        </div>
+                                        <div class="col-6">
+                                            <button type="button" name="likes" id="likebtn">
+                                                <div class="heartbox">
+                                                    <input type="checkbox" class="checkbox" id="heartCheck" />
+                                                    <label for="heartCheck">
+                                                        <svg id="heart-svg" viewBox="467 392 58 57"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <g id="Group" fill="none" fill-rule="evenodd"
+                                                                transform="translate(467 392)">
+                                                                <path
+                                                                    d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                                                    id="heart" fill="#AAB8C2" />
+                                                                <circle id="main-circ" fill="#E2264D" opacity="0"
+                                                                    cx="29.5" cy="29.5" r="1.5" />
+
+                                                                <g id="heartgroup7" opacity="0"
+                                                                    transform="translate(7 6)">
+                                                                    <circle id="heart1" fill="#9CD8C3" cx="2" cy="6"
+                                                                        r="2" />
+                                                                    <circle id="heart2" fill="#8CE8C3" cx="5" cy="2"
+                                                                        r="2" />
+                                                                </g>
+
+                                                                <g id="heartgroup6" opacity="0"
+                                                                    transform="translate(0 28)">
+                                                                    <circle id="heart1" fill="#CC8EF5" cx="2" cy="7"
+                                                                        r="2" />
+                                                                    <circle id="heart2" fill="#91D2FA" cx="3" cy="2"
+                                                                        r="2" />
+                                                                </g>
+
+                                                                <g id="heartgroup3" opacity="0"
+                                                                    transform="translate(52 28)">
+                                                                    <circle id="heart2" fill="#9CD8C3" cx="2" cy="7"
+                                                                        r="2" />
+                                                                    <circle id="heart1" fill="#8CE8C3" cx="4" cy="2"
+                                                                        r="2" />
+                                                                </g>
+
+                                                                <g id="heartgroup2" opacity="0"
+                                                                    transform="translate(44 6)">
+                                                                    <circle id="heart2" fill="#CC8EF5" cx="5" cy="6"
+                                                                        r="2" />
+                                                                    <circle id="heart1" fill="#CC8EF5" cx="2" cy="2"
+                                                                        r="2" />
+                                                                </g>
+
+                                                                <g id="heartgroup5" opacity="0"
+                                                                    transform="translate(14 50)">
+                                                                    <circle id="heart1" fill="#91D2FA" cx="6" cy="5"
+                                                                        r="2" />
+                                                                    <circle id="heart2" fill="#91D2FA" cx="2" cy="2"
+                                                                        r="2" />
+                                                                </g>
+
+                                                                <g id="heartgroup4" opacity="0"
+                                                                    transform="translate(35 50)">
+                                                                    <circle id="heart1" fill="#F48EA7" cx="6" cy="5"
+                                                                        r="2" />
+                                                                    <circle id="heart2" fill="#F48EA7" cx="2" cy="2"
+                                                                        r="2" />
+                                                                </g>
+
+                                                                <g id="heartgroup1" opacity="0"
+                                                                    transform="translate(24)">
+                                                                    <circle id="heart1" fill="#9FC7FA" cx="2.5" cy="3"
+                                                                        r="2" />
+                                                                    <circle id="heart2" fill="#9FC7FA" cx="7.5" cy="2"
+                                                                        r="2" />
+                                                                </g>
+                                                            </g>
+                                                        </svg>
+
+                                                        <span class="heartCount">150</span>
+                                                    </label>
+                                                </div>
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="col-6">
-                                        <button type="button" name="likes" id="likebtn">
-                                            <div class="heartbox">
-                                                <input type="checkbox" class="checkbox" id="heartCheck" />
-                                                <label for="heartCheck">
-                                                    <svg id="heart-svg" viewBox="467 392 58 57"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <g id="Group" fill="none" fill-rule="evenodd"
-                                                            transform="translate(467 392)">
-                                                            <path
-                                                                d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                                                                id="heart" fill="#AAB8C2" />
-                                                            <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5"
-                                                                cy="29.5" r="1.5" />
 
-                                                            <g id="heartgroup7" opacity="0" transform="translate(7 6)">
-                                                                <circle id="heart1" fill="#9CD8C3" cx="2" cy="6"
-                                                                    r="2" />
-                                                                <circle id="heart2" fill="#8CE8C3" cx="5" cy="2"
-                                                                    r="2" />
-                                                            </g>
-
-                                                            <g id="heartgroup6" opacity="0" transform="translate(0 28)">
-                                                                <circle id="heart1" fill="#CC8EF5" cx="2" cy="7"
-                                                                    r="2" />
-                                                                <circle id="heart2" fill="#91D2FA" cx="3" cy="2"
-                                                                    r="2" />
-                                                            </g>
-
-                                                            <g id="heartgroup3" opacity="0"
-                                                                transform="translate(52 28)">
-                                                                <circle id="heart2" fill="#9CD8C3" cx="2" cy="7"
-                                                                    r="2" />
-                                                                <circle id="heart1" fill="#8CE8C3" cx="4" cy="2"
-                                                                    r="2" />
-                                                            </g>
-
-                                                            <g id="heartgroup2" opacity="0" transform="translate(44 6)">
-                                                                <circle id="heart2" fill="#CC8EF5" cx="5" cy="6"
-                                                                    r="2" />
-                                                                <circle id="heart1" fill="#CC8EF5" cx="2" cy="2"
-                                                                    r="2" />
-                                                            </g>
-
-                                                            <g id="heartgroup5" opacity="0"
-                                                                transform="translate(14 50)">
-                                                                <circle id="heart1" fill="#91D2FA" cx="6" cy="5"
-                                                                    r="2" />
-                                                                <circle id="heart2" fill="#91D2FA" cx="2" cy="2"
-                                                                    r="2" />
-                                                            </g>
-
-                                                            <g id="heartgroup4" opacity="0"
-                                                                transform="translate(35 50)">
-                                                                <circle id="heart1" fill="#F48EA7" cx="6" cy="5"
-                                                                    r="2" />
-                                                                <circle id="heart2" fill="#F48EA7" cx="2" cy="2"
-                                                                    r="2" />
-                                                            </g>
-
-                                                            <g id="heartgroup1" opacity="0" transform="translate(24)">
-                                                                <circle id="heart1" fill="#9FC7FA" cx="2.5" cy="3"
-                                                                    r="2" />
-                                                                <circle id="heart2" fill="#9FC7FA" cx="7.5" cy="2"
-                                                                    r="2" />
-                                                            </g>
-                                                        </g>
-                                                    </svg>
-
-                                                    <span class="heartCount">150</span>
-                                                </label>
-                                            </div>
-                                        </button>
-                                    </div>
+                                    <form action="" method="get">
+                                        <button type="submit" name="buy" id="buybtn" formaction="weet_payment.html">지금
+                                            구매</button>
+                                    </form>
                                 </div>
-
-                                <button type="button" name="buy" id="buybtn">지금 구매</button>
                             </div>
 
 
                         </div>
                     </div>
-
         </section>
 
         <!-- TOP-BUTTON -->
