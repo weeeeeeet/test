@@ -112,8 +112,11 @@ section div.menu{
 
     /* border: 2px solid red; */
 }
-section div.menu i{
-    margin: 5px;
+section div.notice{
+   
+}
+.heart {
+    height: 50px;
 }
 section div.menu-list{
     float: left;
@@ -126,7 +129,7 @@ section div.menu-list{
     /* border: 2px solid red; */
 }
 section div.menu a{
-    
+   text-align: center;
    text-decoration: none; /* 밑줄 없애기 */
    color: black;
 }

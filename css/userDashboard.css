@@ -12,9 +12,9 @@
 }
 
 /* 가이드라인 */
-.g{
+/* .g{
     border: 1px solid rgb(192, 2, 255);
-}
+} */
 
 
 /* 배경 스타일 작업 ================================================== */
@@ -65,9 +65,10 @@ section div.notice-list { /* 공지사항 리스트 박스 */
     overflow-x: hidden;
     height: 300px;  /* 박스 높이 */
     padding-bottom: 20px; 
+    font-size: 14px;
 }
 section div.notice-list::-webkit-scrollbar { /*공지사항 리스트 스크롤 너비*/
-    width: 16px;
+    width: 12px;
 }
 section div.notice-list::-webkit-scrollbar-thumb { /*공지사항 리스트 스크롤 막대*/
     background-color: #77a2ff;
@@ -111,27 +112,28 @@ section div.coaching-plan h2{ /*이번주 코칭계획*/
     padding-top: 30px;
     margin: 10px;
 }
-section div.plan-list { /* 공지사항 리스트 박스 */
+section div.plan-list { /* 코칭계획 리스트 박스 */
     overflow: auto;
     overflow-x: hidden;
     height: 300px;  /* 박스 높이 */
     padding-bottom: 20px;
+    font-size: 14px;
 }
-section div.plan-list::-webkit-scrollbar { /*공지사항 리스트 스크롤 너비*/
-    width: 16px;
+section div.plan-list::-webkit-scrollbar { /*코칭계획 리스트 스크롤 너비*/
+    width: 12px;
 }
-section div.plan-list::-webkit-scrollbar-thumb { /*공지사항 리스트 스크롤 막대*/
+section div.plan-list::-webkit-scrollbar-thumb { /*코칭계획 리스트 스크롤 막대*/
     background-color: #77a2ff;
     border-radius: 10px;
     background-clip: padding-box;
     border: 2px solid transparent;
 }
-section div.plan-list::-webkit-scrollbar-track { /*공지사항 리스트 스크롤 여백*/
+section div.plan-list::-webkit-scrollbar-track { /*코칭계획 리스트 스크롤 여백*/
     background-color: rgb(224, 224, 224);
     border-radius: 10px;
     box-shadow: inset 0px 0px 5px white;
 }
-section div.plan-list li { /* 공지사항 리스트 - 리스트 태그*/
+section div.plan-list li { /* 코칭계획 리스트 - 리스트 태그*/
     width: 1000px;
     padding: 20px;
     margin: auto;
@@ -149,10 +151,12 @@ section div.plan-list a{
     color: black;
     padding-left: 10px;
  }
- section span {
+ section span { /* 날짜 */
     display: inline-block;
     float: right;
-    width: 150px;
+    width: 125px;
+    font-size: 14px;
+    color: rgb(180, 180, 180);
     text-align: center;
  }
 

@@ -12,9 +12,9 @@
 }
 
 /* 가이드라인 */
-.g{
+/* .g{
     border: 1px solid rgb(191, 0, 255);
-}
+} */
 
 /* 배경 스타일 작업 ================================================== */
 body {
@@ -49,8 +49,8 @@ section div.user-food {
     border-radius: 18px;
     height: 800px;  /* 오늘의 식단 대시보드 크기 (높이) */
 }
-section div.back-color {    /* 회원님의 식단 대시보드 헤더 색*/
-    background-color: #dafff8;
+section div.back-color {    /* 회원님의 식단 대시보드 헤더 색상*/
+    background-color: #fff5e3;
     border-top-right-radius: 18px;
     border-top-left-radius: 18px;
     height: 100px;
@@ -58,7 +58,7 @@ section div.back-color {    /* 회원님의 식단 대시보드 헤더 색*/
 section div.user-food h2{ /*회원님의 식단 관리 타이틀*/
     font-size: 20px;
     font-weight: bold;
-    color: #464646;
+    color: #FF730E;
     /* border-bottom: solid #e7e7e7; */
 
     padding-left: 45px;
@@ -78,10 +78,10 @@ section div.pic-list { /*회원 식단 카드 리스트*/
     margin-left: 30px;
 }
 section div.pic-list::-webkit-scrollbar { /*회원 식단 카드 스크롤 너비*/
-    width: 16px;
+    width: 12px;
 }
 section div.pic-list::-webkit-scrollbar-thumb { /*회원 식단 카드 스크롤 막대*/
-    background-color: #77a2ff;
+    background-color: #ffce84;
     border-radius: 10px;
     background-clip: padding-box;
     border: 2px solid transparent;
@@ -98,18 +98,25 @@ section div.col { /*카드 col 너비*/
 section div.card { /*식단 카드*/
     width: 150px;
     height: 150px;
-
     margin-right: 20px;
     margin-top: 10px;
+    border-radius: 15px;
+}
+section div.card a{ /*식단 카드 스타일 없애기*/
+   text-decoration: none;
 }
 section div.card img {
     height: 90px;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
 }
 
 section div.card h5{ /*식단 카드 날짜*/
-    font-size: 17px;
+    font-size: 15px;
     width: 100px;
     margin: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
  }
 
 

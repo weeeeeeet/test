@@ -105,12 +105,11 @@ section div.pic-list { /*식단 카드 리스트*/
     display: inline-flex;
     width: 1060px;
     height: 300px;
-    
     margin-left: 17px;
     margin-top: 15px;
 }
 section div.pic-list::-webkit-scrollbar { /*식단 카드 스크롤 너비*/
-    width: 16px;
+    width: 12px;
 }
 section div.pic-list::-webkit-scrollbar-thumb { /*식단 카드 스크롤 막대*/
     background-color: #77a2ff;
@@ -131,17 +130,24 @@ section div.col { /*카드 col 너비*/
 section div.card { /*식단 카드*/
     width: 150px;
     height: 150px;
-
     margin-right: 20px;
     margin-top: 10px;
+    border-radius: 15px;
 }
+section div.card a{ /*식단 카드 스타일 없애기*/
+    text-decoration: none;
+ }
 section div.card img {
     height: 90px;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
 }
 section div.card h5{ /*식단 카드 날짜*/
-    font-size: 17px;
+    font-size: 15px;
     width: 100px;
     margin: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
  }
 
 
