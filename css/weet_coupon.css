@@ -69,6 +69,37 @@ small {
     font-size: 14px;
     color: darkgray;
 }
+
+.reg-coupon {
+    color: black;
+    text-align: right;
+}
+.reg-coupon input:nth-of-type(1) {
+    padding: 5px;
+
+    border: none;
+    border-bottom: 1px solid #2370DF;
+}
+.reg-coupon input:nth-of-type(1):focus {
+    outline-color: #2370DF;
+
+    border: none;
+    border-bottom: 1px solid #2370DF;
+}
+.reg-coupon input:last-of-type {
+    width: 50px;
+    line-height: 30px;
+
+    margin-left: 10px;
+
+    background-color: #2370DF;
+    color: white;
+
+    font-weight: 400;
+
+    border: none;
+    border-radius: 5px;
+}
 /* ================탭 영역 끝============= */
 
 /* ================발급 확인 모달 시작============= */

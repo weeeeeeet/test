@@ -195,8 +195,8 @@
                 <legend>결제 수단</legend>
 
                 <div class="pay-method-container">
-                    <div class="row">
-                        <div class="col">
+                    <div class="row justify-content-center">
+                        <div class="col-md-5">
                             <input type="radio" class="btn-check" name="pg" id="btn-check-normal" value="html5_inicis"
                                 autocomplete="off" checked>
                             <label class="btn btn-outline-primary" for="btn-check-normal">
@@ -205,19 +205,13 @@
                             </label>
                         </div>
 
-                        <div class="col">
+                        <div class="col-md-5">
                             <input type="radio" class="btn-check" name="pg" id="btn-check-kakao" value="kakaopay"
                                 autocomplete="off">
                             <label class="btn btn-outline-primary" for="btn-check-kakao">
                                 <img src="img/payment_icon_yellow_medium.png" alt="카카오페이 이미지">
                                 카카오페이
                             </label>
-                        </div>
-
-                        <div class="col">
-                            <input type="radio" class="btn-check" name="pg" id="btn-check-naver" value="naverpay"
-                                autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btn-check-naver">네이버페이</label>
                         </div>
                     </div>
                 </div>
@@ -265,86 +259,86 @@
                 <button class="btn btn-primary" id="pay-submit" type="submit">결제</button>
             </div>
         </form>
+    </section>
 
-        <!-- 쿠폰팝업(모달창) -->
-        <div class="modal fade" id="payModal" tabindex="-1" role="dialog" aria-labelledby="payModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="payModalLabel">사용가능 쿠폰 <span>3</span></h5>
-                        <button type="button" class="btn-close" id="coupon-close" aria-label="Close"></button>
+    <!-- 쿠폰팝업(모달창) -->
+    <div class="modal fade" id="payModal" tabindex="-1" role="dialog" aria-labelledby="payModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="payModalLabel">사용가능 쿠폰 <span>3</span></h5>
+                    <button type="button" class="btn-close" id="coupon-close" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="coupons" id="no-coupon" value="-1"
+                            checked>
+                        <label class="form-check-label" for="no-coupon">
+                            선택 안 함
+                        </label>
                     </div>
-                    <div class="modal-body">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="coupons" id="no-coupon" value="-1"
-                                checked>
-                            <label class="form-check-label" for="no-coupon">
-                                선택 안 함
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="coupons" id="coupon1" value="1">
-                            <label class="form-check-label" for="coupon1">
-                                <table>
-                                    <colgroup>
-                                        <col style="width: 10%;">
-                                        <col style="width: 70%;">
-                                        <col style="width: 20%;">
-                                    </colgroup>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="coupons" id="coupon1" value="1">
+                        <label class="form-check-label" for="coupon1">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 10%;">
+                                    <col style="width: 70%;">
+                                    <col style="width: 20%;">
+                                </colgroup>
 
-                                    <tr>
-                                        <td>40%</td>
-                                        <td>첫번째 쿠폰</td>
-                                        <td>~ 2022-07-31</td>
-                                    </tr>
-                                </table>
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="coupons" id="coupon2" value="2">
-                            <label class="form-check-label" for="coupon2">
-                                <table>
-                                    <colgroup>
-                                        <col style="width: 10%;">
-                                        <col style="width: 70%;">
-                                        <col style="width: 20%;">
-                                    </colgroup>
-
-                                    <tr>
-                                        <td>10%</td>
-                                        <td>두번째 쿠폰</td>
-                                        <td>~ 2022-07-31</td>
-                                    </tr>
-                                </table>
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="coupons" id="coupon3" value="3">
-                            <label class="form-check-label" for="coupon3">
-                                <table>
-                                    <colgroup>
-                                        <col style="width: 10%;">
-                                        <col style="width: 70%;">
-                                        <col style="width: 20%;">
-                                    </colgroup>
-
-                                    <tr>
-                                        <td>20%</td>
-                                        <td>세번째 쿠폰</td>
-                                        <td>~ 2022-07-31</td>
-                                    </tr>
-                                </table>
-                            </label>
-                        </div>
+                                <tr>
+                                    <td>40%</td>
+                                    <td>첫번째 쿠폰</td>
+                                    <td>~ 2022-07-31</td>
+                                </tr>
+                            </table>
+                        </label>
                     </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-primary" id="coupon-submit" type="submit">적용</button>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="coupons" id="coupon2" value="2">
+                        <label class="form-check-label" for="coupon2">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 10%;">
+                                    <col style="width: 70%;">
+                                    <col style="width: 20%;">
+                                </colgroup>
+
+                                <tr>
+                                    <td>10%</td>
+                                    <td>두번째 쿠폰</td>
+                                    <td>~ 2022-07-31</td>
+                                </tr>
+                            </table>
+                        </label>
                     </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="coupons" id="coupon3" value="3">
+                        <label class="form-check-label" for="coupon3">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 10%;">
+                                    <col style="width: 70%;">
+                                    <col style="width: 20%;">
+                                </colgroup>
+
+                                <tr>
+                                    <td>20%</td>
+                                    <td>세번째 쿠폰</td>
+                                    <td>~ 2022-07-31</td>
+                                </tr>
+                            </table>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" id="coupon-submit" type="submit">적용</button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <div w3-include-html="weet_footer.html"></div>  <!-- footer -->
 

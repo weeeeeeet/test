@@ -63,7 +63,7 @@ h6 {
 
 p {
   color: var(--p-color);
-  font-size: var(--p-font-size);
+  font-size: 14px;
   font-weight: var(--font-weight-light);
   letter-spacing: 0.5px;
 }
@@ -106,8 +106,6 @@ a:hover {
   bottom: 0;
   left: 0;
 }
-
-
 
 /*---------------------------------------
   NAVIGATION               
@@ -227,52 +225,90 @@ a:hover {
   HERO              
 -----------------------------------------*/
 .hero {
-  position: relative;
-  overflow: hidden;
-}
-
-@media screen and (min-width: 992px) {
-  .hero {
-    height: 70vh;
-  }
-
-  .custom-video,
-  .news-detail-image {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .sticky-wrapper {
-    position: relative;
-    bottom: 76px;
-  }
-}
-
-.heroText {
-  position: absolute;
-  z-index: 1;
-  top: 70%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
-
   width: 100%;
+  height: 70vh;
+  overflow-x: hidden;
+  margin: 0 auto;
+  font-size: 14px;
+
+
+  background-color: #043550;
+}
+
+.hero .row {
+  position: relative;
+
+  top: 30%;
+}
+.hero .row img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+
+  border-radius: 20px;
+}
+.hero-text {
+  margin-left: 50px;
+  height: 300px;
+}
+.hero-text .row {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.hero-text .card div:first-of-type {
+  font-size: 14px;
+}
+.hero-text h1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.hero-text span {
+  display: inline-block;
+}
+.hero-text .badge-group {
+  width: 60px;
+  
+  background-color: #FF730E;
+  
   text-align: center;
-  background-color: rgba(4, 53, 87, .3);
+  color: white;
+  font-weight: 500;
+  line-height: 30px;
+}
+.hero-text .fa-star {
+  width: 20px;
+  line-height: 10px;
+}
+.hero-text .reviews {
+  width: 200px;
+  line-height: 30px;
+}
+.hero-text .card div:last-of-type span {
+  width: 80px;
+
+  text-align: center;
+  font-size: 14px;
+  line-height: 28px;
+
+  background-color: #FF730E;
+  border-radius: 20px;
+  margin: 0 5px;
 }
 
 /*---------------------------------------
   SECTION               
 -----------------------------------------*/
-.section-padding {
-  padding-bottom: 7rem;
+.news-detail {
+  width: 1200px;
+  margin: 0 auto;
 }
-
+#section01, #section02, #section04, #section05, #section07 {
+  line-height: 40px;
+}
 .class-title {
   margin-bottom: 50px;
 
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 500;
 
   /* border-bottom: 1px solid lightgray; */
@@ -280,10 +316,115 @@ a:hover {
   border-image-slice: 1; */
 }
 
+.class-intro .class-title {
+  padding-top: 50px;
+}
+.class-intro div:last-of-type>h2 {    /* 클래스소개 */
+  font-size: 20px;
+  font-weight: 500;
+}
 .youtube {
   margin-bottom: 40px;
 }
 
+.trainer-profile-img {    /* 트레이너소개 */
+  width: 280px;
+  height: 350px;
+
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  border: 5px solid transparent;
+  border-radius: 10px;
+  background-image: linear-gradient(#FFF, #FFF), linear-gradient(to right, lightgray, #2370DF, #FF730E , lightgray);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  box-shadow: 5px 5px 20px lightgray;
+  
+}
+.trainer-profile-img img {
+  width: 100%;
+  height: 100%;
+
+  padding: 5px;
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+.trainer-profile div {
+  margin-bottom: 30px;
+}
+.trainer-profile div:nth-of-type(3) {
+  border-bottom: 1px solid lightgray;
+}
+.trainer-profile h2 {
+  font-size: 20px;
+  text-align: center;
+}
+.trainer-profile h3 {
+  font-size: 18px;
+  font-weight: 500;
+
+  margin-bottom: 30px;
+}
+.trainer-profile ul {
+  padding-left: 50px;
+}
+
+.class-progress ul {      /* 커리큘럼 */
+  list-style: none;
+}
+.class-progress ul li {
+  margin-bottom: 30px;
+  padding: 20px;
+
+  /* border-bottom: 1px solid lightgray; */
+  background-color: #f4f8ff;
+  border-radius: 10px;
+}
+
+.step {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 35px;
+
+  margin-bottom: 10px;
+}
+.step span {
+  display: inline-block;
+
+  width: 100px;
+  height: 35px;
+  margin-right: 10px;
+
+  border-radius: 20px;
+  background-color: #2370DF;
+
+  text-align: center;
+  color: white;
+}
+.class-progress ul li p {
+  padding-left: 15px;
+  line-height: 25px;
+}
+
+.center-facilities {
+  border: 1px solid lightgray;
+  border-radius: 20px;
+
+  margin: 0 50px;
+  margin-bottom: 80px;
+  padding-top: 20px;
+}
+.center-facilities span {
+  font-size: 18px;
+}
+
+.carousel-item img {  /* 클래스 사진 */
+  object-fit: cover;
+}
 /*---------------------------------------
   REVIEWS            
 -----------------------------------------*/
@@ -377,8 +518,9 @@ a:hover {
 }
 
 .review-header>div:nth-of-type(1) {
-  font-size: 25px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
+  color: #2370DF;
 }
 
 .review-header>div:last-of-type {
@@ -393,6 +535,9 @@ a:hover {
 
 .reviews>.row {
   margin: 15px 0;
+}
+.review-header .text-muted {
+  /* font-weight: bold; */
 }
 
 /* page */
@@ -568,9 +713,19 @@ a:hover {
 -----------------------------------------*/
 .side-box {
   position: sticky;
+  padding-top: 20px;
   top: 150px;
 }
+.card-header {
+  border-bottom: none;
+  height: 35px;
+  background-color: #FF730E;
+  color: white;
 
+  font-size: 13px;
+  text-align: center;
+  font-weight: 600;
+}
 .side-box .card {
   border: 1px solid lightgray;
   border-radius: 10px;
@@ -584,22 +739,26 @@ a:hover {
 
 .card-info .class-type span {
   color: #2370DF;
+  font-weight: 600;
+}
+.card-info .class-count {
+  font-weight: 700;
 }
 
 .card-info .class-amount {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 .card-info .participants {
-  font-size: 14px;
+  font-size: 12px;
   text-align: left;
   color: gray;
 }
 
 .card-info .participants span {
   color: #2370DF;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -633,9 +792,10 @@ a:hover {
   background-color: white;
   border-radius: 5px;
 
+  width: 100%;
   margin-bottom: 15px;
   height: 50px;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 50px;
 }
 
