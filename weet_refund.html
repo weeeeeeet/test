@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>refund</title>
+
+    <!-- font -->
+    <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap v5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <!-- header & footer -->
+    <link href="css/weet_header&footer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/weet_refund.css">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
+
+    <!-- iamport.payment.js -->
+    <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.2.0.js"></script>
+
+    <script>
+        $(() => {
+            $('#refund-button').click((e) => {
+                    e.preventDefault();
+                    $('#refundModal').modal("show");
+                });
+            
+            $('#reason6').focus(() => {
+                $('#reason-etc').removeAttr('disabled');
+            })
+
+            $('#refund-close').click(() => $('#refundModal').modal("hide"));
+            $('#refund-submit').click(() => {
+                $('#refundModal').modal("hide"); 
+                alert('주문 취소가 완료되었습니다.');
+            });
+
+        }) // .jq
+    </script>
+</head>
+
+<body>
+    <button id="refund-button">주문취소</button>
+
+    <div class="modal fade" id="refundModal" tabindex="-1" role="dialog" aria-labelledby="refundModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="refundModalLabel">환불 정보 입력</h5>
+                    <button type="button" class="btn-close" id="refund-close" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="refund-name">
+                        <p>환불 클래스</p>
+                        <p>(클래스 이름)</p>
+                    </div>
+                    <hr>
+                    <div class="refund-reason">
+                        <p>환불 사유</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="refundReason" id="reason1">
+                            <label class="form-check-label" for="reason1">
+                              수강 스케줄 참여 불가
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="refundReason" id="reason2">
+                            <label class="form-check-label" for="reason2">
+                                고객센터 대응 불만족
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="refundReason" id="reason3">
+                            <label class="form-check-label" for="reason3">
+                                수업 퀄리티 불만족
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="refundReason" id="reason4">
+                            <label class="form-check-label" for="reason4">
+                                중복 결제
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="refundReason" id="reason5">
+                            <label class="form-check-label" for="reason5">
+                                결제수단 변경
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="refundReason" id="reason6">
+                            <label class="form-check-label" for="reason6">
+                                기타
+                                <input type="text" name="reason-etc" id="reason-etc" disabled>
+                            </label>
+                          </div>
+                    </div>
+                    <hr>
+                    <div class="refund-email">
+                        <p>이메일 정보</p>
+                        <label class="form-check-label" for="refund-email">이메일
+                        <input type="email" name="refund-email" id="refund-email" placeholder="입력해주세요.">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" id="refund-submit" type="submit">주문 취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
