@@ -41,31 +41,33 @@
                 <div class="inner">
                     <h3>공지사항 / FAQ</h3>
                     <div class="select-box">
-                        <div class="check-box">
-                            <ul>
-                                <li><span class="search-title">게시판명 </span>:</li>
-                                <li><input type="checkbox" name="user_type" id="user_type" value="allType" checked> 전체
-                                </li>
-                                <li><input type="checkbox" name="user_type" id="user_type" value="notice"> 공지사항</li>
-                                <li><input type="checkbox" name="user_type" id="user_type" value="fap"> 자주묻는질문</li>
-                            </ul>
-                        </div>
-                        <div calss="search-box">
-                            <ul>
-                                <li><span class="search-title">검색어 </span>:</li>
-                                <li>
-                                    <div class="search-bar">
-                                        <select class="search-select" name="search-type">
-                                            <option value="adminTitle">글제목</option>
-                                            <option value="adminCon">내용</option>
-                                        </select>
-                                        <input type="text" name="search" placeholder="검색어 입력">
-                                        <button class="search_btn" name="search">검색</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
+                        <form action="">
+                            <div class="check-box">
+                                <ul>
+                                    <li><span class="search-title">게시판명 </span>:</li>
+                                    <li><input type="checkbox" name="user_type" id="user_type" value="allType" checked>
+                                        전체
+                                    </li>
+                                    <li><input type="checkbox" name="user_type" id="user_type" value="notice"> 공지사항</li>
+                                    <li><input type="checkbox" name="user_type" id="user_type" value="fap"> 자주묻는질문</li>
+                                </ul>
+                            </div>
+                            <div calss="search-box">
+                                <ul>
+                                    <li><span class="search-title">검색어 </span>:</li>
+                                    <li>
+                                        <div class="search-bar">
+                                            <select class="search-select" name="search-type">
+                                                <option value="adminTitle">글제목</option>
+                                                <option value="adminCon">내용</option>
+                                            </select>
+                                            <input type="text" name="search" placeholder="검색어 입력">
+                                            <button class="search_btn" name="search">검색</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
                     </div>
                     <form id="boardForm" name="boardForm">
                         <input type="hidden" id="function_name" name="function_name" value="getBoardList" />

@@ -70,7 +70,7 @@ a{
 
     /* 수직 가운데 정렬 */
     top: 50%;
-    transform: translateY(-50%); /* <- 내 몸의 절반만큼 위로 땡긴다는 뜻이에용 */  
+    transform: translateY(-50%); /* <- 내 몸의 절반만큼 위로 땡긴다는 뜻 */  
 }
 
 .navbar_serach input{

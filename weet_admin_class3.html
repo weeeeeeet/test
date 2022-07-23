@@ -41,32 +41,35 @@
                 <div class="inner">
                     <h3>반려 클래스</h3>
                     <div class="select-box">
-                        <div class="check-box">
-                            <ul>
-                                <li><span class="search-title">유형</span>:</li>
-                                <li><input type="checkbox" name="user_type" id="agm" value="allType" checked> 전체</li>
-                                <li><input type="checkbox" name="user_type" id="agm" value="P"> 개인</li>
-                                <li><input type="checkbox" name="user_type" id="agm" value="G"> 그룹</li>
-                            </ul>
-                        </div>
-                        <div calss="search-box">
-                            <ul>
-                                <li><span class="search-title">검색어 </span>:</li>
-                                <li>
-                                    <div class="search-bar">
-                                        <select class="search-select" name="search-type">
-                                            <option value="class_name">클래스명</option>
-                                            <option value="user_name">이름</option>
-                                            <option value="user_id">아이디</option>
-                                            <option value="reason">반려사유</option>
-                                            <option value="return_date">반려일시</option>
-                                        </select>
-                                        <input type="text" name="search" placeholder="검색어 입력">
-                                        <button class="search_btn" name="search">검색</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <form action="">
+                            <div class="check-box">
+                                <ul>
+                                    <li><span class="search-title">유형</span>:</li>
+                                    <li><input type="checkbox" name="user_type" id="agm" value="allType" checked> 전체
+                                    </li>
+                                    <li><input type="checkbox" name="user_type" id="agm" value="P"> 개인</li>
+                                    <li><input type="checkbox" name="user_type" id="agm" value="G"> 그룹</li>
+                                </ul>
+                            </div>
+                            <div calss="search-box">
+                                <ul>
+                                    <li><span class="search-title">검색어 </span>:</li>
+                                    <li>
+                                        <div class="search-bar">
+                                            <select class="search-select" name="search-type">
+                                                <option value="class_name">클래스명</option>
+                                                <option value="user_name">이름</option>
+                                                <option value="user_id">아이디</option>
+                                                <option value="reason">반려사유</option>
+                                                <option value="return_date">반려일시</option>
+                                            </select>
+                                            <input type="text" name="search" placeholder="검색어 입력">
+                                            <button class="search_btn" name="search">검색</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
 
                     </div>
                     <form id="boardForm" name="boardForm">
