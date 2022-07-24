@@ -1,7 +1,35 @@
+// ==========================================
+//          약관 동의 체크박스
+//===========================================
+
+$(document).ready(function(){
+    // 전체 체크박스 클릭 시
+    $("#agreeAll").click(function() {
+if($("#agreeAll").is(":checked")) $("input[name=agreechk]").prop("checked", true);
+else $("input[name=agreechk]").prop("checked", false);
+});
+
+$("input[name=agreechk]").click(function() {
+var total = $("input[name=agreechk]").length;
+var checked = $("input[name=agreechk]:checked").length;
+
+if(total != checked) $("#agreeAll").prop("checked", false);
+else $("#agreeAll").prop("checked", true); 
+});
+});
+
+
+
+
+
+// ==========================================
+//          
+//===========================================
+
 //joinform_check 함수로 유효성 검사
 function joinform_check() {
     //변수에 담아주기
-    var uid = document.getElementById("uid");
+    var id = document.getElementById("id");
     var pwd = document.getElementById("pwd");
     var repwd = document.getElementById("repwd");
     var uname = document.getElementById("uname");
@@ -16,9 +44,9 @@ function joinform_check() {
     var agree2 = document.getElementById("agree");
     var agree3 = document.getElementById("agree");
 
-    if (uid.value == "") { //해당 입력값이 없을 경우 같은말: if(!uid.value)
+    if (id.value == "") { //해당 입력값이 없을 경우 같은말: if(!uid.value)
       alert("아이디를 입력하세요.");
-      uid.focus(); //focus(): 커서가 깜빡이는 현상, blur(): 커서가 사라지는 현상
+      id.focus(); //focus(): 커서가 깜빡이는 현상, blur(): 커서가 사라지는 현상
       return false; //return: 반환하다 return false:  아무것도 반환하지 말아라 아래 코드부터 아무것도 진행하지 말것
     };
 
@@ -69,9 +97,14 @@ function joinform_check() {
       return false;
     }
 
-    if (!agree.checked) { //체크박스 미체크시
+    if (!agree1.checked) { //체크박스 미체크시
       alert("약관 동의를 체크하세요.");
-      agree.focus();
+      agree1.focus();
+      return false;
+    }
+    if (!agree2.checked) { //체크박스 미체크시
+      alert("약관 동의를 체크하세요.");
+      agree2.focus();
       return false;
     }
 

@@ -23,9 +23,16 @@ input{
 
 /*======= join-contain========== */
 
-.join-contain {
+.join-box {                    /* 회원가입 form*/  
     min-width: 420px;
     margin-top: 50px;
+    /* border: 2px solid green; */
+}
+
+.join-contain {
+    margin: 0 outo;
+    padding-bottom: 50px;
+    width: 370px;
     /* border: 2px solid green; */
 }
 .join-contain h2{                    /* 회원가입문구 */
@@ -40,12 +47,7 @@ input{
     margin-bottom: 30px;
     text-align: center;
 }
-.join-box {                    /* 회원가입 form*/  
-    margin: 0 outo;
-    padding-bottom: 50px;
-    width: 370px;
-    /* border: 2px solid green; */
-}
+
 .form-label{                        /* 입력창 문구 */
     margin-top: 3px;
     margin-left: 10px;

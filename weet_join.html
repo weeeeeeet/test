@@ -8,7 +8,7 @@
 
     <title>Weet</title>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
     <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
@@ -21,23 +21,6 @@
     <link href="css/weet_join.css" rel="stylesheet" />
     <script src="js/loadHTML.js"></script>
 
-    <script type="text/javascript">
-     $(document).ready(function(){
-         // 전체 체크박스 클릭 시
-         $("#agreeAll").click(function() {
-		if($("#agreeAll").is(":checked")) $("input[name=agreechk]").prop("checked", true);
-		else $("input[name=agreechk]").prop("checked", false);
-	});
-
-	$("input[name=agreechk]").click(function() {
-		var total = $("input[name=agreechk]").length;
-		var checked = $("input[name=agreechk]:checked").length;
-
-		if(total != checked) $("#agreeAll").prop("checked", false);
-		else $("#agreeAll").prop("checked", true); 
-	});
-});
-    </script>
 </head>
 
 <body>
@@ -48,9 +31,11 @@
 
 
         <!-- 회원가입 -->
-        <section class="join-contain sig">
-            <h2>회원 가입</h2>
-            <form class="join-box" name="join_form" action="#" method="post">
+        <form class="join-box" name="join_form" action="#" method="post">
+            
+            <section class="join-contain sig">
+                <h2>회원 가입</h2>
+
                 <div class="userid-box">
                     <label for="id" class="form-label">아이디</label>
                     <div class="boxing">
@@ -62,43 +47,44 @@
                 <div class="userpw-box">
                     <label for="pw" class="form-label">비밀번호</label>
                     <div class="boxing">
-                        <input type="password" class="form-control-sm" name="userpwd" id="pwd" minlength="8"
-                            maxlength="14" placeholder="영문 대소문자,숫자,특수문자 최소 1개이상 조합하여 8개이상 15자리 미만" autocomplete="off"
-                            required>
+                        <input type="password" class="form-control-sm" name="pwd" id="pwd" minlength="8" maxlength="14"
+                            placeholder="영문 대소문자,숫자,특수문자 최소 1개이상 조합하여 8개이상 15자리 미만" autocomplete="off" required>
                     </div>
                 </div>
                 <div class="userpw2-box">
                     <label for="pw2" class="form-label">비밀번호 확인</label>
                     <div class="boxing">
-                        <input type="password" class="form-control-sm" name="userPw2" id="pwd2" minlength="8"
+                        <input type="password" class="form-control-sm" name="repwd" id="repwd" minlength="8"
                             maxlength="14" placeholder="비밀번호를 한번 더 입력해주세요" autocomplete="off" required>
                     </div>
                 </div>
                 <div class="email-box">
-                    <label for="mail" class="form-label"> 이메일 </label>
+                    <label for="email" class="form-label"> 이메일 </label>
                     <div class="boxing">
                         <input type="email" class="form-control-sm" name="usermail" id="mail"
-                            placeholder="example1234@gmail.com">
+                            placeholder="example1234@gmail.com" pattern="^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}"
+                            required>
                     </div>
                 </div>
                 <div class="phone-box">
                     <label for="mobaile" class="form-label"> 핸드폰번호 </label>
                     <div class="boxing">
-                        <input type="tell" class="form-control-sm" id="tell" class="int" length="11"
-                            placeholder=" ' - ' 제외하고 입력해주세요">
+                        <input type="tel" class="form-control-sm" id="mobile" class="int"
+                            placeholder=" ' - ' 제외하고 입력해주세요" pattern="\d*" minlength="10" maxlength="11"
+                            required>
                         <button type="button" onclick="id_check();">인증요청</button>
                     </div>
                 </div>
-            </form>
-        </section>
 
-        <div class="partition"></div>
+            </section>
 
-        <!-- 트레이너 프로필 -->
+            <div class="partition"></div>
 
-        <section class="join-contain info">
-            <h3>트레이너 프로필 등록</h3>
-            <form class="info-box" name="join_form" action="#" method="post">
+            <!-- 트레이너 프로필 -->
+
+            <section class="join-contain info">
+                <h3>트레이너 프로필 등록</h3>
+
                 <div class="box1">
                     <div class="tr-prof">
                         <img src="https://picsum.photos/id/684/150/150" alt="">
@@ -129,43 +115,43 @@
                         <li><label for="trintro" class="form-label">트레이너소개</label><span>*</span></li>
                         <li><input type="text" class="form-control-sm" id="intro" maxlength="100"></li>
                     </ul>
-            </form>
-        </section>
 
-        <div class="partition"></div>
+            </section>
 
-        <!-- 사업자 정보 인증 -->
+            <div class="partition"></div>
 
-        <section class="join-contain bnum">
-            <h3>사업자 정보 확인</h3>
-            <form class="info-box" name="join_form" action="#" method="post">
-                <div class="info bum">
-                    <ul>
-                        <li><label for="bus inessNum" class="form-label">사업자 번호 <span>*</span></label></li>
-                        <li><input type="tell" class="form-control-sm" id="businessNum" length="10"
-                                placeholder=" ' - ' 제외하고 입력해주세요">
-                            <p>사업자번호를 도용하여 가입시, 형사처벌 대상에 해당됩니다</p>
-                        </li>
-                        <li><label for="mobaile" class="form-label"> 개업일자 <span>*</span></label></li>
-                        <li><input type="date" class="form-control-sm" id="openDate" length="10"></li>
-                        <li><label for="openDate" class="form-label"> 대표자 성명<span>*</span> </label></li>
-                        <li><input type="text" class="form-control-sm" id="ceoName" length="15"></li>
-                    </ul>
-                </div>
-            </form>
-        </section>
+            <!-- 사업자 정보 인증 -->
 
-        <!-- 약관 동의 -->
+            <section class="join-contain bnum">
+                <h3>사업자 정보 확인</h3>
+                <form class="info-box" name="join_form" action="#" method="post">
+                    <div class="info bum">
+                        <ul>
+                            <li><label for="bus inessNum" class="form-label">사업자 번호 <span>*</span></label></li>
+                            <li><input type="tel" class="form-control-sm" id="businessNum" length="10"
+                                    placeholder=" ' - ' 제외하고 입력해주세요">
+                                <p>사업자번호를 도용하여 가입시, 형사처벌 대상에 해당됩니다</p>
+                            </li>
+                            <li><label for="tel" class="form-label"> 개업일자 <span>*</span></label></li>
+                            <li><input type="date" class="form-control-sm" id="openDate"></li>
+                            <li><label for="openDate" class="form-label"> 대표자 성명<span>*</span> </label></li>
+                            <li><input type="text" class="form-control-sm" id="ceoName" length="15"></li>
+                        </ul>
+                    </div>
 
-        <section class="join-contain agreement">
-            <form class="info-box" name="join_form" action="#" method="post">
+            </section>
+
+            <!-- 약관 동의 -->
+
+            <section class="join-contain agreement">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h5 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed selectall" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseOne" aria-expanded="false"
                                 aria-controls="flush-collapseOne">
-                                전체동의<input class="agree_chkAll" type="checkbox" value="agreeAll" name="agreeAll" id="agreeAll">
+                                전체동의<input class="agree_chkAll" type="checkbox" value="agreeAll" name="agreeAll"
+                                    id="agreeAll">
                             </button>
                         </h5>
                     </div>
@@ -537,7 +523,8 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseThree" aria-expanded="false"
                                 aria-controls="flush-collapseThree">
-                                (필수) 개인정보취급방침 동의<input class="agree_check" type="checkbox" value="agree2" name="agreechk">
+                                (필수) 개인정보취급방침 동의<input class="agree_check" type="checkbox" value="agree2"
+                                    name="agreechk">
                             </button>
                         </h5>
                         <div id="flush-collapseThree" class="accordion-collapse collapse"
@@ -725,7 +712,8 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseFour" aria-expanded="false"
                                 aria-controls="flush-collapseFour">
-                                (선택) 이벤트 및 할인 소식 알림 동의<input class="agree_check" type="checkbox" value="agree3" name="agreechk">
+                                (선택) 이벤트 및 할인 소식 알림 동의<input class="agree_check" type="checkbox" value="agree3"
+                                    name="agreechk">
                             </button>
                         </h5>
                         <div id="flush-collapseFour" class="accordion-collapse collapse"
@@ -735,10 +723,12 @@
                     </div>
                 </div>
                 <div>
-                    <button class="loginbtn" type="submit" id="btn_login_trhome">로그인</button>
+                    <button class="loginbtn" type="submit" id="btn_login_trhome"
+                        onclick="joinform_check();">로그인</button>
                 </div>
-            </form>
-        </section>
+            </section>
+        </form>
+
     </div>
     <!-- footer s -->
     <footer id="footer" include-html="weet_footer.html"></footer>
