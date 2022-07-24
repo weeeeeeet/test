@@ -157,3 +157,9 @@ p {
 .info span{
     color: red;
 }
+
+.accordion-button.selectall::after { display: none;}
+
+.agreement{
+    margin-bottom: 200px;
+}

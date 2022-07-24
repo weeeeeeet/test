@@ -34,22 +34,32 @@
             </div>
             <form action="Login" class="member-login">
                 <div class="mb-3">
-                    <table class="findid-box">
-                        <tbody>
+                    <div class="findid_list">
+                        <table class="findid-box">
+                            <colgroup>
                             <col width="70%">
                             <col width="30%">
-                        <tr>
-                            <th>example1234</th>
-                            <th>2022.07.13</th>
-                        </tr>
-                        <tr>
-                            <th>example1234</th>
-                            <th>2022.07.13</th>
-                        </tr>
-                    </tbody>
-                    </table>
+                        </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>아이디</th>
+                                    <th>가입 일자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>example1234</th>
+                                    <th>2022.07.13</th>
+                                </tr>
+                                <tr>
+                                    <th>example1234</th>
+                                    <th>2022.07.13</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <div class="btn-box">
-                        <input class="findbtn" type="submit" value="로그인하기">
+                        <button  class="findbtn" type="submit" onclick="location.href='weet_login_tr'">로그인하기</button>
                         <input class="findbtn" type="submit" value="비밀번호찾기">
                     </div>
                 </div>
