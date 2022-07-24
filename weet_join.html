@@ -24,22 +24,19 @@
     <script type="text/javascript">
      $(document).ready(function(){
          // 전체 체크박스 클릭 시
-         $("#agreeAll").click(function(){
-             if($("#agreeAll").prop("checked")) {
-                 $(".agree_check").prop("checked", true);
-             } else {
-                $(".agree_check").prop("checked", false);
-             } 
-             });
-        // 전체 체크박스 선택중 체크박스 하나 풀었을 때 '전체'체크박스 해제
-        $(".agree_check").click(function() {
-            if ($("input[name='agree']:checked").length == 3) {
-                $(".agree_check").prop("checked", true);
-            } else {
-                $(".agree_check").prop("checked", false);
-            }
-        });
-     });
+         $("#agreeAll").click(function() {
+		if($("#agreeAll").is(":checked")) $("input[name=chk]").prop("checked", true);
+		else $("input[name=chk]").prop("checked", false);
+	});
+
+	$("input[name=chk]").click(function() {
+		var total = $("input[name=chk]").length;
+		var checked = $("input[name=chk]:checked").length;
+
+		if(total != checked) $("#agreeAll").prop("checked", false);
+		else $("#agreeAll").prop("checked", true); 
+	});
+});
     </script>
 </head>
 
@@ -168,7 +165,7 @@
                             <button class="accordion-button collapsed selectall" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseOne" aria-expanded="false"
                                 aria-controls="flush-collapseOne">
-                                전체동의<input class="agree_check" type="checkbox" value="agreeAll" name="agreeAll" id="agreeAll">
+                                전체동의<input class="agree_chkAll" type="checkbox" value="agreeAll" name="chkAll" id="agreeAll">
                             </button>
                         </h5>
                     </div>
@@ -177,7 +174,7 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                 aria-controls="flush-collapseTwo">
-                                (필수) 이용약관 동의<input class="agree_check" type="checkbox" value="agree1" name="agree">
+                                (필수) 이용약관 동의<input class="agree_check" type="checkbox" value="agree1" name="chk">
                             </button>
                         </h5>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse"
@@ -540,7 +537,7 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseThree" aria-expanded="false"
                                 aria-controls="flush-collapseThree">
-                                (필수) 개인정보취급방침 동의<input class="agree_check" type="checkbox" value="agree2" name="agree">
+                                (필수) 개인정보취급방침 동의<input class="agree_check" type="checkbox" value="agree2" name="chk">
                             </button>
                         </h5>
                         <div id="flush-collapseThree" class="accordion-collapse collapse"
@@ -728,7 +725,7 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseFour" aria-expanded="false"
                                 aria-controls="flush-collapseFour">
-                                (선택) 이벤트 및 할인 소식 알림 동의<input class="agree_check" type="checkbox" value="agree3" name="agree">
+                                (선택) 이벤트 및 할인 소식 알림 동의<input class="agree_check" type="checkbox" value="agree3" name="chk">
                             </button>
                         </h5>
                         <div id="flush-collapseFour" class="accordion-collapse collapse"
