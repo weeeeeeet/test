@@ -3,18 +3,12 @@ let isChecked = false;
 
 heart_button.addEventListener("click", () => {
     isChecked = !isChecked;
+
     let counter_value = document.querySelector('.heartCount');
-    let count = counter_value.innerHTML;
+    let count = Number(counter_value.innerHTML);
 
-    if(isChecked) {
-        counter = Number(count) + 1;
-        console.log(counter);
-
-        counter_value.innerHTML = counter;
-    } else {
-        counter = Number(count) - 1;
-        console.log(counter);
-        
-        counter_value.innerHTML = counter;
-    } // if-else
+    count = isChecked ? ++count : --count;
+    console.log(count);
+    
+    counter_value.innerHTML = count;
 });
