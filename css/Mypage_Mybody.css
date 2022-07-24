@@ -620,6 +620,25 @@ a {
     color: white;
 }
 
+/* 날짜 선택 모달창 ================================ */
+
+#modal_datepicker {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.modal_mybody_date_btn{
+    width: 60px;
+    height: 33px;
+    
+    border: none;
+    border-radius: 5px;
+    background-color: #2370DF;
+
+    font-size: 14px;
+    color: white;
+}
+
 /* ttt ================================ */
 
 /* 푸터와의 공간 분리 */

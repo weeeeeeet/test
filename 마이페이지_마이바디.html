@@ -150,13 +150,15 @@
             <div class="mybody_chart_wrapper">
 
                 <div class="mybody_chart_btn">
-                    <button type="button" class="mybody_btn_date btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+
+                    <button type="button" class="mybody_btn_date btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
                         날짜 선택
                     </button>
                     
-                    <button type="button" class="mybody_btn_select_type btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <!-- <button type="button" class="mybody_btn_select_type btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         체중 (kg)
-                    </button>
+                    </button> -->
+
                 </div>
 
                 <!-- 차트 움직이게 하는 화면 -->
@@ -266,6 +268,40 @@
 
             </div>
         </div>
+
+        <!-- Modal 창 - 날짜 선택창 (팝업창) -->
+        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">날짜 선택</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <!-- 어디로 데이터를 보낼지 작성해야 한다. -->
+                        <form action="#">
+
+                            <!-- 날짜 -->
+                            <div class="modal_mybody_date">
+                                <p>날짜</p>
+                                
+                                <input type="date" id="modal_datepicker">
+                                <input type="submit" class="modal_mybody_date_btn" data-bs-dismiss="modal" value="선택">
+                            </div>
+
+                        </form>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
 
     </section>
 
