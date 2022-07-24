@@ -97,6 +97,7 @@ span {
     border-radius: 10px;
     border: 2px solid #2370DF;
     margin-bottom: 40px;
+    float: left;
 
 }
 .checkbox1 {
@@ -114,6 +115,7 @@ span {
 
 /* ===========위치정보================ */
 .con .location {
+    clear: both;
     width: 100%;
     margin-top: 15px;
     font-size: 18px;

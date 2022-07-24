@@ -226,3 +226,36 @@ span {
     color: white;;
     border: none;
 }
+
+
+
+/* --------------------------------------------------------- */
+
+.class_curriculum > .mark > a > p { /* 물음표 */
+    color: white;
+    font-size: 11px;
+    position: absolute;
+    bottom: -15.5px;
+    text-decoration: none;
+}
+.class_curriculum a > .curriculum_explain {
+    width: 330px;
+    box-shadow: 5px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 80px;
+    background-color: white;
+    padding-top: 22px;
+    padding-right: 25px;
+    padding-left: 5px;
+    position: relative;
+    top: -30px;
+    display: none;
+}
+.class_curriculum a > .curriculum_explain > ul {
+    color: black;
+    font-weight: 400;
+    font-size: 12px;
+}
+.class_curriculum a:hover .curriculum_explain {
+    display: block;
+}
