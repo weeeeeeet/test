@@ -25,13 +25,13 @@
      $(document).ready(function(){
          // 전체 체크박스 클릭 시
          $("#agreeAll").click(function() {
-		if($("#agreeAll").is(":checked")) $("input[name=chk]").prop("checked", true);
-		else $("input[name=chk]").prop("checked", false);
+		if($("#agreeAll").is(":checked")) $("input[name=agreechk]").prop("checked", true);
+		else $("input[name=agreechk]").prop("checked", false);
 	});
 
-	$("input[name=chk]").click(function() {
-		var total = $("input[name=chk]").length;
-		var checked = $("input[name=chk]:checked").length;
+	$("input[name=agreechk]").click(function() {
+		var total = $("input[name=agreechk]").length;
+		var checked = $("input[name=agreechk]:checked").length;
 
 		if(total != checked) $("#agreeAll").prop("checked", false);
 		else $("#agreeAll").prop("checked", true); 
@@ -165,7 +165,7 @@
                             <button class="accordion-button collapsed selectall" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseOne" aria-expanded="false"
                                 aria-controls="flush-collapseOne">
-                                전체동의<input class="agree_chkAll" type="checkbox" value="agreeAll" name="chkAll" id="agreeAll">
+                                전체동의<input class="agree_chkAll" type="checkbox" value="agreeAll" name="agreeAll" id="agreeAll">
                             </button>
                         </h5>
                     </div>
@@ -174,7 +174,7 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                 aria-controls="flush-collapseTwo">
-                                (필수) 이용약관 동의<input class="agree_check" type="checkbox" value="agree1" name="chk">
+                                (필수) 이용약관 동의<input class="agree_check" type="checkbox" value="agree1" name="agreechk">
                             </button>
                         </h5>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse"
@@ -537,7 +537,7 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseThree" aria-expanded="false"
                                 aria-controls="flush-collapseThree">
-                                (필수) 개인정보취급방침 동의<input class="agree_check" type="checkbox" value="agree2" name="chk">
+                                (필수) 개인정보취급방침 동의<input class="agree_check" type="checkbox" value="agree2" name="agreechk">
                             </button>
                         </h5>
                         <div id="flush-collapseThree" class="accordion-collapse collapse"
@@ -725,7 +725,7 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseFour" aria-expanded="false"
                                 aria-controls="flush-collapseFour">
-                                (선택) 이벤트 및 할인 소식 알림 동의<input class="agree_check" type="checkbox" value="agree3" name="chk">
+                                (선택) 이벤트 및 할인 소식 알림 동의<input class="agree_check" type="checkbox" value="agree3" name="agreechk">
                             </button>
                         </h5>
                         <div id="flush-collapseFour" class="accordion-collapse collapse"

@@ -8,8 +8,8 @@
 
     <title>Weet</title>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
     <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,7 +18,7 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-
+    <script src="js/admin_chk.js"></script>
     <script src="js/loadHTML.js"></script>
 
     <link href="css/weet_admin_home.css" rel="stylesheet">
@@ -44,24 +44,24 @@
                         <form action="">
                             <div class="check-box">
                                 <ul>
-                                    <li><span>회원유형 </span>:</li>
-                                    <li><input type="checkbox" name="user_type" id="user_type" value="allType" checked>
+                                    <li><span class="search-title">회원유형 </span>:</li>
+                                    <li><input type="checkbox" name="usertype_chkAll" id="usertype_chkAll" value="usertype_chkAll" checked>
                                         전체
                                     </li>
-                                    <li><input type="checkbox" name="user_type" id="user_type" value="N"> 일반회원</li>
-                                    <li><input type="checkbox" name="user_type" id="user_type" value="T"> 트레이너</li>
+                                    <li><input type="checkbox" name="usertype_chk" value="N" checked> 일반회원</li>
+                                    <li><input type="checkbox" name="usertype_chk" value="T" checked> 트레이너</li>
                                 </ul>
                                 <ul>
-                                    <li><span>상태 </span>:</li>
-                                    <li><input type="checkbox" name="user_type" id="agm" value="allAgree" checked> 전체
+                                    <li><span class="search-title">회원상태 </span>:</li>
+                                    <li><input type="checkbox" name="userstatus_chkAll" id="userstatus_chkAll" value="userstatus_chkAll" checked> 전체
                                     </li>
-                                    <li><input type="checkbox" name="user_type" id="agm" value="SMS"> 휴면</li>
-                                    <li><input type="checkbox" name="user_type" id="agm" value="Email"> 탈퇴</li>
+                                    <li><input type="checkbox" name="userstatus_chk" value="SMS" checked> 휴면</li>
+                                    <li><input type="checkbox" name="userstatus_chk" value="Email" checked> 탈퇴</li>
                                 </ul>
                             </div>
                             <div calss="search-box">
                                 <ul>
-                                    <li><span>검색어 </span> :</li>
+                                    <li><span class="search-title">검색어 </span> :</li>
                                     <li>
                                         <div class="search-bar">
                                             <select class="search-select" name="search-type">

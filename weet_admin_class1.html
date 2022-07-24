@@ -8,8 +8,8 @@
 
     <title>Weet</title>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
     <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,6 +20,7 @@
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 
     <script src="js/loadHTML.js"></script>
+    <script src="js/admin_chk.js"></script>
 
     <link href="css/weet_admin_home.css" rel="stylesheet">
 
@@ -45,18 +46,18 @@
                             <div class="check-box">
                                 <ul>
                                     <li><span class="search-title">상태 </span>:</li>
-                                    <li><input type="checkbox" name="user_type" id="user_type" value="allState" checked>
+                                    <li><input type="checkbox" name="status_chkAll" id="status_chkAll" value="status_chkAll" checked >
                                         전체
                                     </li>
-                                    <li><input type="checkbox" name="user_type" id="user_type" value="S"> 모집중</li>
-                                    <li><input type="checkbox" name="user_type" id="user_type" value="E"> 마감</li>
+                                    <li><input type="checkbox" name="status_chk" value="S" checked> 모집중</li>
+                                    <li><input type="checkbox" name="status_chk" value="E" checked> 마감</li>
                                 </ul>
                                 <ul>
                                     <li><span class="search-title">유형</span>:</li>
-                                    <li><input type="checkbox" name="user_type" id="agm" value="allType" checked> 전체
+                                    <li><input type="checkbox" name="classtype_chkAll" id="classtype_chkAll" value="classtype_chkAll" checked> 전체
                                     </li>
-                                    <li><input type="checkbox" name="user_type" id="agm" value="P"> 개인</li>
-                                    <li><input type="checkbox" name="user_type" id="agm" value="G"> 그룹</li>
+                                    <li><input type="checkbox" name="classtype_chk" value="P" checked> 개인</li>
+                                    <li><input type="checkbox" name="classtype_chk" value="G" checked> 그룹</li>
                                 </ul>
                             </div>
                             <div calss="search-box">
@@ -111,7 +112,7 @@
                                 </colgroup>
                                 <thead id="theader" class="theader">
                                     <tr>
-                                        <th><input type="checkbox" name="checked" id="checked"></th>
+                                        <th><input type="checkbox" name="select_chkAll" id="select_chkAll" value="select_chkAll"></th>
                                         <th>No</th>
                                         <th>클래스명</th>
                                         <th>이름</th>
@@ -124,181 +125,181 @@
                                 </thead>
                                 <tbody id="tbody" class="tbody">
                                     <tr>
-                                        <th><input type="checkbox" name="checked" id="checked"></th>
+                                        <th><input type="checkbox" name="select_chk" id="select_chk"></th>
                                         <th>123124</th>
                                         <th><img class="review_img" src="img/eximg.jpg" alt="#"> 기초근력키우기! 체력키우 ...</th>
-                                        <!-- 10글자 까지 표시(공백포함) -->
+                                        <!-- 15글자 까지 표시(공백포함) -->
                                         <th>김헬스</th>
                                         <th>trtrtr1212</th>
-                                        <th>1,234,000</th> <!-- 30글자 까지 표시(공백포함) -->
+                                        <th>1,234,000</th> 
                                         <th>개인</th>
                                         <th>모집중</th>
                                         <th>2022-07-24 13:42:07</th>
                                     </tr>
                                     <tr>
-                                        <th><input type="checkbox" name="checked" id="checked"></th>
+                                        <th><input type="checkbox" name="select_chk" id="select_chk"></th>
                                         <th>123213</th>
                                         <th><img class="review_img" src="img/eximg.jpg" alt="#"> 초보자도 쉽게 따라올 수 있 ...
                                         </th> <!-- 15글자 까지 표시(공백포함) -->
                                         <th>정헬스</th>
                                         <th>w0qwitd10</th>
-                                        <th>456,000</th> <!-- 30글자 까지 표시(공백포함) -->
+                                        <th>456,000</th>
                                         <th>그룹</th>
                                         <th>마감</th>
                                         <th>2022-07-22 11:23:21</th>
                                     </tr>
                                     <tr>
-                                        <th><input type="checkbox" name="checked" id="checked"></th>
+                                        <th><input type="checkbox" name="select_chk" id="select_chk"></th>
                                         <th>123124</th>
                                         <th><img class="review_img" src="img/eximg.jpg" alt="#"> 기초근력키우기! 체력키우 ...</th>
-                                        <!-- 10글자 까지 표시(공백포함) -->
+                                        <!-- 15글자 까지 표시(공백포함) -->
                                         <th>김헬스</th>
                                         <th>trtrtr1212</th>
-                                        <th>1,234,000</th> <!-- 30글자 까지 표시(공백포함) -->
+                                        <th>1,234,000</th>
                                         <th>개인</th>
                                         <th>모집중</th>
                                         <th>2022-07-24 13:42:07</th>
                                     </tr>
                                     <tr>
-                                        <th><input type="checkbox" name="checked" id="checked"></th>
+                                        <th><input type="checkbox" name="select_chk" id="select_chk"></th>
                                         <th>123213</th>
                                         <th><img class="review_img" src="img/eximg.jpg" alt="#"> 초보자도 쉽게 따라올 수 있 ...
                                         </th> <!-- 15글자 까지 표시(공백포함) -->
                                         <th>정헬스</th>
                                         <th>w0qwitd10</th>
-                                        <th>456,000</th> <!-- 30글자 까지 표시(공백포함) -->
+                                        <th>456,000</th>
                                         <th>그룹</th>
                                         <th>마감</th>
                                         <th>2022-07-22 11:23:21</th>
                                     </tr>
                                     <tr>
-                                        <th><input type="checkbox" name="checked" id="checked"></th>
+                                        <th><input type="checkbox" name="select_chk" id="select_chk"></th>
                                         <th>123124</th>
                                         <th><img class="review_img" src="img/eximg.jpg" alt="#"> 기초근력키우기! 체력키우 ...</th>
-                                        <!-- 10글자 까지 표시(공백포함) -->
+                                        <!-- 15글자 까지 표시(공백포함) -->
                                         <th>김헬스</th>
                                         <th>trtrtr1212</th>
-                                        <th>1,234,000</th> <!-- 30글자 까지 표시(공백포함) -->
+                                        <th>1,234,000</th>
                                         <th>개인</th>
                                         <th>모집중</th>
                                         <th>2022-07-24 13:42:07</th>
                                     </tr>
                                     <tr>
-                                        <th><input type="checkbox" name="checked" id="checked"></th>
+                                        <th><input type="checkbox" name="select_chk" id="select_chk"></th>
                                         <th>123213</th>
                                         <th><img class="review_img" src="img/eximg.jpg" alt="#"> 초보자도 쉽게 따라올 수 있 ...
                                         </th> <!-- 15글자 까지 표시(공백포함) -->
                                         <th>정헬스</th>
                                         <th>w0qwitd10</th>
-                                        <th>456,000</th> <!-- 30글자 까지 표시(공백포함) -->
+                                        <th>456,000</th> 
                                         <th>그룹</th>
                                         <th>마감</th>
                                         <th>2022-07-22 11:23:21</th>
                                     </tr>
                                     <tr>
-                                        <th><input type="checkbox" name="checked" id="checked"></th>
+                                        <th><input type="checkbox" name="select_chk" id="select_chk"></th>
                                         <th>123124</th>
                                         <th><img class="review_img" src="img/eximg.jpg" alt="#"> 기초근력키우기! 체력키우 ...</th>
-                                        <!-- 10글자 까지 표시(공백포함) -->
+                                        <!-- 15글자 까지 표시(공백포함) -->
                                         <th>김헬스</th>
                                         <th>trtrtr1212</th>
-                                        <th>1,234,000</th> <!-- 30글자 까지 표시(공백포함) -->
+                                        <th>1,234,000</th> 
                                         <th>개인</th>
                                         <th>모집중</th>
                                         <th>2022-07-24 13:42:07</th>
                                     </tr>
                                     <tr>
-                                        <th><input type="checkbox" name="checked" id="checked"></th>
+                                        <th><input type="checkbox" name="select_chk" id="select_chk"></th>
                                         <th>123213</th>
                                         <th><img class="review_img" src="img/eximg.jpg" alt="#"> 초보자도 쉽게 따라올 수 있 ...
                                         </th> <!-- 15글자 까지 표시(공백포함) -->
                                         <th>정헬스</th>
                                         <th>w0qwitd10</th>
-                                        <th>456,000</th> <!-- 30글자 까지 표시(공백포함) -->
+                                        <th>456,000</th>
                                         <th>그룹</th>
                                         <th>마감</th>
                                         <th>2022-07-22 11:23:21</th>
                                     </tr>
                                     <tr>
-                                        <th><input type="checkbox" name="checked" id="checked"></th>
+                                        <th><input type="checkbox" name="select_chk" id="select_chk"></th>
                                         <th>123124</th>
                                         <th><img class="review_img" src="img/eximg.jpg" alt="#"> 기초근력키우기! 체력키우 ...</th>
-                                        <!-- 10글자 까지 표시(공백포함) -->
+                                        <!-- 15글자 까지 표시(공백포함) -->
                                         <th>김헬스</th>
                                         <th>trtrtr1212</th>
-                                        <th>1,234,000</th> <!-- 30글자 까지 표시(공백포함) -->
+                                        <th>1,234,000</th>
                                         <th>개인</th>
                                         <th>모집중</th>
                                         <th>2022-07-24 13:42:07</th>
                                     </tr>
                                     <tr>
-                                        <th><input type="checkbox" name="checked" id="checked"></th>
+                                        <th><input type="checkbox" name="select_chk" id="select_chk"></th>
                                         <th>123213</th>
                                         <th><img class="review_img" src="img/eximg.jpg" alt="#"> 초보자도 쉽게 따라올 수 있 ...
                                         </th> <!-- 15글자 까지 표시(공백포함) -->
                                         <th>정헬스</th>
                                         <th>w0qwitd10</th>
-                                        <th>456,000</th> <!-- 30글자 까지 표시(공백포함) -->
+                                        <th>456,000</th>
                                         <th>그룹</th>
                                         <th>마감</th>
                                         <th>2022-07-22 11:23:21</th>
                                     </tr>
                                     <tr>
-                                        <th><input type="checkbox" name="checked" id="checked"></th>
+                                        <th><input type="checkbox" name="select_chk" id="select_chk"></th>
                                         <th>123124</th>
                                         <th><img class="review_img" src="img/eximg.jpg" alt="#"> 기초근력키우기! 체력키우 ...</th>
-                                        <!-- 10글자 까지 표시(공백포함) -->
+                                        <!-- 15글자 까지 표시(공백포함) -->
                                         <th>김헬스</th>
                                         <th>trtrtr1212</th>
-                                        <th>1,234,000</th> <!-- 30글자 까지 표시(공백포함) -->
+                                        <th>1,234,000</th>
                                         <th>개인</th>
                                         <th>모집중</th>
                                         <th>2022-07-24 13:42:07</th>
                                     </tr>
                                     <tr>
-                                        <th><input type="checkbox" name="checked" id="checked"></th>
+                                        <th><input type="checkbox" name="select_chk" id="select_chk"></th>
                                         <th>123213</th>
                                         <th><img class="review_img" src="img/eximg.jpg" alt="#"> 초보자도 쉽게 따라올 수 있 ...
                                         </th> <!-- 15글자 까지 표시(공백포함) -->
                                         <th>정헬스</th>
                                         <th>w0qwitd10</th>
-                                        <th>456,000</th> <!-- 30글자 까지 표시(공백포함) -->
+                                        <th>456,000</th> 
                                         <th>그룹</th>
                                         <th>마감</th>
                                         <th>2022-07-22 11:23:21</th>
                                     </tr>
                                     <tr>
-                                        <th><input type="checkbox" name="checked" id="checked"></th>
+                                        <th><input type="checkbox" name="select_chk" id="select_chk"></th>
                                         <th>123124</th>
                                         <th><img class="review_img" src="img/eximg.jpg" alt="#"> 기초근력키우기! 체력키우 ...</th>
-                                        <!-- 10글자 까지 표시(공백포함) -->
+                                        <!-- 15글자 까지 표시(공백포함) -->
                                         <th>김헬스</th>
                                         <th>trtrtr1212</th>
-                                        <th>1,234,000</th> <!-- 30글자 까지 표시(공백포함) -->
+                                        <th>1,234,000</th>
                                         <th>개인</th>
                                         <th>모집중</th>
                                         <th>2022-07-24 13:42:07</th>
                                     </tr>
                                     <tr>
-                                        <th><input type="checkbox" name="checked" id="checked"></th>
+                                        <th><input type="checkbox" name="select_chk" id="select_chk"></th>
                                         <th>123213</th>
                                         <th><img class="review_img" src="img/eximg.jpg" alt="#"> 초보자도 쉽게 따라올 수 있 ...
                                         </th> <!-- 15글자 까지 표시(공백포함) -->
                                         <th>정헬스</th>
                                         <th>w0qwitd10</th>
-                                        <th>456,000</th> <!-- 30글자 까지 표시(공백포함) -->
+                                        <th>456,000</th> 
                                         <th>그룹</th>
                                         <th>마감</th>
                                         <th>2022-07-22 11:23:21</th>
                                     </tr>
                                     <tr>
-                                        <th><input type="checkbox" name="checked" id="checked"></th>
+                                        <th><input type="checkbox" name="select_chk" id="select_chk"></th>
                                         <th>123124</th>
                                         <th><img class="review_img" src="img/eximg.jpg" alt="#"> 기초근력키우기! 체력키우 ...</th>
-                                        <!-- 10글자 까지 표시(공백포함) -->
+                                        <!-- 15글자 까지 표시(공백포함) -->
                                         <th>김헬스</th>
                                         <th>trtrtr1212</th>
-                                        <th>1,234,000</th> <!-- 30글자 까지 표시(공백포함) -->
+                                        <th>1,234,000</th> 
                                         <th>개인</th>
                                         <th>모집중</th>
                                         <th>2022-07-24 13:42:07</th>
