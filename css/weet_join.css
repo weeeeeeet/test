@@ -35,15 +35,16 @@ input{
     width: 370px;
     /* border: 2px solid green; */
 }
-.join-contain h2{                    /* 회원가입문구 */
+.join-contain  h2{                    /* 회원가입문구 */
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 30px;
     text-align: center;
 }
-.join-contain h3{
+.join-contain  h3{
     font-size: 17px;
     font-weight: 600;
+    margin-top: 60px;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -62,14 +63,14 @@ input{
     margin-bottom: 5px;
 }
 
-.boxing input{                   /* 입력창 */
+.boxing > input{                   /* 입력창 */
     font-size: 8px;
     width: 370px;
     height: 32px;
     /* border: 2px solid green; */
 }
 
-.boxing button{                   /* 입력창 버튼 */
+.boxing > button{                   /* 입력창 버튼 */
     width: 20%;
     color: white;
     background-color: #2370DF;
@@ -82,11 +83,12 @@ input{
     border: 1px solid rgb(236, 236, 236);
     background-color: rgb(236, 236, 236);;
     width: 60%;
+    margin-bottom: 40px;
 }
 
 .info-box{
     text-align: center;
-    max-width: 420px;
+    min-width: 420px;
 }
 
 .box1{                               /* 프로필,이름,성별 */
@@ -94,27 +96,51 @@ input{
     display: flex;
 }
 
-.info .ng{
+.info > .ng{
     width: 270px;
     text-align: left;
     font-size: 14px;
     margin-bottom: 20px;
 }
 
-.info .ng ul{
+.name{
     padding-left: 14px;
 }
 
-.info .name input{
+.name > input{
     width: 100%;
     margin-bottom: 10px;
 }
+.intro ul{
+    width: 370px;
+    padding-left: 0;
+}
 
-.info .intro input{
+.intro input{
     width: 100%;
     height: 100px;
     margin-bottom: 20px;
+    
 }
+.biz ul{
+    width: 370px;
+    padding-left: 0;
+}
+
+.biz input{
+    width: 100%;
+    height: 32px;
+    margin-bottom: 20px;
+}
+
+.accordion-flush {
+    width: 370px;
+    padding-left: 0;
+}
+.accordion-item {
+    width: 100%;
+}
+
 .form-control-sm{
     width: 100%;
 }
@@ -126,7 +152,12 @@ p {
 .accordion{
     margin-left: 30px;
 }
-.accordion-item,.accordion-button{ 
+
+.agreement{
+    margin-bottom: 100px;
+    padding-left: 0;
+}
+.accordion-item .accordion-button{ 
     font-size: 12px;
 }
 .accordion-body p{
@@ -156,12 +187,9 @@ p {
     margin-left: 35px;
   }
 
-.info span{
+.info > span{
     color: red;
 }
 
-.accordion-button.selectall::after { display: none;}
+.accordion-button.selectall::after { display: none; }
 
-.agreement{
-    margin-bottom: 200px;
-}
