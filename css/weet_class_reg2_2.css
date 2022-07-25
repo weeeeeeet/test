@@ -117,6 +117,16 @@ label {
 .img_ex li{
     margin-bottom: 5px;
 }
+
+.g li {
+    font-size: 14px;
+}
+#preview-image {
+    border: 1px solid rgb(181, 181, 181);
+}
+.image-select-btn {
+    font-size: 14px;
+}
 /* 못생긴 기존 input 숨기기 */
 #chooseFile {
     visibility: hidden;
@@ -194,6 +204,9 @@ label {
     margin-left: 3px;
     margin-bottom: 25px;
 }
+.cla4 input {
+    margin-bottom: 30px;
+}
 
 .ct_int placeholder{
     text-align: left;
@@ -243,10 +256,136 @@ label {
 }
 
 
+/* ==================== 호버링 설명 ===================== */
+
+.cla2 > .mark > a > p { /* 물음표 */
+    color: white;
+    font-size: 11px;
+    position: absolute;
+    bottom: -15.5px;
+    text-decoration: none;
+}
+.cla2 a > .photo_explain {
+    width: 330px;
+    box-shadow: 5px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 120px;
+    background-color: white;
+    padding-top: 22px;
+    padding-right: 25px;
+    padding-left: 5px;
+    position: relative;
+    top: -25px;
+    display: none
+}
+.cla2 a > .photo_explain > ul {
+    color: black;
+    font-weight: 400;
+    font-size: 12px;
+}
+.cla2 a:hover .photo_explain {
+    display: block;
+}
+.cla2 a:hover .photo_explain:before
+
+/* ----------------------------------------------------- */
+
+.cla3 {
+    border: 2px solid;
+}
+
+.cla3 > .mark > a > p { /* 물음표 */
+    color: white;
+    font-size: 11px;
+    position: absolute;
+    bottom: -15.5px;
+    text-decoration: none;
+}
+.cla3 a > .title_explain {
+    width: 330px;
+    box-shadow: 5px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 100px;
+    background-color: white;
+    padding-top: 22px;
+    padding-right: 25px;
+    padding-left: 5px;
+    position: relative;
+    top: -25px;
+    display: none
+}
+.cla3 a > .title_explain > ul {
+    color: black;
+    font-weight: 400;
+    font-size: 12px;
+}
+.cla3 a:hover .title_explain {
+    display: block;
+}
 
 
+/* ----------------------------------------------------- */
 
 
+.cla4 > .mark > a > p { /* 물음표 */
+    color: white;
+    font-size: 11px;
+    position: absolute;
+    bottom: -15.5px;
+    text-decoration: none;
+}
+.cla4 a > .introduce_explain {
+    width: 330px;
+    box-shadow: 5px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 70px;
+    background-color: white;
+    padding-top: 22px;
+    padding-right: 25px;
+    padding-left: 5px;
+    position: relative;
+    top: -25px;
+    display: none
+}
+.cla4 a > .introduce_explain > ul {
+    color: black;
+    font-weight: 400;
+    font-size: 12px;
+}
+.cla4 a:hover .introduce_explain {
+    display: block;
+}
 
+/* ----------------------------------------------------- */
+
+
+.cla5 > .mark > a > p { /* 물음표 */
+    color: white;
+    font-size: 11px;
+    position: absolute;
+    bottom: -15.5px;
+    text-decoration: none;
+}
+.cla5 a > .video_explain {
+    width: 330px;
+    box-shadow: 5px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 70px;
+    background-color: white;
+    padding-top: 22px;
+    padding-right: 25px;
+    padding-left: 5px;
+    position: relative;
+    top: -25px;
+    display: none
+}
+.cla5 a > .video_explain > ul {
+    color: black;
+    font-weight: 400;
+    font-size: 12px;
+}
+.cla5 a:hover .video_explain {
+    display: block;
+}
 
 

@@ -1,4 +1,4 @@
-
+/* 
 function getImageFiles(e) {
     const uploadFiles = [];
     const files = e.currentTarget.files;
@@ -44,3 +44,9 @@ function getImageFiles(e) {
   upload.addEventListener('click', () => realUpload.click());
 
   realUpload.addEventListener('change', getImageFiles);
+
+
+ */
+
+
+
