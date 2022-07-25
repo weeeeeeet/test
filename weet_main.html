@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weet</title>
+
+    <link href="css/weet_main.css" rel="stylesheet" />
+    <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
+    
+    <script src="js/loadHTML.js"></script>
+
+    <style>
+        
+    </style>
+</head>
+
+<body>
+   <div include-html="weet_header_login.html"></div>
+   <script>includeHTML();</script>
+
+
+    <!-- ==================BANNER==================== -->
+    
+    <div class = "section">
+        <input type="radio" name="slide" id="slide01" checked>
+        <input type="radio" name="slide" id="slide02">
+        <input type="radio" name="slide" id="slide03">
+
+        <div class="slidewrap">
+            <ul class="slidelist">
+                <li>
+                    <a href="#">
+                        <label for="slide03" class="fa-solid fa-angle-left"></label>
+                         <img src="img/banner1.png">
+                        <label for="slide02" class="fa-solid fa-angle-right"></label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <label for="slide01" class="fa-solid fa-angle-left"></label>
+                        <img src="img/banner2.png">
+                        <label for="slide03" class="fa-solid fa-angle-right"></label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <label for="slide02" class="fa-solid fa-angle-left"></label>
+                         <img src="img/banner3.png">
+                        <label for="slide01" class="fa-solid fa-angle-right"></label>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+   <!-- <section class="banner">
+        <div class="banner_copy_img">
+            <p class="health">헬스? 어렵지 않아!</p>
+            <a href="#" target="_self">
+                <img src="img/banner1.jpg" alt="">
+            </a>
+            <div class="btnPage">
+                <a href="#" class="fa-solid fa-angle-left"></a>
+                <a href="#" class="fa-solid fa-angle-right"></a>
+            </div>
+        </div>
+    
+    </section> -->
+
+
+    <!-- ===================MAIN===================== -->
+
+    <div class="search_main">
+        <input type="text" name="search"placeholder="&nbsp&nbsp&nbsp트레이너명 또는 클래스명 입력" autocomplete="off">
+        <a href="#" class="fa-solid fa-magnifying-glass" target="_self"></a>
+    </div>
+
+    <section class="contents">
+        <div class="main">
+            <div class = "main_class_recommended">
+                <div class="recommended">
+                    <p>추천클래스</p>
+                    <a href="#"  target="_self">+ 더보기&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                </div>
+                <div class="class_list">
+                    <a href="#"  target="_self">
+                        <img src="img/classlist.png" alt="">
+                        
+                        <div class="like" href="#">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </a>
+                    <h1>곽두팔 / 개인클래스 / 서울시 강남구</h1>
+                    <a href="#">헬스? 어렵지 않아! (5/6)</a><br>
+                    <a href="#">곽두팔</a><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <hr>
+                    <h1>10회 400,000원</h1>
+                </div>
+                <div class="class_list">
+                    <a href="#"  target="_self">
+                        <img src="img/classlist.png" alt="">
+                        <div class="like" href="#">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </a>
+                    <h1>곽두팔 / 개인클래스 / 서울시 강남구</h1>
+                    <a href="#">헬스? 어렵지 않아! (5/6)</a><br>
+                    <a href="#">곽두팔</a><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <hr>
+                    <h1>10회 400,000원</h1>
+                </div>
+                <div class="class_list">
+                    <a href="#"  target="_self">
+                        <img src="img/classlist.png" alt="">
+                        <div class="like" href="#">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </a>
+                    <h1>곽두팔 / 개인클래스 / 서울시 강남구</h1>
+                    <a href="#">헬스? 어렵지 않아! (5/6)</a><br>
+                    <a href="#">곽두팔</a><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <hr>
+                    <h1>10회 400,000원</h1>
+                </div>
+            </div>
+            <div class = "main_class_end">
+                <div class="end">
+                    <p>마감임박 클래스</p>
+                    <a href="#"  target="_self">+ 더보기&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                </div>
+                <div class="class_list">
+                    <a href="#"  target="_self">
+                        <img src="img/classlist.png" alt="">
+                        <div class="like" href="#">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </a>
+                    <h1>곽두팔 / 개인클래스 / 서울시 강남구</h1>
+                    <a href="#">헬스? 어렵지 않아! (5/6)</a><br>
+                    <a href="#">곽두팔</a><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <hr>
+                    <h1>10회 400,000원</h1>
+                </div>
+                <div class="class_list">
+                    <a href="#"  target="_self">
+                        <img src="img/classlist.png" alt="">
+                        <div class="like" href="#">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </a>
+                    <h1>곽두팔 / 개인클래스 / 서울시 강남구</h1>
+                    <a href="#">헬스? 어렵지 않아! (5/6)</a><br>
+                    <a href="#">곽두팔</a><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <hr>
+                    <h1>10회 400,000원</h1>
+                </div>
+                <div class="class_list">
+                    <a href="#"  target="_self">
+                        <img src="img/classlist.png" alt="">
+                        <div class="like" href="#">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </a>
+                    <h1>곽두팔 / 개인클래스 / 서울시 강남구</h1>
+                    <a href="#">헬스? 어렵지 않아! (5/6)</a><br>
+                    <a href="#">곽두팔</a><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <hr>
+                    <h1>10회 400,000원</h1>
+                </div>
+                
+            </div>
+        
+            <div class = "main_class_new">
+                <div class="new">
+                    <p>신규 클래스</p>
+                    <a href="#"  target="_self">+ 더보기&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                </div>
+                <div class="class_list">
+                    <a href="#"  target="_self">
+                        <img src="img/classlist.png" alt="">
+                        <div class="like" href="#">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </a>
+                    <h1>곽두팔 / 개인클래스 / 서울시 강남구</h1>
+                    <a href="#">헬스? 어렵지 않아! (5/6)</a><br>
+                    <a href="#">곽두팔</a><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <hr>
+                    <h1>10회 400,000원</h1>
+                </div>
+                <div class="class_list">
+                    <a href="#"  target="_self">
+                        <img src="img/classlist.png" alt="">
+                        <div class="like" href="#">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </a>
+                    <h1>곽두팔 / 개인클래스 / 서울시 강남구</h1>
+                    <a href="#">헬스? 어렵지 않아! (5/6)</a><br>
+                    <a href="#">곽두팔</a><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <hr>
+                    <h1>10회 400,000원</h1>
+                </div>
+                <div class="class_list">
+                    <a href="#"  target="_self">
+                        <img src="img/classlist.png" alt="">
+                        <div class="like" href="#">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </a>
+                    <h1>곽두팔 / 개인클래스 / 서울시 강남구</h1>
+                    <a href="#">헬스? 어렵지 않아! (5/6)</a><br>
+                    <a href="#">곽두팔</a><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <hr>
+                    <h1>10회 400,000원</h1>
+                </div>
+            </div>
+        
+            <div class = "board_hot">
+                <div class="hot_p">
+                    <p>커뮤니티 인기글</p>
+                    <a href="#"  target="_self">+ 더보기&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <div class="hot">
+        <div id="hot_list">
+            <div class="hot_list_list">
+            </div>
+            <div class="hot_list_list">
+            </div>
+            <div class="hot_list_list">
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    
+    <div include-html="weet_footer.html"></div>
+
+
+   
+</body>
+
+</html>
+
+
+
