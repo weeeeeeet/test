@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SCoreDream';
+    box-sizing: border-box;
+}
+
+/* Footer ================================ */
+#footer{
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+/* 
+    display: block;
+    box-sizing: border-box; */
+}
+
+.footer-container {
+    height: 204px;
+    position: relative;  
+    border-top: 1px solid #d9d9d9;
+    box-shadow: 0 3px 3px rgb(236, 236, 236);
+    padding: 0 20px;
+}
+
+.footer-box{ /* inner */
+    position: relative;
+    max-width: 1440px;
+    height: 100%;
+}
+
+.footer-container hr{
+    margin: 5px 0;
+}
+.footer .top{
+    display: block;
+    /* border-bottom: 1px solid #d9d9d9; */
+}
+.footer-logo {                                   /* footer로고 */
+    display: inline-block;
+}
+.footer-logo h5{
+    display: inline-block;
+    font-size: 13px;
+    color: #6C6C6C;;
+    padding-top: 50px;
+    margin-left: 20px;
+}
+
+.footer-logo img{
+    width: 90px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.foot_left{
+    display: inline-block;
+}
+.cs-bnt{
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+    position: absolute;
+    right: 0;
+
+    /* 수직 가운데 정렬 */
+    top: 22%;
+    transform: translateY(-50%);
+
+}
+.cs-bnt button {
+    border-radius: 5px;
+    font-weight: 500;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #434343;
+    background-color: white;
+    font-size: 13px;
+}
+.footer-container ul.time {                               /* 운영시간 */
+    list-style: none;
+    font-size: 10px;
+    color: #6C6C6C;
+}
+.line{
+    position: relative;
+    margin-top: 20px;
+}
+
+.time{
+    position: absolute;
+    right: 20px;
+    /* 수직 가운데 정렬 */
+    top: 35%;
+}
+.footer-container a {
+    font-size: 12px;
+    padding-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.address{
+    margin-bottom: 20px;
+}
+.address p{
+    font-size: 12px;

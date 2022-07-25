@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'SCoreDream';
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol {
+    list-style: none;
+}
+
+section, li::after{ 
+    clear:both; 
+    content:''; 
+    display:block;
+} 
+h3{
+    font-size: 14px;
+    font-weight: 600;
+}
+.sub-text{
+    margin-top: 30px;
+}
+.sub-text p{
+    font-size: 12px;
+
+}
+
+/* ==== login box =========*/
+.login-contain {                 /* 컨텐츠 스타일 */
+    min-width: 400px;
+    margin-top: 150px;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+.login-main-text{               /* 트레이너 로그인 문구 */
+    width: 400px;
+    font-size: 25px;
+    font-weight: 600;
+    display: inline;
+    /* border: 2px solid green; */
+}
+.member-login{
+    width: 400px;
+    /* border: 2px solid red; */
+}
+
+.login-box {
+    margin: 0px;
+    padding: 20px 10px 0 10px;
+    margin-bottom: 20px;
+    /* border: 2px solid green; */
+}
+.login-box label{
+    margin-top: 10px;
+    color: rgb(60, 65, 68);
+}
+
+.form-control-sm{                          /* 폼 박스 */
+    border: 2px solid #2370DF; 
+    width: 370px;
+    height: 40px;
+    /* border: 2px solid green; */
+}
+.login-box label{
+    font-size: 14px;
+    text-align: left;
+    display: block;
+    color: #3c4144;;
+    /* border: 2px solid green; */
+}
+.mentbox {                               /* ~찾기, 회원가입 */
+    padding: 6px 50px 5px 50px ;
+    height: 25px;
+    text-align: center;
+    /* border: 2px solid green; */
+}
+
+.mentbox li{                              
+    color: #9D9D9D;
+    font-size: 8px;
+    padding: 0px 2px;
+    display: inline-block;
+    /* border: 2px solid green; */
+}
+.mentbox a{
+    padding: 0px 15px;
+}
+.loginbtn{                                 /* 로그인 버튼 */
+    background-color: #2370DF;
+    -webkit-box-shadow: 0px 16px 23px -3px #ABABAB; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: aliceblue;
+    width: 370px;
+    height: 50px;
+    border: none;
+    border-radius: 10px; 
+    margin-bottom: 10px;
+}
+
+.loginbtn>span {
+    line-height: 50px;
+}
+
+.greement{                                  /* 동의문구 */
+    font-size: 8px;
+}
+.greement a{
+    font-style: none;
+}
+.join-ment {
+    font-size: 23px;
+    font-weight: 500;
+    margin: 150px 0 50px 0;
+}
+.boxing button{                   /* 입력창 버튼 */
+    width: 20%;
+    color: white;
+    background-color: #2370DF;
+    border: none;
+    border-radius: 3px;
+    font-size:12px;
+}
+.boxing input{                   /* 입력창 */
+    font-size: 8px;
+    width: 370px;
+    height: 32px;
+    /* border: 2px solid green; */
+}
+.btn-box{
+    text-align: center;
+}
+.findbtn{
+    background-color: #2370DF;
+    -webkit-box-shadow: 0px 16px 23px -3px #ABABAB; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: aliceblue;
+    width: 170px;
+    height: 50px;
+    border: none;
+    border-radius: 10px; 
+    
+    margin: 0px 10px;
+}
+.findid_list {
+    background-color: #dbdbdb9c;
+    width: 370px;
+    height: 130px;
+    display: inline-block;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.findid-box{
+    padding-left: 30px;
+    text-align: left;
+}
+.findid-box thead{
+    padding-left: 30px;
+    font-size: 15px;
+}
+
+.findid-box tbody th{
+    padding: 3px 0;
+    font-size: 13px;
+    font-weight: 400;
+}

@@ -1,0 +1,80 @@
+
+body {
+    margin: 0 auto;
+    font-family: 'SCoreDream';
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #2370DF;
+}
+
+#wrap { padding-top: 72px;} /* 헤더높이값만큼 패딩으로 밀어주기 */
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+
+.haeder-container{
+
+    height:72px; 
+    position: relative;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 0 20px; /* 반응형으로 줄였을 때 양쪽 여백이 필요해서 줌! */
+    box-shadow: 0 3px 3px rgb(236, 236, 236);
+}
+
+.header-box{ /* inner */
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+.haeder_left{
+
+    display: inline-block;
+    margin-top: 13px;
+}
+
+.navbar_logo {
+    display: inline-block;
+}
+.navbar_logo a { 
+    display: block;
+}
+
+.navbar_menu {
+    display: inline-block;
+    margin-bottom: 0; /* 초기화 용이라 리셋 스타일이 있지 않으면 안 써도 됨 */
+
+}
+
+.navbar_menu li {
+    padding-right: 31px;
+    font-weight: bold;
+    /* border: 2px solid red; */
+    display: inline-block;
+}
+
+.header_right{
+
+    position: absolute;
+    right: 0;
+
+    /* 수직 가운데 정렬 */
+    top: 50%;
+    transform: translateY(-50%); /* <- 내 몸의 절반만큼 위로 땡긴다는 뜻 */  
+}
+
+.navbar_serach input{
+    width: 270px;
+    border-color: #2370DF;
+    border-radius: 5px; 
+}

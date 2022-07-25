@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>클래스 등록 페이지2</title>
+
+    <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <link href="css/weet_class_reg2_2.css" rel="stylesheet" />
+
+    <script type="text/javascript" defer src="/js/weet_class_reg2_2.js?ver=1"></script>
+    <script src="js/loadHTML.js"></script>
+
+</head>
+
+<body>
+    <div include-html="weet_header_login.html"></div>
+    <script>includeHTML();</script>
+
+    <!-- ==================CONTENTS==================== -->
+    <div class="contents">
+        <h3>클래스 등록</h3>
+
+        <div class="cont_bar">
+            <div class="txt">
+                <div class="c1">
+                    <li>클래스 등록하기</li>
+                    <li>></li>
+                    <li>클래스 기본정보</li>
+                    <li>></li>
+                    <li>스케줄 및 부가정보</li>
+                    <li>></li>
+                    <li>커리큘럼</li>
+                    <li>></li>
+                    <li>헬스장정보</li>
+                    <li>></li>
+                    <li>등록완료</li>
+                </div>
+            </div>
+            <div class="bar">
+                <progress value="37" max="100"></progress>
+            </div> 
+        </div>
+        <div class="con">
+            <div class="cla1">클래스 구분</div>
+            <select name="구분" class="tag">
+                <option value="group">그룹</option>
+                <option value="individual">개인</option>
+            </select>
+                <div class="cla2">클래스 대표 사진 등록<span>*</span> 
+                    <div class="mark">
+                        <a href="#"><p>?</p>
+                            <div class="photo_explain">
+                                <ul>
+                                    <li>대표 사진으로 지정되어 클래서 및 상세 페이지에서 썸네일로 노출됩니다.</li><br>
+                                    <li>고화질의 가로형 사진을 권장합니다.</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+            <!-- <div class="enter">
+                <div class="simg">
+                    <form method="post" enctype="multipart/form-data">
+                        <div class="button">
+                            <label for="chooseFile">
+                                <i class="fas fa-camera"></i>
+                            </label>
+                        </div>
+                        <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+                    </form>
+                </div>
+                
+                <div class="img_ex">
+                    <li>사진은 가로로 찍은 사진을 권장합니다.(가로 사이즈 최소 800px)</li>
+                    <li>사진 용량은 사진 한 장당 10MB까지 등록 가능합니다.</li>
+                    <li>사진은 대표사진 1장만 첨부 가능합니다.</li>
+                </div>
+            </div> -->
+            <!-- <div class="sum"><span> 대표 썸네일.png(229.2KB)</span></div> -->
+            <div class="picAndText g">
+                <!-- ** get 방식으로 보내면 양식이 다 보인다 -->
+                <!-- 그래서 중요한 정보를 노출하기 싫으면 get 방식으로 보내면 안된다 -->
+                <!-- post 방식은 쿼리 스트링이 보이지 않는다! -->
+                <form class="g" name="foodForm" action="http://localhost:8080" method="POST"
+                    enctype="multipart/form-data"></form>
+
+                <!-- 사진 첨부파일 -->
+                <div class="image-container g">
+                    <!-- 이미지 미리보기 -->
+                    <p class="g">
+                        <li>사진은 가로로 찍은 사진을 권장합니다.(가로 사이즈 최소 800px)</li>
+                        <li>사진 용량은 사진 한 장당 10MB까지 등록 가능합니다.</li>
+                        <li>사진은 대표사진 1장만 첨부 가능합니다.</li>
+                    </p>
+                    <p>
+                        <img class="g" style="width: 150px;" id="preview-image"
+                            src="https://dummyimage.com/300x300/ffffff/000000.png&text=preview+image">
+                    </p>
+
+                    <!-- 파일선택 버튼 -->
+                    <div class="image-select-btn g">
+                        <p><input style="display: block;" type="file" id="input-image" onchange="checkSize(this)"></p>
+                    </div>
+                </div>
+                <script>
+                    function readImage(input) {
+                    // 인풋 태그에 파일이 있는 경우
+                    if(input.files && input.files[0]) {
+                        // 이미지 파일인지 검사 (생략)
+                        // FileReader 인스턴스 생성
+                        const reader = new FileReader()
+                        // 이미지가 로드가 된 경우
+                        reader.onload = e => {
+                            const previewImage = document.getElementById("preview-image")
+                            previewImage.src = e.target.result
+                        }
+                        // reader가 이미지 읽도록 하기
+                        reader.readAsDataURL(input.files[0])
+                        }
+                    }
+                    // input file에 change 이벤트 부여
+                    const inputImage = document.getElementById("input-image")
+                    inputImage.addEventListener("change", e => {
+                        readImage(e.target)
+                    })
+
+                    function checkSize(input) {
+                        if (input.files && input.files[0].size > (20 * 1024 * 1024)) {
+                            alert("파일 사이즈가 20mb 를 넘습니다.");
+                            input.value = null;
+                        }
+                    }
+                </script>
+
+                <div class="cla3">클래스 제목<span>*</span> 
+                    <div class="mark">
+                        <a href="#"><p>?</p>
+                            <div class="title_explain">
+                                <ul>
+                                    <li>Wee.T 클래스 리스트, 상세페이지에 가장 먼저 노출되는 제목으로,
+                                        단순한 제목보다는 유니크한 나만의 클래스 제목으로 노출해보세요.</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <input type="class_title" class="ct_input" placeholder="&nbsp&nbsp클래스 제목을 입력해주세요" required>
+                    </div>
+                </div>
+        
+                <div class="cla4">클래스 소개 입력<span>*</span>
+                    <div class="mark">
+                        <a href="#"><p>?</p>
+                            <div class="introduce_explain">
+                                <ul>
+                                    <li>클래스 상세 정보에 노출되는 소개글로 커리큘럼을 제외한 클래스 정보를
+                                        작성해주세요.
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <input type="class_intro" class="ct_input" placeholder="&nbsp&nbsp클래스 소개를 입력해주세요" required>
+                    </div>
+                </div>
+        
+                <div class="cla5">동영상 소개
+                    <div class="mark">
+                        <a href="#"><p>?</p>
+                            <div class="video_explain">
+                                <ul>
+                                    <li>클래스 소개를 위한 동영상이 있다면 링크를 입력해주세요.
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <input type="class_video" class="ct_video" placeholder="&nbsp&nbsp유튜브 패널 영상이 있다면 URL을 입력해주세요">
+                    </div>
+                </div>    
+            
+            <div class="page_button">
+                <button type="button" class="back" onclick="location.href='weet_reg2_1.html'">이전</button>
+                <button type="button" class="next" onclick="location.href='weet_reg2_3.html'">다음</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <!-- ==================FOOTER==================== -->
+
+    <div include-html="weet_footer.html"></div>
+</body>
+
+</html>

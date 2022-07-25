@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>userScheduleCheck</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- 외부 스타일 시트 연결 -->
+    <!-- 유저 대시보드 css -->
+    <link href="/css/userSchedule.css" rel="stylesheet" />
+
+    <!-- 폰트 설정 -->
+    <!-- <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet"> -->
+    <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
+
+    <!-- 외부 JS 연결 -->
+    <!-- defer : 브라우저가 스크립트를 문서 분석 이후에 실행해야 함을 나타내는 불리언 속성이다. -->
+    <script src="/js/loadHTML.js"></script>
+
+    <!-- defer : 브라우저가 스크립트를 문서 분석 이후에 실행해야 함을 나타내는 불리언 속성이다. -->
+    <script type="text/javascript" defer src="/js/userSchedule.js"></script>
+
+</head>
+
+<body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- header 불러오기 -->
+    <div w3-include-html="/header.html"></div>
+
+    <!-- contents -->
+    <section class="wrap">
+
+        <!-- sidebar 불러오기 -->
+        <div w3-include-html="/sidebar.html"></div>
+
+        <!--대시보드 -->
+        <div class="dash g">
+
+            <div class="g">
+                <h1>회원 대시보드</h1>
+            </div>
+
+            <!-- 내 스케쥴 확인 대시보드 -->
+            <div class="mySchedule g">
+                <div class="myScheduleTitle g">
+                    <h2>내 스케쥴 확인</h2>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- footer 불러오기 -->
+    <div w3-include-html="/footer.html"></div>
+
+    <!--includeHTML-->
+    <script>
+        includeHTML();
+    </script>
+
+</body>
+
+</html>
