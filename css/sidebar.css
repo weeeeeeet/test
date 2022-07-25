@@ -19,7 +19,8 @@
 
 /* 배경 스타일 작업 ================================================== */
 body {
-    background-color: rgb(227, 227, 227);
+    /* background-color: rgb(227, 227, 227); */
+    background-color: rgb(241, 241, 241);
     
 }
 section.wrap {
@@ -126,7 +127,7 @@ section div.menu-list{
     /* border: 2px solid red; */
 }
 section div.menu a{
-    
+   text-align: center;
    text-decoration: none; /* 밑줄 없애기 */
    color: black;
 }
