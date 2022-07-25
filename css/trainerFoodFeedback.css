@@ -50,7 +50,7 @@ section div.user-food {
     height: 800px;  /* 오늘의 식단 대시보드 크기 (높이) */
 }
 section div.back-color {    /* 회원님의 식단 대시보드 헤더 색상*/
-    background-color: #fff5e3;
+    background-color: rgb(255, 234, 214);
     border-top-right-radius: 18px;
     border-top-left-radius: 18px;
     height: 100px;
@@ -81,7 +81,7 @@ section div.pic-list::-webkit-scrollbar { /*회원 식단 카드 스크롤 너�
     width: 12px;
 }
 section div.pic-list::-webkit-scrollbar-thumb { /*회원 식단 카드 스크롤 막대*/
-    background-color: #ffce84;
+    background-color: #ffcba6;
     border-radius: 10px;
     background-clip: padding-box;
     border: 2px solid transparent;

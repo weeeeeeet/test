@@ -34,7 +34,7 @@ section div.dash {/* 대시보드 크기 */
     padding: 30px;
     /* height: 300px; */
 }
-section div.dash h1 { /*회원 대시보드 타이틀*/ 
+section div.dash h1 { /*트레이너 대시보드 타이틀*/ 
     font-size: 25px;
     font-weight: bold;
     color: #e6be96;
@@ -96,7 +96,7 @@ section div.notice-list::-webkit-scrollbar { /*공지사항 리스트 스크롤 
     width: 12px;
 }
 section div.notice-list::-webkit-scrollbar-thumb { /*공지사항 리스트 스크롤 막대*/
-    background-color: #ffce84;
+    background-color: #ffcba6;
     border-radius: 10px;
     background-clip: padding-box;
     border: 2px solid transparent;
@@ -205,7 +205,7 @@ section div.plan-list::-webkit-scrollbar { /*코칭계획 리스트 스크롤 �
     width: 12px;
 }
 section div.plan-list::-webkit-scrollbar-thumb {  /*코칭계획 리스트 스크롤 막대*/
-    background-color: #ffce84;
+    background-color: #ffcba6;
     border-radius: 10px;
     background-clip: padding-box;
     border: 2px solid transparent;

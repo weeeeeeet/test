@@ -12,9 +12,9 @@
 }
 
 /* 가이드라인 */
-.g {
+/* .g {
     border: 1px solid rgb(191, 0, 255);
-}
+} */
 
 
 /* 배경 스타일 작업 ================================================== */
@@ -82,7 +82,10 @@ section div.today-food p {
 
 
 /* ================================== */
-
+.container-fluid {
+    height: 620px;
+    width: 1050px;
+}
 .table td {
     padding: 3px;
     position: relative;
@@ -91,33 +94,63 @@ section div.today-food p {
 
 .scheduler {
     overflow: auto;
+    /* overflow-x: hidden; */
+    clear: both;
+    height: 620px;
 }
-
-.scheduler h3 {
-    text-align: right;
-    margin-right: 50px;
+.scheduler h2 {     /* 날짜 텍스트 */
+    float: right;
+    font-size: 25px;
+    color: #FF730E;
+    width: 290px;
 }
-
+.scheduler i {
+    float: right;
+    padding: 5px;
+    color: #FF730E;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+section div.scheduler::-webkit-scrollbar { /* 스케쥴 스크롤 너비*/
+    width: 12px;
+}
+section div.scheduler::-webkit-scrollbar-thumb {  /*스케쥴 스크롤 막대*/
+    background-color: #ffcba6;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+section div.scheduler::-webkit-scrollbar-track { /*스케쥴 스크롤 여백*/
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+}
 .week-scheduler {
     margin: 0 25px;
     height: 80vh;
-    min-width: 1200px;
-    overflow: auto;
+    min-width: 620px;
+    /* overflow: auto; */
 }
-
+.week-scheduler th{
+    background-color: rgb(255, 179, 103);
+    color: white;
+    text-align: center;
+}
 .appointment {
     padding: 3px;
-    border: 1px solid black;
+    border: 1px solid rgb(190, 190, 190);
     border-radius: 3px;
     position: absolute;
     width: calc(100% - 6px);
     height: calc(120px - 6px);
-    background-color: white;
+    background-color: rgb(255, 239, 204);
+    font-size: 13px;
+    text-align: center;
 }
 
 .appointment.checked {
-    background-color: lightblue;
-    border-color: #32383e;
+    background-color: rgb(255, 217, 146);
+    border-color: rgb(190, 190, 190);
     color: #000;
 }
 
