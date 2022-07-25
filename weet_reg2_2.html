@@ -18,9 +18,10 @@
         crossorigin="anonymous"></script>
 
     <link href="css/weet_class_reg2_2.css" rel="stylesheet" />
-    <link href="js/weet_class_reg2_2.js" rel="stylesheet" />
 
+    <script type="text/javascript" defer src="/js/weet_class_reg2_2.js?ver=1"></script>
     <script src="js/loadHTML.js"></script>
+
 </head>
 
 <body>
@@ -69,7 +70,7 @@
                         </a>
                     </div>
             </div>
-            <div class="enter">
+            <!-- <div class="enter">
                 <div class="simg">
                     <form method="post" enctype="multipart/form-data">
                         <div class="button">
@@ -80,13 +81,68 @@
                         <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
                     </form>
                 </div>
+                
                 <div class="img_ex">
                     <li>사진은 가로로 찍은 사진을 권장합니다.(가로 사이즈 최소 800px)</li>
                     <li>사진 용량은 사진 한 장당 10MB까지 등록 가능합니다.</li>
                     <li>사진은 대표사진 1장만 첨부 가능합니다.</li>
                 </div>
-            </div>
-            <div class="sum"><span> 대표 썸네일.png(229.2KB)</span></div>
+            </div> -->
+            <!-- <div class="sum"><span> 대표 썸네일.png(229.2KB)</span></div> -->
+            <div class="picAndText g">
+                <!-- ** get 방식으로 보내면 양식이 다 보인다 -->
+                <!-- 그래서 중요한 정보를 노출하기 싫으면 get 방식으로 보내면 안된다 -->
+                <!-- post 방식은 쿼리 스트링이 보이지 않는다! -->
+                <form class="g" name="foodForm" action="http://localhost:8080" method="POST"
+                    enctype="multipart/form-data"></form>
+
+                <!-- 사진 첨부파일 -->
+                <div class="image-container g">
+                    <!-- 이미지 미리보기 -->
+                    <p class="g">
+                        <li>사진은 가로로 찍은 사진을 권장합니다.(가로 사이즈 최소 800px)</li>
+                        <li>사진 용량은 사진 한 장당 10MB까지 등록 가능합니다.</li>
+                        <li>사진은 대표사진 1장만 첨부 가능합니다.</li>
+                    </p>
+                    <p>
+                        <img class="g" style="width: 150px;" id="preview-image"
+                            src="https://dummyimage.com/300x300/ffffff/000000.png&text=preview+image">
+                    </p>
+
+                    <!-- 파일선택 버튼 -->
+                    <div class="image-select-btn g">
+                        <p><input style="display: block;" type="file" id="input-image" onchange="checkSize(this)"></p>
+                    </div>
+                </div>
+                <script>
+                    function readImage(input) {
+                    // 인풋 태그에 파일이 있는 경우
+                    if(input.files && input.files[0]) {
+                        // 이미지 파일인지 검사 (생략)
+                        // FileReader 인스턴스 생성
+                        const reader = new FileReader()
+                        // 이미지가 로드가 된 경우
+                        reader.onload = e => {
+                            const previewImage = document.getElementById("preview-image")
+                            previewImage.src = e.target.result
+                        }
+                        // reader가 이미지 읽도록 하기
+                        reader.readAsDataURL(input.files[0])
+                        }
+                    }
+                    // input file에 change 이벤트 부여
+                    const inputImage = document.getElementById("input-image")
+                    inputImage.addEventListener("change", e => {
+                        readImage(e.target)
+                    })
+
+                    function checkSize(input) {
+                        if (input.files && input.files[0].size > (20 * 1024 * 1024)) {
+                            alert("파일 사이즈가 20mb 를 넘습니다.");
+                            input.value = null;
+                        }
+                    }
+                </script>
 
                 <div class="cla3">클래스 제목<span>*</span> 
                     <div class="mark">
@@ -99,10 +155,11 @@
                             </div>
                         </a>
                     </div>
+                    <div>
+                        <input type="class_title" class="ct_input" placeholder="&nbsp&nbsp클래스 제목을 입력해주세요" required>
+                    </div>
                 </div>
-            <div>
-                <input type="class_title" class="ct_input" placeholder="&nbsp&nbsp클래스 제목을 입력해주세요">
-            </div>
+        
                 <div class="cla4">클래스 소개 입력<span>*</span>
                     <div class="mark">
                         <a href="#"><p>?</p>
@@ -115,11 +172,11 @@
                             </div>
                         </a>
                     </div>
+                    <div>
+                        <input type="class_intro" class="ct_input" placeholder="&nbsp&nbsp클래스 소개를 입력해주세요" required>
+                    </div>
                 </div>
-            <div class="form-group">
-                <textarea class="form-control" id="exampleTextarea" rows="8" placeholder="&nbsp&nbsp클래스 소개를 입력하세요"></textarea>
-              </div>
-            <div>
+        
                 <div class="cla5">동영상 소개
                     <div class="mark">
                         <a href="#"><p>?</p>
@@ -131,11 +188,11 @@
                             </div>
                         </a>
                     </div>
+                    <div>
+                        <input type="class_video" class="ct_video" placeholder="&nbsp&nbsp유튜브 패널 영상이 있다면 URL을 입력해주세요">
+                    </div>
                 </div>    
-            </div>
-            <div>
-                <input type="class_video" class="ct_video" placeholder="&nbsp&nbsp유튜브 패널 영상이 있다면 URL을 입력해주세요">
-            </div>
+            
             <div class="page_button">
                 <button type="button" class="back" onclick="location.href='weet_reg2_1.html'">이전</button>
                 <button type="button" class="next" onclick="location.href='weet_reg2_3.html'">다음</button>

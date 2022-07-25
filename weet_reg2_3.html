@@ -22,6 +22,8 @@
     <script src="/js/weet_class_reg2_3.js"></script>
     <script src="/js/loadHTML.js"></script>
 
+
+
    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> --> 
 
    
@@ -80,13 +82,13 @@
                         <div class="start_date">
                             <p>시작일을 선택해 주세요.</p><span>*</span>
                             <div class="modal_datepicker_div">
-                                <input type="date" id="modal_datepicker">
+                                <input type="date" id="modal_datepicker" required>
                             </div>
                         </div>
                         <div class="class_time">
                             <p>수업 소요시간(시)</p><span>*</span>
                             <div class="class_time_div">
-                                <input type="number" id="modal_class_time">
+                                <input type="number" id="modal_class_time" required>
                             </div>
                         </div>
                         <div class="class_day">
@@ -118,7 +120,7 @@
                         <div class="class_start_time">
                             <p>수업 시작 시간</p><span>*</span>
                             <div class="class_start_time_div">
-                                <input type="time" id="modal_timepicker">
+                                <input type="time" id="modal_timepicker"required>
                             </div>
                         </div>
                         <div class="class_count">
@@ -130,7 +132,7 @@
                     </div>
 
                     <div class="modal_save">
-                        <button type="button" class="modal_save_btn" onclick="location.href='#'">저장</button>
+                        <input type="submit" class="modal_save_btn">
                     </div>
 
                 <a class="modal_close_btn"><i class="fa-solid fa-xmark"></i></a>
@@ -209,10 +211,6 @@
                     <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
                     <a href="#"><i class="fa-solid fa-xmark"></i></a>
                 </div>
-                <div class="schedule_box">
-                    <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
-                    <a href="#"><i class="fa-solid fa-xmark"></i></a>
-                </div>
             </div>
             <div id="term_num">
                 <div class="member_term">수강생 모집기간<span>*</span>
@@ -232,9 +230,9 @@
                     </div>
                     <div class="term">
                         <div class="datepicker">
-                            <input type="date" id="datepicker">
+                            <input type="date" id="datepicker" required>
                             <span>-</span>
-                            <input type="date" id="datepicker">
+                            <input type="date" id="datepicker" required>
                         </div>
                     </div>
                 </div>
@@ -250,7 +248,7 @@
                         </a>
                     </div>
                     <div class="num">
-                        <input type="text" id="datepicker" placeholder="인원">
+                        <input type="text" id="datepicker" placeholder="인원" required>
                     </div>
                 </div>
             </div>
@@ -283,7 +281,7 @@
                         </a>
                     </div>
                     <div class="class_tuition">
-                        <input type="text" placeholder="금액입력(원)">
+                        <input type="text" placeholder="금액입력(원)" required>
                     </div>
                 </div>
             </div>

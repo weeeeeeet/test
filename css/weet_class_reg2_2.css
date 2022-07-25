@@ -117,6 +117,16 @@ label {
 .img_ex li{
     margin-bottom: 5px;
 }
+
+.g li {
+    font-size: 14px;
+}
+#preview-image {
+    border: 1px solid rgb(181, 181, 181);
+}
+.image-select-btn {
+    font-size: 14px;
+}
 /* 못생긴 기존 input 숨기기 */
 #chooseFile {
     visibility: hidden;
@@ -193,6 +203,9 @@ label {
     color: #ff9100;
     margin-left: 3px;
     margin-bottom: 25px;
+}
+.cla4 input {
+    margin-bottom: 30px;
 }
 
 .ct_int placeholder{
@@ -374,3 +387,5 @@ label {
 .cla5 a:hover .video_explain {
     display: block;
 }
+
+
