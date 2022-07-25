@@ -8,8 +8,8 @@
 
     <title>Weet</title>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
     <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,8 +18,8 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-
-    <script src="js/loadHTML.js"></script>
+    <script src="js/admin_chk.js"></script>
+    <script src="js/loadHTML2.js"></script>
 
     <link href="css/weet_admin_home.css" rel="stylesheet">
 
@@ -41,52 +41,53 @@
                 <div class="inner">
                     <h3>결제 현황</h3>
                     <div class="select-box">
-                        <div class="check-box">
-                            <ul>
-                                <li><span class="search-title">결제상태</span>:</li>
-                                <li><input type="checkbox" name="user_type" id="agm" value="allPayState" checked> 전체
-                                </li>
-                                <li><input type="checkbox" name="user_type" id="agm" value="pay1"> 미결제</li>
-                                <li><input type="checkbox" name="user_type" id="agm" value="pay2"> 결제완료</li>
-                                <li><input type="checkbox" name="user_type" id="agm" value="pay3"> 결제실패</li>
-                                <li><input type="checkbox" name="user_type" id="agm" value="pay4"> 결제취소</li>
-                            </ul>
-                            <ul>
-                                <li><span class="search-title">결제수단</span>:</li>
-                                <li><input type="checkbox" name="user_type" id="agm" value="allPayment" checked> 전체</li>
-                                <li><input type="checkbox" name="user_type" id="agm" value="P"> 네이버페이</li>
-                                <li><input type="checkbox" name="user_type" id="agm" value="P"> 카카오페이</li>
-                                <li><input type="checkbox" name="user_type" id="agm" value="P"> TOSS페이</li>
-                                <li><input type="checkbox" name="user_type" id="agm" value="G"> 실시간계좌이체</li>
-                                <li><input type="checkbox" name="user_type" id="agm" value="G"> 가상계좌</li>
-                            </ul>
-                            <div class="searchDate-box">
+                        <form action="">
+                            <div class="check-box">
                                 <ul>
-                                    <li><span class="search-title">검색기간</span>:</li>
-                                    <li><input type="datetime-local" class="searchDate" id="startD"> ~
-                                    <li><input type="datetime-local" class="searchDate" id="endD">
+                                    <li><span class="search-title">결제상태</span>:</li>
+                                    <li><input type="checkbox" name="paystatus_chkAll" id="paystatus_chkAll" value="paystatus_chkAll" checked> 전체
+                                    </li>
+                                    <li><input type="checkbox" name="paystatus_chk" value="pay1" checked> 미결제</li>
+                                    <li><input type="checkbox" name="paystatus_chk" value="pay2" checked> 결제완료</li>
+                                    <li><input type="checkbox" name="paystatus_chk" value="pay3" checked> 결제실패</li>
+                                    <li><input type="checkbox" name="paystatus_chk" value="pay4" checked> 결제취소</li>
+                                </ul>
+                                <ul>
+                                    <li><span class="search-title">결제수단</span>:</li>
+                                    <li><input type="checkbox" name="paytype_chkAll" id="paytype_chkAll" value="paytype_chkAll" checked> 전체
+                                    </li>
+                                    <li><input type="checkbox" name="paytype_chk" value="P" checked> 카카오페이</li>
+                                    <li><input type="checkbox" name="paytype_chk" value="P" checked> TOSS페이</li>
+                                    <li><input type="checkbox" name="paytype_chk" value="G" checked> 실시간계좌이체</li>
+                                    <li><input type="checkbox" name="paytype_chk" value="G" checked> 가상계좌</li>
+                                </ul>
+                                <div class="searchDate-box">
+                                    <ul>
+                                        <li><span class="search-title">검색기간</span>:</li>
+                                        <li><input type="datetime-local" class="searchDate" id="startD"> ~
+                                        <li><input type="datetime-local" class="searchDate" id="endD">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div calss="search-box">
+                                <ul>
+                                    <li><span class="search-title">검색어 </span>:</li>
+                                    <li>
+                                        <div class="search-bar">
+                                            <select class="search-select" name="search-type">
+                                                <option value="class_name">클래스명</option>
+                                                <option value="user_name">이름</option>
+                                                <option value="user_id">아이디</option>
+                                                <option value="reason">반려사유</option>
+                                                <option value="return_date">반려일시</option>
+                                            </select>
+                                            <input type="text" name="search" placeholder="검색어 입력">
+                                            <button class="search_btn" name="search">검색</button>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div calss="search-box">
-                            <ul>
-                                <li><span class="search-title">검색어 </span>:</li>
-                                <li>
-                                    <div class="search-bar">
-                                        <select class="search-select" name="search-type">
-                                            <option value="class_name">클래스명</option>
-                                            <option value="user_name">이름</option>
-                                            <option value="user_id">아이디</option>
-                                            <option value="reason">반려사유</option>
-                                            <option value="return_date">반려일시</option>
-                                        </select>
-                                        <input type="text" name="search" placeholder="검색어 입력">
-                                        <button class="search_btn" name="search">검색</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
+                        </form>
                     </div>
                     <form id="boardForm" name="boardForm">
                         <input type="hidden" id="function_name" name="function_name" value="getBoardList" />

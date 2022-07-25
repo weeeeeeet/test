@@ -19,7 +19,7 @@
         crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 
-    <script src="js/loadHTML.js"></script>
+    <script src="js/loadHTML2.js"></script>
 
     <link href="css/weet_admin_home.css" rel="stylesheet">
 
@@ -41,31 +41,32 @@
                 <div class="inner">
                     <h3>쿠폰 관리</h3>
                     <div class="select-box">
-                        <div class="searchDate-box">
-                            <ul>
-                                <li><span class="search-title">검색기간</span>:</li>
-                                <li><input type="datetime-local" class="searchDate" id="startD"> ~
-                                <li><input type="datetime-local" class="searchDate" id="endD">
-                            </ul>
-                        </div>
-                        <div calss="search-box">
-                            <ul>
-                                <li><span class="search-title">검색어 </span>:</li>
-                                <li>
-                                    <div class="search-bar">
-                                        <select class="search-select" name="search-type">
-                                            <option value="couponNum">쿠폰코드</option>
-                                            <option value="couponName">쿠폰명</option>
-                                            <option value="couponExp">쿠폰설명</option>
-                                            <option value="couponPer">할인금액</option>
-                                        </select>
-                                        <input type="text" name="search" placeholder="검색어 입력">
-                                        <button class="search_btn" name="search">검색</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
+                        <form action="">
+                            <div class="searchDate-box">
+                                <ul>
+                                    <li><span class="search-title">검색기간</span>:</li>
+                                    <li><input type="datetime-local" class="searchDate" id="startD"> ~
+                                    <li><input type="datetime-local" class="searchDate" id="endD">
+                                </ul>
+                            </div>
+                            <div calss="search-box">
+                                <ul>
+                                    <li><span class="search-title">검색어 </span>:</li>
+                                    <li>
+                                        <div class="search-bar">
+                                            <select class="search-select" name="search-type">
+                                                <option value="couponNum">쿠폰코드</option>
+                                                <option value="couponName">쿠폰명</option>
+                                                <option value="couponExp">쿠폰설명</option>
+                                                <option value="couponPer">할인금액</option>
+                                            </select>
+                                            <input type="text" name="search" placeholder="검색어 입력">
+                                            <button class="search_btn" name="search">검색</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
                     </div>
                     <form id="boardForm" name="boardForm">
                         <input type="hidden" id="function_name" name="function_name" value="getBoardList" />
@@ -80,9 +81,9 @@
                                     <li><span id="search_conut">0</span></li>
                                 </ul>
                             </div>
-                            <div class="btns">
-                                <button class="registbtn">등록</button>
-                                <button class="deletebtn">삭제</button>
+                            <div class="btns-box">
+                                <button class="btns registbtn">등록</button>
+                                <button class="btns deletebtn">삭제</button>
                             </div>
                         </div>
                         <div class="table-box">

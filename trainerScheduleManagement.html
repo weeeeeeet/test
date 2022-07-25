@@ -20,12 +20,15 @@
     <!-- <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
 
-    <!-- 외부 HTML 연결 -->
-    <!-- defer : 브라우저가 스크립트를 문서 분석 이후에 실행해야 함을 나타내는 불리언 속성이다. -->
+    <!-- 외부 JS 연결 -->
     <script src="/js/loadHTML.js"></script>
 
     <!-- defer : 브라우저가 스크립트를 문서 분석 이후에 실행해야 함을 나타내는 불리언 속성이다. -->
     <script type="text/javascript" defer src="/js/trainerSchedule.js"></script>
+
+    <!-- jquery 설정 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
 
 </head>
 
@@ -34,6 +37,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
 
     <!-- header 불러오기 -->
     <div w3-include-html="/header.html"></div>
@@ -48,7 +52,7 @@
         <div class="dash g">
 
             <div class="g">
-                <h1>회원 대시보드</h1>
+                <h1>트레이너 대시보드</h1>
             </div>
 
         <!-- 오늘의 식단 올리기 대시보드 -->
@@ -57,10 +61,182 @@
                 <h2>스케쥴 확인</h2>
                 <p class="g">일정을 한눈에 확인하세요</p>
             </div>
-        </div>
-    </div>
 
+            <!-- 위클리 스케쥴러 -->
+             <!-- (C) Iryna Marushkina -->
+            <div class="container-fluid g">
+                <div class="">
+
+                    <div class="scheduler g">
+
+                    <div class="g">
+                        <a href="#"><i class="fas fa-square-caret-right g"></i><h2>2022 7월 18일 - 7월 24일</h2></a>
+                    </div>
+
+                    <div class="week-scheduler g">
+                        <table class="table table-bordered g">
+                        <thead class="thead g">
+
+                            <tr>
+                                <th></th>
+                                <th>월요일</th></div>
+                                <th>화요일</th>
+                                <th>수요일</th>
+                                <th>목요일</th>
+                                <th>금요일</th>
+                                <th>토요일</th>
+                                <th>일요일</th>
+                            </div>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                            <td>8:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+
+                            <tr>
+                            <td>9:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+
+                            <tr>
+                            <td>10:00</td>
+                            <td>
+                                <div class="appointment">Darlene 10AM</div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+
+                            <tr>
+                            <td>11:00</td>
+                            <td></td>
+                            <td>
+                                <div class="appointment checked">Robertson 11AM</div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+
+                            <tr>
+                            <td>12:00</td>
+                            <td></td>
+                            <td>
+                                <!-- <div class="appointment overlap-right  checked">Robertson 12AM</div> -->
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="appointment checked">Robertson 12AM</div>
+                            </td>
+                            <td></td>
+                            </tr>
+
+                            <tr>
+                            <td>13:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+
+                            <tr>
+                            <td>14:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+
+                            <tr>
+                            <td>15:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+                            
+                            <tr>
+                            <td>16:00</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="appointment">Darlene 10AM</div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>17:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>18:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+            </div>   
+
+        </div>
+
+        
     </section>
+
+    
+
 
     <!-- footer 불러오기 -->
     <div w3-include-html="/footer.html"></div>

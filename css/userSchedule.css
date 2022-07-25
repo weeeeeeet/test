@@ -18,8 +18,7 @@
 
 /* 배경 스타일 작업 ================================================== */
 body {
-    background-color: rgb(227, 227, 227);
-    
+    /* background-color: rgb(227, 227, 227); */ 
 }
 section.wrap {
     display: flex;
