@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>마이페이지 - 회원 - 내정보</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <link href="css/Mypage_TR_MyInfo_update.css" rel="stylesheet" />
+    <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- ==================HEADER==================== -->
+
+    <section class="header">
+        <nav class="nav_left">
+            <a href="http://127.0.0.1:5500/WEET/weet_header2.html"  target="_self">
+                <img src="img/weet_logo.png" alt="위의 이미지를 누르면 연결됩니다." width="100">
+            <a>
+            <div class="categories">
+                <a href="커뮤니티페이지" target="_self">
+                    커뮤니티
+                </a>
+                <a href="클래스페이지" target="_self">
+                    클래스
+                </a>
+            </div>
+        </nav>
+        
+        <div class="header_right">
+            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+            <input type="text" name="search"placeholder="트레이너명 또는 클래스명 입력">
+            <a href="#" class="fa-solid fa-magnifying-glass" target="_self"></a>
+            <a href="마이페이지" class="fa-solid fa-user" target="_self"></a>
+            <a href="알람" class="fa-solid fa-bell" target="_self"></a>
+        </div>
+    </section>
+    <div class="underline"></div>
+
+
+    <!-- ==================CONTENT==================== -->
+
+    <section class="content">
+
+        <nav class="content_left">
+            <!-- 프로필 + 왼쪽 목록 -->
+
+            <div class="profile">
+
+                <div class="profile_photo"></div>
+
+                <div class="profile_id">구창식2</div>
+
+                <div class="profile_social">T</div>
+
+                <div class="profile_level">LV.3</div>
+
+                <a href="#" class="profile_email">helloword@naver.com <i class="fas fa-angle-right"></i> </a>
+
+            </div>
+
+            <div class="mypage_list">
+                <!-- 왼쪽 목록 -->
+
+                <ul class="mypage_list_top">
+                    <li><a href="#">내 활동</a></li>
+                    <li><a href="/마이페이지_트레이너_내클래스룸_클래스검수.html">내 클래스룸</a></li>
+                    <li><a href="#">MY BODY</a></li>
+                </ul>
+
+                <ul class="mypage_list_bottom">
+                    <li><a href="#">구매 내역</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <div class="content_right">
+            <!-- 오른쪽 영역 : 위쪽 목록 + 전체 / 답변완료 + -->
+
+            <div class="mypage_top">
+
+                <ul class="mypage_toplist">
+                    <li><a href="#" class="on">프로필</a></li>
+                    <li><a href="#">알림살정</a></li>
+                    <li><a href="#">회원탈퇴</a></li>
+                </ul>
+
+            </div>
+
+            <div class="content_right_MyProfile">
+
+                <div class="content_right_MyProfile_TOP">
+
+                    <div class="content_right_MyProfile_profile">
+
+                        <div class="content_right_MyProfile_photo"></div>
+        
+                        <div class="content_right_MyProfile_id">구창식2</div>
+
+                        <div class="content_right_MyProfile_social">T</div>
+
+                        <div class="content_right_MyProfile_Level">LV.3</div>
+        
+                        <a href="#" class="content_right_MyProfile_email">helloword@naver.com </a>
+        
+                    </div>
+
+                </div>
+
+                <div class="content_right_MyProfile_content">
+
+                    <div class="MyProfile_content_name">닉네임
+                        <input type="text" name="name" class="MyProfile_content_name_value" placeholder="구창식2">
+                        <div class="MyProfile_content_name_check_btn"><a href="#">중복확인</a></div>
+                    </div>
+
+                    <div class="MyProfile_content_gender">성별
+                        <div class="MyProfile_content_gender_value">여</div>
+                    </div>
+
+                    <div class="MyProfile_content_phone">연락처 정보
+                        <input type="text" name="phone" class="MyProfile_content_phone_value" placeholder="010-1234-5678">
+                        <div class="MyProfile_content_phone_check_btn"><a href="#">인증</a></div>
+                    </div>
+
+                    <div class="MyProfile_content_pw">비밀번호
+                        <input type="password" name="password" class="MyProfile_content_pw_value" placeholder="**********">
+                        <div>영문 대소문자, 숫자, 특수문자를 조합하여 8이상 15자리 미만 입력 가능</div>
+                    </div>
+
+                    <div class="MyProfile_content_pw2">비밀번호 확인
+                        <input type="password" name="password2" class="MyProfile_content_pw_value2" placeholder="**********">
+                        <div>비밀번호가 일치하지 않습니다</div>
+                    </div>
+
+                    <div class="MyProfile_content_email">이메일
+                        <input type="text" name="email" class="MyProfile_content_email_value" placeholder="helloword@naver.com">
+                    </div>
+
+                    <div class="MyProfile_content_career">
+                        <p>경력사항 <br>및 수료사항</p>
+                        <input type="text" name="career" class="MyProfile_content_career_value" placeholder="1,000자 이내">
+                    </div>
+
+                    <a href="#" class="MyProfile_content_update">정보수정 완료</a>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+
+    </section>
+
+    <!-- ==================밑의 가리는 공간을 가리는 것을 방지하기 위한 쓸데없는 공간==================== -->
+
+    <div class="ttt"></div>
+
+    <!-- ==================FOOTER==================== -->
+    
+    <footer class="footer">
+        <div class="underline"></div>
+        <img src="img/weet_logo_bw.png" alt="">
+        <!-- <p>맞춤형 PT 예약&관리 플랫폼</p> -->
+
+        <div class="notice_service">
+            <button type="button" name="btnNotice" onclick="location.href='공지사항 주소';">공지사항</button>
+            <button type="button" name="btnService" onclick="location.href='고객센터 주소';">고객센터</button>
+            <br>
+            <ul class="time">
+                <li>운영시간 : 평일10시~18시 (주말, 공휴일 제외)</li>
+                <li> 점심시간 : 12시 30분~14시</li>
+            </ul>
+        </div>
+        <div class="underline2"></div>
+        <div class="terms">
+            <a href="이용약관페이지" target="_self">이용약관</a>
+            <a href="개인정보처리방침페이지" target="_self">개인정보처리방침</a>
+        </div>
+        <div class="underline2"></div>
+        <div class="address">
+            <p>대표: 조은별 | 서울특별시 강남구 테헤란로14길 6 남도빌딩 2F | Tel : 1234-5678<br>
+                사업자 등록번호 : 123-45-67892 | 통신판매업신고 : 2222-서울강남-1111호
+            </p>
+        </div>
+    </footer>
+   
+</body>
+
+</html>
