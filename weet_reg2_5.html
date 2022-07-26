@@ -25,6 +25,9 @@
    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> --> 
 
    
+   <!-- 카카오 주소검색 API -->
+   <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
 </head>
 
 <body>
@@ -85,16 +88,17 @@
             <div class="location">위치정보<span>*</span></div>
 
             <div class="location_search">
-                <input type="text" readonly placeholder="도로명 검색 버튼을 클릭하세요.">
-                <button class="road" onclick="도로명 검색">도로명 검색</button>
-                <div class="detail_location"><input type="text" placeholder="상세 주소 입력"></div>
+                <input type="text" id="address_kakao" name="address" readonly placeholder="검색창을 클릭하여 도로명을 검색해주세요." required>
+                <!-- <button class="road" onclick="도로명 검색">도로명 검색</button> -->
+                <div class="detail_location"><input type="text" name="address_detail" placeholder="상세 주소를 입력해주세요." required></div>
             </div>
             
         </div>
-            
+
+
         <div class="page_button">
             <button type="button" class="back" onclick="location.href='weet_reg2_4.html'">이전</button>
-            <button type="button" class="next" onclick="location.href='weet_reg2_6.html'">다음</button>
+            <button type="submit" class="next" onclick="location.href='weet_reg2_6.html'">다음</button>
         </div>
     
     </div>    
@@ -102,5 +106,20 @@
     <!-- ==================FOOTER==================== -->
     <div include-html="weet_footer.html"></div>
 </body>
+
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+window.onload = function(){
+    document.getElementById("address_kakao").addEventListener("click", function(){ //주소입력칸을 클릭하면
+        //카카오 지도 발생
+        new daum.Postcode({
+            oncomplete: function(data) { //선택시 입력값 세팅
+                document.getElementById("address_kakao").value = data.address; // 주소 넣기
+                document.querySelector("input[name=address_detail]").focus(); //상세입력 포커싱
+            }
+        }).open();
+    });
+}
+</script>
 
 </html>

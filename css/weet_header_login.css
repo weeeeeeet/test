@@ -72,6 +72,7 @@
     padding-top: 7px;
     text-decoration: none;
     position: relative;
+    cursor: pointer;
 }
 div.header_right .dropdown {
     width: 150px;
@@ -86,7 +87,7 @@ div.header_right .dropdown {
     box-shadow: 5px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
 }
 div.header_right .dropdown {
-   display:none;
+    display:none;
 }
 div.header_right .dropdown .fa-solid {
     color: #637288;
@@ -95,7 +96,7 @@ div.header_right .dropdown li {
     list-style: none;
     font-size: 14px;
     font-weight: 500;
-    margin-left: 0px;
+    margin-left: -30px;
     margin-top: 10px;
 }
 div.header_right .dropdown li a {
@@ -103,6 +104,7 @@ div.header_right .dropdown li a {
     font-size: 14px;
     margin-left: 10px;
     color: #637288;
+    top: 50px;
 }
 
 div.header_right i:hover {                 /* 사람 아이콘 */
