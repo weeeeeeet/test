@@ -39,7 +39,7 @@
             <!-- 컨텐츠 (게시글) -->
             <div class="content-container">
                 <div class="inner">
-                    <h3>휴면/탈퇴 회원</h3>
+                    <h3>회원 리스트</h3>
                     <div class="select-box">
                         <form action="">
                             <div class="check-box">
@@ -52,11 +52,11 @@
                                     <li><input type="checkbox" name="usertype_chk" value="T" checked> 트레이너</li>
                                 </ul>
                                 <ul>
-                                    <li><span class="search-title">회원상태 </span>:</li>
-                                    <li><input type="checkbox" name="userstatus_chkAll" id="userstatus_chkAll" value="userstatus_chkAll" checked> 전체
+                                    <li><span class="search-title">수신동의 </span>:</li>
+                                    <li><input type="checkbox" name="agmtype_chkAll" id="agmtype_chkAll" value="allAagmtype_chkAll" checked> 전체
                                     </li>
-                                    <li><input type="checkbox" name="userstatus_chk" value="SMS" checked> 휴면</li>
-                                    <li><input type="checkbox" name="userstatus_chk" value="Email" checked> 탈퇴</li>
+                                    <li><input type="checkbox" name="agmtype_chk" value="SMS" checked> SMS</li>
+                                    <li><input type="checkbox" name="agmtype_chk" value="Email" checked> E-mail</li>
                                 </ul>
                             </div>
                             <div calss="search-box">
@@ -98,203 +98,176 @@
                             <table class="table table-striped">
                                 <colgroup>
                                     <col width="5%" />
-                                    <col width="7%" />
+                                    <col width="10%" />
                                     <col width="12%" />
-                                    <col width="7%" />
-                                    <col width="13%" />
+                                    <col width="12%" />
+                                    <col width="11%" />
                                     <col width="20%" />
-                                    <col width="12%" />
-                                    <col width="12%" />
+                                    <col width="20%" />
+                                    <col width="20%" />
                                 </colgroup>
                                 <thead id="theader" class="theader">
                                     <tr>
                                         <th><input type="checkbox" name="checked" id="checked"></th>
-                                        <th>상태</th>
                                         <th>회원유형</th>
                                         <th>아이디</th>
+                                        <th>닉네임</th>
                                         <th>이름</th>
                                         <th>이메일</th>
                                         <th>연락처</th>
                                         <th>가입일</th>
-                                        <th>마지막 접속일</th>
                                     </tr>
                                 </thead>
                                 <tbody id="tbody" class="tbody">
                                     <tr>
                                         <th><input type="checkbox" name="checked" id="checked"></th>
-                                        <th>휴면</th>
-                                        <th>일반회원</th>
-                                        <th>아이디12</th>
-                                        <th>김이름</th>
-                                        <th>email14@gmail.com</th>
-                                        <th>010-0000-1004</th>
-                                        <th>2021-05-12</th>
-                                        <th>2022-06-12</th>
-                                    </tr>
-                                    <tr>
-                                        <th><input type="checkbox" name="checked" id="checked"></th>
-                                        <th>탈퇴</th>
                                         <th>트레이너</th>
-                                        <th>트레트레</th>
-                                        <th>김트레</th>
-                                        <th>trtr1313@naver.com</th>
-                                        <th>010-0000-2323</th>
-                                        <th>2021-07-12</th>
-                                        <th>2022-05-12</th>
+                                        <th>bbangx2</th>
+                                        <th>근육빵빵</th>
+                                        <th>김빵빵</th>
+                                        <th>bbang@gmail.com</th>
+                                        <th>010-1234-5678</th>
+                                        <th>2022-07-13</th>
                                     </tr>
                                     <tr>
                                         <th><input type="checkbox" name="checked" id="checked"></th>
-                                        <th>휴면</th>
                                         <th>일반회원</th>
-                                        <th>아이디12</th>
-                                        <th>김이름</th>
-                                        <th>email14@gmail.com</th>
-                                        <th>010-0000-1004</th>
-                                        <th>2021-05-12</th>
-                                        <th>2022-06-12</th>
+                                        <th>djdejddl00</th>
+                                        <th>엉덩이뿌셔</th>
+                                        <th>김사랑</th>
+                                        <th>loveee@gmail.com</th>
+                                        <th>010-1111-4444</th>
+                                        <th>2022-07-16</th>
                                     </tr>
                                     <tr>
                                         <th><input type="checkbox" name="checked" id="checked"></th>
-                                        <th>탈퇴</th>
                                         <th>트레이너</th>
-                                        <th>트레트레</th>
-                                        <th>김트레</th>
-                                        <th>trtr1313@naver.com</th>
-                                        <th>010-0000-2323</th>
-                                        <th>2021-07-12</th>
-                                        <th>2022-05-12</th>
+                                        <th>bbangx2</th>
+                                        <th>근육빵빵</th>
+                                        <th>김빵빵</th>
+                                        <th>bbang@gmail.com</th>
+                                        <th>010-1234-5678</th>
+                                        <th>2022-07-13</th>
                                     </tr>
                                     <tr>
                                         <th><input type="checkbox" name="checked" id="checked"></th>
-                                        <th>휴면</th>
                                         <th>일반회원</th>
-                                        <th>아이디12</th>
-                                        <th>김이름</th>
-                                        <th>email14@gmail.com</th>
-                                        <th>010-0000-1004</th>
-                                        <th>2021-05-12</th>
-                                        <th>2022-06-12</th>
+                                        <th>djdejddl00</th>
+                                        <th>엉덩이뿌셔</th>
+                                        <th>김사랑</th>
+                                        <th>loveee@gmail.com</th>
+                                        <th>010-1111-4444</th>
+                                        <th>2022-07-16</th>
                                     </tr>
                                     <tr>
                                         <th><input type="checkbox" name="checked" id="checked"></th>
-                                        <th>탈퇴</th>
                                         <th>트레이너</th>
-                                        <th>트레트레</th>
-                                        <th>김트레</th>
-                                        <th>trtr1313@naver.com</th>
-                                        <th>010-0000-2323</th>
-                                        <th>2021-07-12</th>
-                                        <th>2022-05-12</th>
+                                        <th>bbangx2</th>
+                                        <th>근육빵빵</th>
+                                        <th>김빵빵</th>
+                                        <th>bbang@gmail.com</th>
+                                        <th>010-1234-5678</th>
+                                        <th>2022-07-13</th>
                                     </tr>
                                     <tr>
                                         <th><input type="checkbox" name="checked" id="checked"></th>
-                                        <th>휴면</th>
                                         <th>일반회원</th>
-                                        <th>아이디12</th>
-                                        <th>김이름</th>
-                                        <th>email14@gmail.com</th>
-                                        <th>010-0000-1004</th>
-                                        <th>2021-05-12</th>
-                                        <th>2022-06-12</th>
+                                        <th>djdejddl00</th>
+                                        <th>엉덩이뿌셔</th>
+                                        <th>김사랑</th>
+                                        <th>loveee@gmail.com</th>
+                                        <th>010-1111-4444</th>
+                                        <th>2022-07-16</th>
                                     </tr>
                                     <tr>
                                         <th><input type="checkbox" name="checked" id="checked"></th>
-                                        <th>탈퇴</th>
                                         <th>트레이너</th>
-                                        <th>트레트레</th>
-                                        <th>김트레</th>
-                                        <th>trtr1313@naver.com</th>
-                                        <th>010-0000-2323</th>
-                                        <th>2021-07-12</th>
-                                        <th>2022-05-12</th>
+                                        <th>bbangx2</th>
+                                        <th>근육빵빵</th>
+                                        <th>김빵빵</th>
+                                        <th>bbang@gmail.com</th>
+                                        <th>010-1234-5678</th>
+                                        <th>2022-07-13</th>
                                     </tr>
                                     <tr>
                                         <th><input type="checkbox" name="checked" id="checked"></th>
-                                        <th>휴면</th>
                                         <th>일반회원</th>
-                                        <th>아이디12</th>
-                                        <th>김이름</th>
-                                        <th>email14@gmail.com</th>
-                                        <th>010-0000-1004</th>
-                                        <th>2021-05-12</th>
-                                        <th>2022-06-12</th>
+                                        <th>djdejddl00</th>
+                                        <th>엉덩이뿌셔</th>
+                                        <th>김사랑</th>
+                                        <th>loveee@gmail.com</th>
+                                        <th>010-1111-4444</th>
+                                        <th>2022-07-16</th>
                                     </tr>
                                     <tr>
                                         <th><input type="checkbox" name="checked" id="checked"></th>
-                                        <th>탈퇴</th>
                                         <th>트레이너</th>
-                                        <th>트레트레</th>
-                                        <th>김트레</th>
-                                        <th>trtr1313@naver.com</th>
-                                        <th>010-0000-2323</th>
-                                        <th>2021-07-12</th>
-                                        <th>2022-05-12</th>
+                                        <th>bbangx2</th>
+                                        <th>근육빵빵</th>
+                                        <th>김빵빵</th>
+                                        <th>bbang@gmail.com</th>
+                                        <th>010-1234-5678</th>
+                                        <th>2022-07-13</th>
                                     </tr>
                                     <tr>
                                         <th><input type="checkbox" name="checked" id="checked"></th>
-                                        <th>휴면</th>
                                         <th>일반회원</th>
-                                        <th>아이디12</th>
-                                        <th>김이름</th>
-                                        <th>email14@gmail.com</th>
-                                        <th>010-0000-1004</th>
-                                        <th>2021-05-12</th>
-                                        <th>2022-06-12</th>
+                                        <th>djdejddl00</th>
+                                        <th>엉덩이뿌셔</th>
+                                        <th>김사랑</th>
+                                        <th>loveee@gmail.com</th>
+                                        <th>010-1111-4444</th>
+                                        <th>2022-07-16</th>
                                     </tr>
                                     <tr>
                                         <th><input type="checkbox" name="checked" id="checked"></th>
-                                        <th>탈퇴</th>
                                         <th>트레이너</th>
-                                        <th>트레트레</th>
-                                        <th>김트레</th>
-                                        <th>trtr1313@naver.com</th>
-                                        <th>010-0000-2323</th>
-                                        <th>2021-07-12</th>
-                                        <th>2022-05-12</th>
+                                        <th>bbangx2</th>
+                                        <th>근육빵빵</th>
+                                        <th>김빵빵</th>
+                                        <th>bbang@gmail.com</th>
+                                        <th>010-1234-5678</th>
+                                        <th>2022-07-13</th>
                                     </tr>
                                     <tr>
                                         <th><input type="checkbox" name="checked" id="checked"></th>
-                                        <th>휴면</th>
                                         <th>일반회원</th>
-                                        <th>아이디12</th>
-                                        <th>김이름</th>
-                                        <th>email14@gmail.com</th>
-                                        <th>010-0000-1004</th>
-                                        <th>2021-05-12</th>
-                                        <th>2022-06-12</th>
+                                        <th>djdejddl00</th>
+                                        <th>엉덩이뿌셔</th>
+                                        <th>김사랑</th>
+                                        <th>loveee@gmail.com</th>
+                                        <th>010-1111-4444</th>
+                                        <th>2022-07-16</th>
                                     </tr>
                                     <tr>
                                         <th><input type="checkbox" name="checked" id="checked"></th>
-                                        <th>탈퇴</th>
                                         <th>트레이너</th>
-                                        <th>트레트레</th>
-                                        <th>김트레</th>
-                                        <th>trtr1313@naver.com</th>
-                                        <th>010-0000-2323</th>
-                                        <th>2021-07-12</th>
-                                        <th>2022-05-12</th>
+                                        <th>bbangx2</th>
+                                        <th>근육빵빵</th>
+                                        <th>김빵빵</th>
+                                        <th>bbang@gmail.com</th>
+                                        <th>010-1234-5678</th>
+                                        <th>2022-07-13</th>
                                     </tr>
                                     <tr>
                                         <th><input type="checkbox" name="checked" id="checked"></th>
-                                        <th>휴면</th>
                                         <th>일반회원</th>
-                                        <th>아이디12</th>
-                                        <th>김이름</th>
-                                        <th>email14@gmail.com</th>
-                                        <th>010-0000-1004</th>
-                                        <th>2021-05-12</th>
-                                        <th>2022-06-12</th>
+                                        <th>djdejddl00</th>
+                                        <th>엉덩이뿌셔</th>
+                                        <th>김사랑</th>
+                                        <th>loveee@gmail.com</th>
+                                        <th>010-1111-4444</th>
+                                        <th>2022-07-16</th>
                                     </tr>
                                     <tr>
                                         <th><input type="checkbox" name="checked" id="checked"></th>
-                                        <th>탈퇴</th>
-                                        <th>트레이너</th>
-                                        <th>트레트레</th>
-                                        <th>김트레</th>
-                                        <th>trtr1313@naver.com</th>
-                                        <th>010-0000-2323</th>
-                                        <th>2021-07-12</th>
-                                        <th>2022-05-12</th>
+                                        <th>일반회원</th>
+                                        <th>djdejddl00</th>
+                                        <th>엉덩이뿌셔</th>
+                                        <th>김사랑</th>
+                                        <th>loveee@gmail.com</th>
+                                        <th>010-1111-4444</th>
+                                        <th>2022-07-16</th>
                                     </tr>
                                 </tbody>
                             </table>
