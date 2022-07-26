@@ -15,6 +15,10 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="ico/favicon.ico" type="image/x-icon">
+
     <!-- bootstrap v5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -53,7 +57,7 @@
             let pg = $('btn-check').val();
             console.log(pg);
             let name = $('.class-title').text();    // 상품정보s
-            let amount = parseInt($('#total-amount').text().substring(0,$('#total-amount').text().length-1).replace(",", "")); // 금액
+            let amount = parseInt($('#total-amount').text().substring(0, $('#total-amount').text().length - 1).replace(",", "")); // 금액
 
             console.log(name);
 
@@ -92,7 +96,7 @@
 </head>
 
 <body>
-    <div w3-include-html="weet_header_login.html"></div>      <!-- header -->
+    <div w3-include-html="weet_header_login.html"></div> <!-- header -->
 
     <section class="contents">
         <form class="was-validated" onsubmit="goPayment()">
@@ -272,8 +276,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="coupons" id="no-coupon" value="-1"
-                            checked>
+                        <input class="form-check-input" type="radio" name="coupons" id="no-coupon" value="-1" checked>
                         <label class="form-check-label" for="no-coupon">
                             선택 안 함
                         </label>
@@ -340,7 +343,7 @@
         </div>
     </div>
 
-    <div w3-include-html="weet_footer.html"></div>  <!-- footer -->
+    <div w3-include-html="weet_footer.html"></div> <!-- footer -->
 
     <script>includeHTML();</script>
 </body>
