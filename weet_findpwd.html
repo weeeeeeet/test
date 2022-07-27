@@ -18,7 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-    <link href="css/weet_login_tr.css" rel="stylesheet" />
+    <link href="css/weet_findpwd.css" rel="stylesheet" />
     <script src="js/loadHTML2.js"></script>
 
 </head>
@@ -30,23 +30,24 @@
         <!-- header e -->
 
         <section class="login-contain">
-
+            <div class="inner_box">
             <div class="login-main-text"> 비밀번호 찾기 </div>
             <div class="sub-text">
             </div>
-            <form action="Login" class="member-login">
-                <div class="mb-3">
-                    <ul class="login-box">
-                        <li class="login-userid">
+            <form action="Findpwd" class="findpwd">
+                <div class="input_list">
+                    <div class="inner-list">
+                        <div class="la_input alon">
                             <label for="id" class="form-label">비밀번호를 찾고자 하는 아이디를 입력해 주세요.</label>
-                            <div class="input-group mb-3">
+                            <div class="input_group">
                                 <input type="text" class="form-control-sm" id="id" minlength="8" maxlength="15"
                                     placeholder="8-15자의 영문 소문자, 숫자만 가능합니다.">
-                        </li>
-                    </ul>
-                    <a href="weet_findpwd2.html"><input class="loginbtn" type="submit" value="다음"></a>
+                            </div>
+                        </div>
+                    <button class="loginbtn" type="submit" value="다음">다음</button>
                 </div>
             </form>
+        </div>
         </section>
     </div>
     <script>includeHTML();</script>

@@ -30,40 +30,41 @@
         <!-- header e -->
 
         <section class="login-contain">
-
-            <div class="login-main-text"> 아이디 찾기 </div>
-            <div class="sub-text">
-                <h3>회원정보에 등록한 휴대전화로 인증</h3>
-                <P>회원정보에 등록한 휴대전화 번호와 입력한 휴대전화 번호가 같아야, 인증번호를 받을 수 있습니다.</P>
-            </div>
-            <form action="Login" class="member-login">
-                <div class="mb-3">
-                    <ul class="login-box">
-                        <li class="login-userid">
-                            <label for="uname" class="form-label">이름</label>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" id="uname" minlength="2" maxlength="15"
-                                    placeholder="김영희" aria-label="Recipient's username"
-                                    aria-describedby="button-addon2">
-                        </li>
-                        <div class="boxing">
-                            <li>
-                                <label for="mobile" class="form-label">핸드폰번호</label>
+            <div class="inner_box">
+                <div class="login-main-text"> 아이디 찾기 </div>
+                <div class="sub-text">
+                    <h3>회원정보에 등록한 휴대전화로 인증</h3>
+                    <P>회원정보에 등록한 휴대전화 번호와 입력한 휴대전화 번호가 같아야, 인증번호를 받을 수 있습니다.</P>
+                </div>
+                <form action="Login" class="member-login">
+                    <div class="mb-3">
+                        <ul class="login-box">
+                            <li class="login-userid">
+                                <label for="uname" class="form-label">이름</label>
                                 <div class="input-group mb-3">
-                                    <input type="tell" class="form-control" id="tell" class="int" length="11"
-                                        placeholder=" ' - ' 제외하고 입력해주세요" aria-label="Recipient's username"
+                                    <input type="text" class="form-control" id="uname" minlength="2" maxlength="15"
+                                        placeholder="김영희" aria-label="Recipient's username"
                                         aria-describedby="button-addon2">
-                                    <button class="btn btn-outline-secondary" type="button"
-                                        id="button-addon2">인증요청</button>
-                                </div>
                             </li>
-                        </div>
-                    </ul>
+                            <div class="boxing">
+                                <li>
+                                    <label for="mobile" class="form-label">핸드폰번호</label>
+                                    <div class="input-group mb-3">
+                                        <input type="tell" class="form-control" id="tell" class="int" length="11"
+                                            placeholder=" ' - ' 제외하고 입력해주세요" aria-label="Recipient's username"
+                                            aria-describedby="button-addon2">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            id="button-addon2">인증요청</button>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
 
-                   <button class="loginbtn" type="submit">다음<a href=""></a></button>
-              
+                        <button class="loginbtn" type="submit">다음<a href=""></a></button>
+
+                    </div>
+                </form>
             </div>
-            </form>
         </section>
     </div>
     <script>includeHTML();</script>
