@@ -113,6 +113,7 @@
     cursor: pointer;
 
     border: none;
+    border-radius: 3px;
     background-color: #2370DF;
     color: white;
 
