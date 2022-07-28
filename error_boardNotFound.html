@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <!-- 나중에 JSP로 변환 시 에러페이지는 상단에 에러페이지 속성 추가할것! -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PT예약 플랫폼::Wee.T</title>
+
+    <!-- css -->
+    <link href="css/error_boardNotFound.css" rel="stylesheet" />
+
+    <!-- font -->
+    <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- googlefonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="ico/favicon.ico" type="image/x-icon">
+
+    <!-- javascript -->
+    <script src="js/loadHTML.js"></script>
+</head>
+
+<body>
+    <div w3-include-html="weet_header_login.html"></div>
+
+    <!-- ==================COMM==================== -->
+
+    <div>
+        <nav class="commhome_menu">
+            <a href="#" class="commhome_home">홈</a>
+            <a href="#" class="commhome_tr">TR 게시판</a>
+            <a href="#" class="commhome_write">글쓰기</a>
+        </nav>
+        <div class="commhome_line1"></div>
+    </div>
+
+    <section class="contents">
+        <!-- =====정렬===== -->
+        <select class="form-select" aria-label="Default select example">
+            <option selected>정렬</option>
+            <option value="1">최신순</option>
+            <option value="2">댓글순</option>
+            <option value="3">좋아요순</option>
+
+        </select>
+
+        <!-- =====검색===== -->
+        <div class="search_main">
+            <input type="text" name="search" placeholder="" autocomplete="off" value="다이어트">
+            <a href="#" class="fa-solid fa-magnifying-glass" target="_self"></a>
+        </div>
+
+        <div w3-include-html="notFound.html"></div>
+    </section>
+
+    <!-- ==================FOOTER==================== -->
+
+    <div w3-include-html="weet_footer.html"></div>
+    <script>includeHTML();</script>
+</body>
+
+</html>
+
+<!-- xcvcxvcxccxv -->
