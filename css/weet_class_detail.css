@@ -536,10 +536,6 @@ a:hover {
 .reviews>.row {
   margin: 15px 0;
 }
-.review-header .text-muted {
-  /* font-weight: bold; */
-}
-
 /* page */
 .pagination,
 .jsgrid .jsgrid-pager {
