@@ -290,8 +290,8 @@ a {
     margin-bottom: 10px;
 }
 
-/* 수신동의 저장 */
-.content_right_secede_save{
+/* 회원탈퇴 저장 */
+.content_right_secede_delete{
     background-color: #2370DF;
     border: none;
     border-radius: 8px;
@@ -305,41 +305,6 @@ a {
 
     margin-top: 10px;
     margin-left: 615px;
-}
-
-/* 모달창 ================================ */
-
-/* 모달창 - 전체를 감싸는 보더 설정 */
-.modal_class_content{
-    width: 100%;
-
-    margin-bottom: 10px;
-}
-
-/* 모달창 - 클래스 제목 */
-.modal_class_title{
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-    color: #000000;
-    font-size: 24px;
-    text-align: center;
-}
-
-/* 모달창 - 확인 버튼 */
-.btn_submit {
-    background-color: #2370DF;
-    border: none;
-    border-radius: 8px;
-
-    color: white;
-    font-size: 14px;
-
-    width: 70px;
-    height: 38px;
-
-    margin-bottom: 30px;
-    margin-left: 200px;
 }
 
 /* Footer ================================ */
