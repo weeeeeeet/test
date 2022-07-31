@@ -6,7 +6,9 @@
     font-family: 'SCoreDream';
     box-sizing: border-box;
 }
-
+a {
+    text-decoration: none;
+}
 ul,
 ol {
     list-style: none;
@@ -17,12 +19,24 @@ section, li::after{
     content:''; 
     display:block;
 } 
+h3{
+    font-size: 14px;
+    font-weight: 600;
+}
 
+
+.sub-text{
+    margin-top: 30px;
+}
+.sub-text p{
+    font-size: 12px;
+
+}
 
 /* ==== login box =========*/
 .login-contain {                 /* 컨텐츠 스타일 */
     max-width: 1440px;
-    margin-top: 100px;   
+    margin-top: 100px;          
     /* 헤더 높이만큼 밀어주기 */
     
 }
@@ -51,7 +65,8 @@ section, li::after{
     font-size: 14px;
 }
 
-.findpwd{
+
+.findid{                            /* form 영역 */
     width: 400px;
     /* border: 2px solid green; */
 }
@@ -60,35 +75,46 @@ section, li::after{
     margin-bottom: 30px;
 }
 
-.la_input {                       /* label + input box */
+.findid_list{                       /* id 테이블 outer */
     margin: 0px;
-    padding: 20px 10px 0 10px;
-}   
-.form-label{                       /* label 스타일 */
+    padding: 25px 10px;
+    background-color: #dbdbdb9c;
+    border-radius: 10px;
+}
+
+.findid-box{
+    text-align: center;
+    width: 360px;
+}
+
+.findid-box thead th{
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.findid-box tbody th{
+    padding: 3px 0;
     font-size: 14px;
-    padding-left: 7px;
-    text-align: left;
-    display: block;
-    color: #3c4144;;
-    /* border: 2px solid green; */
+    font-weight: 500;
 }
 
-.form-control-sm{                  /* input 스타일 */
-    border: 2px solid #2370DF; 
-    width: 100%;
-    height: 35px;
+.btn-box{
+    margin-top: 30px;
+    text-align: center;
 }
-
-
-.loginbtn{                                 /* 로그인 버튼 */
+.findbtn{
     background-color: #2370DF;
     -webkit-box-shadow: 0px 16px 23px -3px #ABABAB; 
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: aliceblue;
-    width: 370px;
+    width: 170px;
     height: 50px;
     border: none;
     border-radius: 10px; 
-    margin-bottom: 10px;
+    
+    margin: 0px 10px;
 }
+
+
 

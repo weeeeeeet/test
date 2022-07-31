@@ -6,7 +6,9 @@
     font-family: 'SCoreDream';
     box-sizing: border-box;
 }
-
+a {
+    text-decoration: none;
+}
 ul,
 ol {
     list-style: none;
@@ -17,14 +19,26 @@ section, li::after{
     content:''; 
     display:block;
 } 
+h3{
+    font-size: 14px;
+    font-weight: 600;
+}
 
+
+.sub-text{
+    margin-top: 30px;
+}
+.sub-text p{
+    font-size: 12px;
+
+}
 
 /* ==== login box =========*/
 .login-contain {                 /* 컨텐츠 스타일 */
     max-width: 1440px;
-    margin-top: 100px;   
+    margin-top: 100px;          
     /* 헤더 높이만큼 밀어주기 */
-    
+    /* border: 2px solid green; */
 }
 .inner_box {
     height: 100%;
@@ -51,9 +65,10 @@ section, li::after{
     font-size: 14px;
 }
 
-.findpwd{
+
+.findid{
     width: 400px;
-    /* border: 2px solid green; */
+    display: inline-block;
 }
 
 .inner-list{                      /* 라벨+인풋 list(모음) */
@@ -70,7 +85,6 @@ section, li::after{
     text-align: left;
     display: block;
     color: #3c4144;;
-    /* border: 2px solid green; */
 }
 
 .form-control-sm{                  /* input 스타일 */
@@ -79,6 +93,27 @@ section, li::after{
     height: 35px;
 }
 
+.input-group .putbtn {                            /* input + btn스타일 */
+    border: 2px solid #2370DF; 
+    height: 35px;
+}
+
+.form-control{
+    border: 2px solid #2370DF; 
+    float: left;
+    height: 35px;
+    font-size: .875rem;
+}
+
+.btn-outline-secondary{
+    height: 35px;
+    color: white;
+    background-color: #2370DF;
+    border: none;
+    font-size:12px;
+    flex-direction: column;
+    font-size: .875rem;
+}
 
 .loginbtn{                                 /* 로그인 버튼 */
     background-color: #2370DF;
@@ -91,4 +126,3 @@ section, li::after{
     border-radius: 10px; 
     margin-bottom: 10px;
 }
-

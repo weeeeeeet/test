@@ -93,7 +93,7 @@
                                 </ul>
                             </div>
                             <div class="btns-box">
-                                <button class="btns registbtn" data-bs-toggle="modal" data-bs-target="#newcoupon" data-bs-whatever="@getbootstrap" >등록</button>
+                                <button class="btns registbtn" data-bs-toggle="modal" data-bs-target="#1newcoupon" data-bs-whatever="@getbootstrap" >등록</button>
                                 <button class="btns deletebtn">삭제</button>
                             </div>
                         </div>
@@ -312,34 +312,48 @@
         </div>
     </div>
 
-    <div class="modal fade" id="newcoupon" tabindex="-1" aria-labelledby="newcouponLabel" aria-hidden="true">
-      <div class="modal-dialog">
+    <div class="modal fade" id="1newcoupon" tabindex="-1" aria-labelledby="newcouponLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="newcoupon">쿠폰 등록</h5>
+            <h5 class="modal-title" id="1newcoupon">1:1 문의 답변 등록</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
+            <p>Modal body text goes here.</p>
+            <table>
+                <tr>
+                    <th>제목</th>
+                    <th>클래스 환불 가능 문의</th>
+                </tr>
+                <tr>
+                    <th>문의 유형</th>
+                    <th>환불문의</th>
+                    <th>작성일자</th>
+                    <th>2022.06.12 19:22</th>
+                </tr>
+                <tr>
+                    <th>아이디</th>
+                    <th>hellowworld@naver.com</th>
+                    <th>연락처</th>
+                    <th>010-1234-5678</th>
+                </tr>
+                <tr>
+                    <th>클래스 시작해서 12회 중 3회를 어쩌고 저쩌고 대충 문의하는 내용 블라블라</th>
+                </tr>
+            </table>
+            
             <form>
               <div class="mb-3">
                 <label for="recipient-name" class="col-form-label">쿠폰 이름</label>
                 <input type="text" class="form-control" id="couponName" placeholder="">
               </div>
               <div class="mb-3">
-                <label for="recipient-name" class="col-form-label">쿠폰 코드</label>
+                <label for="recipient-name" class="col-form-label">제목</label>
                 <input type="text" class="form-control" id="couponNum">
               </div>
               <div class="mb-3">
-                <label for="recipient-name" class="col-form-label">할인율(원)</label>
-                <input type="number" class="form-control" id="couponPer">
-              </div>
-              <div class="mb-3">
-                <label for="recipient-name" class="col-form-label">사용기한</label>
-                <input type="datetime-local" class="form-control" id="couponSdate">
-                <input type="datetime-local" class="form-control" id="couponEdate">
-              </div>
-              <div class="mb-3">
-                <label for="message-text" class="col-form-label">상세내용</label>
+                <label for="message-text" class="col-form-label">본문</label>
                 <textarea class="form-control" id="message-text"></textarea>
               </div>
             </form>

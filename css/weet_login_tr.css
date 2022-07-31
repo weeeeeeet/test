@@ -36,7 +36,7 @@ h3{
 /* ==== login box =========*/
 .login-contain {                 /* 컨텐츠 스타일 */
     max-width: 1440px;
-    /* max-height: 800px; */
+    max-height: 800px;
     margin-top: 75px;          
     /* 헤더 높이만큼 밀어주기 */
     display: block;
@@ -67,7 +67,7 @@ h3{
 }
 
 .login-box {
-    margin: 0px;
+    margin: 0p auto;
     padding: 20px 10px 0 10px;
     margin-bottom: 20px;
     border: 2px solid green;
