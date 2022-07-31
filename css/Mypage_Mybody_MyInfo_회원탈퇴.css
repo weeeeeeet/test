@@ -210,7 +210,60 @@ a {
     border-bottom: 2px solid black;
 }
 
-/* 수신동의  ================================ */
+/* 모달창 1 - 회원탈퇴 ================================ */
+
+/* 모달창 - 전체를 감싸는 보더 설정 */
+.modal_class_content{
+    width: 100%;
+
+    margin-bottom: 10px;
+}
+
+/* 모달창 - 헤드 - 제목 */
+.modal-title{
+    width: 100%;
+
+    color: #666666;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 모달창 - 클래스 제목 */
+.modal_class_title{
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 모달창 - 클래스 제목 */
+.modal_class_title_value{
+    color: #000000;
+    font-size: 14px;
+
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+/* 모달창 - 환불사유 제목 */
+.modal_class_content{
+    padding-bottom: 10px;
+}
+
+/* 모달창 - 주문취소 버튼 */
+.btn_submit{
+    background-color: #2370DF;
+    border: none;
+    border-radius: 8px;
+
+    color: white;
+    font-size: 14px;
+
+    width: 70px;
+    height: 38px;
+}
+
+/* 탈퇴 동의  ================================ */
 
 /* 수신동의 전체적인 틀 잡기 */
 .content_right_secede{
