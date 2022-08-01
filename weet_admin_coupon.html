@@ -30,6 +30,7 @@
      <!-- #### style ####-->
     <!-- css -->
     <link href="css/weet_admin_home.css" rel="stylesheet">
+    <link href="css/weet_modal_coupon.css" rel="stylesheet">
     <!-- java script -->
     <script src="js/loadHTML2.js"></script>    
 
@@ -92,7 +93,7 @@
                                 </ul>
                             </div>
                             <div class="btns-box">
-                                <button class="btns registbtn" data-bs-toggle="modal" data-bs-target="#newcouponbb">등록</button>
+                                <button class="btns registbtn" data-bs-toggle="modal" id="newcouponPop">등록</button>
                                 <button class="btns deletebtn">삭제</button>
                             </div>
                         </div>
@@ -281,20 +282,31 @@
             </div>
         </div>
     </div>
-
-  
     
-    <div class="modal fade" id="newcouponbb" tabindex="-1" aria-labelledby="newcouponLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" >
+    <!-- 쿠폰등록 모달 -->
+
+    <script>
+        $(() => {
+            $('#newcouponPop').click((e) => {
+                e.preventDefault();
+                $('#newcouponModal').modal("show");
+            });
+            $('#newcoupon-close').click(() => $('#newcouponModal').modal("hide"));
+            $('#newcoupon-submit').click(() => $('#newcouponModal').modal("hide"));
+        }) // .jq
+    </script>
+    
+    <div class="modal fade" id="newcouponModal" tabindex="-1" aria-labelledby="newcouponLabel" aria-hidden="true">
+        <div class="modal-dialog" >
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="newcouponLabel">쿠폰 등록</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" id="newcoupon-close" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <form>
                 <div class="mb-3">
-                  <label for="newcoupon-name" class="col-form-label">쿠폰 이름</label>
+                  <label for="newcoupon-name" id="coupon" class="col-form-label">쿠폰 이름</label>
                   <input type="text" class="form-control" id="couponName" placeholder="">
                 </div>
                 <div class="mb-3">
@@ -317,8 +329,8 @@
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
-              <button type="button" class="btn btn-primary">등록</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="newcoupon-close">닫기</button>
+              <button id="newcoupon-submit" type="submit" class="btn btn-primary">등록</button>
             </div>
           </div>
         </div>
