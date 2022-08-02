@@ -35,6 +35,7 @@
     display: inline;
     float: left;
 }
+
 .footer .notice_service {                      /* 공지사항, 고객센터 */
     float: right;
     margin-top: 20px;
