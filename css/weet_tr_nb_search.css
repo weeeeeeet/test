@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SCoreDream';
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body {
+    /* padding-top: 100px; */
+}
+
+.contents {
+    margin: 0 auto;
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 280px;
+    width: 1040px;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------ */
+
+.commhome_menu a {
+    width: 50px;
+    margin: 10px 100px;
+    font-size: 15px;
+    display: inline;
+    text-decoration: none;
+    background: #fff;
+    color: black;
+}
+
+.commhome_menu a:nth-of-type(1) {
+    margin: 0px 100px;
+    padding-top: 25px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.commhome_menu a:nth-of-type(2) {
+    width: 100px;
+    margin: 0px -50px;
+    border-bottom: 1px solid;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.commhome_menu a:nth-of-type(3) {
+    display: block;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+
+    float: right;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+
+    background-color: #2370DF;
+    color: #fff;
+}
+
+.commhome_line1 {
+    clear: both;
+    height: 1.5px;
+    background: rgb(236, 236, 236);
+}
+
+/* ------------------------------------------------ */
+
+/* =====정렬===== */
+.form-select {
+    width: 150px;
+    height: 40px;
+    margin-top: 50px;
+    border: 2px solid #2370DF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* =====검색===== */
+.search_main {
+    width: 415px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.search_main input {
+    float: left;
+    width: 300px;
+    height: 40px;
+    margin: -88px 0px 0px 400px;
+    border: 2px solid #2370DF;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    /* box-shadow: 0px 5px 10px 0.5px rgba(0, 0, 0, 0.2); */
+}
+
+.search_main a {
+    display: inline-block;
+    /* padding-top: 1px; */
+    margin: -83px -310px;
+    text-decoration: none;
+    color: #2370DF;
+    font-size: 25px;
+    position: absolute;
+    right: 11%
+}
+
+/* ------------------------------------------------ */
+
+
+/* =====인기 게시판===== */
+
+/* =====인기 게시판 글===== */
+.commhome_box_list {
+    height: 800px;
+    margin-bottom: 330px;
+}
+
+/* =====인기 게시판 글 내용===== */
+.commhome_text_type {
+    display: inline-block;
+    color: #063765;
+    font-size: 16px;
+}
+
+.tr_nb_search_type {
+    color: #797979;
+    font-size: 16px;
+}
+
+.commhome_comment {
+    color: #2370DF;
+}
+
+.commhome_heart {
+    color: #EB5757;
+}
+
+.tr_nb_search_text_num {
+    float: right;
+    font-size: 14px;
+    font-weight: 450;
+    color: #A4A4A4;
+}
+
+.commhome_t {
+    padding: 2px;
+    border: 1px solid #FF730E;
+    color: white;
+    background-color: #FF730E;
+}
+
+.commhome_lv {
+    padding: 1px 3px;
+    color: white;
+    border-radius: 5px;
+    background-color: #FF6565;
+}
+
+.tr_nb_search_center {
+    text-align: center;
+}
+
+.commhome_plus {
+    color: #18A0FB;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.commhome_plus:hover {
+    color: #18A0FB;
+}
+
+
+
+/* =====전체게시물===== */
+.tr_nb_search_text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FF730E;
+}
+
+.tr_nb_search_num {
+    margin-left: 750px;
+    font-weight: bold;
+    color: #999999;
+}
+
+.commhome_type2 {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.commhome_box_tr_list {
+    width: 1040px;
+    height: 430px;
+    padding: 20px;
+    margin: 25px 6.5px 30px -10px;
+    border-radius: 20px;
+    border: 2px solid #E5E5E5;
+    background-color: white;
+    float: left;
+    font-size: 14px;
+}
+
+.tr_nb_noanswer_line {
+    margin-bottom: 10px;
+}
+
+/* =====TOP 버튼===== */
+.top {
+    width: 38px;
+    border: 1px solid;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 230px;
+    left: 250px;
+    text-align: center;
+    text-decoration: none;
+    color: #A7A7A7;
+    font-size: 10px;
+}
+
+.top:hover {
+    color: #A7A7A7;
+}
