@@ -70,7 +70,7 @@ body {
 
 /* =====목록 아이콘===== */
 .QA_list {
-    margin: -38px 0px 0px 1500px;
+    margin: -38px 0px 0px 2480px;
     position: absolute;
     display: flex;
     color: #2370DF;
@@ -301,6 +301,42 @@ body {
 }
 
 .tr_post_edit2 {
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    position: relative;
+    top: -28px;
+}
+
+/* =====채택on===== */
+.tr_post_adopt {
+    /* position: relative; */
+    width: 18px;
+    height: 20px;
+    color: #FF730E;
+    margin: -60px 0px 0px 700px;
+    /* top: -30px; */
+}
+
+.tr_post_edit3 {
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    position: relative;
+    top: -28px;
+}
+
+/* =====채택off===== */
+.tr_post_adopt2 {
+    /* position: relative; */
+    width: 18px;
+    height: 20px;
+    color: #FF730E;
+    margin: -60px 0px 0px 700px;
+    /* top: -30px; */
+}
+
+.tr_post_edit4 {
     display: inline-block;
     color: black;
     font-size: 14px;
