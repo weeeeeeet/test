@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SCoreDream';
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body {
+    /* padding-top: 100px; */
+}
+
+.contents {
+    margin: 0 auto;
+    height: 1055px;
+    min-height: 100%;
+    padding-bottom: 280px;
+    width: 1040px;
+    text-decoration: none;
+
+}
+
+/* ------------------------------------------------ */
+
+/* 검색 */
+.QA_box {
+    text-align: center;
+    background-color: #6C6C6C;
+    margin-top: 20px;
+    height: 300px;
+}
+
+/* 무엇을 도와 드릴까요? */
+.QA_text {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 70%;
+    color: white;
+    font-size: 25px;
+}
+
+/* 검색창 */
+.QA_search {
+    display: inline;
+    width: 800px;
+    height: 7%;
+    border: 2.5px solid #2370DF;
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    position: absolute;
+    top: auto;
+    left: 30%;
+}
+
+/* 돋보기 */
+.search {
+    position: absolute;
+    display: flex;
+    left: 68%;
+    margin-top: 20px;
+    color: #2370DF;
+}
+
+/* ------------------------------------------------ */
+
+.QA_q {
+    color: #18A0FB;
+}
+.QA_q_text {
+    font-weight: bold;
+    color: black;
+}
+.QA_list {
+    position: absolute;
+    display: flex;
+    left: 80%;
+    margin-top: -15px;
+    color: #2370DF;
+}
+.QA_list_text {
+    font-weight: lighter;
+    color: black;
+    text-decoration: none;
+}
+.QA_list a:hover {
+    color: black;
+}
+.QA_a {
+    color: #FFBABA;
+}
+.QA_a_text {
+    font-weight: bold;
+    color: black;
+}
