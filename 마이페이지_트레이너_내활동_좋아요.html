@@ -6,25 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>마이페이지 - 회원 - 내정보</title>
+    <title>마이페이지 - 내활동</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-
-    <!-- 차트.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-
-    <link href="css/Mypage_TR_bell.css" rel="stylesheet" />
+    <link href="css/Mypage_TR_1_like.css" rel="stylesheet" />
     <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
 
-    <!-- favicon -->
-    <link rel="icon" href="/ico/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
@@ -83,7 +73,7 @@
                 <!-- 왼쪽 목록 -->
 
                 <ul class="mypage_list_top">
-                    <li><a href="#">내 활동</a></li>
+                    <li><a href="/마이페이지_트레이너_내활동.html" class="on">내 활동</a></li>
                     <li><a href="/마이페이지_트레이너_내클래스룸_클래스검수.html">내 클래스룸</a></li>
                     <li><a href="#">MY BODY</a></li>
                 </ul>
@@ -103,66 +93,64 @@
             <div class="mypage_top">
 
                 <ul class="mypage_toplist">
-                    <li><a href="/마이페이지_회원_내정보.html">프로필</a></li>
-                    <li><a href="/마이페이지_회원_내정보_알림설정.html" class="on">알림살정</a></li>
-                    <li><a href="/마이페이지_회원_내정보_회원탈퇴.html">회원탈퇴</a></li>
+                    <li><a href="/마이페이지_트레이너_내활동.html">TR 게시판</a></li>
+                    <li><a href="/마이페이지_트레이너_내활동_좋아요.html" class="on">좋아요</a></li>
+                    <li><a href="/마이페이지_내활동_댓글.html">댓글</a></li>
                 </ul>
 
             </div>
 
-            <div class="content_right_agree">
+            <div>
 
-                <form action="#">
-                    <div class="receive_agree">수신 동의</div>
-                    
-                    <div class="receive_agree_WEET">
-                        <p>위티 활동관련 알림</p>
-                    
-                        <input type="checkbox" name="TR_receive_agree_WEET_check" value="1" class="TR_receive_agree_WEET_check"> SMS
-                        <input type="checkbox" name="TR_receive_agree_WEET_check" value="2" class="TR_receive_agree_WEET_check"> e-mail
-
-                    </div>
-                    
-                    <div class="receive_agree_EVENT">
-                        <p>프로모션, 이벤트, 쿠폰 등 다양한 혜택 정보</p>
-                    
-                        <input type="checkbox" name="TR_receive_agree_EVENT_check" value="1" class="TR_receive_agree_EVENT_check"> SMS
-                        <input type="checkbox" name="TR_receive_agree_EVENT_check" value="2" class="TR_receive_agree_EVENT_check"> e-mail
-                    </div>
-                    
-                    <input type="submit" value="저장" class="content_right_agree_save btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
-
-                </form>
+                <ul class="mypage_top_tabs">
+                    <li><a href="/마이페이지_내활동_좋아요.html" class="on"><span class="on2"></span> 전체</a></li>
+                </ul>
 
             </div>
-            
-        </div>
 
-        <!-- Modal 창 (팝업창1) - 회원탈퇴하기 -->
-        <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="TR_tables">
 
-                <div class="modal-content">
+                <div class="tb1">
+                    <span class="tr_no">109</span>
+                    <a href="#" class="tr_title">운동을 처음 시작하는데, PT로 시작해도 ...</a>
+                    <span class="tr_date">2022.06.19</span>
+                    <span style="color: red;" class="heart"><i class="fas fa-heart"></i></span> <span class="tr_like">12</span>
+                    <span style="color: #2370DF;" class="comment"><i class="fa-regular fa-comment-dots"></i></span><span class="tr_comment">5</span>
+                </div>
 
-                    <div class="modal-body">
-                        <p class="modal_class_title">알림설정이 저장되었습니다.</p>
-                        <button type="button" class="btn_submit btn-secondary" data-bs-dismiss="modal">확인</button>
-                    </div>
-                    
+                <div class="tb1">
+                    <span class="tr_no">108</span>
+                    <a href="#" class="tr_title">다음주부터 PT를 시작하게 되었어요!</a>
+                    <span class="tr_date">2022.06.19</span>
+                    <span style="color: red;" class="heart"><i class="fas fa-heart"></i></span> <span class="tr_like">7</span>
+                    <span style="color: #2370DF;" class="comment"><i class="fa-regular fa-comment-dots"></i></span><span class="tr_comment">6</span>
+                </div>
+
+                <div class="tb1">
+                    <span class="tr_no">107</span>
+                    <a href="#" class="tr_title">제 식단 좀 봐주실 수 있을까요?</a>
+                    <span class="tr_date">2022.06.19</span>
+                    <span style="color: red;" class="heart"><i class="fas fa-heart"></i></span> <span class="tr_like">7</span>
+                    <span style="color: #2370DF;" class="comment"><i class="fa-regular fa-comment-dots"></i></span><span class="tr_comment">6</span>
+                </div>
+
+                <div class="tb1">
+                    <span class="tr_no">106</span>
+                    <a href="#" class="tr_title">게시물 제목</a>
+                    <span class="tr_date">2022.06.19</span>
+                    <span style="color: red;" class="heart"><i class="fas fa-heart"></i></span> <span class="tr_like">7</span>
+                    <span style="color: #2370DF;" class="comment"><i class="fa-regular fa-comment-dots"></i></span><span class="tr_comment">6</span>
                 </div>
 
             </div>
 
         </div>
 
-
     </section>
 
-    <!-- ==================밑의 가리는 공간을 가리는 것을 방지하기 위한 쓸데없는 공간==================== -->
-
-    <div class="ttt"></div>
-
     <!-- ==================FOOTER==================== -->
+    
+
     
     <footer class="footer">
         <div class="underline"></div>
