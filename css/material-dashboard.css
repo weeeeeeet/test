@@ -49,7 +49,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: , 128, 154;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
+  --bs-font-sans-serif: "SCoreDream", Helvetica, Arial, sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -3581,7 +3581,7 @@ textarea.form-control.is-invalid {
 .btn {
   --bs-btn-padding-x: 1.5rem;
   --bs-btn-padding-y: 0.625rem;
-  --bs-btn-font-family: ;
+  --bs-btn-font-family: 'SCoreDream';
   --bs-btn-font-size: 0.75rem;
   --bs-btn-font-weight: 700;
   --bs-btn-line-height: 1.667;
@@ -20996,7 +20996,7 @@ fieldset:disabled .btn {
 }
 
 .card .card-body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "SCoreDream";
   padding: 1.5rem;
 }
 
@@ -25795,7 +25795,7 @@ h3,
 .h3,
 .h3 {
   font-weight: 600;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "SCoreDream";
 }
 
 h4,
@@ -25873,7 +25873,7 @@ p {
 }
 
 .text-sans-serif {
-  font-family: "Roboto", Helvetica, Arial, sans-serif !important;
+  font-family: "SCoreDream", Helvetica, Arial, sans-serif !important;
 }
 
 .text-monospace {
