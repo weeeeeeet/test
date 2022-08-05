@@ -26,34 +26,47 @@
 <body>
     <div class="wrap">
         <!-- header s -->
-        <header id="header" include-html="weet_unlogin_header.html"></header>
+        <header id="header" include-html="weet_admin_header.html"></header>
         <!-- header e -->
 
         <section class="login-contain">
 
-            <div class="login-main-text"> 관리자 로그인 </div>
+            <div class="inner_box">
+                <div class="login-main-text"> 관리자 로그인 </div>
+                <div class="sub-text">
 
-            <form action="Login" class="member-login">
-                <div class="mb-3">
-                    <ul class="login-box">
-                        <li class="login-userid">
-                            <label for="userid" class="form-label">아이디</label>
-                            <input type="text" class="form-control-sm" id="userid" placeholder="example1234">
-                        </li>
-                        <li class="login-userpwd">
-                            <label for="pwd" class="form-label">비밀번호</label>
-                            <input type="password" class="form-control-sm" id="pwd">
-                        </li>
-                    </ul>
-                    <ul class="mentbox admin">
-                        <li><a href="weet_findpwd.html" class="findpw" role="button" aria-disabled="true">비밀번호 찾기</a></li>
-                        <li>|</li>
-                        <li><a href="weet_findid.html" class="findid" role="button" aria-disabled="true">아이디 찾기</a></li>
-                    </ul>
-                    <button class="loginbtn" type="submit">로그인</button>
+                    <form action="Login" class="member-login">
+                        <div class="linput_list">
+                            <div class="inner-list">
+                                <div class="la_input">
+                                    <label for="userid" class="form-label">아이디</label>
+                                    <div class="input_group">
+                                        <input type="text" class="form-control-sm" id="userid"
+                                            placeholder="example1234">
+                                    </div>
+                                </div>
+                                <div class="inner-list">
+                                    <div class="la_input">
+                                        <label for="pwd" class="form-label">비밀번호</label>
+                                        <div class="input_group">
+                                            <input type="password" class="form-control-sm" id="pwd">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="mentbox admin">
+                                    <li><a href="weet_findpwd.html" class="findpw" role="button"
+                                            aria-disabled="true">비밀번호
+                                            찾기</a></li>
+                                    <li>|</li>
+                                    <li><a href="weet_findid.html" class="findid" role="button" aria-disabled="true">아이디
+                                            찾기</a></li>
+                                </ul>
+                                <button class="loginbtn" type="submit">로그인</button>
+                            </div>
+                    </form>
                 </div>
-            </form>
-
+            </div>
         </section>
     </div>
     <script>includeHTML();</script>
