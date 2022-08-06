@@ -139,15 +139,38 @@ span {
     position: relative;
     background: linear-gradient( to left, #ff720e55, #2371df4a);
 }
+.con .box_contents {
+    width: 420px;
+    height: 220px;
+    background-color: rgba(255, 255, 255, 0.479);
+    display: inline-block;
+   /*  border: 2px solid red; */
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
 .con .schedule_box > a:nth-of-type(1) {
     color: white;
-    margin-top: 8px;
+    margin-top: 12px;
     position: absolute;
-    margin-left: 495px;
+    margin-left: 35px;
+    /* border: 2px solid red; */
+    display: inline;
+}
+.box_contents h3 {
+    font-size: 15px;
+    margin-left: 32px;
+}
+.box_contents ul {
+    list-style: none;
+    font-size: 14px;
+}
+.box_contents li {
+    margin-bottom: 12px;
 }
 .con .schedule_box > a:nth-of-type(2) {
     color: white;
-    margin-top: 7px;
+    margin-top: 11px;
     margin-right: 16px;
     display: inline;
     float: right;
