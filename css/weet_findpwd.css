@@ -36,7 +36,7 @@ h3{
 /* ==== login box =========*/
 .login-contain {                 /* 컨텐츠 스타일 */
     max-width: 1440px;
-    margin-top: 72px;          
+    margin-top: 100px;          
     /* 헤더 높이만큼 밀어주기 */
     
 }
@@ -81,15 +81,16 @@ h3{
 }   
 .form-label{                       /* label 스타일 */
     font-size: 14px;
-    padding-left: 7px;
+    padding-left: 5px;
     text-align: left;
     display: block;
     color: #3c4144;;
     /* border: 2px solid green; */
 }
 
-.la_input .alon {
-    margin-bottom: 30px;
+.alon {
+    padding: 40px;
+    /* border: 2px solid #2370DF;  */
 }
 
 .form-control-sm{                  /* input 스타일 */
@@ -108,6 +109,6 @@ h3{
     height: 50px;
     border: none;
     border-radius: 10px; 
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
