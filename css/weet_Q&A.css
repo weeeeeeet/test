@@ -8,9 +8,6 @@
     box-sizing: border-box;
 }
 
-body {
-    /* padding-top: 100px; */
-}
 
 .contents {
     margin: 0 auto;
@@ -21,6 +18,11 @@ body {
     text-decoration: none;
 
 }
+
+.inner {
+    margin-top: 95px;
+}
+
 
 /* ------------------------------------------------ */
 
