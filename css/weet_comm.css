@@ -8,9 +8,6 @@
     box-sizing: border-box;
 }
 
-body {
-    /* padding-top: 100px; */
-}
 
 .contents {
     margin: 0 auto;
@@ -22,6 +19,11 @@ body {
 }
 
 /* ------------------------------------------------ */
+
+.inner{
+    margin-top: 100px;
+    z-index: 0;
+}
 
 .commhome_menu a {
     width: 50px;
@@ -72,7 +74,14 @@ body {
     background: rgb(236, 236, 236);
 }
 
+.inner{
+    max-width: 1440px;
+    z-index: 0;
+}
 /* ------------------------------------------------ */
+
+
+
 /* =====인기 게시판===== */
 .commhome_type {
     display: inline-block;
@@ -112,6 +121,14 @@ body {
 .commhome_text_type {
     display: inline-block;
     color: #063765;
+}
+.comm_title{
+    font-size: 14px;
+    color: #2370DF;
+}
+.comm_sub{
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .commhome_comment {
@@ -182,12 +199,20 @@ body {
 
 .chat {
     position: fixed;
-    bottom: 300px;
-    left: 300px;
+    bottom: 30%;
+    left: 10%;
     text-decoration: none;
-    color: #54C0EB;
+    color: #2370DF;
 }
 
 .chat:hover {
-    color: #54C0EB;
+    color: #2371dfc0
 }
+
+/* ---모달---- */
+
+.modal__background{
+    position: fixed;
+    top:0; left: 0; bottom: 0; right: 0;
+    background: rgba(107, 107, 107, 0.8);
+  }
