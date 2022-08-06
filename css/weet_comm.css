@@ -83,7 +83,8 @@
     border: none;
 
     position: absolute;
-    left: 68%; 
+    right: 0;
+    left: 66%; 
     transform:translateY(50%);
 
 }
@@ -230,11 +231,39 @@
 
 /* ---모달---- */
 
-.modal__background{
-    position: fixed;
-    top:0; left: 0; bottom: 0; right: 0;
-    background: rgba(107, 107, 107, 0.8);
-  }
+.modal{
+
+
+    text-align: center;
+}
+
+
+.modal_body h4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    font-size: 18px;
+}
+.modal_btns{
+    width: 140px;
+    height: 40px;
+    color: aliceblue;
+    border-radius: 4px;
+    border: none;
+    margin: 10px 20px;
+
+    font-size: 16px;
+}
+.yesbtn{
+    background-color: #2370DF;
+}
+.nobtn {
+    background-color:#D9D9D9;
+}
+.savebtn{
+    background-color: #85EC1D;
+}
+
 
   /* ====글쓰기==== */
   
