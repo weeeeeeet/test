@@ -1,13 +1,17 @@
 @charset "UTF-8";
 
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: 'SCoreDream';
     box-sizing: border-box;
 }
 
 /* Footer ================================ */
+#warp{
+    max-height: calc(100vh - 204px);;
+}
+
 #footer{
     bottom: 0;
     width: 100%;
@@ -106,3 +110,4 @@
 }
 .address p{
     font-size: 12px;
+}

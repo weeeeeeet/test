@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SCoreDream';
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.contents {
+    margin: 0 auto;
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 280px;
+    width: 1040px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------------------------------------ */
+
+.inner{
+    margin-top: 100px;
+}
+
+/* 검색 */
+.inquiry_confirmation_box {
+    text-align: center;
+    background-color: #6C6C6C;
+    margin-top: 20px;
+    height: 300px;
+}
+
+/* 무엇을 도와 드릴까요? */
+.inquiry_confirmation_text {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 70%;
+    color: white;
+    font-size: 25px;
+}
+
+/* 검색창 */
+.inquiry_confirmation_search {
+    display: inline;
+    width: 800px;
+    height: 7%;
+    border: 2.5px solid #2370DF;
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    position: absolute;
+    top: auto;
+    left: 30%;
+}
+
+/* 돋보기 */
+.inquiry_confirmation_search2 {
+    position: absolute;
+    display: flex;
+    left: 68%;
+    margin-top: 20px;
+
+    color: #2370DF;
+}
+
+/* ------------------------------------------------ */
+
+.inquiry_confirmation_btn1 {
+    width: 180px;
+    padding: 10px;
+    margin-left: 8%;
+    border: 0;
+    border-radius: 20px;
+    font-size: 15px;
+    color: white;
+    background-color: #6C6C6C;
+}
+
+.inquiry_confirmation_btn2 {
+    width: 180px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: white;
+    background-color: #2370DF;
+}
+
+.inner {
+    margin-top: 95px;
+}
+
+
+/* ------------------------------------------------ */
+
+.inquiry_confirmation_title {
+    font-size: 20px;
+}
+
+.inquiry_confirmation_box1 {
+    width: 1040px;
+    height: 1040px;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0px 1px 13px 1px #c0bcbc;
+}
+
+.inquiry_confirmation_box2 {
+    width: 800px;
+    height: 350px;
+    background-color: #DDDBDB;
+    border-radius: 10px;
+    margin-left: 70px;
+    padding: 50px 70px;
+    text-align: left;
+}
+
+.inquiry_confirmation_card-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.inquiry_confirmation_wee {
+    color: #2370DF;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.inquiry_confirmation_. {
+    color: #85EC1D;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.inquiry_confirmation_t {
+    color: #FF730E;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.inquiry_confirmation_btn3 {
+    width: 150px;
+    padding: 10px;
+    margin: 13% 39%;
+    border: 0;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: #2E2A2A;
+}
+
+.inquiry_confirmation_file {
+    color: #2370DF;
+}
+
+.inquiry_confirmation_file_memo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------ */
+
+.inquiry_confirmation_q {
+    margin-top: 30px;
+    color: #18A0FB;
+    display: inline-flex;
+    float: left;
+}
+
+.Inquiry_confirmation_btn4 {
+    margin-left: 20px;
+    margin-top: 15px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    outline: none;
+    /* float: left; */
+
+}
+
+.Inquiry_confirmation_btn4:hover {
+    color: black;
+}
+
+.Inquiry_confirmation_date {
+    margin-top: 40px;
+    margin-left: -855px;
+    /* margin-bottom: 100px; */
+    color: #C4C4C4;
+    font-size: 14px;
+    font-weight: lighter;
+    /* float: left; */
+
+}
+
+.Inquiry_confirmation_answer1 {
+    /* display: inline-block; */
+    width: 200px;
+    height: 50px;
+    padding-top: 11px;
+    border-radius: 20px;
+    margin-left: 530px;
+    background-color: #999999;
+    /* margin-left: 80%; */
+    /* padding: 20px; */
+    color: white;
+    font-size: 25px;
+    /* text-align: center; */
+    float: right;
+    font-weight: 500;
+}
+
+/* ------------------------------------------------ */
+
+.inquiry_confirmation_q2 {
+    /* margin-top: 30px; */
+    color: #18A0FB;
+    display: inline-flex;
+    float: left;
+}
+
+.Inquiry_confirmation_btn5 {
+    margin-left: 20px;
+    margin-top: 15px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    outline: none;
+    /* float: left; */
+
+}
+
+.Inquiry_confirmation_btn5:hover {
+    color: black;
+}
+
+.Inquiry_confirmation_date2 {
+    margin-top: 40px;
+    margin-left: -855px;
+    /* margin-bottom: 100px; */
+    color: #C4C4C4;
+    font-size: 14px;
+    font-weight: lighter;
+    /* float: left; */
+
+}
+
+.Inquiry_confirmation_answer2 {
+    /* display: inline-block; */
+    width: 200px;
+    height: 50px;
+    padding-top: 11px;
+    border-radius: 20px;
+    margin-left: 530px;
+    background-color: #2370DF;
+    /* margin-left: 80%; */
+    /* padding: 20px; */
+    color: white;
+    font-size: 25px;
+    /* text-align: center; */
+    float: right;
+    font-weight: 500;
+}

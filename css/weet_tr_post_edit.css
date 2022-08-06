@@ -1,0 +1,384 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SCoreDream';
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body {
+    /* padding-top: 100px; */
+}
+
+.contents {
+    margin: 0 auto;
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 280px;
+    width: 1040px;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------ */
+
+.commhome_menu a {
+    width: 50px;
+    margin: 10px 100px;
+    font-size: 15px;
+    display: inline;
+    text-decoration: none;
+    background: #fff;
+    color: black;
+}
+
+/* =====홈===== */
+.commhome_menu a:nth-of-type(1) {
+    margin: 0px 100px;
+    padding-top: 25px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* =====TR게시판===== */
+.commhome_menu a:nth-of-type(2) {
+    width: 100px;
+    margin: 0px -50px;
+    border-bottom: 1px solid;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* =====글쓰기 버튼===== */
+.commhome_menu a:nth-of-type(3) {
+    display: block;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+
+    float: right;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+
+    background-color: #2370DF;
+    color: #fff;
+}
+
+/* =====목록 아이콘===== */
+.QA_list {
+    margin: -38px 0px 0px 2480px;
+    position: absolute;
+    display: flex;
+    color: #2370DF;
+}
+
+/* =====목록 버튼===== */
+.QA_list_text {
+    margin: 5px 0px 0px 13px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.QA_list a:hover {
+    color: black;
+}
+
+.commhome_line1 {
+    clear: both;
+    height: 1.5px;
+    background: rgb(236, 236, 236);
+}
+
+/* ------------------------------------------------ */
+
+
+
+
+/* =====인기 게시판===== */
+
+/* =====인기 게시판 글===== */
+.commhome_box_list {
+    height: 800px;
+    margin-bottom: 330px;
+}
+
+/* =====인기 게시판 글 내용===== */
+.commhome_text_type {
+    display: inline-block;
+    color: #063765;
+    font-size: 16px;
+}
+
+/* =====수정버튼===== */
+.tr_post_edit_btn1 {
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+
+    position: relative;
+    top: -30px;
+    left: 700px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+
+    background-color: #85EC1D;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tr_post_edit_btn2 {
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+
+    /* float: right; */
+    position: relative;
+    top: -30px;
+    left: 730px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+
+    background-color: #FF730E;
+    color: #fff;
+    text-decoration: none;
+}
+
+.commhome_comment {
+    color: #2370DF;
+}
+
+.commhome_heart {
+    color: #EB5757;
+}
+
+.tr_nb_search_text_num {
+    float: right;
+    font-size: 14px;
+    font-weight: 450;
+    color: #A4A4A4;
+}
+
+.commhome_t {
+    padding: 2px;
+    border: 1px solid #FF730E;
+    color: white;
+    background-color: #FF730E;
+}
+
+.commhome_lv {
+    padding: 1px 3px;
+    color: white;
+    border-radius: 5px;
+    background-color: #FF6565;
+}
+
+.tr_nb_search_center {
+    text-align: center;
+}
+
+.commhome_plus {
+    color: #18A0FB;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.commhome_plus:hover {
+    color: #18A0FB;
+}
+
+
+
+/* =====전체게시물===== */
+.commhome_box_tr_list {
+    width: 1040px;
+    height: auto;
+    padding: 20px;
+    margin: 25px 6.5px 30px -10px;
+    border-radius: 20px;
+    border: 2px solid #E5E5E5;
+    background-color: white;
+    float: left;
+    font-size: 14px;
+}
+
+.tr_nb_noanswer_line {
+    margin-bottom: 10px;
+    border-style: dashed;
+}
+
+.tr_post_icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin: 0px 15px 0px 30px;
+    border-radius: 50%;
+    background-color: #35e0f7;
+}
+
+.tr_post_comment {
+    width: 850px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: #E5E5E5;
+    background-color: white;
+}
+
+.tr_post_comment_style {
+    text-decoration: none;
+}
+
+/* ------------------------------------------------ */
+
+.tr_post_nick_location {
+    position: relative;
+    top: -45px;
+    left: 80px;
+}
+
+.commhome_t {
+    padding: 2px;
+    border: 1px solid #FF730E;
+    color: white;
+    background-color: #FF730E;
+}
+
+.commhome_lv {
+    padding: 1px 3px;
+    color: white;
+    border-radius: 5px;
+    background-color: #FF6565;
+}
+
+.tr_post_comment2 {
+    display: inline-block;
+    width: 900px;
+    height: auto;
+    padding: 5px 2px 5px 2px;
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: #E5E5E5;
+    background-color: white;
+    font-size: 14px;
+    position: relative;
+    left: 80px;
+    top: -40px;
+}
+
+/* =====연필===== */
+.tr_post_submit2 {
+    width: 20px;
+    height: 20px;
+    color: #85EC1D;
+    margin: -65px 0px 0px 80px;
+}
+
+.tr_post_edit {
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    position: relative;
+    top: -28px;
+}
+
+/* =====삭제===== */
+.tr_post_x {
+    /* position: relative; */
+    width: 18px;
+    height: 20px;
+    color: #FF730E;
+    margin: -60px 0px 0px 10px;
+    /* top: -30px; */
+}
+
+.tr_post_edit2 {
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    position: relative;
+    top: -28px;
+}
+
+/* =====채택on===== */
+.tr_post_adopt {
+    /* position: relative; */
+    width: 18px;
+    height: 20px;
+    color: #FF730E;
+    margin: -60px 0px 0px 700px;
+    /* top: -30px; */
+}
+
+.tr_post_edit3 {
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    position: relative;
+    top: -28px;
+}
+
+/* =====채택off===== */
+.tr_post_adopt2 {
+    /* position: relative; */
+    width: 18px;
+    height: 20px;
+    color: #FF730E;
+    margin: -60px 0px 0px 700px;
+    /* top: -30px; */
+}
+
+.tr_post_edit4 {
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    position: relative;
+    top: -28px;
+}
+
+/* ------------------------------------------------ */
+
+.FAQ_num1 {
+    margin-top: 10px;
+    color: #CCCCCC;
+}
+
+.FAQ_num2 {
+    margin-top: 10px;
+    text-align: center;
+    color: #EB5757;
+}
+
+.FAQ_num3 {
+    margin-top: 10px;
+    color: black;
+}
+
+.FAQ_num1:hover {
+    color: #CCCCCC;
+    background-color: white;
+}
+
+.FAQ_num2:hover {
+    color: #EB5757;
+    background-color: white;
+}
+
+.FAQ_num3:hover {
+    color: black;
+    background-color: white;
+}
+
+.pagination {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}

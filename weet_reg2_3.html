@@ -21,6 +21,9 @@
 
     <script src="/js/weet_class_reg2_3.js"></script>
     <script src="/js/loadHTML.js"></script>
+    <!-- favicon -->
+   <link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
+   <link rel="icon" href="ico/favicon.ico" type="image/x-icon">
 
 
 
@@ -200,6 +203,7 @@
                     // 모달창 띄우기
                     modal('my_modal');
                 });
+
             </script>
 
 
@@ -304,14 +308,132 @@
                 <button class="class_img_delete" onclick="팝업링크">전체삭제</button> -->
             </div>
 
- 
+            <!-- --------------------------------------- -->
+            <div id='image_preview'>
+                <input type='file' id='btnAtt' multiple='multiple'>
+                <div id='att_zone' 
+                      data-placeholder='파일을 첨부 하려면 파일 선택 버튼을 클릭하거나 파일을 드래그앤드롭 하세요'></div>
+            </div>
+
+            <script>
+                ( /* att_zone : 이미지들이 들어갈 위치 id, btn : file tag id */
+                  imageView = function imageView(att_zone, btn){
+                
+                    var attZone = document.getElementById(att_zone);
+                    var btnAtt = document.getElementById(btn)
+                    var sel_files = [];
+                    
+                    // 이미지와 체크 박스를 감싸고 있는 div 속성
+                    var div_style = 'display:inline-block;position:relative;'
+                                  + 'width:200px;height:120px;margin:5px;z-index:1';
+                    // 미리보기 이미지 속성
+                    var img_style = 'width:100%;height:100%;z-index:none';
+                    // 이미지안에 표시되는 체크박스의 속성
+                    var chk_style = 'width:20px;height:20px;position:absolute;font-size:24px;'
+                                  + 'right:8px;bottom:90px;z-index:999;background-color:rgb(124, 124, 124);border:none;color:white;'
+                                  + 'border-radius:30px;font-size:14px'
+                  
+                    btnAtt.onchange = function(e){
+                      var files = e.target.files;
+                      var fileArr = Array.prototype.slice.call(files)
+                      for(f of fileArr){
+                        imageLoader(f);
+                      }
+                    }  
+                    
+                  
+                    // 탐색기에서 드래그앤 드롭 사용
+                    attZone.addEventListener('dragenter', function(e){
+                      e.preventDefault();
+                      e.stopPropagation();
+                    }, false)
+                    
+                    attZone.addEventListener('dragover', function(e){
+                      e.preventDefault();
+                      e.stopPropagation();
+                      
+                    }, false)
+                  
+                    attZone.addEventListener('drop', function(e){
+                      var files = {};
+                      e.preventDefault();
+                      e.stopPropagation();
+                      var dt = e.dataTransfer;
+                      files = dt.files;
+                      for(f of files){
+                        imageLoader(f);
+                      }
+                      
+                    }, false)
+                    
+                
+                    
+                    /*첨부된 이미리즐을 배열에 넣고 미리보기 */
+                    imageLoader = function(file){
+                      sel_files.push(file);
+                      var reader = new FileReader();
+                      reader.onload = function(ee){
+                        let img = document.createElement('img')
+                        img.setAttribute('style', img_style)
+                        img.src = ee.target.result;
+                        attZone.appendChild(makeDiv(img, file));
+                      }
+                      
+                      reader.readAsDataURL(file);
+                    }
+                    
+                    /*첨부된 파일이 있는 경우 checkbox와 함께 attZone에 추가할 div를 만들어 반환 */
+                    makeDiv = function(img, file){
+                      var div = document.createElement('div')
+                      div.setAttribute('style', div_style)
+                      
+                      var btn = document.createElement('input')
+                      btn.setAttribute('type', 'button')
+                      btn.setAttribute('value', 'x')
+                      btn.setAttribute('delFile', file.name);
+                      btn.setAttribute('style', chk_style);
+                      btn.onclick = function(ev){
+                        var ele = ev.srcElement;
+                        var delFile = ele.getAttribute('delFile');
+                        for(var i=0 ;i<sel_files.length; i++){
+                          if(delFile== sel_files[i].name){
+                            sel_files.splice(i, 1);      
+                          }
+                        }
+                        
+                        dt = new DataTransfer();
+                        for(f in sel_files) {
+                          var file = sel_files[f];
+                          dt.items.add(file);
+                        }
+                        btnAtt.files = dt.files;
+                        var p = ele.parentNode;
+                        attZone.removeChild(p)
+                      }
+                      div.appendChild(img)
+                      div.appendChild(btn)
+                      return div
+                    }
+                  }
+                )('att_zone', 'btnAtt')
+                
+                </script>
+
+            <div id="img_detail">
+                <ul>
+                    <li>사진은 가로로 찍은 사진을 권장합니다. (가로 사이즈 최소 800px)</li>
+                    <li>사진 용량은 사진 한 장당 10MB까지 등록 가능합니다.</li>
+                    <li>사진은 최대 9장 까지 권장합니다.그 이상은 등록이 불가합니다.</li>
+                </ul>
+            </div>
+                
             <div class="page_button">
                 <button type="button" class="back" onclick="location.href='weet_reg2_2.html'">이전</button>
                 <button type="button" class="next" onclick="location.href='weet_reg2_4.html'">다음</button>
             </div>
         </div>
-            
-                
+        
+        
     
     </div>    
     
