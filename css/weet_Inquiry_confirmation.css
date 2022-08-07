@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 
+
 .contents {
     margin: 0 auto;
     height: auto;
@@ -90,10 +91,10 @@ a {
     background-color: #2370DF;
 }
 
+
 .inner {
     margin-top: 95px;
 }
-
 
 /* ------------------------------------------------ */
 

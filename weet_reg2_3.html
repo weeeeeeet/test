@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <div include-html="weet_header_login.html"></div>
+    <div  w3-include-html="weet_header_login.html"></div>
     <script>includeHTML();</script>
 
     <!-- ==================CONTENTS==================== -->
@@ -212,8 +212,18 @@
 
             <div class="schedule_box_all">
                 <div class="schedule_box">
+                    <div class="box_contents">
+                        <h3>상세 스케줄 내역</h3>
+                        <ul>
+                            <li>클래스 시작일 : </li>
+                            <li>요일과 수업 시작시간 : </li>
+                            <li>회차 : </li>
+                            <li>수업소요시간 : </li>
+                        
+                    </div>
                     <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
                     <a href="#"><i class="fa-solid fa-xmark"></i></a>
+
                 </div>
             </div>
             <div id="term_num">
@@ -368,7 +378,7 @@
                     
                 
                     
-                    /*첨부된 이미리즐을 배열에 넣고 미리보기 */
+                    /*첨부된 이미지를을 배열에 넣고 미리보기 */
                     imageLoader = function(file){
                       sel_files.push(file);
                       var reader = new FileReader();

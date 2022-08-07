@@ -8,7 +8,6 @@
     box-sizing: border-box;
 }
 
-
 .contents {
     margin: 0 auto;
     height: auto;
@@ -80,8 +79,6 @@
 }
 /* ------------------------------------------------ */
 
-
-
 /* =====인기 게시판===== */
 .commhome_type {
     display: inline-block;
@@ -122,6 +119,7 @@
     display: inline-block;
     color: #063765;
 }
+
 .comm_title{
     font-size: 14px;
     color: #2370DF;
@@ -199,6 +197,7 @@
 
 .chat {
     position: fixed;
+
     bottom: 30%;
     left: 10%;
     text-decoration: none;
