@@ -16,7 +16,6 @@ body {
     margin: 0 auto;
     height: auto;
     min-height: 100%;
-    padding-bottom: 280px;
     width: 1040px;
     text-decoration: none;
 
@@ -25,70 +24,86 @@ body {
 /* ------------------------------------------------ */
 
 /* 검색 */
-.inquiry_box {
+.FAQ_box {
     text-align: center;
     /* position: relative; */
-    background-color: #6C6C6C;
+    background-color: #929292;
     /* margin: 30px -200px -50px -200px; */
-    margin-top: 20px;
+    margin-top: 100px;
     /* width: 1440px; */
-    height: 300px;
+    height: 290px;
 }
 
 /* 무엇을 도와 드릴까요? */
-.inquiry_text {
+.FAQ_text {
+    width: 100%;
+    margin-top: 50px;
     display: inline-block;
-    margin-top: 20px;
-    margin-right: 70%;
+    margin-right: 470px;
     color: white;
     font-size: 25px;
+    font-weight: 500;
 }
-
-/* 검색창 */
-.inquiry_search {
-    display: inline;
-    width: 800px;
-    height: 7%;
-    border: 2.5px solid #2370DF;
-    border-radius: 10px;
-    padding: 8px 12px;
-    font-size: 14px;
-    position: absolute;
-    top: auto;
-    left: 30%;
-    /* vertical-align: auto; */
+.banner_search {
+    width: 815px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0px;
+    position: relative;
 }
-
-/* 돋보기 */
-.search {
-    position: absolute;
-    display: flex;
-    /* bottom: 1px; */
-    left: 68%;
-    /* display: inline-block; */
-    /* margin-left: 30px; */
+.banner_search input {
+    margin-left: 50px;
+    float: left;
+    width: 700px;
+    height: 70px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 1px solid white;
     margin-top: 20px;
-
-    color: #2370DF;
+    padding-left: 260px;
+    box-shadow: 5px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
 }
+.banner_search a {
+    display: inline-block;
+    padding-top: 115px;
+    top: -80px;
+    right: 90px;
+    text-decoration: none;
+    color: #2370DF;
+    font-size: 40px;
+    position: absolute;
+}
+/* 돋보기 */
+.search > a.fa-solid {
+    position: relative;
+    left: -55px;
+    top: 5px;
+    font-size: 32px;
+    margin-top: 20px;
+    color: #2370DF;
+    text-decoration: none;
+} 
 
 /* ------------------------------------------------ */
 
-.inquiry_btn1 {
+.select_category {
+    margin-top: 10px
+}
+
+.FAQ_btn1 {
     width: 180px;
-    padding: 10px;
-    margin-left: 8%;
-    border: 0;
+    padding: 8px;
     border-radius: 20px;
     font-size: 15px;
     color: white;
+    border: 0.1px solid #6C6C6C;
     background-color: #6C6C6C;
 }
 
-.inquiry_btn2 {
+.FAQ_btn2 {
+    margin-left: 5px;
     width: 180px;
-    padding: 10px;
-    /* margin-bottom: -70px; */
+    padding: 8px;
     border-radius: 20px;
     font-size: 15px;
     color: white;
@@ -99,8 +114,11 @@ body {
 
 .inquiry_title {
     font-size: 20px;
+    margin-top: 30px;
+    font-weight: 600;
 }
 .inquiry_box1 {
+    margin-top: 30px;
     width: 1040px;
     height: 1040px;
     border: 1px solid #E5E5E5;
@@ -108,20 +126,21 @@ body {
     padding: 50px;
     text-align: center;
     box-shadow: 0px 1px 13px 1px #c0bcbc;
+    margin-bottom: 50px;
 }
 
 .inquiry_box2 {
-    width: 800px;
-    height: 350px;
-    background-color: #DDDBDB;
+    width: 940px;
+    height: 400px;
+    background-color: #eaeaea;
     border-radius: 10px;
-    margin-left: 70px;
     padding: 50px 70px;
     text-align: left;
 }
 .card-text {
     font-size: 20px;
     font-weight: bold;
+    line-height: 45px;
 }
 
 .inquiry_wee {
@@ -129,7 +148,7 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
-.inquiry_. {
+.inquiry_ {
     color: #85EC1D;
     font-size: 20px;
     font-weight: bold;
@@ -141,18 +160,23 @@ body {
 }
 .inquiry_btn3 {
     width: 150px;
-    padding: 10px;
-    margin: 13% 39%;
+    margin-top: 100px;
+    margin-left: 320px;
     border: 0;
     border-radius: 20px;
     font-size: 20px;
     color: white;
     background-color: #2E2A2A;
 }
+
+.no_file {
+    margin-top: 170px;
+}
 .inquiry_file {
     color: #2370DF;
 }
 .inquiry_file_memo {
+    margin-top: 30px;
     font-size: 30px;
     font-weight: bold;
 }

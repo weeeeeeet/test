@@ -22,7 +22,7 @@
 
 <body>
     <!-- ==================HEADER==================== -->
-    <div include-html="weet_header.html"></div>
+    <div include-html="weet_header_login.html"></div>
 
 
 
@@ -31,34 +31,25 @@
 
 
 
-    <section class="inquiry_search_bar">
-        <div class="inquiry_box">
-            <br><br>
-            <p class="inquiry_text">무엇을 도와 드릴까요?</p>
-            <br><br>
-            
-            <input type="text" class="inquiry_search">
-        
-            <div class="search">
-                <i class="fas fa-magnifying-glass fa-2x"></i>
+    <section class="FAQ_search_bar">
+        <div class="FAQ_box">
+            <p class="FAQ_text">무엇을 도와 드릴까요?</p>
+
+            <div class="banner_search">
+                <input type="text" name="search"placeholder="질문을 검색해 주세요" autocomplete="off" />
+                <a href="#" class="fa-solid fa-magnifying-glass" target="_self"></a>
             </div>
-            <!-- <a href="#" class="fa-solid fa-magnifying-glass" target="_self"></a> -->
         </div>
         <br>
-        <div>
-            <button type="button" onclick="location.href='링크주소';" class="inquiry_btn1 btn btn-primary btn-lg">자주 묻는 질문</button>
-            <button type="button" onclick="location.href='링크주소';" class="inquiry_btn2 btn btn-secondary btn-lg">1:1 문의</button>
-        </div>
     </section>
     
 
     <section class="contents">
-        <!-- <p>1:1 문의하기</p> -->
-        <br><br>
+        <div class="select_category">
+            <button type="button" onclick="location.href='weet_FAQ.html';" class="FAQ_btn1 btn btn-primary btn-lg">자주 묻는 질문</button>
+            <button type="button" onclick="location.href='weet_inquiry.html';" class="FAQ_btn2 btn btn-secondary btn-lg">1:1 문의</button>
+        </div>
         <h5 class="inquiry_title">1:1 문의하기</h1>
-        <br>
-        <!-- <div class="card text-center"> -->
-            
 
             <div class="inquiry_box1">
                 <div class="inquiry_box2">
@@ -71,46 +62,12 @@
                         </p>
                     </p>
                 </div>
-                <br><br><br><br><br><br><br>
-                <i class="inquiry_file fas fa-file-circle-xmark fa-9x"></i>
-                <br><br><br><br>
-                <p class="inquiry_file_memo">문의 내역이 없습니다.</p>
+                <div class="no_file">
+                    <i class="inquiry_file fas fa-file-circle-xmark fa-9x"></i>              
+                    <p class="inquiry_file_memo">문의 내역이 없습니다.</p>
+                </div>
             </div>
 
-
-
-
-
-
-
-        <!-- <ul class=" list-group list-group-flush">
-            <li class="list-group-item"><a href="#" class="notice_list"></a><span class="notice_date"></span></li>
-            <li class="list-group-item"><span class="FAQ_list1">[클래스문의]<i class="FAQ_list2">혹시 개인 Pt의 경우에는 다른 강사님으로 변경이 가능한가요?</i><a href="#" class="FAQ_plus">더보기 +</a></span></li>
-            <li class="list-group-item"><span class="FAQ_list1">[클래스문의]<i class="FAQ_list2">혹시 개인 Pt의 경우에는 다른 강사님으로 변경이 가능한가요?</i><a href="#" class="FAQ_plus">더보기 +</a></span></li>
-            <li class="list-group-item"><span class="FAQ_list1">[클래스문의]<i class="FAQ_list2">혹시 개인 Pt의 경우에는 다른 강사님으로 변경이 가능한가요?</i><a href="#" class="FAQ_plus">더보기 +</a></span></li>
-            <li class="list-group-item"><span class="FAQ_list1">[클래스문의]<i class="FAQ_list2">혹시 개인 Pt의 경우에는 다른 강사님으로 변경이 가능한가요?</i><a href="#" class="FAQ_plus">더보기 +</a></span></li>
-            <li class="list-group-item"><span class="FAQ_list1">[클래스문의]<i class="FAQ_list2">혹시 개인 Pt의 경우에는 다른 강사님으로 변경이 가능한가요?</i><a href="#" class="FAQ_plus">더보기 +</a></span></li>
-            <li class="list-group-item"><span class="FAQ_list1">[클래스문의]<i class="FAQ_list2">혹시 개인 Pt의 경우에는 다른 강사님으로 변경이 가능한가요?</i><a href="#" class="FAQ_plus">더보기 +</a></span></li>
-            <li class="list-group-item"><span class="FAQ_list1">[클래스문의]<i class="FAQ_list2">혹시 개인 Pt의 경우에는 다른 강사님으로 변경이 가능한가요?</i><a href="#" class="FAQ_plus">더보기 +</a></span></li>
-            <li class="list-group-item"><span class="FAQ_list1">[클래스문의]<i class="FAQ_list2">혹시 개인 Pt의 경우에는 다른 강사님으로 변경이 가능한가요?</i><a href="#" class="FAQ_plus">더보기 +</a></span></li>
-            <li class="list-group-item"><a href="#" class="notice_list"></a><span class="notice_date"></span></li>
-        </ul>
-        <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item"><a class="FAQ_num1 page-link" href="#"><i class="fas fa-angle-left"></i> 이전</a></li>
-              <li class="page-item"><a class="FAQ_num2 page-link" href="#">1</a></li>
-              <li class="page-item"><a class="FAQ_num3 page-link" href="#">2</a></li>
-              <li class="page-item"><a class="FAQ_num3 page-link" href="#">3</a></li>
-              <li class="page-item"><a class="FAQ_num3 page-link" href="#">4</a></li>
-              <li class="page-item"><a class="FAQ_num3 page-link" href="#">5</a></li>
-              <li class="page-item"><a class="FAQ_num3 page-link" href="#">6</a></li>
-              <li class="page-item"><a class="FAQ_num3 page-link" href="#">7</a></li>
-              <li class="page-item"><a class="FAQ_num3 page-link" href="#">8</a></li>
-              <li class="page-item"><a class="FAQ_num3 page-link" href="#">9</a></li>
-              <li class="page-item"><a class="FAQ_num3 page-link" href="#">10</a></li>
-              <li class="page-item"><a class="FAQ_num3 page-link" href="#">다음 <i class="fas fa-angle-right"></i></a></li>
-            </ul> -->
-        </nav>
     </section>
 
 

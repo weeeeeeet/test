@@ -8,17 +8,21 @@
     box-sizing: border-box;
 }
 
-body {
-    /* padding-top: 100px; */
-}
 
 .contents {
     margin: 0 auto;
-    height: auto;
+    height: 500px;
     min-height: 100%;
+    padding-bottom: 280px;
     width: 1040px;
     text-decoration: none;
+
 }
+
+.inner {
+    margin-top: 95px;
+}
+
 
 /* ------------------------------------------------ */
 
@@ -84,106 +88,56 @@ body {
 } 
 
 /* ------------------------------------------------ */
-
-.select_category {
-    margin-top: 10px
-}
-
-.FAQ_btn1 {
-    width: 180px;
-    padding: 8px;
-    border-radius: 20px;
-    font-size: 15px;
-    color: white;
-    background-color: #2370DF;
-}
-
-.FAQ_btn2 {
-    margin-left: 5px;
-    width: 180px;
-    padding: 8px;
-    border-radius: 20px;
-    font-size: 15px;
-    color: white;
-    background-color: #6C6C6C;
-}
-
-/* .FAQ_list1 {
-    font-size: 14px;
-    color: #2370DF;
-    border: 2px solid red;
-}
-
-.FAQ_list2 {
-    font-size: 14px;
-    color: black;
-}
-
-.FAQ_plus {
-    float: right;
-    color: #9A9A9A;
-} */
-
-/* ------------------------------------------------ */
-.table {
-    margin-top: 30px
-}
-
-.categories {
-    font-size: 15px;
-    color: #2370DF;
-}
-.title a{
-    text-decoration: none;
-    font-size: 15px;
-    color: black;
-}
-.more a {
-    float: right;
-    text-decoration: none;
-    font-size: 15px;
-    color: gray;
-}
-.table td {
-    padding-bottom: 20px;
-    padding-top: 20px;
+.question {
     border-bottom: 0.1px solid gray;
+    margin-top: 20px;
 }
-
-
-.FAQ_num1 {
-    margin-top: 10px;
-    color: #CCCCCC;
+.question .QA_q {
+    margin-bottom: 20px
 }
-
-.FAQ_num2 {
-    margin-top: 10px;
-    text-align: center;
-    color: #EB5757;
+.question .QA_list {
+    float: right;
+    margin-top: 25px;
+    right: 150px;
+    color:#18A0FB;
 }
-
-.FAQ_num3 {
-    margin-top: 10px;
+.question .QA_list_text {
+    text-decoration: none;
     color: black;
+    margin-left: 5px;
+    font-weight: 600;
 }
 
-.FAQ_num1:hover {
-    color: #CCCCCC;
-    background-color: white;
+.QA_q {
+    color: #18A0FB;
+    position: relative;
+    width: 900px;
 }
-
-.FAQ_num2:hover {
-    color: #EB5757;
-    background-color: white;
-}
-
-.FAQ_num3:hover {
+.QA_q_text {
     color: black;
-    background-color: white;
+    font-weight: 600;
+    margin-left: 20px;
+    top: 20px;
+    position:absolute;
 }
 
-.pagination {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
+.answer {
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.QA_list a:hover {
+    color: black;
+    
+}
+.QA_a {
+    color: #FFBABA;
+    position: relative;
+}
+.QA_a_text {
+    color: black;
+    font-weight: 600;
+    margin-left: 20px;
+    width: 1000px;
+    top: 20px;
+    position:absolute;
 }
