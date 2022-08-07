@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 
+
 .contents {
     margin: 0 auto;
     height: auto;
@@ -111,6 +112,14 @@ a {
     background-color: #2370DF;
 }
 
+<<<<<<< HEAD
+=======
+
+.inner {
+    margin-top: 95px;
+}
+
+>>>>>>> 8748a5e16273851e725c23496e387a586e651f5b
 /* ------------------------------------------------ */
 
 .inquiry_title {

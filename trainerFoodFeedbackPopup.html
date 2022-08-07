@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>클래스 공지사항 팝업창</title>
+    <title>트레이너 식단 피드백 작성 팝업</title>
 
      <!-- favicon -->
      <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon">
@@ -17,7 +17,7 @@
  
      <!-- 외부 스타일 시트 연결 -->
      <!-- 유저 대시보드 css -->
-     <link href="/css/userNoticePopup.css" rel="stylesheet" />
+     <link href="/css/userFoodFeedbackPopup.css" rel="stylesheet" />
  
      <!-- 폰트어썸 설정 -->
      <!-- <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet"> -->
@@ -37,9 +37,10 @@
 
     <section class="wrap">
 
-        <!-- 글 제목 -->
+        <!-- 날짜 & 회원 이름 -->
         <div class="title g">
-            <h1>공지 제목</h1>
+            <h1>2022년 08월 01일</h1>
+            <h2>Darlene Robertson 회원님의 식단입니다.</h2>
         </div>
 
         <!-- 취소 버튼 -->
@@ -49,9 +50,40 @@
             </button>
         </div>
         
-        <!-- 글 내용 -->
-        <div class="contents g">
+        <!-- 식단 사진 & 내용 -->
+        <div class="g">
+            <!-- 식단 사진 -->
+            <div class="contents g">
+                <img src="https://picsum.photos/id/493/600/400" class="card-img-top" alt="">
+            </div>
+    
+            <!-- 식단 내용 -->
+            <div>
+                <p>아침 : 생선구이, 방울토마토 샐러드, 현미밥</p>
+            </div>
+        </div>
 
+        <div class="g">
+            <!-- 식단 사진 -->
+            <div class="contents g">
+                <img src="https://picsum.photos/id/493/600/400" class="card-img-top" alt="">
+            </div>
+    
+            <!-- 식단 내용 -->
+            <div>
+                <p>점심 : 고구마, 리코타 치즈 샐러드, 계란</p>
+            </div>
+        </div>
+
+        <!-- 트레이너 피드백 작성 -->
+        <div class="g">
+      
+            <!-- 피드백 내용 작성 -->
+            <div class="g">
+                <p>
+                    내용을 입력해주세요.
+                </p>
+            </div>
         </div>
 
         <!-- 확인 버튼 -->
