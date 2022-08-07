@@ -48,13 +48,13 @@ section div.dash h1{ /*회원 대시보드 타이틀*/
     padding: 10px;
 }
 
-/* 오늘의 식단 올리기 대시보드----------------------------------*/
+/* 내 스케줄 확인 대시보드----------------------------------*/
 section div.mySchedule {
     background-color: rgb(255, 255, 255); /* 오늘의 식단 대시보드 색깔*/
     border-radius: 18px;
     height: 800px;  /* 오늘의 식단 대시보드 크기 (높이) */
 }
-section div.myScheduleTitle h2 { /*오늘의 식단 올리기 타이틀*/
+section div.myScheduleTitle h2 { /*내 스케쥴 확인 타이틀*/
     font-size: 20px;
     font-weight: bold;
     color: #2370DF;
@@ -64,6 +64,10 @@ section div.myScheduleTitle h2 { /*오늘의 식단 올리기 타이틀*/
     padding-top: 30px;
     padding-bottom: 15px;
     margin: 10px;   
+}
+
+.ScheduleBoard {    /* 스케쥴 타임라인 여백*/
+    margin: 50px;
 }
 
 /* ----------codepen-------------------------------------------------------------- */

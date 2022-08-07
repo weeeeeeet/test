@@ -181,6 +181,18 @@ section div.coaching-plan h2 { /*이번주 코칭계획 텍스트*/
 section div.plan-write a { /* 작성 버튼 스타일 없앰*/
     text-decoration: none;
 }
+
+#write-btn {    /* 작성 버튼 스타일 없앰 **** 버튼태그!! */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    outline: none; 
+
+    margin-bottom: 12px;
+}
+
 section div.plan-write i { /* 작성 버튼 아이콘*/
     color: #FF730E;
     border-radius: 7px;
@@ -266,3 +278,5 @@ section div.plan-list h5 { /* 공지사항 삭제 버튼 */
     color: rgb(180, 180, 180);
     text-align: center;
 }
+
+/* 모달 작업 ==================================================*/
