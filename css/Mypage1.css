@@ -71,6 +71,9 @@ a {
 /* 컨텐츠 영역에 양쪽 200px씩 여백주기 */
 .content{
     margin: 20px 200px 0px;
+    width: 1040px;
+
+    width :calc(100% - 400px);
 }
 
 /* 컨텐츠 영역의 왼쪽 가로 길이 잡아주기 */
