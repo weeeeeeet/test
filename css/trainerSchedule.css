@@ -31,12 +31,12 @@ section.wrap {
 section div.dash {
     display: inline-block;
     text-align: left;
-    width: 1200px;
-    /*대시보드 컨텐츠 틀 크기 (너비) */
-    height: 925px;
-    /*대시보드 컨텐츠 틀 크기 (높이) */
-
+    width: 1200px;   /*대시보드 컨텐츠 틀 크기 (너비) */
+    height: 925px; /*대시보드 컨텐츠 틀 크기 (높이) */
+    margin: auto;  /*대시보드 위치 창 크기에 따라 */
     padding: 30px;
+
+    margin: auto;  /*대시보드 위치 창 크기에 따라 */
 
     /* height: 300px; */
 }
@@ -51,15 +51,12 @@ section div.dash h1 {
 
 /* 오늘의 식단 올리기 대시보드----------------------------------*/
 section div.today-food {
-    background-color: rgb(255, 255, 255);
-    /* 오늘의 식단 대시보드 색깔*/
+    background-color: rgb(255, 255, 255); /* 오늘의 식단 대시보드 색깔*/
     border-radius: 18px;
-    height: 800px;
-    /* 오늘의 식단 대시보드 크기 (높이) */
+    height: 800px;/* 오늘의 식단 대시보드 크기 (높이) */
 }
 
-section div.today-food h2 {
-    /*스케쥴 확인 타이틀*/
+section div.today-food h2 {   /*스케쥴 확인 타이틀*/
     font-size: 20px;
     font-weight: bold;
     color: #FF730E;
@@ -71,26 +68,27 @@ section div.today-food h2 {
     margin: 10px;
 }
 
-section div.today-food p {
-    /*스케쥴 확인 문구*/
+section div.today-food p {/*스케쥴 확인 문구*/
+    
     padding-left: 45px;
-    ;
+
     padding-bottom: 15px;
 
     border-bottom: solid #e7e7e7;
 }
 
 
-/* ================================== */
+/* 캘린더 ================================== */
+
 .container-fluid {
     height: 620px;
     width: 1050px;
 }
-.table td {
+/* .table td {
     padding: 3px;
     position: relative;
     height: 60px;
-}
+} */
 
 .scheduler {
     overflow: auto;
@@ -125,46 +123,20 @@ section div.scheduler::-webkit-scrollbar-track { /*스케쥴 스크롤 여백*/
     border-radius: 10px;
     box-shadow: inset 0px 0px 5px white;
 }
-.week-scheduler {
-    margin: 0 25px;
-    height: 80vh;
-    min-width: 620px;
-    /* overflow: auto; */
+#calendar { /*캘린더*/
+    overflow: hidden;
+    width: 1000px;
 }
-.week-scheduler th{
-    background-color: rgb(255, 179, 103);
-    color: white;
-    text-align: center;
+#calendar button{
+   background-color: #FF730E;
 }
-.appointment {
-    padding: 3px;
-    border: 1px solid rgb(190, 190, 190);
-    border-radius: 3px;
-    position: absolute;
-    width: calc(100% - 6px);
-    height: calc(120px - 6px);
-    background-color: rgb(255, 239, 204);
-    font-size: 13px;
-    text-align: center;
-}
-
-.appointment.checked {
-    background-color: rgb(255, 217, 146);
-    border-color: rgb(190, 190, 190);
-    color: #000;
-}
-
-.appointment.overlap-left {
-    width: calc(50% - 3px);
-    left: 50%;
-}
-
-.appointment.overlap-right {
-    width: calc(50% - 6px);
+.fc-event-title-container { /*이벤트 박스*/
 
 }
+.fc-event-time { /*이벤트 시간*/
 
-.footer {
-    text-align: center;
-    padding: 20px;
+}
+#calendar .fc-button {
+    border-color: #b84d00;
+
 }

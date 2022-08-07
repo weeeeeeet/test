@@ -7,8 +7,59 @@
 
     <title>클래스 공지사항 팝업창</title>
 
+     <!-- favicon -->
+     <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon">
+     <link rel="icon" href="/ico/favicon.ico" type="image/x-icon">
+ 
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 
+     <!-- 외부 스타일 시트 연결 -->
+     <!-- 유저 대시보드 css -->
+     <link href="/css/userNoticePopup.css" rel="stylesheet" />
+ 
+     <!-- 폰트어썸 설정 -->
+     <!-- <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet"> -->
+     <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
+ 
+     <!-- 외부 JS 연결 -->
+     <script src="/js/loadHTML.js"></script>
+
+
 </head>
 <body>
-    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous">
+    </script>
+
+    <section class="wrap">
+
+        <!-- 글 제목 -->
+        <div class="title g">
+            <h1>공지 제목</h1>
+        </div>
+
+        <!-- 취소 버튼 -->
+        <div class="cancel">
+            <button class="cancel_btn g" name="writeCancel">
+                <i class="fas fa-x"></i>
+            </button>
+        </div>
+        
+        <!-- 글 내용 -->
+        <div class="contents g">
+
+        </div>
+
+        <!-- 확인 버튼 -->
+        <div class="g">
+            <button class="confirm-btn" type="submit">확인</button>
+        </div>
+
+    </section>
+
 </body>
 </html>l

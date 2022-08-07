@@ -35,6 +35,7 @@ section div.dash {
     height: 930px;  /* 대시보드 크기 */
 
     padding: 30px;
+    margin: auto;  /*대시보드 위치 창 크기에 따라 */
 
     /* height: 300px; */
 }

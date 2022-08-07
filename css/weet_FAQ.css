@@ -16,10 +16,8 @@ body {
     margin: 0 auto;
     height: auto;
     min-height: 100%;
-    padding-bottom: 280px;
     width: 1040px;
     text-decoration: none;
-
 }
 
 /* ------------------------------------------------ */
@@ -28,56 +26,72 @@ body {
 .FAQ_box {
     text-align: center;
     /* position: relative; */
-    background-color: #6C6C6C;
+    background-color: #929292;
     /* margin: 30px -200px -50px -200px; */
-    margin-top: 20px;
+    margin-top: 100px;
     /* width: 1440px; */
-    height: 300px;
+    height: 290px;
 }
 
 /* 무엇을 도와 드릴까요? */
 .FAQ_text {
+    width: 100%;
+    margin-top: 50px;
     display: inline-block;
-    margin-top: 20px;
-    margin-right: 70%;
+    margin-right: 470px;
     color: white;
     font-size: 25px;
+    font-weight: 500;
 }
-
-/* 검색창 */
-.FAQ_search {
-    display: inline;
-    width: 800px;
-    height: 7%;
-    border: 2.5px solid #2370DF;
-    border-radius: 10px;
-    padding: 8px 12px;
-    font-size: 14px;
-    position: absolute;
-    top: auto;
-    left: 30%;
-    /* vertical-align: auto; */
+.banner_search {
+    width: 815px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0px;
+    position: relative;
 }
-
-/* 돋보기 */
-.search {
-    position: absolute;
-    display: flex;
-    /* bottom: 1px; */
-    left: 68%;
-    /* display: inline-block; */
-    /* margin-left: 30px; */
+.banner_search input {
+    margin-left: 50px;
+    float: left;
+    width: 700px;
+    height: 70px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 1px solid white;
     margin-top: 20px;
-
-    color: #2370DF;
+    padding-left: 260px;
+    box-shadow: 5px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
 }
+.banner_search a {
+    display: inline-block;
+    padding-top: 115px;
+    top: -80px;
+    right: 90px;
+    text-decoration: none;
+    color: #2370DF;
+    font-size: 40px;
+    position: absolute;
+}
+/* 돋보기 */
+.search > a.fa-solid {
+    position: relative;
+    left: -55px;
+    top: 5px;
+    font-size: 32px;
+    margin-top: 20px;
+    color: #2370DF;
+    text-decoration: none;
+} 
 
 /* ------------------------------------------------ */
 
+.select_category {
+    margin-top: 10px
+}
+
 .FAQ_btn1 {
     width: 180px;
-    padding: 10px;
-    margin-left: 8%;
+    padding: 8px;
     border-radius: 20px;
     font-size: 15px;
     color: white;
@@ -85,17 +99,19 @@ body {
 }
 
 .FAQ_btn2 {
+    margin-left: 5px;
     width: 180px;
-    padding: 10px;
+    padding: 8px;
     border-radius: 20px;
     font-size: 15px;
     color: white;
     background-color: #6C6C6C;
 }
 
-.FAQ_list1 {
+/* .FAQ_list1 {
     font-size: 14px;
     color: #2370DF;
+    border: 2px solid red;
 }
 
 .FAQ_list2 {
@@ -106,9 +122,34 @@ body {
 .FAQ_plus {
     float: right;
     color: #9A9A9A;
-}
+} */
 
 /* ------------------------------------------------ */
+.table {
+    margin-top: 30px
+}
+
+.categories {
+    font-size: 15px;
+    color: #2370DF;
+}
+.title a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+.more a {
+    float: right;
+    text-decoration: none;
+    font-size: 15px;
+    color: gray;
+}
+.table td {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 0.1px solid gray;
+}
+
 
 .FAQ_num1 {
     margin-top: 10px;

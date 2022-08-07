@@ -8,6 +8,10 @@
 
     <title>trainerScheduleManagement</title>
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/ico/favicon.ico" type="image/x-icon">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,7 +20,7 @@
     <!-- 유저 대시보드 css -->
     <link href="/css/trainerSchedule.css" rel="stylesheet" />
 
-    <!-- 폰트 설정 -->
+    <!-- 폰트어썸 설정 -->
     <!-- <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
 
@@ -26,11 +30,22 @@
     <!-- defer : 브라우저가 스크립트를 문서 분석 이후에 실행해야 함을 나타내는 불리언 속성이다. -->
     <script type="text/javascript" defer src="/js/trainerSchedule.js"></script>
 
+    <!-- 캘린더 자바스크립트 파일 -->
+    <script type="text/javascript" defer src="/js/trainerCalendar.js"></script>
+
     <!-- jquery 설정 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
 
+    <!-- fullcalendar CDN -->
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.js'></script>
+
+    <!-- fullcalendar 언어 CDN -->
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/locales-all.min.js'></script>
+
 </head>
+
 
 <body>
     <!-- Bootstrap JS -->
@@ -40,7 +55,7 @@
 
 
     <!-- header 불러오기 -->
-    <div w3-include-html="/header.html"></div>
+    <div w3-include-html="/header_login.html"></div>
 
     <!-- contents -->
     <section class="wrap">
@@ -63,179 +78,21 @@
             </div>
 
             <!-- 위클리 스케쥴러 -->
-             <!-- (C) Iryna Marushkina -->
             <div class="container-fluid g">
-                <div class="">
+                <div class="scheduler g">
 
-                    <div class="scheduler g">
-
-                    <div class="g">
-                        <a href="#"><i class="fas fa-square-caret-right g"></i><h2>2022 7월 18일 - 7월 24일</h2></a>
-                    </div>
-
-                    <div class="week-scheduler g">
-                        <table class="table table-bordered g">
-                        <thead class="thead g">
-
-                            <tr>
-                                <th></th>
-                                <th>월요일</th></div>
-                                <th>화요일</th>
-                                <th>수요일</th>
-                                <th>목요일</th>
-                                <th>금요일</th>
-                                <th>토요일</th>
-                                <th>일요일</th>
-                            </div>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-
-                            <tr>
-                            <td>8:00</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            </tr>
-
-                            <tr>
-                            <td>9:00</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            </tr>
-
-                            <tr>
-                            <td>10:00</td>
-                            <td>
-                                <div class="appointment">Darlene 10AM</div>
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            </tr>
-
-                            <tr>
-                            <td>11:00</td>
-                            <td></td>
-                            <td>
-                                <div class="appointment checked">Robertson 11AM</div>
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            </tr>
-
-                            <tr>
-                            <td>12:00</td>
-                            <td></td>
-                            <td>
-                                <!-- <div class="appointment overlap-right  checked">Robertson 12AM</div> -->
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                                <div class="appointment checked">Robertson 12AM</div>
-                            </td>
-                            <td></td>
-                            </tr>
-
-                            <tr>
-                            <td>13:00</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            </tr>
-
-                            <tr>
-                            <td>14:00</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            </tr>
-
-                            <tr>
-                            <td>15:00</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            </tr>
-                            
-                            <tr>
-                            <td>16:00</td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                                <div class="appointment">Darlene 10AM</div>
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            </tr>
-
-                            <tr>
-                                <td>17:00</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-
-                            <tr>
-                                <td>18:00</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-
-                        </tbody>
-                        </table>
-                    </div>
-                    </div>
+                    <!-- 캘린더 -->
+                    <!-- <div w3-include-html="/trCalendar.html"></div> -->
+                    <div id='calendar' class="g"></div>
                 </div>
-            </div>   
+
+                
+            </div>  
 
         </div>
 
         
     </section>
-
-    
 
 
     <!-- footer 불러오기 -->
