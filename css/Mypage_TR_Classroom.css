@@ -20,7 +20,7 @@ a {
     padding: 20px 80px 20px 80px;
     height: 100px;
     background-color: white;
-    position: static;                       /* 헤더 고정 */
+    position: sticky;                       /* 헤더 고정 */
     top: 0px;
 }
 .header nav.nav_left a{                     /* 로고 */
@@ -110,12 +110,36 @@ a {
     float: left;
 }
 
-/* 컨텐츠 영역의 왼쪽상단의 프로필의 소설 로그인 종류*/
+/* 컨텐츠 영역의 왼쪽상단의 프로필의 트레이너 표시 */
 .content .content_left .profile_social{
     width: 18px;
     height: 18px;
 
+    display: inline-block;
+
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+
+    background-color: #F18E50;
     margin-top: 13px;
+}
+
+/* 컨텐츠 영역의 왼쪽상단의 프로필의 트레이너 레벨 표시 */
+.content .content_left .profile_level{
+    width: 35px;
+    height: 15px;
+
+    display: inline-block;
+
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+
+    background-color: #FF6565;
+    border-radius: 8px;
 }
 
 /* 컨텐츠 영역의 왼쪽상단의 프로필의 소설 로그인 아이디 위치 및 크기 잡아주기 */
@@ -124,6 +148,7 @@ a {
     font-size: 12px;
     color: #595959;
 }
+
 
 /* 컨켄츠 영역의 왼쪽 목록 */
 .content .mypage_list{
@@ -177,7 +202,7 @@ a {
     height: 50px;
 
     margin-right: 200px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
     border: 1px solid #595959;
     border-radius: 8px;
@@ -210,154 +235,58 @@ a {
     border-bottom: 2px solid black;
 }
 
-/* 모달창 1 - 회원탈퇴 ================================ */
-
-/* 모달창 - 전체를 감싸는 보더 설정 */
-.modal_class_content{
-    width: 100%;
-
-    margin-bottom: 10px;
-}
-
-/* 모달창 - 헤드 - 제목 */
-.modal-title{
-    width: 100%;
-
-    color: #666666;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* 모달창 - 클래스 제목 */
-.modal_class_title{
-    color: #000000;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-/* 모달창 - 클래스 제목 */
-.modal_class_title_value{
-    color: #000000;
+/* 클래스 클릭 시 해당 클래스의 대시보드로 이동합니다 */
+.content_right .content_p {
     font-size: 14px;
+    color: #6B6B6B;
 
-    padding-bottom: 10px;
-    border-bottom: 1px solid black;
+    margin-left: 10px;
 }
 
-/* 모달창 - 환불사유 제목 */
-.modal_class_content{
-    padding-bottom: 10px;
-}
-
-/* 모달창 - 주문취소 버튼 */
-.btn_submit{
-    background-color: #2370DF;
-    border: none;
-    border-radius: 8px;
-
-    color: white;
-    font-size: 14px;
-
-    width: 70px;
-    height: 38px;
-}
-
-/* 탈퇴 동의  ================================ */
-
-/* 수신동의 전체적인 틀 잡기 */
-.content_right_secede{
+/* 클래스 카드 위치 및 크기 지정 */
+.content_right .class_card{
     margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+
+    width: 230px;
 }
 
-/* 정밀 탈퇴하겠습니까? */
-.content_right_secede .secede_agree{
+/* 클래스 카드 이미지 */
+.content_right .class_card .card_img{
+    width: 230px;
+    height: 125px;
+}
+
+/* 클래스 카드 - 클래스 제목 */
+.content_right .class_card .card-text{
+    display: inline-block;
+    margin-top: 10px;
+
+    height: 50px;
+
+    text-align: center;
     font-size: 14px;
-    font-weight: bold;
-
-    margin-bottom: 20px;
+    color: black;
 }
 
-/* 정밀 탈퇴하겠습니까? - 본문 */
-.content_right_secede .secede_agree>p:last-of-type{
-    font-size: 14px;
-    font-weight: normal;
-
-    margin-bottom: 60px;
-}
-
-/* 탈퇴하는 이유 - Wee.T 를 탈퇴하시는 이유는 무엇인가요? */
-.content_right_secede .secede_type>p{
-    font-size: 14px;
-    font-weight: bold;
-
-    margin-bottom: 20px;
-}
-
-/* 탈퇴하는 이유 - 체크박스 */
-.content_right_secede .secede_type_1{
-    margin-bottom: 10px;
-
-    font-size: 14px;
-}
-
-.content_right_secede .secede_type_1>input:first-of-type{
-    margin-left: 0px;
-}
-
-.content_right_secede .secede_type_1>input{
-    margin-left: 150px;
-}
-
-.content_right_secede .secede_type_2{
-    margin-bottom: 10px;
-
-    font-size: 14px;
-}
-
-.content_right_secede .secede_type_2>input:first-of-type{
-    margin-left: 0px;
-}
-
-.content_right_secede .secede_type_2>input:nth-of-type(2){
-    margin-left: 178px;
-}
-
-.content_right_secede .secede_type_2>input{
-    margin-left: 138px;
-}
-
-.content_right_secede .secede_type_3{
-    margin-bottom: 10px;
-
-    font-size: 14px;
-}
-
-.content_right_secede .secede_type_3 .receive_agree_WEET_check_text{
-    width: 668px;
-    height: 28px;
-
-    border-radius: 8px;
-    border: 1px solid #A4A4A4;
-
-    margin-bottom: 10px;
-}
-
-/* 회원탈퇴 저장 */
-.content_right_secede_delete{
-    background-color: #2370DF;
-    border: none;
+/* 탑 버튼 */
+.TOP_btn{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #A7A7A7;
     border-radius: 8px;
 
-    color: white;
-    font-size: 14px;
+    padding-left: 2px;
+
+    font-size: 13px;
+    font-weight: bold;
+    color: #A7A7A7;
     text-align: center;
 
-    width: 110px;
-    height: 31px;
-
-    margin-top: 10px;
-    margin-left: 615px;
+    position: fixed;
+    bottom: 300px;
+    right: 250px;
 }
 
 /* Footer ================================ */

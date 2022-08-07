@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>마이페이지 - 클래스룸</title>
+    <title>마이페이지 - 내활동</title>
 
-    <link href="css/Mypage_End_Classroom.css" rel="stylesheet" />
+    <link href="css/Mypage_TR_1_comment_complete.css" rel="stylesheet" />
     <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
 
@@ -63,9 +63,11 @@
 
                 <div class="profile_photo"></div>
 
-                <div class="profile_id">WEE.T</div>
+                <div class="profile_id">구창식2</div>
 
-                <img src="./img/naver2.png" class="profile_social" alt="소설로그인표시">
+                <div class="profile_social">T</div>
+
+                <div class="profile_level">LV.3</div>
 
                 <a href="#" class="profile_email">helloword@naver.com <i class="fas fa-angle-right"></i> </a>
 
@@ -75,8 +77,8 @@
                 <!-- 왼쪽 목록 -->
 
                 <ul class="mypage_list_top">
-                    <li><a href="#">내 활동</a></li>
-                    <li><a href="#" class="on">내 클래스룸</a></li>
+                    <li><a href="/마이페이지_트레이너_내활동.html" class="on">내 활동</a></li>
+                    <li><a href="/마이페이지_트레이너_내클래스룸_클래스검수.html">내 클래스룸</a></li>
                     <li><a href="#">MY BODY</a></li>
                 </ul>
 
@@ -95,41 +97,61 @@
             <div class="mypage_top">
 
                 <ul class="mypage_toplist">
-                    <li><a href="#">내 클래스 룸</a></li>
-                    <li><a href="#" class="on">수강종료 클래스</a></li>
-                    <li><a href="#">예약 클래스</a></li>
-                    <li><a href="#">찜 한 클래스</a></li>
+                    <li><a href="/마이페이지_트레이너_내활동.html" class="on">TR 게시판</a></li>
+                    <li><a href="/마이페이지_트레이너_내활동_좋아요.html">좋아요</a></li>
+                    <li><a href="/마이페이지_트레이너_내활동_댓글.html">댓글</a></li>
                 </ul>
 
             </div>
 
-            <div class="class_card">
-                <img src="./img/classcard1.jpg" class="card_img" alt="해당 클래스의 대포사진 자리">
-                <a href="#" class="card-text">[인기 클래스] 국내1위 홈트계 끝판왕 '위이티'</a>
-                <a href="#" class="class_card_btn btn btn-primary">후기 등록하기</a>
+            <div>
+
+                <ul class="mypage_top_tabs">
+                    <li><a href="/마이페이지_트레이너_내활동.html"><span></span> 전체</a></li>
+                    <li><a href="/마이페이지_TR_내활동_답변완료.html" class="on"><span class="on2"></span> 답변 완료</a></li>
+                </ul>
+
             </div>
 
-            <div class="class_card">
-                <img src="./img/classcard2.jpg" class="card_img" alt="해당 클래스의 대포사진 자리">
-                <a href="#" class="card-text">[신규 클래스] 국내1위 홈트계 끝판왕 '위이티'</a>
-                <a href="#" class="class_card_btn btn btn-primary">후기 등록하기</a>
+            <div class="TR_tables">
+
+                <div class="tb1">
+                    <span class="tr_no">109</span>
+                    <a href="#" class="tr_title">운동을 처음 시작하는데, PT로 시작해도 ...</a>
+                    <span class="tr_date">2022.06.19</span>
+                    <span style="color: red;" class="heart"><i class="fas fa-heart"></i></span> <span class="tr_like">12</span>
+                    <span style="color: #2370DF;" class="comment"><i class="fa-regular fa-comment-dots"></i></span><span class="tr_comment">5</span>
+                </div>
+
+                <div class="tb1">
+                    <span class="tr_no">108</span>
+                    <a href="#" class="tr_title">다음주부터 PT를 시작하게 되었어요!</a>
+                    <span class="tr_date">2022.06.19</span>
+                    <span style="color: red;" class="heart"><i class="fas fa-heart"></i></span> <span class="tr_like">7</span>
+                    <span style="color: #2370DF;" class="comment"><i class="fa-regular fa-comment-dots"></i></span><span class="tr_comment">6</span>
+                </div>
+
+                <div class="tb1">
+                    <span class="tr_no">107</span>
+                    <a href="#" class="tr_title">제 식단 좀 봐주실 수 있을까요?</a>
+                    <span class="tr_date">2022.06.19</span>
+                    <span style="color: red;" class="heart"><i class="fas fa-heart"></i></span> <span class="tr_like">7</span>
+                    <span style="color: #2370DF;" class="comment"><i class="fa-regular fa-comment-dots"></i></span><span class="tr_comment">6</span>
+                </div>
+
+                <div class="tb1">
+                    <span class="tr_no">106</span>
+                    <a href="#" class="tr_title">게시물 제목</a>
+                    <span class="tr_date">2022.06.19</span>
+                    <span style="color: red;" class="heart"><i class="fas fa-heart"></i></span> <span class="tr_like">7</span>
+                    <span style="color: #2370DF;" class="comment"><i class="fa-regular fa-comment-dots"></i></span><span class="tr_comment">6</span>
+                </div>
+
             </div>
 
-            <div class="class_card">
-                <img src="./img/classcard3.jpg" class="card_img" alt="해당 클래스의 대포사진 자리">
-                <a href="#" class="card-text">[PT] 국내1위 홈트계 끝판왕 '위이티'</a>
-                <a href="#" class="class_card_btn btn btn-primary">후기 등록하기</a>
-            </div>
-
-            
         </div>
 
     </section>
-
-    <!-- ==================TOPBUTTON==================== -->
-
-    <!-- <a href="#" class="TOP_btn"><i class="fas fa-angle-up"></i><br>TOP</a> -->
-    <a href="#" class="TOP_btn">△<br>TOP</a>
 
     <!-- ==================FOOTER==================== -->
     
