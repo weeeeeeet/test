@@ -21,6 +21,10 @@ body {
     text-decoration: none;
 }
 
+.inner{
+    margin-top: 100px;
+}
+
 /* ------------------------------------------------ */
 
 .commhome_menu a {
