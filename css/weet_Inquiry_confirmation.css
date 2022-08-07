@@ -12,7 +12,7 @@
     margin: 0 auto;
     height: auto;
     min-height: 100%;
-    padding-bottom: 280px;
+    padding-bottom: 30px;
     width: 1040px;
     text-decoration: none;
 }
@@ -23,85 +23,103 @@ a {
 
 /* ------------------------------------------------ */
 
-.inner{
-    margin-top: 100px;
-}
-
 /* 검색 */
-.inquiry_confirmation_box {
+.FAQ_box {
     text-align: center;
-    background-color: #6C6C6C;
-    margin-top: 20px;
-    height: 300px;
+    /* position: relative; */
+    background-color: #929292;
+    /* margin: 30px -200px -50px -200px; */
+    margin-top: 100px;
+    /* width: 1440px; */
+    height: 290px;
 }
 
 /* 무엇을 도와 드릴까요? */
-.inquiry_confirmation_text {
+.FAQ_text {
+    width: 100%;
+    margin-top: 50px;
     display: inline-block;
-    margin-top: 20px;
-    margin-right: 70%;
+    margin-right: 470px;
     color: white;
     font-size: 25px;
+    font-weight: 500;
 }
-
-/* 검색창 */
-.inquiry_confirmation_search {
-    display: inline;
-    width: 800px;
-    height: 7%;
-    border: 2.5px solid #2370DF;
-    border-radius: 10px;
-    padding: 8px 12px;
-    font-size: 14px;
-    position: absolute;
-    top: auto;
-    left: 30%;
+.banner_search {
+    width: 815px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0px;
+    position: relative;
 }
-
-/* 돋보기 */
-.inquiry_confirmation_search2 {
-    position: absolute;
-    display: flex;
-    left: 68%;
+.banner_search input {
+    margin-left: 50px;
+    float: left;
+    width: 700px;
+    height: 70px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 1px solid white;
     margin-top: 20px;
-
-    color: #2370DF;
+    padding-left: 260px;
+    box-shadow: 5px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
 }
+.banner_search a {
+    display: inline-block;
+    padding-top: 115px;
+    top: -80px;
+    right: 90px;
+    text-decoration: none;
+    color: #2370DF;
+    font-size: 40px;
+    position: absolute;
+}
+/* 돋보기 */
+.search > a.fa-solid {
+    position: relative;
+    left: -55px;
+    top: 5px;
+    font-size: 32px;
+    margin-top: 20px;
+    color: #2370DF;
+    text-decoration: none;
+} 
 
 /* ------------------------------------------------ */
 
-.inquiry_confirmation_btn1 {
+.select_category {
+    margin-top: 10px
+}
+
+.FAQ_btn1 {
     width: 180px;
-    padding: 10px;
-    margin-left: 8%;
-    border: 0;
+    padding: 8px;
     border-radius: 20px;
     font-size: 15px;
     color: white;
+    border: none;
     background-color: #6C6C6C;
 }
 
-.inquiry_confirmation_btn2 {
+.FAQ_btn2 {
+    margin-left: 5px;
     width: 180px;
-    padding: 10px;
+    padding: 8px;
+    border: none;
     border-radius: 20px;
     font-size: 15px;
     color: white;
     background-color: #2370DF;
 }
 
-.inner {
-    margin-top: 95px;
-}
-
-
 /* ------------------------------------------------ */
 
-.inquiry_confirmation_title {
+.inquiry_title {
     font-size: 20px;
+    margin-top: 30px;
+    font-weight: 600;
 }
-
-.inquiry_confirmation_box1 {
+.inquiry_box1 {
+    margin-top: 30px;
     width: 1040px;
     height: 1040px;
     border: 1px solid #E5E5E5;
@@ -109,45 +127,42 @@ a {
     padding: 50px;
     text-align: center;
     box-shadow: 0px 1px 13px 1px #c0bcbc;
+    margin-bottom: 50px;
 }
 
-.inquiry_confirmation_box2 {
-    width: 800px;
-    height: 350px;
-    background-color: #DDDBDB;
+.inquiry_box2 {
+    width: 940px;
+    height: 400px;
+    background-color: #eaeaea;
     border-radius: 10px;
-    margin-left: 70px;
     padding: 50px 70px;
     text-align: left;
 }
-
-.inquiry_confirmation_card-text {
+.card-text {
     font-size: 20px;
     font-weight: bold;
+    line-height: 45px;
 }
 
-.inquiry_confirmation_wee {
+.inquiry_wee {
     color: #2370DF;
     font-size: 20px;
     font-weight: bold;
 }
-
-.inquiry_confirmation_. {
+.inquiry_ {
     color: #85EC1D;
     font-size: 20px;
     font-weight: bold;
 }
-
-.inquiry_confirmation_t {
+.inquiry_t {
     color: #FF730E;
     font-size: 20px;
     font-weight: bold;
 }
-
-.inquiry_confirmation_btn3 {
+.inquiry_btn3 {
     width: 150px;
-    padding: 10px;
-    margin: 13% 39%;
+    margin-top: 100px;
+    margin-left: 320px;
     border: 0;
     border-radius: 20px;
     font-size: 20px;
@@ -155,16 +170,12 @@ a {
     background-color: #2E2A2A;
 }
 
-.inquiry_confirmation_file {
-    color: #2370DF;
-}
-
-.inquiry_confirmation_file_memo {
-    font-size: 30px;
-    font-weight: bold;
-}
-
 /* ------------------------------------------------ */
+
+.inquiry_confirmation_hi {
+    height: 110px;
+    border-bottom: 0.1px solid gray;
+}
 
 .inquiry_confirmation_q {
     margin-top: 30px;
@@ -175,13 +186,12 @@ a {
 
 .Inquiry_confirmation_btn4 {
     margin-left: 20px;
-    margin-top: 15px;
+    margin-top: 10px;
     color: black;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     outline: none;
-    /* float: left; */
 
 }
 
@@ -191,42 +201,56 @@ a {
 
 .Inquiry_confirmation_date {
     margin-top: 40px;
-    margin-left: -855px;
+    margin-left: -865px;
     /* margin-bottom: 100px; */
     color: #C4C4C4;
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: 500;
     /* float: left; */
 
 }
 
 .Inquiry_confirmation_answer1 {
     /* display: inline-block; */
-    width: 200px;
-    height: 50px;
+    width: 170px;
+    height: 45px;
     padding-top: 11px;
     border-radius: 20px;
-    margin-left: 530px;
+    margin-left: 570px;
     background-color: #999999;
-    /* margin-left: 80%; */
-    /* padding: 20px; */
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     /* text-align: center; */
     float: right;
     font-weight: 500;
 }
 
+
+.Inquiry_confirmation_answer2 {
+    /* display: inline-block; */
+    width: 170px;
+    height: 45px;
+    padding-top: 11px;
+    border-radius: 20px;
+    margin-left: 570px;
+    background-color: #2370DF;
+    color: white;
+    font-size: 20px;
+    /* text-align: center; */
+    float: right;
+    font-weight: 500;
+}
+
+
 /* ------------------------------------------------ */
 
-.inquiry_confirmation_q2 {
-    /* margin-top: 30px; */
+/* .inquiry_confirmation_q2 {
     color: #18A0FB;
     display: inline-flex;
     float: left;
-}
+} */
 
-.Inquiry_confirmation_btn5 {
+/* .Inquiry_confirmation_btn5 {
     margin-left: 20px;
     margin-top: 15px;
     color: black;
@@ -234,7 +258,6 @@ a {
     font-weight: bold;
     text-decoration: none;
     outline: none;
-    /* float: left; */
 
 }
 
@@ -245,27 +268,9 @@ a {
 .Inquiry_confirmation_date2 {
     margin-top: 40px;
     margin-left: -855px;
-    /* margin-bottom: 100px; */
     color: #C4C4C4;
     font-size: 14px;
     font-weight: lighter;
-    /* float: left; */
+    border: 20px solid red;
 
-}
-
-.Inquiry_confirmation_answer2 {
-    /* display: inline-block; */
-    width: 200px;
-    height: 50px;
-    padding-top: 11px;
-    border-radius: 20px;
-    margin-left: 530px;
-    background-color: #2370DF;
-    /* margin-left: 80%; */
-    /* padding: 20px; */
-    color: white;
-    font-size: 25px;
-    /* text-align: center; */
-    float: right;
-    font-weight: 500;
-}
+} */
