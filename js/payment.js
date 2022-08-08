@@ -38,4 +38,24 @@ const goPayment = () => {
             }
         }
     );
-}
+} // goPayment
+
+// 체크박스 전체선택
+const selectAll = (selectAll) => {
+    const checkboxes = document.querySelectorAll('input[name="agmt"]');
+
+    checkboxes.forEach((checkbox) => {
+        checkbox.checked = selectAll.checked
+    }); // forEach
+    
+} // selectAll
+
+// 하나라도 체크 해제되면 전체선택 해제
+const checkSelectAll = (checkbox) => {
+    const selectall = document.querySelector('#agmt-all');
+
+    if (checkbox.checked === false) {
+        selectall.checked = false;
+    } // if
+
+} // checkSelectAll

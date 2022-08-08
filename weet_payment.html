@@ -187,7 +187,12 @@
                             <label for="agmt-all" class="form-check-label">전체 동의</label>
                         </div>
                         <div class="col form-check-reverse">
-                            <input type="checkbox" class="form-check-input" name="agmt-all" id="agmt-all">
+                            <input 
+                                type="checkbox" 
+                                class="form-check-input" 
+                                name="agmt-all" 
+                                id="agmt-all"
+                                onclick='selectAll(this)'>
                         </div>
                     </div>
                     <div class="row">
@@ -195,7 +200,13 @@
                             <label for="agmt-age" class="form-check-label">만 14세 이상 결제 동의</label>
                         </div>
                         <div class="col form-check-reverse">
-                            <input type="checkbox" class="form-check-input" name="agmt-age" id="agmt-age" required>
+                            <input 
+                                type="checkbox" 
+                                class="form-check-input select" 
+                                name="agmt" 
+                                id="agmt-age" 
+                                onclick='checkSelectAll(this)'
+                                required>
                             <div class="invalid-feedback">
                                 약관에 동의해 주세요.
                             </div>
@@ -206,7 +217,12 @@
                             <label for="agmt-confirm" class="form-check-label">주문내용 확인 및 결제동의</label>
                         </div>
                         <div class="col form-check-reverse">
-                            <input type="checkbox" class="form-check-input" name="agmt-confirm" id="agmt-confirm"
+                            <input 
+                                type="checkbox" 
+                                class="form-check-input select" 
+                                name="agmt" 
+                                id="agmt-confirm"
+                                onclick='checkSelectAll(this)'
                                 required>
                             <div class="invalid-feedback">
                                 약관에 동의해 주세요.
