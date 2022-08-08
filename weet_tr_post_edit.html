@@ -19,6 +19,14 @@
 
     <link rel="stylesheet" href="css/weet_tr_post_edit.css">
     <script src="loadHTML.js"></script>
+
+    <script>$(document).ready(function () {
+        $('#summernote').summernote({
+            height: 500,
+            lang: "ko-KR"
+        });
+    });</script>
+
 </head>
 
 <body>
@@ -298,6 +306,68 @@
         <!-- ==================FOOTER==================== -->
 
         <div include-html="weet_footer.html"></div> <!-- footer -->
+    </div>
+
+    <!-- ==================MADAL==================== -->
+    <script>
+        $(() => {
+            $('#writeUpload').click(() => $('#uploadCheack').modal("show"));
+            $('#refuseBtn').click(() => $('#uploadCheack').modal("hide"));
+            
+            $('#uploadBtn').click(() => $('#uploadComplete').modal("show"));
+            $('#confirmBtn').click(() => $('#uploadComplete').modal("hide"));
+            $('#confirmBtn').click(() => $('#uploadCheack').modal("hide"));
+
+            $('#writeSave').click(() => $('#saveCheack').modal("show"));
+            $('#nosaveBtn').click(() => $('#saveCheack').modal("hide"));
+
+            $('#saveBtn').click(() => $('#saveComplete').modal("show"));
+            $('#saveConfirmBtn').click(() => $('#saveComplete').modal("hide"));
+            $('#saveConfirmBtn').click(() => $('#saveCheack').modal("hide"));
+
+        }) // .jq
+    </script>
+    <div id="uploadCheack" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal_body">
+                    <h4 class="madal_text">글을 게시하겠습니까?</h4>
+                    <button id="uploadBtn" class="modal_btns yesbtn">예</button>
+                    <button id="refuseBtn" class="modal_btns nobtn">아니요</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="uploadComplete" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal_body">
+                    <h4 class="madal_text">게시물이 성공적으로 등록되었습니다.</h4>
+                    <button id="confirmBtn" class="modal_btns yesbtn">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="saveCheack" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal_body">
+                    <h4 class="madal_text">게시물을 임시저장하시겠습니까?</h4>
+                    <button id="saveBtn"class="modal_btns savebtn">예</button>
+                    <button id="nosaveBtn" class="modal_btns nobtn">아니요</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="saveComplete" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal_body">
+                    <h4 class="madal_text">게시물이 임시저장 되었습니다.</h4>
+                    <button id="saveConfirmBtn" class="modal_btns savebtn">확인</button>
+                </div>
+            </div>
+        </div>
     </div>
     <script>includeHTML();</script>
 
