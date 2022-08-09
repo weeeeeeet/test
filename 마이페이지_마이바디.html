@@ -145,8 +145,8 @@
                     인바디 입력
                 </button>
                 
-                <button type="button" class="mybody_delete btn btn-primary">
-                    기록삭제
+                <button type="button" class="mybody_delete btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                    기록 수정
                 </button>
 
             </div>
@@ -273,6 +273,61 @@
             </div>
         </div>
 
+        <!-- Modal 창 - 인바디 수정창 (모달창) -->
+        <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">인바디 수정</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <!-- 어디로 데이터를 보낼지 작성해야 한다. -->
+                        <form action="#">
+
+                            <!-- 날짜 -->
+                            <div class="modal_mybody_date">
+                                <p>날짜</p>
+                                
+                                <!-- 데이트 피커 적용 -->
+                                <input type="date" name="마이바디_수정_날짜" id="modal_datepicker">
+                                
+                            </div>
+
+                            <!-- 체중 -->
+                            <div class="modal_mybody_weight">
+                                <p>체중 (kg)</p>
+                                <input type="text" name="마이바디_수정_체중" placeholder="체중을 입력해주세요.">
+                            </div>
+
+                            <!-- 골격근량 -->
+                            <div class="modal_mybody_muscle">
+                                <p>골격근량 (kg)</p>
+                                <input type="text" name="마이바디_수정_골격근량" placeholder="골격근량을 입력해주세요.">
+                            </div>
+
+                            <!-- 체지방률 -->
+                            <div class="modal_mybody_BMI">
+                                <p>체지방률 (%)</p>
+                                <input type="text" name="마이바디_수정_체지방률" placeholder="체지방률을 입력해주세요.">
+                            </div>
+
+
+                            <input type="submit" class="modal_mybody_input_btn" data-bs-dismiss="modal" value="등록">
+
+                        </form>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
         <!-- Modal 창 - 날짜 선택창 (팝업창) -->
         <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -293,7 +348,7 @@
                             <div class="modal_mybody_date">
                                 <p>날짜</p>
                                 
-                                <input type="date" id="modal_datepicker">
+                                <input type="date" name="마이바디_날짜선택" id="modal_datepicker">
                                 <input type="submit" class="modal_mybody_date_btn" data-bs-dismiss="modal" value="선택">
                             </div>
 
