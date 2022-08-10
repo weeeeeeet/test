@@ -122,13 +122,13 @@
 .main .class_list a {
     position : relative;
 }
-.main .class_list .like i{
+/* .main .class_list .like i{
     position: absolute;
     left: 275px;
     top: -30px;
     color: red;
     font-size: 25px;
-}
+} */
 .main .class_list h1:nth-of-type(1) {
     font-size: 13px;
     font-weight: 300;
@@ -187,3 +187,315 @@
     line-height: 95px;
 }
 
+
+#likebtn {
+    width: 100%;
+  }
+  
+  #sharebtn:hover,
+  #likebtn:hover {
+    background-color: rgba(35, 112, 223, .1);
+  }
+  
+  
+  /*---------------------------------------
+    SIDE-BOX-HEART-ANIMATED     
+  -----------------------------------------*/
+  svg {
+    cursor: pointer;
+    overflow: visible;
+    width: 40px;
+    padding-bottom: 5px;
+    position: relative;
+    bottom: 200px;
+    left: 270px;
+  }
+  
+  svg #heart {
+    transform-origin: center;
+    animation: animateHeartOut .3s linear forwards;
+  }
+  
+  svg #main-circ {
+    transform-origin: 29.5px 29.5px;
+  }
+  
+.checkbox {
+display: none;
+}
+
+.checkbox:checked+label svg #heart {
+transform: scale(0.2);
+fill: #E2264D;
+animation: animateHeart .3s linear forwards .25s;
+
+}
+
+.checkbox:checked+label svg #main-circ {
+transition: all 2s;
+animation: animateCircle .3s linear forwards;
+opacity: 1;
+}
+  
+
+.checkbox2 {
+    display: none;
+  }
+  
+.checkbox2:checked+label svg #heart {
+    transform: scale(0.2);
+    fill: #E2264D;
+    animation: animateHeart .3s linear forwards .25s;
+}
+  
+.checkbox2:checked+label svg #main-circ {
+    transition: all 2s;
+    animation: animateCircle .3s linear forwards;
+    opacity: 1;
+}
+
+
+.checkbox3 {
+display: none;
+}
+  
+.checkbox3:checked+label svg #heart {
+    transform: scale(0.2);
+    fill: #E2264D;
+    animation: animateHeart .3s linear forwards .25s;
+    
+  }
+  
+.checkbox3:checked+label svg #main-circ {
+    transition: all 2s;
+    animation: animateCircle .3s linear forwards;
+    opacity: 1;
+  }  
+
+.checkbox4 {
+    display: none;
+}
+      
+.checkbox4:checked+label svg #heart {
+    transform: scale(0.2);
+    fill: #E2264D;
+    animation: animateHeart .3s linear forwards .25s;
+}
+    
+.checkbox4:checked+label svg #main-circ {
+    transition: all 2s;
+    animation: animateCircle .3s linear forwards;
+    opacity: 1;
+} 
+
+.checkbox5 {
+    display: none;
+}
+      
+.checkbox5:checked+label svg #heart {
+    transform: scale(0.2);
+    fill: #E2264D;
+    animation: animateHeart .3s linear forwards .25s;
+}
+    
+.checkbox5:checked+label svg #main-circ {
+    transition: all 2s;
+    animation: animateCircle .3s linear forwards;
+    opacity: 1;
+} 
+
+.checkbox6 {
+    display: none;
+}
+      
+.checkbox6:checked+label svg #heart {
+    transform: scale(0.2);
+    fill: #E2264D;
+    animation: animateHeart .3s linear forwards .25s;
+}
+    
+.checkbox6:checked+label svg #main-circ {
+    transition: all 2s;
+    animation: animateCircle .3s linear forwards;
+    opacity: 1;
+} 
+
+
+.checkbox7 {
+    display: none;
+}
+      
+.checkbox7:checked+label svg #heart {
+    transform: scale(0.2);
+    fill: #E2264D;
+    animation: animateHeart .3s linear forwards .25s;
+}
+    
+.checkbox7:checked+label svg #main-circ {
+    transition: all 2s;
+    animation: animateCircle .3s linear forwards;
+    opacity: 1;
+} 
+
+.checkbox8 {
+    display: none;
+}
+      
+.checkbox8:checked+label svg #heart {
+    transform: scale(0.2);
+    fill: #E2264D;
+    animation: animateHeart .3s linear forwards .25s;
+}
+    
+.checkbox8:checked+label svg #main-circ {
+    transition: all 2s;
+    animation: animateCircle .3s linear forwards;
+    opacity: 1;
+} 
+
+.checkbox9 {
+    display: none;
+}
+      
+.checkbox9:checked+label svg #heart {
+    transform: scale(0.2);
+    fill: #E2264D;
+    animation: animateHeart .3s linear forwards .25s;
+}
+    
+.checkbox9:checked+label svg #main-circ {
+    transition: all 2s;
+    animation: animateCircle .3s linear forwards;
+    opacity: 1;
+} 
+
+.checkbox10 {
+    display: none;
+}
+      
+.checkbox10:checked+label svg #heart {
+    transform: scale(0.2);
+    fill: #E2264D;
+    animation: animateHeart .3s linear forwards .25s;
+}
+    
+.checkbox10:checked+label svg #main-circ {
+    transition: all 2s;
+    animation: animateCircle .3s linear forwards;
+    opacity: 1;
+} 
+
+.checkbox11 {
+    display: none;
+}
+      
+.checkbox11:checked+label svg #heart {
+    transform: scale(0.2);
+    fill: #E2264D;
+    animation: animateHeart .3s linear forwards .25s;
+}
+    
+.checkbox11:checked+label svg #main-circ {
+    transition: all 2s;
+    animation: animateCircle .3s linear forwards;
+    opacity: 1;
+} 
+
+.checkbox12 {
+    display: none;
+}
+      
+.checkbox12:checked+label svg #heart {
+    transform: scale(0.2);
+    fill: #E2264D;
+    animation: animateHeart .3s linear forwards .25s;
+}
+    
+.checkbox12:checked+label svg #main-circ {
+    transition: all 2s;
+    animation: animateCircle .3s linear forwards;
+    opacity: 1;
+} 
+
+
+
+/*   ------------------------------------------------------- */
+
+
+
+  @keyframes animateCircle {
+    40% {
+      transform: scale(10);
+      opacity: 1;
+      fill: #DD4688;
+    }
+  
+    55% {
+      transform: scale(11);
+      opacity: 1;
+      fill: #D46ABF;
+    }
+  
+    65% {
+      transform: scale(12);
+      opacity: 1;
+      fill: #CC8EF5;
+    }
+  
+    75% {
+      transform: scale(13);
+      opacity: 1;
+      fill: transparent;
+      stroke: #CC8EF5;
+      stroke-width: .5;
+    }
+  
+    85% {
+      transform: scale(17);
+      opacity: 1;
+      fill: transparent;
+      stroke: #CC8EF5;
+      stroke-width: .2;
+    }
+  
+    95% {
+      transform: scale(18);
+      opacity: 1;
+      fill: transparent;
+      stroke: #CC8EF5;
+      stroke-width: .1;
+    }
+  
+    100% {
+      transform: scale(19);
+      opacity: 1;
+      fill: transparent;
+      stroke: #CC8EF5;
+      stroke-width: 0;
+    }
+  }
+  
+  @keyframes animateHeart {
+    0% {
+      transform: scale(0.2);
+    }
+  
+    40% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes animateHeartOut {
+    0% {
+      transform: scale(1.4);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
