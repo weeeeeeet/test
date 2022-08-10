@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>commhome</title>
+
+    <!-- #### common ####-->
+    <!-- favicon -->
+    <link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="ico/favicon.ico" type="image/x-icon">
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/63eb3bc178.js" crossorigin="anonymous"></script>
+    <!-- font -->
+    <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
+    <!-- bootstrap v5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+    <link rel="stylesheet" href="css/weet_inquiry_write.css">
+    <script src="loadHTML.js"></script>
+    <script>$(document).ready(function () {
+            $('#summernote').summernote({
+                height: 500,
+                lang: "ko-KR"
+            });
+        });</script>
+</head>
+
+<body>
+
+    <div class="wrap">
+
+        <!-- ==================HEADER==================== -->
+        <div id="header" include-html="weet_header_login.html"></div>
+
+            
+        <section class="FAQ_search_bar">
+            <div class="FAQ_box">
+                <p class="FAQ_text">무엇을 도와 드릴까요?</p>
+
+                <div class="banner_search">
+                    <input type="text" name="search"placeholder="질문을 검색해 주세요" autocomplete="off" />
+                    <a href="#" class="fa-solid fa-magnifying-glass" target="_self"></a>
+                </div>
+            </div>
+            <br>
+        </section>
+
+ 
+        <div class="inner">
+    
+
+            <section class="contents">
+                <div>
+                    <nav class="inquiry_menu">
+                        <h1 class="inquiry_home">1:1 문의 - 글쓰기</h1>
+                        <button id="writeSave" class="btns savebtn btn-open-popup" type="button">임시저장</button>
+                        <button id="writeUpload" class="btns writebtn" type="button">접수하기</button>
+                    </nav>
+                </div>
+
+                <div class="board_categories">
+                    <p class="subject boardcategories">문의유형</p>
+                    <select name="구분" class="">
+                        <option value="">결제문의</option>
+                        <option value="">계정문의</option>
+                        <option value="">오류신고</option>
+                        <option value="">건의사항</option>
+                        <option value="">클래스환불</option>
+                    </select>
+                </div>
+
+                <div class="board_phone">
+                    <p class="subject boardcategories">답변을 받을 전화번호</p>
+                    <div class="phone_number">
+                        <input type="tel" class="form-control" name="inquiry_phone" id="phone"
+                            placeholder="010-0000-0000 ('-' 없이 입력)" pattern="\d*" minlength="10" maxlength="11"
+                            required>
+                        <div class="invalid-feedback">
+                            올바른 전화번호를 입력해주세요.
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="boardtitle_box">
+                    <label class="subject boardtitle">제목</label>
+                    <input type="text" name="boardcontents" placeholder="제목을 입력해주세요">
+                </div>
+
+                <div class="boardcontents_box">
+                    <p class="subject boardcontents">본문</p>
+
+                    <div class="write_box">
+                        <div id="summernote">문의글을 작성해주세요.</div>
+                    </div>
+                </div>
+
+                <div class="agreement">
+                    <input type="hidden" name="kboard_option_info" value="0">
+                    <label><input type="checkbox" name="kboard_option_info" value="1" id="info" required>
+                        &nbsp개인정보 수집 및 이용에 동의합니다. 1:1문의를 위한 최소한의 개인정보만을 수집하고 있습니다. 개인정보는 '개인정보 처리방침'에 근거하여 관리합니다.(필수)
+                    </label>
+                </div>
+            </section>
+
+
+        </div>
+
+
+        <!-- ==================FOOTER==================== -->
+
+        <div include-html="weet_footer.html"></div> <!-- footer -->
+
+    </div>
+
+    <!-- ==================MADAL==================== -->
+    <script>
+        $(() => {
+            $('#writeUpload').click(() => $('#uploadCheack').modal("show"));
+            $('#refuseBtn').click(() => $('#uploadCheack').modal("hide"));
+            
+            $('#uploadBtn').click(() => $('#uploadComplete').modal("show"));
+            $('#confirmBtn').click(() => $('#uploadComplete').modal("hide"));
+            $('#confirmBtn').click(() => $('#uploadCheack').modal("hide"));
+
+            $('#writeSave').click(() => $('#saveCheack').modal("show"));
+            $('#nosaveBtn').click(() => $('#saveCheack').modal("hide"));
+
+            $('#saveBtn').click(() => $('#saveComplete').modal("show"));
+            $('#saveConfirmBtn').click(() => $('#saveComplete').modal("hide"));
+            $('#saveConfirmBtn').click(() => $('#saveCheack').modal("hide"));
+
+        }) // .jq
+    </script>
+    <div id="uploadCheack" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal_body">
+                    <h4 class="madal_text">글을 게시하겠습니까?</h4>
+                    <button id="uploadBtn" class="modal_btns yesbtn">예</button>
+                    <button id="refuseBtn" class="modal_btns nobtn">아니요</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="uploadComplete" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal_body">
+                    <h4 class="madal_text">게시물이 성공적으로 등록되었습니다.</h4>
+                    <button id="confirmBtn" class="modal_btns yesbtn">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="saveCheack" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal_body">
+                    <h4 class="madal_text">게시물을 임시저장하시겠습니까?</h4>
+                    <button id="saveBtn"class="modal_btns savebtn">예</button>
+                    <button id="nosaveBtn" class="modal_btns nobtn">아니요</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="saveComplete" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal_body">
+                    <h4 class="madal_text">게시물이 임시저장 되었습니다.</h4>
+                    <button id="saveConfirmBtn" class="modal_btns savebtn">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>includeHTML();</script>
+
+</body>
+
+</html>
