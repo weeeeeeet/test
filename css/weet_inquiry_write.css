@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'SCoreDream';
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.contents {
+    margin-top: 60px;
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 280px;
+    width: 1040px;
+    text-decoration: none;
+    position: relative;
+}
+
+/* ------------------------------------------------ */
+
+/* 검색 */
+.FAQ_box {
+    text-align: center;
+    /* position: relative; */
+    background-color: #929292;
+    /* margin: 30px -200px -50px -200px; */
+    margin-top: 100px;
+    /* width: 1440px; */
+    height: 290px;
+}
+
+/* 무엇을 도와 드릴까요? */
+.FAQ_text {
+    width: 100%;
+    margin-top: 50px;
+    display: inline-block;
+    margin-right: 470px;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+.banner_search {
+    width: 815px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0px;
+    position: relative;
+}
+.banner_search input {
+    margin-left: 50px;
+    float: left;
+    width: 700px;
+    height: 70px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 1px solid white;
+    margin-top: 20px;
+    padding-left: 260px;
+    box-shadow: 5px 5px 10px 0.5px rgba(0, 0, 0, 0.2);
+}
+.banner_search a {
+    display: inline-block;
+    padding-top: 115px;
+    top: -80px;
+    right: 90px;
+    text-decoration: none;
+    color: #2370DF;
+    font-size: 40px;
+    position: absolute;
+}
+/* 돋보기 */
+.search > a.fa-solid {
+    position: relative;
+    left: -55px;
+    top: 5px;
+    font-size: 32px;
+    margin-top: 20px;
+    color: #2370DF;
+    text-decoration: none;
+} 
+
+.inner{
+    margin-top: 100px;
+    z-index: 0;
+}
+
+.inquiry_home {
+    font-size: 20px;
+    width: 1040px;
+    margin: 0 auto;
+    font-weight: 600;
+}
+/* ------------------------------------------------ */
+
+/* ===== 버튼===== */
+.btns {                                /* 저장,완료 버튼 */
+    width: 100px;
+    height: 30px;
+    color: aliceblue;
+    border-radius: 4px;
+    border: none;
+    position: absolute;
+    top: 0px;    
+    left: 79%; 
+    /* transform:translateY(50%); */
+}
+.savebtn{
+    background-color: #85EC1D;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    border: 2px solid #85EC1D;
+}
+.writebtn{
+    margin-left: 110px;
+    background-color: #2370DF;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    border: 2px solid #2370DF;
+}
+
+.board_categories {
+    margin-top: 30px;
+    display: inline-block;
+}
+select {
+    width: 200px;
+    height: 30px;
+}
+.board_phone {
+    clear: both;
+    float: right;
+    display: inline;
+    margin-top: 30px;
+}
+
+.form-control {
+    width: 300px;
+}
+
+hr {
+    border: 0.1px solid gray;
+}
+/* ---모달---- */
+
+.modal{
+
+
+    text-align: center;
+}
+
+
+.modal_body h4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    font-size: 18px;
+}
+.modal_btns{
+    width: 140px;
+    height: 40px;
+    color: aliceblue;
+    border-radius: 4px;
+    border: none;
+    margin: 10px 20px;
+
+    font-size: 16px;
+}
+.yesbtn{
+    background-color: #2370DF;
+}
+.nobtn {
+    background-color:#D9D9D9;
+}
+.savebtn{
+    background-color: #85EC1D;
+}
+
+
+
+
+  /* ====글쓰기==== */
+  
+.boardtitle_box{                             /* 제목 박스 */
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+}
+
+.boardtitle_box input{                      /* 제목 입력칸 */
+    width: 100%;
+    height: 100%;
+    border:0px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.boardcontents_box{                         /* 글쓰기 박스 */
+    margin-top: 10px;
+}
+
+.subject{                                   /* 글씨공통스타일 */
+    color: #2370DF;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.agreement label {
+    font-size: 13px;
+    font-weight: 500;
+
+}
