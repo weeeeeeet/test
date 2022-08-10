@@ -26,13 +26,6 @@
     <link rel="stylesheet" href="css/weet_tr_post_edit.css">
     <script src="loadHTML.js"></script>
 
-    <script>$(document).ready(function () {
-        $('#summernote').summernote({
-            height: 500,
-            lang: "ko-KR"
-        });
-    });</script>
-
 </head>
 
 <body>
@@ -49,11 +42,12 @@
             <div>
                 <nav class="commhome_menu">
                     <a href="tr_nb.html" class="commhome_tr">TR 게시판</a>
-                    <button id="writeUpload" class="btns writebtn" type="button">글쓰기</button>
+                    <button id="writeUpload" class="btns writebtn" onclick="location.href='/comm_write.html'" type="button">글쓰기</button>
                     <!-- onclick="location.href='joinUs.jsp' " -->
                 </nav>
 
                 <i class="QA_list fas fa-list-ul fa-2x"><a href="#" class="QA_list_text">목록</a></i>
+
                 <div class="commhome_line1"></div>
             </div>
 
@@ -65,12 +59,12 @@
                             <b class="commhome_font_size">
                                 <p class="commhome_text_type">PT를 시작할까 고민중입니다.</p>
                                 <div>
-                                    <a href="#" class="tr_post_edit_btn1">수정</a>
-                                    <a href="#" class="tr_post_edit_btn2">삭제</a>
-                                    <button id="writeEdit" class="btns savebtn btn-open-popup" type="button">수정</button>
-                                    <button id="writeDelete" class="btns writebtn" type="삭제">삭제</button>
+                                    <button id="writeEdit" class="btns tr_post_edit_btn1 btn-open-popup" type="button">수정</button>
+                                    <button id="writeDelete" class="btns tr_post_edit_btn2 writebtn" type="삭제">삭제</button>
                                 </div>
+
                                 <p>불꽃길만걷자</p>
+
                                 <p>안녕하세요! 이번에 PT를 시작해 보려고 하는 헬린이 불꽃길만걷자입니다!
                                     <br>
                                     위튜브를 보면서 운동을 시작한지 3개월이 지났는데, 마침 회사 주변 헬스장이 개업하면서 PT 할인을 많이 하고 있어서 PT를 시작할지 고민 중입니다.
@@ -86,6 +80,7 @@
                                     : 아무래도 회사에 출근을 해야되기 때문에 PT를 할 수 있는 시간이 제한적이고, 야근이 갑작스럽게 발생했을 시에는 그 마저도 못 갈 가능성이
                                     있습니다. 그런데 ...
                                 </p>
+
                                 <p class="tr_nb_search_reaction"><i
                                         class="commhome_heart fas fa-heart fa-2x"></i>&nbsp;&nbsp; 5
                                     <span class="tr_nb_search_text_num">2022.06.15 05:18</span>
@@ -286,6 +281,7 @@
                                         class="tr_post_edit4">&nbsp;&nbsp;채택</span></a>
                                 </p>
                             </b>
+
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination">
                                     <li class="page-item"><a class="FAQ_num1 page-link" href="#"><i
@@ -304,8 +300,9 @@
                                                 class="fas fa-angle-right"></i></a></li>
                                 </ul>
                             </nav>
+
                         </div>
-                    </div>n
+                    </div>
                 </div>
             </section>
 
