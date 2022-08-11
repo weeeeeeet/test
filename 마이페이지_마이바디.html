@@ -228,18 +228,11 @@
                             <p>날짜</p>
                             
                             <!-- 데이트 피커 적용 -->
-                            <div class="col-md-3 col-xs-4 modal_date_wrap">
-                                <div class="form-group">
-                                    <div class="input-group date" style="width: 400px;" id="datetimepicker1" data-target-input="nearest">
-                                        <input type="text" name="마이바디_날짜" class="modal_date_input form-control datetimepicker-input" data-target="#datetimepicker1" value="17/07/2022">
-                                        <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
-                                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <script type="text/javascript" src="./js/데이트피커.js"></script>
+                            <input 
+                                    type="date" 
+                                    name="마이바디_날짜" 
+                                    style="width: 300px; margin-left: 93px;  border: 1px solid #D7D7D7; border-radius: 3px; height: 33px;" 
+                                    id="modal_datepicker insert_mybody_date">
                             
                         </div>
 
@@ -294,7 +287,11 @@
                                 <p>날짜</p>
                                 
                                 <!-- 데이트 피커 적용 -->
-                                <input type="date" name="마이바디_수정_날짜" id="modal_datepicker insert_mybody_date">
+                                <input 
+                                    type="date" 
+                                    name="마이바디_수정_날짜" 
+                                    style="width: 300px; margin-left: 93px;  border: 1px solid #D7D7D7; border-radius: 3px; height: 33px;" 
+                                    id="modal_datepicker insert_mybody_date">
                                 
                             </div>
 
@@ -348,7 +345,11 @@
                             <div class="modal_mybody_date">
                                 <p>날짜</p>
                                 
-                                <input type="date" name="마이바디_날짜선택" id="modal_datepicker">
+                                <input 
+                                    type="date" 
+                                    name="마이바디_날짜선택"
+                                    style="width: 230px; margin-left: 93px;  border: 1px solid #D7D7D7; border-radius: 3px; height: 33px;" 
+                                    id="modal_datepicker insert_mybody_date">
                                 <input type="submit" class="modal_mybody_date_btn" data-bs-dismiss="modal" value="선택">
                             </div>
 
